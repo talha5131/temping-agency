@@ -58,7 +58,7 @@
 									<span class="icon-bar"></span>
 								</button>
 								<div class="" style="position: absolute;top: 0px; margin-left: 6%;">
-									<a href="index">
+									<a href="{{ url('/')}}">
 										<img class="img-responsive" src="public/assets/images/logo.png" alt="logo">
 									</a>
 								</div>
