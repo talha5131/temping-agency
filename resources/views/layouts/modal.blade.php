@@ -9,7 +9,7 @@
 
 	<!-- Minimal Rich Text Editor With CSS -->
 
-	<link rel="stylesheet" href="css/richtext.min.css">
+	<link rel="stylesheet" href="public/assets/css/richtext.min.css">
 </head>
 
 <body>
@@ -94,12 +94,12 @@
 	</div>
 	<!-- Modal: modalPoll -->
 	<!-- initialize jQuery Library -->
-	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="public/assets/js/jquery.js"></script>
 	<!-- minimal Rich Text Editor With jQuery -->
 
-	<script type="text/javascript" src="js/jquery.richtext.min.js"></script>
+	<script type="text/javascript" src="public/assets/js/jquery.richtext.min.js"></script>
 
-	<script src="js/jquery-captcha-lgh.min.js"></script>
+	<script src="public/assets/js/jquery-captcha-lgh.min.js"></script>
 
 	<!-- jQuery Validation -->
 

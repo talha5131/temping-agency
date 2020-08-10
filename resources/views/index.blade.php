@@ -173,11 +173,11 @@
 					</div>
 					<!--/ Content row end -->
 
-					<div class="col-md-6 ts-padding about-img" style="height:374px;background:url(images/pages/about-3.jpg) 50% 50% / cover no-repeat;">
+					<div class="col-md-6 ts-padding about-img" style="height:374px;background:url(public/assets/images/pages/about-3.jpg) 50% 50% / cover no-repeat;">
 					</div>
 				</div>
 				<div class="row about-wrapper-bottom">
-					<div class="col-md-6 ts-padding about-img" style="height:374px;background:url(images/pages/about-2.jpg) 50% 50% / cover no-repeat;">
+					<div class="col-md-6 ts-padding about-img" style="height:374px;background:url(public/assets/images/pages/about-2.jpg) 50% 50% / cover no-repeat;">
 					</div>
 					<!--/ About image end -->
 					<div class="col-md-6 ts-padding about-message">
@@ -201,7 +201,7 @@
 						<p>Agency temps are usually very experienced individuals as they are required to work in a variety of settings. Here they gain a smorgasbord of knowledge and learn to be very adaptable to the different situations that they are placed in. Temps are also very keen to learn as each new skills provides them with an additional opportunity to find assignments. This is beneficial to your company as the work will be done with new creativity and analytical skills. </p>
 					</div>
 					<!--/ About message end -->
-					<div class="col-md-6 ts-padding about-img" style="height:374px;background:url(images/pages/about-1.jpg) 50% 50% / cover no-repeat;">
+					<div class="col-md-6 ts-padding about-img" style="height:374px;background:url(public/assets/images/pages/about-1.jpg) 50% 50% / cover no-repeat;">
 					</div>
 					<!--/ About image end -->
 				</div>
@@ -464,7 +464,7 @@
 		<section id="image-block" class="image-block no-padding">
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-md-6 ts-padding" style="height:650px;background:url(images/image-block-bg.jpg) 50% 50% / cover no-repeat;">
+					<div class="col-md-6 ts-padding" style="height:650px;background:url(public/assets/images/image-block-bg.jpg) 50% 50% / cover no-repeat;">
 					</div>
 					<div class="col-md-6 ts-padding img-block-right">
 						<div class="img-block-head text-center">

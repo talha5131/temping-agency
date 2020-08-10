@@ -16,35 +16,35 @@
 
 	<!-- Favicons
 		================================================== -->
-	<link rel="icon" href="img/favicon/favicon-32x32.png" type="image/x-icon" />
-	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/favicon/favicon-144x144.png">
-	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/favicon/favicon-72x72.png">
-	<link rel="apple-touch-icon-precomposed" href="img/favicon/favicon-54x54.png">
+	<link rel="icon" href="public/assets/img/favicon/favicon-32x32.png" type="image/x-icon" />
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="public/assets/img/favicon/favicon-144x144.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="public/assets/img/favicon/favicon-72x72.png">
+	<link rel="apple-touch-icon-precomposed" href="public/assets/img/favicon/favicon-54x54.png">
 
 	<!-- CSS
 		================================================== -->
 
 	<!-- Bootstrap -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="public/assets/css/bootstrap.min.css">
 	<!-- Template styles-->
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="public/assets/css/style.css">
 	<!-- Responsive styles-->
-	<link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" href="public/assets/css/responsive.css">
 	<!-- FontAwesome -->
-	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="public/assets/css/font-awesome.min.css">
 	<!-- Animation -->
-	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="public/assets/css/animate.css">
 	<!-- Prettyphoto -->
-	<link rel="stylesheet" href="css/prettyPhoto.css">
+	<link rel="stylesheet" href="public/assets/css/prettyPhoto.css">
 	<!-- Owl Carousel -->
-	<link rel="stylesheet" href="css/owl.carousel.css">
-	<link rel="stylesheet" href="css/owl.theme.css">
+	<link rel="stylesheet" href="public/assets/css/owl.carousel.css">
+	<link rel="stylesheet" href="public/assets/css/owl.theme.css">
 	<!-- Flexslider -->
-	<link rel="stylesheet" href="css/flexslider.css">
+	<link rel="stylesheet" href="public/assets/css/flexslider.css">
 	<!-- Flexslider -->
-	<link rel="stylesheet" href="css/cd-hero.css">
+	<link rel="stylesheet" href="public/assets/css/cd-hero.css">
 	<!-- Style Swicther -->
-	<link id="style-switch" href="css/presets/preset3.css" media="screen" rel="stylesheet" type="text/css">
+	<link id="style-switch" href="public/assets/css/presets/preset3.css" media="screen" rel="stylesheet" type="text/css">
 
 	<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
 	<!--[if lt IE 9]>
@@ -64,14 +64,14 @@
 		<!--/ Header end -->
 
 		<div id="banner-area">
-			<img src="images/banner/banner2.jpg" alt="" />
+			<img src="public/assets/images/banner/banner2.jpg" alt="" />
 			<div class="parallax-overlay"></div>
 			<!-- Subpage title start -->
 			<div class="banner-title-content">
 				<div class="text-center">
 					<h2>How to achieve your Bonus?</h2>
 					<ul class="breadcrumb">
-						<li><a href="index.html"> Home</a></li>
+						<li><a href="index"> Home</a></li>
 
 						<li>Blog</li>
 						<li>How to achieve your Bonus? </li>
@@ -91,7 +91,7 @@
 						<div class="post-content">
 							<!-- post image start -->
 							<div class="post-image-wrapper">
-								<img src="images/blog/blog1.jpg" class="img-responsive" alt="" />
+								<img src="public/assets/images/blog/blog1.jpg" class="img-responsive" alt="" />
 								<span class="blog-date"><a href="#"> May 03, 2019</a></span>
 							</div><!-- post image end -->
 							<div class="post-header clearfix">
@@ -256,7 +256,7 @@
 											<li>
 												<div class="posts-thumb pull-left">
 													<a href="#">
-														<img alt="img" src="images/blog/blog1.jpg">
+														<img alt="img" src="public/assets/images/blog/blog1.jpg">
 													</a>
 												</div>
 												<div class="post-content">
@@ -273,7 +273,7 @@
 											<li>
 												<div class="posts-thumb pull-left">
 													<a href="#">
-														<img alt="img" src="images/blog/blog2.jpg">
+														<img alt="img" src="public/assets/images/blog/blog2.jpg">
 													</a>
 												</div>
 												<div class="post-content">
@@ -291,7 +291,7 @@
 											<li>
 												<div class="posts-thumb pull-left">
 													<a href="#">
-														<img alt="img" src="images/blog/blog3.jpg">
+														<img alt="img" src="public/assets/images/blog/blog3.jpg">
 													</a>
 												</div>
 												<div class="post-content">
@@ -314,7 +314,7 @@
 											<li>
 												<div class="posts-thumb pull-left">
 													<a href="#">
-														<img alt="img" src="images/blog/blog3.jpg">
+														<img alt="img" src="public/assets/images/blog/blog3.jpg">
 													</a>
 												</div>
 												<div class="post-content">
@@ -331,7 +331,7 @@
 											<li>
 												<div class="posts-thumb pull-left">
 													<a href="#">
-														<img alt="img" src="images/blog/blog1.jpg">
+														<img alt="img" src="public/assets/images/blog/blog1.jpg">
 													</a>
 												</div>
 												<div class="post-content">
@@ -353,7 +353,7 @@
 											<li>
 												<div class="posts-avator pull-left">
 													<a href="#">
-														<img alt="img" src="images/blog/avator1.png">
+														<img alt="img" src="public/assets/images/blog/avator1.png">
 													</a>
 												</div>
 												<div class="post-content">
@@ -370,7 +370,7 @@
 											<li>
 												<div class="posts-avator pull-left">
 													<a href="#">
-														<img alt="img" src="images/blog/avator2.jpg">
+														<img alt="img" src="public/assets/images/blog/avator2.jpg">
 													</a>
 												</div>
 												<div class="post-content">
@@ -441,34 +441,34 @@
 		================================================== -->
 
 		<!-- initialize jQuery Library -->
-		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="public/assets/js/jquery.js"></script>
 		<!-- Bootstrap jQuery -->
-		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="public/assets/js/bootstrap.min.js"></script>
 		<!-- Style Switcher -->
-		<script type="text/javascript" src="js/style-switcher.js"></script>
+		<script type="text/javascript" src="public/assets/js/style-switcher.js"></script>
 		<!-- Owl Carousel -->
-		<script type="text/javascript" src="js/owl.carousel.js"></script>
+		<script type="text/javascript" src="public/assets/js/owl.carousel.js"></script>
 		<!-- PrettyPhoto -->
-		<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+		<script type="text/javascript" src="public/assets/js/jquery.prettyPhoto.js"></script>
 		<!-- Bxslider -->
-		<script type="text/javascript" src="js/jquery.flexslider.js"></script>
+		<script type="text/javascript" src="public/assets/js/jquery.flexslider.js"></script>
 		<!-- CD Hero slider -->
-		<script type="text/javascript" src="js/cd-hero.js"></script>
+		<script type="text/javascript" src="public/assets/js/cd-hero.js"></script>
 		<!-- Isotope -->
-		<script type="text/javascript" src="js/isotope.js"></script>
-		<script type="text/javascript" src="js/ini.isotope.js"></script>
+		<script type="text/javascript" src="public/assets/js/isotope.js"></script>
+		<script type="text/javascript" src="public/assets/js/ini.isotope.js"></script>
 		<!-- Wow Animation -->
-		<script type="text/javascript" src="js/wow.min.js"></script>
+		<script type="text/javascript" src="public/assets/js/wow.min.js"></script>
 		<!-- SmoothScroll -->
-		<script type="text/javascript" src="js/smoothscroll.js"></script>
+		<script type="text/javascript" src="public/assets/js/smoothscroll.js"></script>
 		<!-- Eeasing -->
-		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="public/assets/js/jquery.easing.1.3.js"></script>
 		<!-- Counter -->
-		<script type="text/javascript" src="js/jquery.counterup.min.js"></script>
+		<script type="text/javascript" src="public/assets/js/jquery.counterup.min.js"></script>
 		<!-- Waypoints -->
-		<script type="text/javascript" src="js/waypoints.min.js"></script>
+		<script type="text/javascript" src="public/assets/js/waypoints.min.js"></script>
 		<!-- Template custom -->
-		<script type="text/javascript" src="js/custom.js"></script>
+		<script type="text/javascript" src="public/assets/js/custom.js"></script>
 	</div><!-- Body inner end -->
 </body>
 

@@ -39,7 +39,7 @@ Route::get('/cv-upload', function () {
 });
 Route::get('/employer', function () {
     return view('employer');
-});
+})->name('employer');
 Route::get('/job-seeker', function () {
     return view('job-seeker');
 });

@@ -4,8 +4,8 @@
 				<div class="row">
 					<div class="col-md-4 col-sm-12 footer-widget">
 
-						<a href="index.php">
-							<img class="img-responsive" src="images/logo.png" alt="logo">
+						<a href="index">
+							<img class="img-responsive" src="public/assets/images/logo.png" alt="logo">
 						</a> <br>
 						<p> Temping Agency is a privately owned recruitment agency based in Central London, W1 area and Established as part of the Workers Direct Group in 2010, TA has delivered excellent recruitment and employment services to clients in a variety of industries.<br> <br>Our services include recruitment, selection, placement, contract and temporary workers and our consultants are highly trained and experienced to deal with each step of the process. </p>
 
@@ -241,7 +241,7 @@
 		<!-- Google Map API Key Source -->
 		<script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyCsa2Mi2HqyEcEnM1urFSIGEpvualYjwwM"></script>
 		<!-- Doc https://developers.google.com/maps/documentation/javascript/get-api-key -->
-		<script type="text/javascript" src="js/gmap3.js"></script>
+		<script type="text/javascript" src="public/assets/js/gmap3.js"></script>
 		<script type="text/javascript"></script>
 		<script type="text/javascript">
 			$(function() {

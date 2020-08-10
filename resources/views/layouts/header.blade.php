@@ -3,7 +3,7 @@
 
 <head>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="public/assets/css/style.css">
 
 </head>
 
@@ -29,7 +29,7 @@
 							<div class="nav-top-content navbar-right" style="margin-right: 5%;">
 								<ul class="nav navbar-nav">
 									<li class="">
-										<a href="employer" class="btn btn-primary cd-btn" style="margin-top: 10px; color: white; font-size: 11px">Employer</a>
+										<a href="{{route('employer')}}" class="btn btn-primary cd-btn" style="margin-top: 10px; color: white; font-size: 11px">Employer</a>
 									</li>
 									<li class="">
 										<a href="job-seeker" class="btn btn-primary cd-btn" style="margin-top: 10px; margin-left: 5px; color: white; font-size: 11px">Job Seeker</a>
@@ -74,39 +74,39 @@
 									<div class="dropdown-menu mega-menu" style="background-color: rgba(81, 40, 79, 0.5); border: 1px solid rgba(81, 40, 79, 0.5); border-radius: 20px">
 										<div class="row">
 											<div class="col-sm-4">
-												<img src="images/catering/2705385-min.jpg" class="img-responsive">
+												<img src="public/assets/images/catering/2705385-min.jpg" class="img-responsive">
 												<a href="catering">
 													<h4>CATERING</h4>
 												</a>
-												<img src="images/light-industrial-staff/welder-673559.jpg" class="img-responsive">
+												<img src="public/assets/images/light-industrial-staff/welder-673559.jpg" class="img-responsive">
 												<a href="light-industrial-staff">
 													<h4>Light Industrial Staff</h4>
 												</a>
 
-												<img src="images/construction/Construction-Laborers.jpg" class="img-responsive">
+												<img src="public/assets/images/construction/Construction-Laborers.jpg" class="img-responsive">
 												<a href="construction">
 													<h4>Construction</h4>
 												</a>
 
 											</div>
 											<div class="col-sm-4">
-												<img src="images/events/events2.jpg" alt="Events" class="img-responsive">
+												<img src="public/assets/images/events/events2.jpg" alt="Events" class="img-responsive">
 												<a href="events-&-promotions">
 													<h4>Events & Promotions</h4>
 												</a>
 
-												<img src="images/it-and-tech/tech1.jpg" class="img-responsive">
+												<img src="public/assets/images/it-and-tech/tech1.jpg" class="img-responsive">
 												<a href="it-&-telecom">
 													<h4>IT & Telecom</h4>
 												</a>
 
 											</div>
 											<div class="col-sm-4">
-												<img src="images/hospitality/hospitality1.jpg" class="img-responsive">
+												<img src="public/assets/images/hospitality/hospitality1.jpg" class="img-responsive">
 												<a href="hospitality">
 													<h4>Hospitality</h4>
 												</a>
-												<img src="images/sales-and-retail/sales1.jpg" class="img-responsive">
+												<img src="public/assets/images/sales-and-retail/sales1.jpg" class="img-responsive">
 												<a href="sales-&-retail">
 													<h4>Sales & Retail</h4>
 												</a>
