@@ -37,9 +37,12 @@ Route::get('/contact', function () {
 Route::get('/cv-upload', function () {
     return view('cv-upload');
 });
+Route::post('/cv-upload','WebController@cvUpload');
+
 Route::get('/employer', function () {
     return view('employer');
 })->name('employer');
+
 Route::get('/job-seeker', function () {
     return view('job-seeker');
 });
@@ -49,9 +52,14 @@ Route::get('/location', function () {
 Route::get('/post-a-job', function () {
     return view('post-a-job');
 });
+
+Route::post('/post-a-job', 'WebController@post');
+
+
 Route::get('/testimonial', function () {
     return view('testimonial');
 });
+
 Route::get('/why-us', function () {
     return view('why-us');
 });

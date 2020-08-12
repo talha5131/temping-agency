@@ -48,8 +48,8 @@
 
 	<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
 	<!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
-      <script src="js/respond.min.js"></script>
+      <script src="public/assets/js/html5shiv.js"></script>
+      <script src="public/assets/js/respond.min.js"></script>
   <![endif]-->
 
 </head>
@@ -139,15 +139,15 @@
 								</div>
 							</div>
 						</div>
-						<!-- 
+						<!--
 						<h3 class="title-border">Senior Manager</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, natus voluptatibus adipisci porro magni dolore eos eius ducimus corporis quos perspiciatis quis iste, vitae autem libero ullam omnis cupiditate quam.</p>
 
 						<div class="panel-group" id="accordionA">
 							<div class="panel panel-default">
 								<div class="panel-heading">
-									<h4 class="panel-title"> 
-										<a data-toggle="collapse" data-parent="#accordionA, #accordionB" href="#collapseOne">Job Requirements</a> 
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordionA, #accordionB" href="#collapseOne">Job Requirements</a>
 									</h4>
 								</div>
 								<div id="collapseOne" class="panel-collapse collapse in">
@@ -186,7 +186,7 @@
 							</div> -->
 						<!--/ Panel 2 end-->
 
-						<!-- 
+						<!--
 							<div class="panel panel-default">
 								<div class="panel-heading">
 									<h4 class="panel-title">
@@ -223,8 +223,8 @@
 						<div class="panel-group" id="accordionB">
 							<div class="panel panel-default">
 								<div class="panel-heading">
-									<h4 class="panel-title"> 
-										<a data-toggle="collapse" data-parent="#accordionA, #accordionB" href="#collapseA">Job Requirements</a> 
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordionA, #accordionB" href="#collapseA">Job Requirements</a>
 									</h4>
 								</div>
 								<div id="collapseA" class="panel-collapse collapse in">
@@ -282,7 +282,7 @@
 								</div>
 							</div> -->
 						<!--/ Panel 3 end-->
-						<!-- 
+						<!--
 							<div class="gap-20"></div>
 
 							<p><a href="#" class="btn btn-primary solid">Apply Now <i class="fa fa-long-arrow-right"></i></a></p>

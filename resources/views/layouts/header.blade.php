@@ -41,10 +41,10 @@
 									<li class="">
 										<a href="post-a-job" class="btn btn-primary cd-btn" style="margin-top: 10px; margin-left: 5px; color: white; font-size: 11px">Post A Job</a>
 									</li>
-									<li class="">
+<!-- 									<li class="">
 										<a href="#" class="btn btn-primary cd-btn" style="padding-right:15px; margin-top: 10px;
 										margin-left: 5px; color: white; font-size: 11px; padding-left: 17px" data-toggle="modal" data-target="#modalRegisterLogin">Register/Login</a>
-									</li>
+									</li> -->
 								</ul>
 							</div>
 						</div>
@@ -65,7 +65,7 @@
 							</div>
 							<!--/ Logo end -->
 							<ul class="nav navbar-nav navbar-left nav-mid-content" style="margin-left: 27%; margin-right: 5%">
-								<li class="active"><a href="index">Home </a></li>
+								<li class="active"><a href="{{ url('/')}}">Home </a></li>
 								<li><a href="about2">About Us</a></li>
 								<li><a href="why-us">Why Us</a></li>
 								<li><a href="career">Jobs</a></li>

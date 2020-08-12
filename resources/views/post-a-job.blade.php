@@ -228,14 +228,15 @@
 				<div class="row about-wrapper-top">
 
 					<div class="col-md-12 ts-padding about-message">
-						<form id="postAJob">
-							<div class="form-group">
-								<label for="">Have an account?</label>
-								<p>
-									If you don't have an account you can create one below by entering your email address/username. Your account details will be confirmed via email.
-								</p>
-								<button class="btn btn-success btn-lg">Sign In</button>
-							</div>
+						<form id="postAJob" action="post-a-job" method="post" enctype="multipart/form-data">
+                            @csrf
+{{--							<div class="form-group">--}}
+{{--								<label for="">Have an account?</label>--}}
+{{--								<p>--}}
+{{--									If you don't have an account you can create one below by entering your email address/username. Your account details will be confirmed via email.--}}
+{{--								</p>--}}
+{{--								<button class="btn btn-success btn-lg">Sign In</button>--}}
+{{--							</div>--}}
 							<hr>
 							<div class="form-group">
 								<label for="email">Your Email Address</label>
@@ -244,22 +245,22 @@
 							<hr>
 							<div class="form-group">
 								<label for="jobTitle">Job Title</label>
-								<input type="text" class="form-control" id="jobTitle" name="jobTitle" placeholder="Job Title">
+								<input type="text" class="form-control" id="title" name="title" placeholder="Job Title">
 							</div>
 							<hr>
 							<div class="form-group">
 								<label for="location">Location <small>(optional)</small></label>
-								<input type="text" class="form-control" id="location" placeholder="e.g. London">
+								<input type="text" class="form-control" id="location" name="location" placeholder="e.g. London">
 							</div>
 							<hr>
 							<div class="form-group">
 								<label for="jobtype">Job Type</label>
-								<select class="form-control" id="jobtype">
-									<option>Freelance</option>
-									<option selected>Full Time</option>
-									<option>Internship</option>
-									<option>Part Time</option>
-									<option>Temporary</option>
+								<select class="form-control" id="jobtype" name="jobtype">
+									<option value="Freelance">Freelance</option>
+									<option value="Full Time" selected>Full Time</option>
+									<option value="Internship">Internship</option>
+									<option value="Part Time">Part Time</option>
+									<option value="Temporary">Temporary</option>
 								</select>
 							</div>
 							<hr>
@@ -279,23 +280,23 @@
 
 							<div class="form-group">
 								<label for="compName">Company Name</label>
-								<input type="text" class="form-control" id="compName" name="compName" placeholder="Enter the name of the company">
+								<input type="text" class="form-control" id="company" name="company" placeholder="Enter the name of the company">
 							</div>
 							<div class="form-group">
 								<label for="website">Website <small>(optional)</small></label>
-								<input type="text" class="form-control" id="website" placeholder="http://">
+								<input type="text" class="form-control" id="website" name="website" placeholder="http://">
 							</div>
 							<div class="form-group">
 								<label for="tagline">Tagline <small>(optional)</small></label>
-								<input type="text" class="form-control" id="tagline" placeholder="Briefly describe your company">
+								<input type="text" class="form-control" id="tagline" name="tagline" placeholder="Briefly describe your company">
 							</div>
 							<div class="form-group">
 								<label for="video">Video <small>(optional)</small></label>
-								<input type="text" class="form-control" id="video" placeholder="A link to a video about your company">
+								<input type="text" class="form-control" id="video" name="video" placeholder="A link to a video about your company">
 							</div>
 							<div class="form-group">
 								<label for="twitterUsername">Twitter Username <small>(optional)</small></label>
-								<input type="text" class="form-control" id="twitterUsername" placeholder="@yourcompany">
+								<input type="text" class="form-control" id="twitterUsername" name="twitterUsername" placeholder="@yourcompany">
 							</div>
 							<div class="form-group">
 								<div class="row">
@@ -303,8 +304,8 @@
 										<label for="logo">Logo <small>(optional)</small></label>
 									</div>
 									<div class="col-md-10">
-										<input type="file" id="logo">
-										<small class="form-text text-muted">Maximum file size: 128 MB.</small>
+										<input type="file" id="logo" name="logo">
+										<small class="form-text text-muted">Maximum file size: 2 MB.</small>
 									</div>
 								</div>
 							</div>
@@ -527,7 +528,7 @@
 						required: true,
 						email: true
 					},
-					jobTitle: {
+					title: {
 						required: true,
 					},
 					desc: {
@@ -538,7 +539,7 @@
 						required: true,
 						email: true,
 					},
-					compName: {
+					company: {
 						required: true,
 					}
 				}

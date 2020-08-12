@@ -136,7 +136,7 @@
 
 					<ul class="breadcrumb">
 
-						<li><a href="index.html"> Home</a></li>
+						<li><a href="{{ url('/') }}"> Home</a></li>
 
 						<li>Upload a CV</li>
 
@@ -179,7 +179,15 @@
 					</div>
 
 				</div><!-- Title row end -->
-
+                @if (session('success'))
+                    <div class="row">
+                        <div class="col-md-12 heading text-center">
+                            <div class="alert  alert-success alert-dismissible fade show" role="alert">
+                                {{ session('success') }}
+                            </div>
+                        </div>
+                    </div>
+                @endif
 
 
 				<div class="row about-wrapper-bottom">
@@ -218,12 +226,12 @@
 
 
 				<div class="row about-wrapper-top">
-
 					<div class="col-md-12 ts-padding about-message">
-						<form id="cvUploadForm">
+						<form id="cvUploadForm" action="cv-upload" method="post" enctype="multipart/form-data">
+                            @csrf
 							<div class="form-group">
 								<label for="fname">Full Name</label>
-								<input type="text" class="form-control" id="fname" name="fname" placeholder="Peter John">
+								<input type="text" class="form-control" id="name" name="name" placeholder="Peter John">
 								<h5 id="namecheck"></h5>
 							</div>
 							<hr>
@@ -235,7 +243,7 @@
 							<hr>
 							<div class="form-group">
 								<label for="phoneNumber">Phone Number</label>
-								<input type="text" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="+44*********">
+								<input type="text" class="form-control" id="phone" name="phone" placeholder="+44*********">
 								<h5 id="numbercheck"></h5>
 							</div>
 							<hr>
@@ -247,25 +255,25 @@
 							<hr>
 							<div class="form-group">
 								<label for="location">Location <small>(optional)</small></label>
-								<input type="text" class="form-control" id="location" placeholder="e.g. London">
+								<input type="text" class="form-control" id="location" name="location" placeholder="e.g. London">
 							</div>
 							<hr>
 							<div class="form-group">
 								<label for="jobtype">Select Your Relevant Job Category</label>
-								<select class="form-control" id="jobtype">
-									<option selected>Other</option>
-									<option>Trade & Construction</option>
-									<option>Site Labourers & Cleaners</option>
-									<option>Multi-Skilled Builders</option>
-									<option>Forklift Operatives</option>
-									<option>Warehouse</option>
-									<option>Drivers</option>
-									<option>Pickers & Packers</option>
-									<option>Electricians & Electricians Mate</option>
-									<option>Plumbing</option>
-									<option>Electrical</option>
-									<option>Cleaning</option>
-									<option>Property Maintenance</option>
+								<select class="form-control" id="category" name="category">
+									<option selected disabled>Please Select</option>
+									<option value="Trade & Construction">Trade & Construction</option>
+									<option value="Site Labourers & Cleaners">Site Labourers & Cleaners</option>
+									<option value="Multi-Skilled Builders">Multi-Skilled Builders</option>
+									<option value="Forklift Operatives">Forklift Operatives</option>
+									<option value="Warehouse">Warehouse</option>
+									<option value="Drivers">Drivers</option>
+									<option value="Pickers & Packers">Pickers & Packers</option>
+									<option value="Electricians & Electricians Mate">Electricians & Electricians Mate</option>
+									<option value="Plumbing">Plumbing</option>
+									<option value="Electrical">Electrical</option>
+									<option value="Cleaning">Cleaning</option>
+									<option value="Property Maintenance">Property Maintenance</option>
 								</select>
 							</div>
 							<hr>
@@ -295,12 +303,12 @@
 									<div class="col-md-6">
 										<label for="pictureUpload">Upload Your Picture</label>
 										<input type="file" id="pictureUpload" name="pictureUpload">
-										<small class="form-text text-muted">Maximum file size: 128 MB.</small>
+										<small class="form-text text-muted">Maximum file size: 2 MB.</small>
 									</div>
 									<div class="col-md-6">
 										<label for="cvUpload">Upload Your CV</label>
 										<input type="file" id="cvUpload" name="cvUpload">
-										<small class="form-text text-muted">Maximum file size: 128 MB.</small>
+										<small class="form-text text-muted">Maximum file size: 2 MB.</small>
 									</div>
 								</div>
 							</div>
@@ -516,14 +524,14 @@
 		$(document).ready(function() {
 			$('#cvUploadForm').validate({
 				rules: {
-					fname: {
+					name: {
 						required: true,
 					},
 					email: {
 						required: true,
 						email: true
 					},
-					phoneNumber: {
+					phone: {
 						required: true,
 						minlength: 5,
 						maxlength: 10
@@ -534,6 +542,9 @@
 					availability: {
 						required: true,
 					},
+                    category: {
+					    required: true,
+                    },
 					salary: {
 						required: true,
 					},
