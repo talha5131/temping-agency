@@ -464,9 +464,9 @@
 		<section id="image-block" class="image-block no-padding">
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-md-6 ts-padding" style="height:650px;background:url(public/assets/images/image-block-bg.jpg) 50% 50% / cover no-repeat;">
+					<div class="col-md-6 col-sm-12 ts-padding" style="height:650px;background:url(public/assets/images/image-block-bg.jpg) 50% 50% / cover no-repeat;">
 					</div>
-					<div class="col-md-6 ts-padding img-block-right">
+					<div class="col-md-6 col-sm-12 ts-padding img-block-right">
 						<div class="img-block-head text-center">
 
 							<h3>Why Choose Us</h3>
