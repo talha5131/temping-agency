@@ -99,3 +99,6 @@ Route::get('/temporary-labourer', function () {
 Route::get('/ready-talent', function () {
     return view('ready-talent');
 });
+Route::get('/job', function () {
+    return view('job');
+});

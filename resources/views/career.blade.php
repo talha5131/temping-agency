@@ -92,7 +92,7 @@
 									<img src="public/assets/images/construction/Construction-Laborers.jpg" class="img-responsive">
 									<h4><a href="#">Accountant – US Department of Veterans Affairs – Sheridan, WY</a></h4>
 									<p>Applicants wishing to receive credit for such experience must indicate clearly the nature of their duties and responsibilities in each position and the number… $43,251 – $83,210 a year</p>
-									<button class="btn btn-primary">Read More</button>
+									<a href="job"class="btn btn-primary">Apply Now</a>
 								</div>
 							</div>
 							<div class="col-md-4">
