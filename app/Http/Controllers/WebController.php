@@ -40,12 +40,12 @@ class WebController extends Controller
 
         $mail = [
             'name' => $cv->name,
-            'info' => 'Recieved'
+            'info' => 'Recieved',
+            'code' => $code,
         ];
 
-        $send = Mail::to($user->email)->send(new Mailer($mail));
-        if($send)
-            return redirect()->back()->with('success','Congratulations! Your CV has been uploaded');
+        Mail::to($user->email)->send(new Mailer($mail));
+        return redirect()->back()->with('success','Congratulations! Your CV has been uploaded');
     }
     public function post(Request $request){
 //        return $request;
