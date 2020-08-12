@@ -182,7 +182,7 @@
                 @if (session('success'))
                     <div class="row">
                         <div class="col-md-12 heading text-center">
-                            <div class="alert  alert-success alert-dismissible fade show" role="alert">
+                            <div class="alert  alert-success alert-dismissible" role="alert">
                                 {{ session('success') }}
                             </div>
                         </div>
