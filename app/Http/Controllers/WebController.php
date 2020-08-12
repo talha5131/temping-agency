@@ -48,11 +48,12 @@ class WebController extends Controller
         return redirect()->back()->with('success','Congratulations! Your CV has been uploaded');
     }
     public function post(Request $request){
-//        return $request;
+        $code = str_random(10);
         $user = new User();
         $user->name = '';
         $user->email = $request->email;
         $user->phone = '';
+        $user->password = Hash::make($code);
         $user->user_type = 'employer';
         $user->save();
 
@@ -71,7 +72,5 @@ class WebController extends Controller
         $job->user_id = $user->id;
         $job->save();
         return $request;
-
-
     }
 }
