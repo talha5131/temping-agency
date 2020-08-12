@@ -8,8 +8,8 @@ use Illuminate\Support\Facades\Hash;
 use App\User;
 use App\CV;
 use App\Job;
-use App\Mail\Mail as Mailer;
-
+use App\Mail\MailCv;
+use App\Mail\MailJob;
 class WebController extends Controller
 {
     public function cvUpload(Request $request){
@@ -44,7 +44,7 @@ class WebController extends Controller
             'code' => $code,
         ];
 
-        Mail::to($user->email)->send(new Mailer($mail));
+        Mail::to($user->email)->send(new MailCv($mail));
         return redirect()->back()->with('success','Congratulations! Your CV has been uploaded');
     }
     public function post(Request $request){
@@ -71,6 +71,13 @@ class WebController extends Controller
         $job->twitter = isset($request->twitterUsername)?$request->twitterUsername:'';
         $job->user_id = $user->id;
         $job->save();
-        return $request;
+        $mail = [
+            'name' => $user->name,
+            'info' => 'Recieved',
+            'code' => $code,
+        ];
+
+        Mail::to($user->email)->send(new MailJob($mail));
+        return redirect()->back()->with('success','Congratulations! Your Job has been uploaded');
     }
 }
