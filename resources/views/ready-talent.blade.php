@@ -1,6 +1,7 @@
-<!DOCTYPE html>
+@extends('layouts.base')
+@section('title','Ready Talent')
+@section('content')
 
-<html lang="en">
 
 <head>
 
@@ -11,8 +12,6 @@
 		================================================== -->
 
 	<meta charset="utf-8">
-
-	<title>Ready Talent</title>
 
 	<meta name="description" content="">
 
@@ -107,17 +106,6 @@
 </head>
 
 
-
-<body>
-	<!-- Modal Import -->
-	@include('layouts.modal')
-	<div class="body-inner">
-
-
-
-		<!-- Header start -->
-		@include('layouts.header')
-		<!--/ Header end -->
 
 		<div id="banner-area">
 
@@ -378,12 +366,6 @@
 
 
 
-		<!-- Footer start -->
-		@include('layouts.footer')
-		<!--/ Footer end -->
-
-
-
 		<!-- Javascript Files
 
 		================================================== -->
@@ -480,6 +462,3 @@
 
 	</div><!-- Body inner end -->
 
-</body>
-
-</html>

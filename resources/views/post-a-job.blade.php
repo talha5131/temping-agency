@@ -1,6 +1,6 @@
-<!DOCTYPE html>
-
-<html lang="en">
+@extends('layouts.base')
+@section('title','Post A Job')
+@section('content')
 
 <head>
 
@@ -11,8 +11,6 @@
 		================================================== -->
 
 	<meta charset="utf-8">
-
-	<title>Post A Job</title>
 
 	<meta name="description" content="">
 
@@ -114,16 +112,6 @@
 </head>
 
 
-
-<body>
-	<!-- Modal Import -->
-	@include('layouts.modal')
-	<div class="body-inner">
-
-
-		<!-- Header start -->
-		@include('layouts.header')
-		<!--/ Header end -->
 
 
 
@@ -450,10 +438,6 @@
 		<!--/ Main container end -->
 
 
-		<!-- Footer start -->
-		@include('layouts.footer')
-		<!--/ Footer end -->
-
 
 
 		<!-- Javascript Files
@@ -557,6 +541,3 @@
 
 		$('.content').richText();
 	</script>
-</body>
-
-</html>

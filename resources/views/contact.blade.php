@@ -1,12 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.base')
+@section('title','Contact Us')
+@section('content')
+
 
 <head>
 
 	<!-- Basic Page Needs
 		================================================== -->
 	<meta charset="utf-8">
-	<title>Contact Us</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
 
@@ -58,12 +59,7 @@
 
 </head>
 
-<body>
 	<div class="body-inner">
-
-		<!-- Header start -->
-		@include('layouts.header')
-		<!--/ Header end -->
 
 		<div id="banner-area">
 			<img src="public/assets/images/banner/banner2.jpg" alt="" />
@@ -167,9 +163,6 @@
 		<!--/ Main container end -->
 
 
-		<!-- Footer start -->
-		@include('layouts.footer')
-		<!--/ Footer end -->
 
 		<!-- Javascript Files
 		================================================== -->
@@ -260,6 +253,3 @@
 		<!-- Template custom -->
 		<script type="text/javascript" src="public/assets/js/custom.js"></script>
 	</div><!-- Body inner end -->
-</body>
-
-</html>

@@ -1,6 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-
+@extends('layouts.base')
+@section('title','How to achieve your Bonus?')
+@section('content')
 <head>
 
 	<!-- Basic Page Needs
@@ -54,14 +54,6 @@
 
 </head>
 
-<body>
-	<!-- Modal Import -->
-	@include('layouts.header')
-	<div class="body-inner">
-
-		<!-- Header start -->
-		@include('layouts.header')
-		<!--/ Header end -->
 
 		<div id="banner-area">
 			<img src="public/assets/images/banner/banner2.jpg" alt="" />
@@ -433,9 +425,6 @@
 
 		<div class="gap-40"></div>
 
-		<!-- Footer start -->
-		@include('layouts.footer')
-		<!--/ Footer end -->
 
 		<!-- Javascript Files
 		================================================== -->
@@ -470,6 +459,3 @@
 		<!-- Template custom -->
 		<script type="text/javascript" src="public/assets/js/custom.js"></script>
 	</div><!-- Body inner end -->
-</body>
-
-</html>

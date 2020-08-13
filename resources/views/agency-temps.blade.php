@@ -1,23 +1,8 @@
-<!DOCTYPE html>
-
-<html lang="en">
+@extends('layouts.base')
+@section('title','Agency Temp')
+@section('content')
 
 <head>
-
-
-
-	<!-- Basic Page Needs
-
-		================================================== -->
-
-	<meta charset="utf-8">
-
-	<title>Agency Temps</title>
-
-	<meta name="description" content="">
-
-	<meta name="author" content="">
-
 
 
 	<!-- Mobile Specific Metas
@@ -106,18 +91,6 @@
 
 </head>
 
-
-
-<body>
-	<!-- Modal Import -->
-	@include('layouts.modal')
-	<div class="body-inner">
-
-
-
-		<!-- Header start -->
-		@include('layouts.header')
-		<!--/ Header end -->
 
 		<div id="banner-area">
 
@@ -396,10 +369,6 @@
 		</section>
 		<!--/ Main container end -->
 
-		<!-- Footer start -->
-		@include('layouts.footer')
-		<!--/ Footer end -->
-
 
 
 		<!-- Javascript Files
@@ -497,7 +466,3 @@
 		<script type="text/javascript" src="public/assets/js/custom.js"></script>
 
 	</div><!-- Body inner end -->
-
-</body>
-
-</html>
