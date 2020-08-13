@@ -87,14 +87,16 @@
 					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 
 						<div class="row">
+                            @foreach($jobs as $job)
 							<div class="col-md-4">
 								<div class="well">
 									<img src="public/assets/images/construction/Construction-Laborers.jpg" class="img-responsive">
-									<h4><a href="#">Accountant – US Department of Veterans Affairs – Sheridan, WY</a></h4>
-									<p>Applicants wishing to receive credit for such experience must indicate clearly the nature of their duties and responsibilities in each position and the number… $43,251 – $83,210 a year</p>
-									<a href="job"class="btn btn-primary">Apply Now</a>
+									<h4><a href="#">{{ $job->title }}</a></h4>
+									<p>{{ $job->description }}</p>
+									<a href="job/{{$job->id}}"class="btn btn-primary">Read More</a>
 								</div>
 							</div>
+                            @endforeach
 							<div class="col-md-4">
 								<div class="well">
 									<img src="public/assets/images/pictures/hub-05-29-jobinterviewlies-Hero-1200x900.jpg" class="img-responsive">

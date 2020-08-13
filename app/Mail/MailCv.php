@@ -29,7 +29,7 @@ class MailCv extends Mailable
      */
     public function build(){
 
-        return $this->subject('This is Testing MailCv')
+        return $this->subject('This is Testing Mail')
             ->view('mail.cv');
     }
 }

@@ -80,4 +80,14 @@ class WebController extends Controller
         Mail::to($user->email)->send(new MailJob($mail));
         return redirect()->back()->with('success','Congratulations! Your Job has been uploaded');
     }
+
+    public function jobs(){
+        $jobs = Job::all();
+        return view('career',compact('jobs'));
+    }
+
+    public function job_detail($id){
+        $job = Job::find($id);
+        return view('job',compact('job'));
+    }
 }

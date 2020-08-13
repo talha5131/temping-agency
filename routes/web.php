@@ -28,9 +28,7 @@ Route::get('/blog-item', function () {
 Route::get('/book-a-temp', function () {
     return view('book-a-temp');
 });
-Route::get('/career', function () {
-    return view('career');
-});
+Route::get('/career', 'WebController@jobs');
 Route::get('/contact', function () {
     return view('contact');
 });
@@ -99,6 +97,9 @@ Route::get('/temporary-labourer', function () {
 Route::get('/ready-talent', function () {
     return view('ready-talent');
 });
-Route::get('/job', function () {
-    return view('job');
-});
+
+Route::get('/job/{id}', 'WebController@job_detail');
+
+//Route::get('/job', function () {
+//        view('job');
+//});

@@ -96,11 +96,11 @@
 
     <!--[if lt IE 9]>
 
-<script src="js/html5shiv.js"></script>
+<script src="public/assets/js/html5shiv.js"></script>-->
 
-<script src="js/respond.min.js"></script>
+<!--<script src="public/assets/js/respond.min.js"></script>-->
 
-<![endif]-->
+{{--<![endif]-->--}}
 
     <style>
         #file-upload-button {
