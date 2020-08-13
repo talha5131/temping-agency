@@ -1,5 +1,5 @@
 @extends('layouts.base')
-@section('title','Job Details')
+@section('title',$job->title)
 @section('content')
 
 <head>
@@ -170,13 +170,12 @@
                             </div>
                         </div>
                         <br>
-                        <p>There is nothing worse than applying for a job or attending an interview and not hearing anything back. It can be
-                            very frustrating and this is why we will always provide you with feedback, regardless of the outcome.
-                        </p>
+                        <p>{{$job->description}}</p>
                         <br>
 
-                        <form id="jobApplyForm" action="cv-upload" method="post" enctype="multipart/form-data">
+                        <form id="jobApplyForm" action="{{route('apply-job')}}" method="post" enctype="multipart/form-data">
                             @csrf
+                            <input type="hidden" name="job" value="{{$job->id}}">
                             <div class="form-group">
                                 <label for="fname">Full Name</label>
                                 <input type="text" class="form-control" id="name" name="name" placeholder="Peter John">

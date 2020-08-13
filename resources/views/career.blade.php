@@ -85,7 +85,7 @@
 									<img src="public/assets/images/construction/Construction-Laborers.jpg" class="img-responsive">
 									<h4><a href="#">{{ $job->title }}</a></h4>
 									<p>{{ $job->description }}</p>
-									<a href="/job/{{$job->id}}"class="btn btn-primary">Read More</a>
+									<a href="job/{{$job->id}}" class="btn btn-primary">Read More</a>
 								</div>
 							</div>
                             @endforeach

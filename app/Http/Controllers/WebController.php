@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Activity;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Hash;
@@ -10,6 +11,7 @@ use App\CV;
 use App\Job;
 use App\Mail\MailCv;
 use App\Mail\MailJob;
+use App\Mail\Applied;
 class WebController extends Controller
 {
     public function index(){
@@ -92,5 +94,23 @@ class WebController extends Controller
     public function job_detail($id){
         $job = Job::find($id);
         return view('job',compact('job'));
+    }
+
+    public function apply_job(Request $request){
+        $code = str_random(10);
+        $user = new User();
+        $user->name = $request->name;
+        $user->email = $request->email;
+        $user->phone = $request->phone;
+        $user->password = Hash::make($code);
+        $user->user_type = 'candidate';
+        $user->save();
+
+        $job = new Activity();
+        $job->id = $job;
+        $job->user_id = $user->id;
+        $job->save();
+
+        
     }
 }

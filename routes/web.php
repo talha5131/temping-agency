@@ -98,6 +98,8 @@ Route::get('/ready-talent', function () {
 
 Route::get('/job/{id}', 'WebController@job_detail');
 
+Route::post('/apply-job', 'WebController@apply_job')->name('apply-job');
+
 //Route::get('/job', function () {
 //        view('job');
 //});
