@@ -1,6 +1,6 @@
-<!DOCTYPE html>
-
-<html lang="en">
+@extends('layouts.base')
+@section('title','Catering')
+@section('content')
 
 <head>
 
@@ -12,7 +12,6 @@
 
 		<meta charset="utf-8">
 
-		<title>Catering</title>
 
 		<meta name="description" content="">	
 
@@ -107,17 +106,6 @@
 </head>
 
 
-
-<body>
-	<!-- Modal Import -->
-	@include('layouts.modal')
-	<div class="body-inner">
-
-
-
-		<!-- Header start -->
-		@include('layouts.header')
-		<!--/ Header end -->
 
 		<div id="banner-area">
 
@@ -400,18 +388,6 @@
 
 
 
-
-
-
-
-
-
-		<!-- Footer start -->
-		@include('layouts.footer')
-		<!--/ Footer end -->
-
-
-
 	<!-- Javascript Files
 
 		================================================== -->
@@ -507,7 +483,3 @@
 <script type="text/javascript" src="public/assets/js/custom.js"></script>
 
 </div><!-- Body inner end -->
-
-</body>
-
-</html>

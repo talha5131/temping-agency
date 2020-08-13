@@ -1,12 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.base')
+@section('title','Temping Agency')
+@section('content')
 
 <head>
 
 	<!-- Basic Page Needs
 		================================================== -->
 	<meta charset="utf-8">
-	<title>Temping Agency</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
 
@@ -56,15 +56,8 @@
 
 </head>
 
-<body>
-	<!-- Modal Import -->
-	@include('layouts.modal')
-	<!-- Style switcher end -->
 
-	<div class="body-inner">
 
-		<!-- Header start -->
-		@include('layouts.header')
 		<!-- Slider start -->
 		<section id="home" class="no-padding">
 			<div id="main-slide" class="cd-hero">
@@ -618,9 +611,7 @@
 		</section>
 		<!--/ Clients end -->
 
-		<!-- Footer start -->
-		@include('layouts.footer')
-		<!--/ Footer end -->
+
 
 		<!-- Javascript Files
 		================================================== -->
@@ -659,8 +650,3 @@
 
 
 	<!-- Body inner end -->
-
-
-</body>
-
-</html>

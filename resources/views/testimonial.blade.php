@@ -1,5 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.base')
+@section('title','Testimonials')
+@section('content')
 
 <head>
 
@@ -53,15 +54,6 @@
   <![endif]-->
 
 </head>
-
-<body>
-	<!-- Modal Import -->
-	@include('layouts.modal')
-	<div class="body-inner">
-
-		<!-- Header start -->
-		@include('layouts.header')
-		<!--/ Header end -->
 
 		<div id="banner-area">
 			<img src="public/assets/images/banner/banner2.jpg" alt="" />
@@ -144,9 +136,6 @@
 			</div>
 		</section>
 
-		<!-- Footer start -->
-		@include('layouts.footer')
-		<!--/ Footer end -->
 
 		<!-- Javascript Files
 		================================================== -->
@@ -181,6 +170,3 @@
 		<!-- Template custom -->
 		<script type="text/javascript" src="public/assets/js/custom.js"></script>
 	</div><!-- Body inner end -->
-</body>
-
-</html>
