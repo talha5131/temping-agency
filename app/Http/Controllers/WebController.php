@@ -12,6 +12,9 @@ use App\Mail\MailCv;
 use App\Mail\MailJob;
 class WebController extends Controller
 {
+    public function index(){
+        return view('index');
+    }
     public function cvUpload(Request $request){
         $code = str_random(10);
         $user = new User();

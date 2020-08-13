@@ -32,13 +32,13 @@
 
 ================================================== -->
 
-    <link rel="icon" href="public/assets/img/favicon/favicon-32x32.png" type="image/x-icon" />
+    <link rel="icon" href="{{asset('img/favicon/favicon-32x32.png')}}" type="image/x-icon" />
 
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="public/assets/img/favicon/favicon-144x144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{asset('img/favicon/favicon-144x144.png')}}">
 
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="public/assets/img/favicon/favicon-72x72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{asset('img/favicon/favicon-72x72.png')}}">
 
-    <link rel="apple-touch-icon-precomposed" href="public/assets/img/favicon/favicon-54x54.png">
+    <link rel="apple-touch-icon-precomposed" href="{{asset('img/favicon/favicon-54x54.png')}}">
 
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
@@ -50,45 +50,45 @@
 
     <!-- Bootstrap -->
 
-    <link rel="stylesheet" href="public/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
 
     <!-- Template styles-->
 
-    <link rel="stylesheet" href="public/assets/css/style.css">
+    <link rel="stylesheet" href="{{asset('css/style.css')}}">
 
     <!-- Responsive styles-->
 
-    <link rel="stylesheet" href="public/assets/css/responsive.css">
+    <link rel="stylesheet" href="{{asset('css/responsive.css')}}">
 
     <!-- FontAwesome -->
 
-    <link rel="stylesheet" href="public/assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{asset('css/font-awesome.min.css')}}">
 
     <!-- Animation -->
 
-    <link rel="stylesheet" href="public/assets/css/animate.css">
+    <link rel="stylesheet" href="{{asset('css/animate.css')}}">
 
     <!-- Prettyphoto -->
 
-    <link rel="stylesheet" href="public/assets/css/prettyPhoto.css">
+    <link rel="stylesheet" href="{{asset('css/prettyPhoto.css')}}">
 
     <!-- Owl Carousel -->
 
-    <link rel="stylesheet" href="public/assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="{{asset('css/owl.carousel.css')}}">
 
-    <link rel="stylesheet" href="public/assets/css/owl.theme.css">
-
-    <!-- Flexslider -->
-
-    <link rel="stylesheet" href="public/assets/css/flexslider.css">
+    <link rel="stylesheet" href="{{asset('css/owl.theme.css')}}">
 
     <!-- Flexslider -->
 
-    <link rel="stylesheet" href="public/assets/css/cd-hero.css">
+    <link rel="stylesheet" href="{{asset('css/flexslider.css')}}">
+
+    <!-- Flexslider -->
+
+    <link rel="stylesheet" href="{{asset('css/cd-hero.css')}}">
 
     <!-- Style Swicther -->
 
-    <link id="style-switch" href="public/assets/css/presets/preset3.css" media="screen" rel="stylesheet" type="text/css">
+    <link id="style-switch" href="{{asset('css/presets/preset3.css')}}" media="screen" rel="stylesheet" type="text/css">
 
 
 
@@ -124,7 +124,7 @@
 
         <div id="banner-area">
 
-            <img src="public/assets/images/banner/banner1.jpg" alt="" />
+            <img src="{{asset('images/banner/banner1.jpg')}}" alt="" />
 
             <div class="parallax-overlay"></div>
 
@@ -134,7 +134,7 @@
 
                 <div class="text-center">
                     <br>
-                    <h2>Job Seeker</h2>
+                    <h2>Job</h2>
                 </div>
 
             </div><!-- Subpage title end -->
@@ -161,7 +161,7 @@
 
                     <div class="col-md-12 heading text-center">
 
-                        <h2 class="title2">Job Seeker
+                        <h2 class="title2">{{ $job->title }}
 
                             <span class="title-desc"> Temping Agency </span>
 
@@ -359,63 +359,61 @@
 
         <!-- initialize jQuery Library -->
 
-        <script type="text/javascript" src="public/assets/js/jquery.js"></script>
+        <script type="text/javascript" src="{{asset('js/jquery.js')}}"></script>
 
         <!-- Bootstrap jQuery -->
 
-        <script type="text/javascript" src="public/assets/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="{{asset('js/bootstrap.min.js')}}"></script>
 
         <!-- Style Switcher -->
 
-        <script type="text/javascript" src="public/assets/js/style-switcher.js"></script>
+        <script type="text/javascript" src="{{asset('js/style-switcher.js')}}"></script>
 
         <!-- Owl Carousel -->
 
-        <script type="text/javascript" src="public/assets/js/owl.carousel.js"></script>
+        <script type="text/javascript" src="{{asset('js/owl.carousel.js')}}"></script>
 
         <!-- PrettyPhoto -->
 
-        <script type="text/javascript" src="public/assets/js/jquery.prettyPhoto.js"></script>
+        <script type="text/javascript" src="{{asset('js/jquery.prettyPhoto.js')}}"></script>
 
         <!-- Bxslider -->
 
-        <script type="text/javascript" src="public/assets/js/jquery.flexslider.js"></script>
+        <script type="text/javascript" src="{{asset('js/jquery.flexslider.js')}}"></script>
 
         <!-- Owl Carousel -->
 
-        <script type="text/javascript" src="public/assets/js/cd-hero.js"></script>
+        <script type="text/javascript" src="{{asset('js/cd-hero.js')}}"></script>
 
         <!-- Isotope -->
 
-        <script type="text/javascript" src="public/assets/js/isotope.js"></script>
+        <script type="text/javascript" src="{{asset('js/isotope.js')}}"></script>
 
-        <script type="text/javascript" src="public/assets/js/ini.isotope.js"></script>
+        <script type="text/javascript" src="{{asset('js/ini.isotope.js')}}"></script>
 
         <!-- Wow Animation -->
 
-        <script type="text/javascript" src="public/assets/js/wow.min.js"></script>
+        <script type="text/javascript" src="{{asset('js/wow.min.js')}}"></script>
 
         <!-- SmoothScroll -->
 
-        <script type="text/javascript" src="public/assets/js/smoothscroll.js"></script>
+        <script type="text/javascript" src="{{asset('js/smoothscroll.js')}}"></script>
 
         <!-- Eeasing -->
 
-        <script type="text/javascript" src="public/assets/js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="{{asset('js/jquery.easing.1.3.js')}}"></script>
 
         <!-- Counter -->
 
-        <script type="text/javascript" src="public/assets/js/jquery.counterup.min.js"></script>
+        <script type="text/javascript" src="{{asset('js/jquery.counterup.min.js')}}"></script>
 
-        <!-- Waypoints -->
+        <!-- Waypoints ---->
 
-        <script type="text/javascript" src="public/assets/js/waypoints.min.js"></script>
+      <script type="text/javascript" src="{{asset('js/waypoints.min.js')}}"></script>
 
-        <!-- Template custom -->
+        <!-- Template custom       <script type="text/javascript" src="public/assets/js/custom.js"></script>
 
-        <script type="text/javascript" src="public/assets/js/custom.js"></script>
-
-        <!-- jQuery Validation -->
+        jQuery Validation -->
 
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
 
