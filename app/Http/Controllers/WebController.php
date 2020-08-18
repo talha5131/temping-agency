@@ -12,6 +12,7 @@ use App\Job;
 use App\Mail\MailCv;
 use App\Mail\MailJob;
 use App\Mail\Applied;
+use Illuminate\Support\Facades\Storage;
 class WebController extends Controller
 {
     public function index(){
@@ -41,6 +42,22 @@ class WebController extends Controller
         $cv->cv = $request->cv;
         $cv->user_id = $user->id;
         $cv->platform = 'Temping Agency';
+
+        if($request->hasfile('cv'))
+        {
+            $file = $request->file('cv')->getClientOriginalName();
+            $cv = 'Temping Agency'.'-'.$user->id.'-'.$file;
+            $path = $request->file('cv')->storeAs('vitae',$cv,'s3');
+            $cvUrl = Storage::disk('s3')->response('vitae/' . $cv);
+        }
+        if($request->hasfile('image'))
+        {
+            $file = $request->file('image')->getClientOriginalName();
+            $img = 'Temping Agency'.'-'.$user->id.'-'.$file;
+            $path = $request->file('img')->storeAs('images',$img,'s3');
+            $imgUrl = Storage::disk('s3')->response('images/' . $img);
+        }
+
         $cv->save();
 
         $mail = [
@@ -111,6 +128,14 @@ class WebController extends Controller
         $job->user_id = $user->id;
         $job->save();
 
-        
+        $mail = [
+            'name' => $user->name,
+            'info' => 'Recieved',
+            'code' => $code,
+        ];
+
+        Mail::to($user->email)->send(new Applied($mail));
+        return redirect()->back()->with('success','Congratulations! We');
+
     }
 }

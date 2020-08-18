@@ -16,9 +16,9 @@ class Applied extends Mailable
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($user)
     {
-        //
+        $this->user = $user;
     }
 
     /**
@@ -26,8 +26,9 @@ class Applied extends Mailable
      *
      * @return $this
      */
-    public function build()
-    {
-        return $this->view('view.name');
+    public function build(){
+
+        return $this->subject('This is Testing Mail')
+            ->view('mail.applied');
     }
 }
