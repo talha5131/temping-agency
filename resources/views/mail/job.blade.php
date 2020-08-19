@@ -1,7 +1,3 @@
-@extends('layouts.base')
-@section('title','Job Applied')
-@section('content')
-
 <head>
 
     <!-- Basic Page Needs
@@ -46,6 +42,8 @@
     <!-- Style Swicther -->
     <link id="style-switch" href="public/assets/css/presets/preset3.css" media="screen" rel="stylesheet" type="text/css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
     <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
@@ -55,27 +53,49 @@
     <style>
         .col-md-12 ul h4 {
             text-transform: none;
+            color: black;
+        }
+
+        .ts-testimonial-content .temping-logo {
+            float: left;
+            margin: 0 30%;
+            width: 35%;
+            height: 11%;
+            border-radius: 0%;
+        }
+
+        .classic {
+            /* margin-top: 6px;
+            margin-left: 15px; */
+            font-size: 20px;
+            text-align: center;
+            margin-top: 25%;
+            color: black;
+        }
+
+        /* .temping-logo{
+            margin: 0 38%;
+            width: 150px;
+        } */
+        .vertical-hr {
+            border-left: 6px solid #51284f;
+            height: 480px;
+        }
+
+        .vertical-hr1 {
+            position: relative;
+            left: 100px;
+            border-left: 2px solid #51284f;
+            height: 95px;
+        }
+        .fas,.far{
+            color: #51284f;
+            font-size: 20px;
+            /* border-right:1px solid #51284f; */
+            margin-right: 15px;
         }
     </style>
 </head>
-
-<div id="banner-area">
-    <img src="public/assets/images/banner/banner2.jpg" alt="" />
-    <div class="parallax-overlay"></div>
-    <!-- Subpage title start -->
-    <div class="banner-title-content">
-        <div class="text-center">
-            <h2>Job Applied</h2>
-            <ul class="breadcrumb">
-
-                <li><a href=""> Home</a></li>
-                <li>Job Applied</li>
-
-
-            </ul>
-        </div>
-    </div><!-- Subpage title end -->
-</div><!-- Banner area end -->
 
 <!-- Main container start -->
 
@@ -85,48 +105,82 @@
         <!-- Services -->
 
         <div class="row">
-            <div class="col-md-12 heading" style="margin: 0 26%;">
-                <span class="title-icon classic pull-left"><i class="fa fa-cogs"></i></span>
-                <h2 class="title classic">You Applied For The Job.</h2>
-            </div>
-        </div>
-
-
-        <div class="row">
             <div class="col-md-12 col-sm-12">
-                <div class="ts-testimonial-content" style="margin: 0 25%;">
+                <div class="ts-testimonial-content" style="margin: 0 25%;padding-bottom: 50px;">
+                    <img src="public/assets/images/temping-logo.png" alt="testimonial" class="temping-logo">
                     <div class="row">
+                        <div class="col-md-12 heading">
+                            <h3 class="classic">You Applied For The Job.</h3>
+                        </div>
+                    </div>
+                    <div class="row vertical-hr">
                         <div class="col-md-12 col-sm-12">
-                            <img src="public/assets/images/clients/testimonial1.jpg" alt="testimonial">
-                            <h3 style="padding-left: 100px; padding-top: 5%;">Name: Hammad Ahmad</h3>
+                            <img src="public/assets/images/clients/testimonial1.jpg" alt="testimonial" style="position: relative;top:10px;color: black;">
+                            <div class="vertical-hr1">
+                                <h3 style="padding-top: 3%;position: relative;left: -50px;top:20px;color: black;">Hammad Ahmad</h3>
+                            </div>
                         </div>
                         <br><br>
-                        <div class="col-md-12 col-sm-12" style="padding-bottom: 20px;">
-                            <ul>
+                        <div class="col-md-12 col-sm-12">
+                            <!-- <table class="table table-bordered">
+                                <tr>
+                                    <td style=""><i class="far fa-envelope"></i></td>
+                                    <td>hammad-ahmad@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-phone-alt"></i></td>
+                                    <td>0306-4629013</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-key"></i></td>
+                                    <td>0123456789</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-file-alt"></i></td>
+                                    <td>ABCDEFG</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-map-marker-alt"></i></td>
+                                    <td>London</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="far fa-clock"></i</td>
+                                    <td>Full Time / Half Time</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-pound-sign"></i></td>
+                                    <td>20</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="far fa-building"></i></td>
+                                    <td>XYZ</td>
+                                </tr>
+                            </table> -->
+                            <ul style="list-style-type:none">
                                 <h4>
-                                    <li>email: hammad-ahmad@gmail.com</li>
+                                    <li><i class="far fa-envelope"></i> hammad-ahmad@gmail.com</li>
                                 </h4>
                                 <h4>
-                                    <li>Phone Number: 0306-4629013</li>
+                                    <li><i class="fas fa-phone-alt"></i> 0306-4629013</li>
                                 </h4>
                                 <h4>
-                                    <li>Your Password Is: 0123456789</li>
+                                    <li><i class="fas fa-key"></i> 0123456789</li>
                                 </h4>
                                 <h4>
-                                    <li>Job Title: ABCDEFG</li>
+                                    <li><i class="fas fa-file-alt"></i> ABCDEFG</li>
                                 </h4>
 
                                 <h4>
-                                    <li>Location: London</li>
+                                    <li><i class="fas fa-map-marker-alt"></i> London</li>
                                 </h4>
                                 <h4>
-                                    <li>Type: Full Time / Half Time</li>
+                                    <li><i class="far fa-clock"></i> Full Time / Half Time</li>
                                 </h4>
                                 <h4>
-                                    <li>Expected Salary: 20</li>
+                                    <li><i class="fas fa-pound-sign"></i> 20</li>
                                 </h4>
                                 <h4>
-                                    <li>Company: XYZ</li>
+                                    <li><i class="far fa-building"></i> XYZ</li>
                                 </h4>
                             </ul>
                         </div>
@@ -145,18 +199,6 @@
 
 </section>
 <!--/ Main container end -->
-
-<section class="call-to-action">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <h3> Email us at info@temping-agency.com
-                </h3>
-                <a href="mailto:info@temping-agency.com" class="pull-right btn btn-primary white">Email Us</a>
-            </div>
-        </div>
-    </div>
-</section>
 
 
 <!-- Javascript Files
