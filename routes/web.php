@@ -95,7 +95,12 @@ Route::get('/temporary-labourer', function () {
 Route::get('/ready-talent', function () {
     return view('ready-talent');
 });
-
+Route::get('/new-job', function () {
+    return view('new-job');
+});
+Route::get('/cv', function () {
+    return view('cv');
+});
 Route::get('/job/{id}', 'WebController@job_detail');
 
 Route::post('/apply-job', 'WebController@apply_job')->name('apply-job');

@@ -7,7 +7,6 @@
 	<!-- Basic Page Needs
 		================================================== -->
 	<meta charset="utf-8">
-	<title>Testimonials</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
 
