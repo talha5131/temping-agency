@@ -110,87 +110,50 @@
                     <img src="public/assets/images/temping-logo.png" alt="testimonial" class="temping-logo">
                     <div class="row">
                         <div class="col-md-12 heading">
-                            <h3 class="classic">You Applied For The Job.</h3>
+                            <h3 class="classic">You Posted For The Job.</h3>
                         </div>
                     </div>
                     <div class="row vertical-hr">
                         <div class="col-md-12 col-sm-12">
                             <img src="public/assets/images/clients/testimonial1.jpg" alt="testimonial" style="position: relative;top:10px;color: black;">
                             <div class="vertical-hr1">
-                                <h3 style="padding-top: 3%;position: relative;left: -50px;top:20px;color: black;">Hammad Ahmad</h3>
+{{--                                <h3 style="padding-top: 3%;position: relative;left: -50px;top:20px;color: black;">Hammad Ahmad</h3>--}}
                             </div>
                         </div>
                         <br><br>
                         <div class="col-md-12 col-sm-12">
-                            <!-- <table class="table table-bordered">
-                                <tr>
-                                    <td style=""><i class="far fa-envelope"></i></td>
-                                    <td>hammad-ahmad@gmail.com</td>
-                                </tr>
-                                <tr>
-                                    <td><i class="fas fa-phone-alt"></i></td>
-                                    <td>0306-4629013</td>
-                                </tr>
-                                <tr>
-                                    <td><i class="fas fa-key"></i></td>
-                                    <td>0123456789</td>
-                                </tr>
-                                <tr>
-                                    <td><i class="fas fa-file-alt"></i></td>
-                                    <td>ABCDEFG</td>
-                                </tr>
-                                <tr>
-                                    <td><i class="fas fa-map-marker-alt"></i></td>
-                                    <td>London</td>
-                                </tr>
-                                <tr>
-                                    <td><i class="far fa-clock"></i</td>
-                                    <td>Full Time / Half Time</td>
-                                </tr>
-                                <tr>
-                                    <td><i class="fas fa-pound-sign"></i></td>
-                                    <td>20</td>
-                                </tr>
-                                <tr>
-                                    <td><i class="far fa-building"></i></td>
-                                    <td>XYZ</td>
-                                </tr>
-                            </table> -->
                             <ul style="list-style-type:none">
                                 <h4>
-                                    <li><i class="far fa-envelope"></i> hammad-ahmad@gmail.com</li>
+                                    <li><i class="far fa-envelope"></i>{{ $user['email'] }}</li>
                                 </h4>
                                 <h4>
-                                    <li><i class="fas fa-phone-alt"></i> 0306-4629013</li>
+                                    <li><i class="fas fa-phone-alt"></i>{{ $user['phone'] }}</li>
                                 </h4>
                                 <h4>
-                                    <li><i class="fas fa-key"></i> 0123456789</li>
+                                    <li><i class="fas fa-key"></i>{{ $user['code'] }}</li>
                                 </h4>
                                 <h4>
-                                    <li><i class="fas fa-file-alt"></i> ABCDEFG</li>
+                                    <li><i class="fas fa-file-alt"></i>{{ $user['title'] }}</li>
                                 </h4>
 
                                 <h4>
-                                    <li><i class="fas fa-map-marker-alt"></i> London</li>
+                                    <li><i class="fas fa-map-marker-alt"></i>{{ $user['location'] }}</li>
                                 </h4>
                                 <h4>
-                                    <li><i class="far fa-clock"></i> Full Time / Half Time</li>
+                                    <li><i class="far fa-clock"></i>{{ $user['type'] }}</li>
                                 </h4>
                                 <h4>
-                                    <li><i class="fas fa-pound-sign"></i> 20</li>
+{{--                                    <li><i class="fas fa-pound-sign"></i> 20</li>--}}
                                 </h4>
                                 <h4>
-                                    <li><i class="far fa-building"></i> XYZ</li>
+                                    <li><i class="far fa-building"></i>{{ $user['company'] }}</li>
                                 </h4>
                             </ul>
                         </div>
                     </div>
-                    <!-- <div class="ts-testimonial-author">
-                        <h3 class="name">Tahlia Bidmead<span>Chief Operation Officer</span></h3>
-                    </div> -->
                 </div><!-- Testimonial content end -->
                 <br><br>
-                <h5 style="margin: 0 35%;">Thanks For Applying For This Job.</h5>
+                <h5 style="margin: 0 35%;">Thanks For posting the Job.</h5>
             </div><!-- End col-md-6 -->
         </div><!-- Content row  end -->
 

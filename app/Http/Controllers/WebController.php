@@ -19,6 +19,7 @@ class WebController extends Controller
         return view('index');
     }
     public function cvUpload(Request $request){
+//        return $request;
         $code = str_random(10);
         $user = new User();
         $user->name = $request->name;
@@ -28,9 +29,26 @@ class WebController extends Controller
         $user->user_type = 'candidate';
         $user->save();
 
+        if($request->hasfile('image'))
+        {
+            $file = $request->file('image')->getClientOriginalName();
+            $image = 'Temping Agency'.'-'.$user->id.'-'.$file;
+            $path = $request->file('cv')->storeAs('images',$image,'s3');
+            $imgUrl = Storage::disk('s3')->response('images/' . $image);
+        }
+
+        if($request->hasfile('cv'))
+        {
+            $file = $request->file('cv')->getClientOriginalName();
+            $vitae = 'Temping Agency'.'-'.$user->id.'-'.$file;
+            $path = $request->file('cv')->storeAs('vitae',$vitae,'s3');
+            $cvUrl = Storage::disk('s3')->response('vitae/' . $vitae);
+        }
+
+
         $cv = new CV();
         $cv->name = $user->name;
-        $cv->image = $request->image;
+        $cv->image = $image;
         $cv->email = $user->email;
         $cv->phone = $user->phone;
         $cv->address = $request->address;
@@ -39,31 +57,18 @@ class WebController extends Controller
         $cv->pref_temporary = $request->choice;
         $cv->availability = $request->availability;
         $cv->expected_salary = $request->salary;
-        $cv->cv = $request->cv;
+        $cv->cv = $vitae;
         $cv->user_id = $user->id;
         $cv->platform = 'Temping Agency';
-
-        if($request->hasfile('cv'))
-        {
-            $file = $request->file('cv')->getClientOriginalName();
-            $cv = 'Temping Agency'.'-'.$user->id.'-'.$file;
-            $path = $request->file('cv')->storeAs('vitae',$cv,'s3');
-            $cvUrl = Storage::disk('s3')->response('vitae/' . $cv);
-        }
-        if($request->hasfile('image'))
-        {
-            $file = $request->file('image')->getClientOriginalName();
-            $img = 'Temping Agency'.'-'.$user->id.'-'.$file;
-            $path = $request->file('img')->storeAs('images',$img,'s3');
-            $imgUrl = Storage::disk('s3')->response('images/' . $img);
-        }
-
         $cv->save();
 
         $mail = [
             'name' => $cv->name,
-            'info' => 'Recieved',
+            'email' =>$cv->email,
+            'phone' =>$cv->phone,
             'code' => $code,
+            'location' => $cv->location,
+            'cv' => $cvUrl,
         ];
 
         Mail::to($user->email)->send(new MailCv($mail));
@@ -93,10 +98,16 @@ class WebController extends Controller
         $job->twitter = isset($request->twitterUsername)?$request->twitterUsername:'';
         $job->user_id = $user->id;
         $job->save();
+
         $mail = [
             'name' => $user->name,
-            'info' => 'Recieved',
+            'email' =>$user->email,
+            'phone' =>$user->phone,
             'code' => $code,
+            'title' => $job->title,
+            'location' => $job->location,
+            'type' => $job->type,
+            'company' => $job->company,
         ];
 
         Mail::to($user->email)->send(new MailJob($mail));
@@ -114,6 +125,7 @@ class WebController extends Controller
     }
 
     public function apply_job(Request $request){
+//        return $request;
         $code = str_random(10);
         $user = new User();
         $user->name = $request->name;
@@ -123,19 +135,44 @@ class WebController extends Controller
         $user->user_type = 'candidate';
         $user->save();
 
-        $job = new Activity();
-        $job->id = $job;
-        $job->user_id = $user->id;
-        $job->save();
+
+        $job = Job::find($request->job);
+
+        $ja = new Activity();
+        $ja->job_id = $job->id;
+        $ja->user_id = $user->id;
+        $ja->save();
+
+        if($request->hasfile('cv'))
+        {
+            $file = $request->file('cv')->getClientOriginalName();
+            $vitae = 'Temping Agency'.'-'.$user->id.'-'.$file;
+            $path = $request->file('cv')->storeAs('vitae',$vitae,'s3');
+            $cvUrl = Storage::disk('s3')->response('vitae/' . $vitae);
+        }
+
+        $cv = new CV();
+        $cv->name = $user->name;
+        $cv->email = $user->email;
+        $cv->phone = $user->phone;
+        $cv->cv = $vitae;
+        $cv->user_id = $user->id;
+        $cv->platform = 'Temping Agency';
+        $cv->save();
 
         $mail = [
             'name' => $user->name,
-            'info' => 'Recieved',
+            'email' =>$user->email,
+            'phone' =>$user->phone,
             'code' => $code,
+            'title' => $job->title,
+            'location' => $job->location,
+            'type' => $job->type,
+            'company' => $job->company,
         ];
 
         Mail::to($user->email)->send(new Applied($mail));
-        return redirect()->back()->with('success','Congratulations! We');
+        return redirect()->back()->with('success','Successfully Applied for this job!');
 
     }
 }

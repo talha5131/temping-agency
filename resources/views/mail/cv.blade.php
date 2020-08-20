@@ -130,60 +130,26 @@
                         <div class="col-md-12 col-sm-12">
                             <img src="public/assets/images/clients/testimonial1.jpg" alt="testimonial" style="position: relative;top:10px;color: black;">
                             <div class="vertical-hr1">
-                                <h3 style="padding-top: 3%;position: relative;left: -50px;top:20px;color: black;">Hammad Ahmad</h3>
+                                <h3 style="padding-top: 3%;position: relative;left: -50px;top:20px;color: black;">{{ $user['name'] }}</h3>
                             </div>
                         </div>
                         <br><br>
                         <div class="col-md-12 col-sm-12">
-                            <!-- <table class="table table-bordered">
-                                <tr>
-                                    <td style=""><i class="far fa-envelope"></i></td>
-                                    <td>hammad-ahmad@gmail.com</td>
-                                </tr>
-                                <tr>
-                                    <td><i class="fas fa-phone-alt"></i></td>
-                                    <td>0306-4629013</td>
-                                </tr>
-                                <tr>
-                                    <td><i class="fas fa-key"></i></td>
-                                    <td>0123456789</td>
-                                </tr>
-                                <tr>
-                                    <td><i class="fas fa-file-alt"></i></td>
-                                    <td>ABCDEFG</td>
-                                </tr>
-                                <tr>
-                                    <td><i class="fas fa-map-marker-alt"></i></td>
-                                    <td>London</td>
-                                </tr>
-                                <tr>
-                                    <td><i class="far fa-clock"></i</td>
-                                    <td>Full Time / Half Time</td>
-                                </tr>
-                                <tr>
-                                    <td><i class="fas fa-pound-sign"></i></td>
-                                    <td>20</td>
-                                </tr>
-                                <tr>
-                                    <td><i class="far fa-building"></i></td>
-                                    <td>XYZ</td>
-                                </tr>
-                            </table> -->
                             <ul style="list-style-type:none">
                                 <h4>
-                                    <li><i class="far fa-envelope"></i> hammad-ahmad@gmail.com</li>
+                                    <li><i class="far fa-envelope"></i>{{ $user['email'] }}</li>
                                 </h4>
                                 <h4>
-                                    <li><i class="fas fa-phone-alt"></i> 0306-4629013</li>
+                                    <li><i class="fas fa-phone-alt"></i>{{ $user['phone'] }}</li>
                                 </h4>
                                 <h4>
-                                    <li><i class="fas fa-key"></i> 0123456789</li>
+                                    <li><i class="fas fa-key"></i>{{ $user['code'] }}</li>
                                 </h4>
                                 <h4>
-                                    <li><i class="fas fa-map-marker-alt"></i> XYZ</li>
+                                    <li><i class="fas fa-map-marker-alt"></i>{{ $user['location'] }}</li>
                                 </h4>
                                 <li>
-                                    <button class="btn btn-primary cv-button" style="font-size: 20px;">
+                                    <button class="btn btn-primary cv-button" style="font-size: 20px;" download = "{{ $user['cv'] }}">
                                         CV <i class='far fa-file'></i>
                                     </button>
                                 </li>
