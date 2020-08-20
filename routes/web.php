@@ -95,6 +95,9 @@ Route::get('/temporary-labourer', function () {
 Route::get('/ready-talent', function () {
     return view('ready-talent');
 });
+Route::get('admin/login', function () {
+    return view('admin.login');
+});
 Route::get('/admin', function () {
     return view('admin.main');
 })->name('admin');
