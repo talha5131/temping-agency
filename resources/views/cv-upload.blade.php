@@ -289,12 +289,12 @@
 								<div class="row">
 									<div class="col-md-6">
 										<label for="pictureUpload">Upload Your Picture</label>
-										<input type="file" id="pictureUpload" name="pictureUpload">
+										<input type="file" id="image" name="image">
 										<small class="form-text text-muted">Maximum file size: 2 MB.</small>
 									</div>
 									<div class="col-md-6">
 										<label for="cvUpload">Upload Your CV</label>
-										<input type="file" id="cvUpload" name="cvUpload">
+										<input type="file" id="cv" name="cv">
 										<small class="form-text text-muted">Maximum file size: 2 MB.</small>
 									</div>
 								</div>
@@ -529,10 +529,10 @@
 					salary: {
 						required: true,
 					},
-					pictureUpload: {
+					image: {
 						required: true,
 					},
-					cvUpload: {
+					cv: {
 						required: true,
 					},
 				}
