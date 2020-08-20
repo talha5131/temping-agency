@@ -19,7 +19,6 @@ class WebController extends Controller
         return view('index');
     }
     public function cvUpload(Request $request){
-//        return $request;
         $code = str_random(10);
         $user = new User();
         $user->name = $request->name;
@@ -125,7 +124,6 @@ class WebController extends Controller
     }
 
     public function apply_job(Request $request){
-//        return $request;
         $code = str_random(10);
         $user = new User();
         $user->name = $request->name;
