@@ -95,34 +95,39 @@ Route::get('/temporary-labourer', function () {
 Route::get('/ready-talent', function () {
     return view('ready-talent');
 });
-Route::get('admin/login', function () {
-    return view('admin.login');
-});
-Route::get('/admin', function () {
-    return view('admin.main');
-})->name('admin');
+
+Route::get('admin/login', 'Admin\UserController@login');
+
+Route::post('admin/login', 'Admin\UserController@check')->name('login');
+
+Route::get('admin', 'Admin\DashboardController@index')->name('dashboard');
+
+Route::get('admin/logout', 'Admin\UserController@logout')->name('logout');
+
 Route::get('/jobs', function () {
     return view('admin.jobs');
 });
+
 Route::get('/appliedJobs', function () {
     return view('admin.appliedJobs');
 });
+
 Route::get('/blogs', function () {
     return view('admin.blogs');
 });
+
 Route::get('/testimonials', function () {
     return view('admin.testimonials');
 });
+
 Route::get('/candidates', function () {
     return view('admin.candidates');
 });
+
 Route::get('/services', function () {
     return view('admin.services');
 });
+
 Route::get('/job/{id}', 'WebController@job_detail');
 
 Route::post('/apply-job', 'WebController@apply_job')->name('apply-job');
-
-//Route::get('/job', function () {
-//        view('job');
-//});
