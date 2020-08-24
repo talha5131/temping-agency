@@ -1,5 +1,27 @@
+<style>
+@media (max-width: 767.98px) {
+    .main-sidebar, .main-sidebar::before {
+    box-shadow: none!important;
+    margin-left: 0px;
+}
+
+aside {
+    display: none;
+}
+.btn-open{
+    position: fixed;
+    top: 55vh;
+    z-index: 1;
+}
+.btn-open{
+    position: fixed;
+    top: 80vh;
+    z-index: 1;
+}
+}
+</style>
 <!-- Main Sidebar Container -->
-<aside class="main-sidebar elevation-4" style="background: black; margin-top:5.6%;padding-top:50px;">
+<aside class="main-sidebar elevation-4" id="sidebar" style="background: black; margin-top:77px;padding-top:50px;">
     <!-- #51284f; -->
 
     <!-- Sidebar -->
@@ -125,3 +147,15 @@
     </div>
     <!-- /.sidebar -->
 </aside>
+<div>
+    <button class ="btn btn-primary btn-open" onclick="myFunction()"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button>
+</div>
+<div>
+    <button class ="btn btn-primary btn-close"><i class="fa fa-times" aria-hidden="true"></i></button>
+</div>
+<script>
+function myFunction() {
+    document.getElementById("sidebar").style.display = "block";
+    // console.log('Button Is Clicked');
+}
+</script>

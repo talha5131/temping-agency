@@ -13,6 +13,9 @@
                         <div class="col-sm-6">
                             <h1 class="m-0 text-dark">Temping Agency Dashboard</h1>
                         </div>
+                        <div class = "col-sm-3">
+                            <button class = "btn mr-0" style = "float: right;"><i class="fa fa-bars" aria-hidden="true"></i></button>
+                        </div>
                         <!-- /.col -->
                         <!-- /.col -->
                     </div>
