@@ -104,9 +104,8 @@ Route::get('admin', 'Admin\DashboardController@index')->name('dashboard');
 
 Route::get('admin/logout', 'Admin\UserController@logout')->name('logout');
 
-Route::get('admin/jobs', 'Admin\JobController@index')->name('admin.jobs');
-
-Route::get('/appliedJobs', function () {
+Route::get('admin-jobs', 'Admin\JobController@index')->name('admin.jobs');
+Route::get('/admin-appliedJobs', function () {
     return view('admin.appliedJobs');
 });
 
@@ -118,9 +117,7 @@ Route::get('/testimonials', function () {
     return view('admin.testimonials');
 });
 
-Route::get('/candidates', function () {
-    return view('admin.candidates');
-});
+Route::get('admin-candidates', 'Admin\CVController@index')->name('admin.candidates');
 
 Route::get('/services', function () {
     return view('admin.services');

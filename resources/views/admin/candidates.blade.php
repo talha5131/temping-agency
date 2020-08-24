@@ -40,16 +40,13 @@
                         <th>Approved</th>
                         <th>Actions</th>
                     </tr>
+                    @foreach($total as $cv)
                     <tr>
-                        <td>ABC</td>
-                        <td>ABC</td>
-                        <td>ABC</td>
+                        <td>{{$cv->name}}</td>
+                        <td></td>
+                        <td></td>
                     </tr>
-                    <tr>
-                        <td>ABC</td>
-                        <td>ABC</td>
-                        <td>ABC</td>
-                    </tr>
+                    @endforeach
                 </table>
                 <!-- /.container-fluid -->
             </section>
