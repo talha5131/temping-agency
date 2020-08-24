@@ -98,8 +98,13 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="public/assets/pages/layout/top-nav.html" class="nav-link">
+                            <a href="{{ route('admin.candidates') }}" class="nav-link">
                                 <p>Candidates</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('admin.candidates') }}" class="nav-link">
+                                <p>Temping Candidates</p>
                             </a>
                         </li>
                     </ul>

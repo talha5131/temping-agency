@@ -31,9 +31,9 @@
                             <!-- small box -->
                             <div class="small-box bg-info">
                                 <div class="inner">
-                                    <h3>150</h3>
+                                    <h3>{{ $employer }}</h3>
 
-                                    <p>New Orders</p>
+                                    <p>Employers</p>
                                 </div>
                                 <div class="icon">
                                     <i class="ion ion-bag"></i>
@@ -46,9 +46,9 @@
                             <!-- small box -->
                             <div class="small-box bg-success">
                                 <div class="inner">
-                                    <h3>53<sup style="font-size: 20px">%</sup></h3>
+                                    <h3>{{ $cv }}</h3>
 
-                                    <p>Bounce Rate</p>
+                                    <p>Total Candidates</p>
                                 </div>
                                 <div class="icon">
                                     <i class="ion ion-stats-bars"></i>
@@ -61,9 +61,9 @@
                             <!-- small box -->
                             <div class="small-box bg-warning">
                                 <div class="inner">
-                                    <h3>44</h3>
+                                    <h3>{{ $temps }}</h3>
 
-                                    <p>User Registrations</p>
+                                    <p>Temping Agency Candidates</p>
                                 </div>
                                 <div class="icon">
                                     <i class="ion ion-person-add"></i>
@@ -76,9 +76,24 @@
                             <!-- small box -->
                             <div class="small-box bg-danger">
                                 <div class="inner">
-                                    <h3>65</h3>
+                                    <h3>{{ $applied }}</h3>
 
-                                    <p>Unique Visitors</p>
+                                    <p>Candidates Applied</p>
+                                </div>
+                                <div class="icon">
+                                    <i class="ion ion-pie-graph"></i>
+                                </div>
+                                <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                            </div>
+                        </div>
+                        <!-- ./col -->
+                        <div class="col-lg-3 col-6">
+                            <!-- small box -->
+                            <div class="small-box bg-danger">
+                                <div class="inner">
+                                    <h3>{{ $job }}</h3>
+
+                                    <p>Jobs</p>
                                 </div>
                                 <div class="icon">
                                     <i class="ion ion-pie-graph"></i>

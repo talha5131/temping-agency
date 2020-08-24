@@ -40,16 +40,13 @@
                         <th>Approved</th>
                         <th>Actions</th>
                     </tr>
+                    @foreach($jobs as $job)
                     <tr>
-                        <td>ABC</td>
-                        <td>ABC</td>
-                        <td>ABC</td>
+                        <td>{{$job->title}}</td>
+                        <td>{{$job->category}}</td>
+                        <td>{{$job->user_id}}</td>
                     </tr>
-                    <tr>
-                        <td>ABC</td>
-                        <td>ABC</td>
-                        <td>ABC</td>
-                    </tr>
+                    @endforeach
                 </table>
                 <!-- /.container-fluid -->
             </section>

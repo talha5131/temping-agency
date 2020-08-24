@@ -15,10 +15,10 @@ class JobController extends Controller
     public function index(Request $request)
     {
         if($request->session()->has('admin')) {
-            $job = Job::all();
-            return view('admin.jobs', compact('job'));
+            $jobs = Job::all();
+            return view('admin.jobs', compact('jobs'));
         }else
-            return view('admin.login');
+            return redirect('admin/login');
     }
 
     /**

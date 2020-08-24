@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Job;
+use App\CV;
 use Illuminate\Http\Request;
 
 class CvController extends Controller
@@ -10,11 +12,14 @@ class CvController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        //
+        if($request->session()->has('admin')) {
+            $total = CV::all();
+            return view('admin.candidates', compact('total'));
+        }else
+            return redirect('admin/login');
     }
 
     /**
