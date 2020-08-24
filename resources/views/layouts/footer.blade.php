@@ -1,26 +1,3 @@
-<head>
-	<!-- Bootstrap -->
-	<link rel="stylesheet" href="public/assets/css/bootstrap.min.css">
-	<!-- Template styles-->
-	<link rel="stylesheet" href="public/assets/css/style.css">
-	<!-- Responsive styles-->
-	<link rel="stylesheet" href="public/assets/css/responsive.css">
-	<!-- FontAwesome -->
-	<link rel="stylesheet" href="public/assets/css/font-awesome.min.css">
-	<!-- Animation -->
-	<link rel="stylesheet" href="public/assets/css/animate.css">
-	<!-- Prettyphoto -->
-	<link rel="stylesheet" href="public/assets/css/prettyPhoto.css">
-	<!-- Owl Carousel -->
-	<link rel="stylesheet" href="public/assets/css/owl.carousel.css">
-	<link rel="stylesheet" href="public/assets/css/owl.theme.css">
-	<!-- Flexslider -->
-	<link rel="stylesheet" href="public/assets/css/flexslider.css">
-	<!-- Flexslider -->
-	<link rel="stylesheet" href="public/assets/css/cd-hero.css">
-	<!-- Style Swicther -->
-	<link id="style-switch" href="public/assets/css/presets/preset3.css" media="screen" rel="stylesheet" type="text/css">
-</head>
 
 <!-- Footer start -->
 <footer id="footer" class="footer">

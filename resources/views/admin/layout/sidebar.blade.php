@@ -13,11 +13,11 @@ aside {
     top: 55vh;
     z-index: 1;
 }
-.btn-open{
+/* .btn-open{
     position: fixed;
     top: 80vh;
     z-index: 1;
-}
+} */
 }
 </style>
 <!-- Main Sidebar Container -->
