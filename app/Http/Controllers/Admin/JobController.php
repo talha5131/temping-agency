@@ -4,17 +4,21 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Job;
 
 class JobController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        //
+        if($request->session()->has('admin')) {
+            $job = Job::all();
+            return view('admin.jobs', compact('job'));
+        }else
+            return view('admin.login');
     }
 
     /**

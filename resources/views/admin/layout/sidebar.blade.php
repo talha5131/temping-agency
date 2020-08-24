@@ -30,7 +30,7 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="jobs" class="nav-link">
+                            <a href="{{ route('admin.jobs') }}" class="nav-link">
                                 <p>Jobs</p>
                             </a>
                         </li>
