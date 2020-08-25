@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Job;
+use App\Activity;
 
 class JobController extends Controller
 {
@@ -85,5 +86,13 @@ class JobController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function applied(Request $request){
+        if($request->session()->has('admin')) {
+            $applied = Activity::all();
+            return view('admin.appliedJobs',compact('applied'));
+        }else
+            return redirect('admin/login');
     }
 }

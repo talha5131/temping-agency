@@ -105,9 +105,8 @@ Route::get('admin', 'Admin\DashboardController@index')->name('dashboard');
 Route::get('admin/logout', 'Admin\UserController@logout')->name('logout');
 
 Route::get('admin-jobs', 'Admin\JobController@index')->name('admin.jobs');
-Route::get('/admin-appliedJobs', function () {
-    return view('admin.appliedJobs');
-});
+
+Route::get('admin-appliedJobs', 'Admin\JobController@applied')->name('admin.applied');
 
 Route::get('/blogs', function () {
     return view('admin.blogs');
