@@ -25,22 +25,26 @@ class JobController extends Controller
     /**
      * Show the form for creating a new resource.
      *
-     * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
-        //
+        if($request->session()->has('admin')) {
+            return view('admin.addJob');
+        }else
+            return redirect('admin/login');
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
     {
-        //
+        if($request->session()->has('admin')) {
+            $jobs = Job::all();
+            return view('admin.jobs', compact('jobs'));
+        }else
+            return redirect('admin/login');
     }
 
     /**
