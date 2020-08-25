@@ -106,6 +106,10 @@ Route::get('admin/logout', 'Admin\UserController@logout')->name('logout');
 
 Route::get('admin-jobs', 'Admin\JobController@index')->name('admin.jobs');
 
+Route::get('admin-addJob', 'Admin\JobController@create');
+
+Route::post('admin-addJob', 'Admin\JobController@store')->name('admin.addJob');
+
 Route::get('admin-appliedJobs', 'Admin\JobController@applied')->name('admin.applied');
 
 Route::get('/blogs', function () {
