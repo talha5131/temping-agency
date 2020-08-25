@@ -1,4 +1,12 @@
 <style>
+    .btn-open {
+        display: none;
+    }
+
+    .btn-close {
+        display: none;
+    }
+
     @media (max-width: 767.98px) {
 
         .main-sidebar,
@@ -12,21 +20,17 @@
         }
 
         .btn-open {
+            display: block;
             position: fixed;
             top: 60vh;
-            z-index: 1;
+            z-index: 100;
             font-size: 2em;
         }
 
         .btn-close {
             float: right;
+            display: block;
         }
-    }
-    .btn-open {
-        display: none;
-    }
-    .btn-close {
-        display: none;
     }
 </style>
 <!-- Main Sidebar Container -->
@@ -35,7 +39,7 @@
 
     <!-- Sidebar -->
     <div class="sidebar">
-            <button class="btn btn-primary btn-close" onclick="closeSideBar()"><i class="fa fa-times" aria-hidden="true"></i></button>
+        <button class="btn btn-primary btn-close" id="btn-close"><i class="fa fa-times" aria-hidden="true"></i></button>
 
         <h2 style="color: white;font-weight:700;">Menu</h2>
 
@@ -163,14 +167,22 @@
     <!-- /.sidebar -->
 </aside>
 <div>
-    <button class="btn btn-primary btn-open" onclick="myFunction()"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button>
+    <button class="btn btn-primary btn-open" id="btn-open"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
-    function myFunction() {
-        document.getElementById("sidebar").style.display = "block";
-    }
+    // function myFunction() {
+    //     document.getElementById("sidebar").style.display = "block";
+    // }
 
-    function closeSideBar() {
-        document.getElementById("sidebar").style.display = "none";
-    }
+    // function closeSideBar() {
+    //     document.getElementById("sidebar").style.display = "none";
+    // }
+
+        $("#btn-close").click(function() {
+            $("#sidebar").hide("slow");
+        });
+        $("#btn-open").click(function() {
+            $("#sidebar").show("slow");
+        });
 </script>
