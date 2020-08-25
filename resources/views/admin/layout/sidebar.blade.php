@@ -3,8 +3,6 @@
         display: none;
     }
 
-    .abc {}
-
     @media (max-width: 767.98px) {
 
         .main-sidebar,
