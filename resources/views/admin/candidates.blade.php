@@ -36,9 +36,11 @@
             <section class="content">
                 <table class="table table-bordered table-striped">
                     <tr>
-                        <th>Title</th>
-                        <th>Approved</th>
-                        <th>Actions</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Category</th>
+                        <th>Expected Salary</th>
+                        <th>Platform</th>
                     </tr>
                     @foreach($total as $cv)
                     <tr>

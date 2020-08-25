@@ -12,7 +12,7 @@ class UserController extends Controller{
         if($request->session()->has('admin'))
             return redirect()->route('dashboard');
         else
-            return redirect('admin/login');
+            return view('admin.login');
     }
 
     public function check(Request $request)
