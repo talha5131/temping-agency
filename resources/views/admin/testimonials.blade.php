@@ -1,4 +1,5 @@
 @extends('admin.layout.base')
+@section('title','Testimonials')
 @section('content')
 <style>
     a{

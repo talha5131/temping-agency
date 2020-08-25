@@ -1,4 +1,5 @@
 @extends('admin.layout.base')
+@section('title','Admin Dashboard')
 @section('content')
 
 <body class="hold-transition sidebar-mini layout-fixed">

@@ -110,7 +110,7 @@
 							</div>
 							<div class="form-group">
 								<label>Message</label>
-								<textarea class="form-control content" name="message" id="message" rows="10" required></textarea>
+								<textarea class="form-control contact-content" name="message" id="message" rows="10" required></textarea>
 							</div>
 							<div class="text-right"><br>
 								<button class="btn btn-primary solid blank" type="submit">Send Message</button>
@@ -224,7 +224,7 @@
 						};
 					});
 			});
-			$('.content').richText();
+			$('.contact-content').richText();
 
 			// Contact Us Form Validation
 

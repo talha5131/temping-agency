@@ -194,7 +194,7 @@
 
 
 
-					<div class="col-md-6 ts-padding about-img" style="height:374px;background:url(images/pages/about-4.jpg) 50% 50% / cover no-repeat;">
+					<div class="col-md-6 ts-padding about-img" style="height:374px;background:url(public/assets/images/pages/about-4.jpg) 50% 50% / cover no-repeat;">
 
 					</div>
 					<!--/ About image end -->

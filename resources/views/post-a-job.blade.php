@@ -263,7 +263,7 @@
 							<hr>
 							<div class="form-group">
 								<label for="desc">Description</label>
-								<textarea class="form-control content" rows="7" id="desc" name="desc"></textarea>
+								<textarea class="form-control job-content" rows="7" id="desc" name="desc"></textarea>
 
 							</div>
 							<hr>
@@ -539,5 +539,5 @@
 			});
 		});
 
-		$('.content').richText();
+		$('.job-content').richText();
 	</script>

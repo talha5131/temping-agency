@@ -1,4 +1,5 @@
 @extends('admin.layout.base')
+@section('title','Add Job')
 @section('content')
 </style>
 <body class="hold-transition sidebar-mini layout-fixed">

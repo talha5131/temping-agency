@@ -22,9 +22,10 @@
         .btn-open {
             display: block;
             position: fixed;
-            top: 60vh;
+            top: 55vh;
             z-index: 100;
             font-size: 2em;
+            left: -10px;
         }
 
         .btn-close {
@@ -167,7 +168,8 @@
     <!-- /.sidebar -->
 </aside>
 <div>
-    <button class="btn btn-primary btn-open" id="btn-open"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button>
+    <button class="btn btn-open" id="btn-open" style="color: #51284f;"><i class="fa fa-arrow-circle-right" aria-hidden="true"
+     ></i></button>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
