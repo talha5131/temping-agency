@@ -28,6 +28,7 @@
 </head>
 @include('admin.layout.header')
 @include('admin.layout.sidebar')
+<title>@yield('title')</title>
 
 @yield('content')
 

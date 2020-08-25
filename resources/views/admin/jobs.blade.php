@@ -1,4 +1,5 @@
 @extends('admin.layout.base')
+@section('title','Admin Jobs')
 @section('content')
 <style>
     a{
