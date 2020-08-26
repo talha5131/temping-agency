@@ -506,7 +506,7 @@
 
 		<!-- jQuery Validation -->
 
-		<script type="text/javascript" src="public/assets/https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
 
 		<!-- minimal Rich Text Editor With jQuery -->
 
@@ -514,7 +514,6 @@
 
 	</div><!-- Body inner end -->
 	<script type="text/javascript">
-		$(document).ready(function() {
 			$('#postAJob').validate({
 				rules: {
 					email: {
@@ -537,7 +536,6 @@
 					}
 				}
 			});
-		});
 
 		$('.job-content').richText();
 	</script>

@@ -502,7 +502,6 @@
 	</div><!-- Body inner end -->
 
 	<script type="text/javascript">
-		$(document).ready(function() {
 			$('#cvUploadForm').validate({
 				rules: {
 					name: {
@@ -537,5 +536,4 @@
 					},
 				}
 			});
-		});
 	</script>
