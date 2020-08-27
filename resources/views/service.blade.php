@@ -1,10 +1,9 @@
 <style>
-	html,
-	body {
-		width: 100%;
-		margin: 0px;
-		padding: 0px;
-		overflow-x: hidden;
+	@media only screen and (min-width: 200px) and (max-width: 768px) {
+		body {
+			/* width: 100%; */
+			overflow-x: hidden;
+		}
 	}
 </style>
 

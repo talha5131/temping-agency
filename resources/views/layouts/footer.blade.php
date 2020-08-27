@@ -9,6 +9,11 @@
 		top: 70vh;
 		z-index: 10000000;
 	} */
+	@media only screen and (min-width: 200px) and (max-width: 768px) {
+		#btn-top {
+			display: none;
+		}
+	}
 </style>
 <!-- Footer start -->
 <footer id="footer" class="footer">
@@ -243,7 +248,7 @@
 		</div>
 		<!--/ Row end -->
 		<div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top affix">
-			<button class="btn btn-primary" title="Back to Top"><i class="fa fa-angle-double-up"></i></button>
+			<button class="btn btn-primary" id="btn-top" title="Back to Top"><i class="fa fa-angle-double-up"></i></button>
 		</div>
 		<!-- <button onclick="topFunction()" id="myBtn" class="btn btn-primary" title="Go to top"><i class="fas fa-arrow-up"></i></button> -->
 	</div>
