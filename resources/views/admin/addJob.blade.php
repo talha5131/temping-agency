@@ -150,44 +150,38 @@
                         </div>
                         <hr>
                         <div class="row">
-                        <div class="col-sm-4 form-group">
-                            <label for="tags">Job Purpose</label>
-                            <input type="text" data-role="tagsinput" class="form-control">
+                            <div class="col-sm-4 form-group">
+                                <label for="tags">Job Purpose</label>
+                                <input type="text" data-role="tagsinput" class="form-control">
+                            </div>
+                            <div class="col-sm-4 form-group">
+                                <label for="compName">Job Responsibilites</label>
+                                <input type="text" class="form-control" id="company" name="company" placeholder="Enter the name of the company">
+                            </div>
+                            <div class="col-sm-4 form-group">
+                                <label for="website">Job Requirements</label>
+                                <input type="text" class="form-control" id="website" name="website" placeholder="http://">
+                            </div>
                         </div>
-                        <div class="col-sm-4 form-group">
-                            <label for="compName">Job Responsibilites</label>
-                            <input type="text" class="form-control" id="company" name="company" placeholder="Enter the name of the company">
-                        </div>
-                        <div class="col-sm-4 form-group">
-                            <label for="website">Job Requirements</label>
-                            <input type="text" class="form-control" id="website" name="website" placeholder="http://">
-                        </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="tagline">Tagline <small>(optional)</small></label>
-                            <input type="text" class="form-control" id="tagline" name="tagline" placeholder="Briefly describe your company">
-                        </div>
-                        <div class="form-group">
-                            <label for="video">Video <small>(optional)</small></label>
-                            <input type="text" class="form-control" id="video" name="video" placeholder="A link to a video about your company">
-                        </div>
-                        <div class="form-group">
-                            <label for="twitterUsername">Twitter Username <small>(optional)</small></label>
-                            <input type="text" class="form-control" id="twitterUsername" name="twitterUsername" placeholder="@yourcompany">
-                        </div>
-                        <div class="form-group">
-                            <div class="row">
-                                <div class="col-md-2">
-                                    <label for="logo">Logo <small>(optional)</small></label>
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <label for="logo">Add Image</label>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <input type="file" id="logo" name="logo">
+                                    </div>
                                 </div>
-                                <div class="col-md-10">
-                                    <input type="file" id="logo" name="logo">
-                                    <small class="form-text text-muted">Maximum file size: 2 MB.</small>
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <div class="row">
+                                    <button type="submit" class="col-sm-3 btn btn-primary" style="float:right;">Submit</button>
+                                    <button type="submit" class="col-sm-3 btn btn-primary" style="float:right; margin-left:20px;">Reset</button>
                                 </div>
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-primary">Preview</button>
-                        <button type="submit" class="btn btn-primary">Save Draft</button>
+
                     </form>
                 </div>
                 <!-- /.container-fluid -->
