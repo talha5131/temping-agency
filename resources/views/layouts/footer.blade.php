@@ -1,5 +1,5 @@
 <style>
-	#myBtn {
+	/* #myBtn {
 		background-color: green;
 		transition: transform .2s;
 		margin: 0 auto;
@@ -8,7 +8,7 @@
 		right: 50px;
 		top: 70vh;
 		z-index: 10000000;
-	}
+	} */
 </style>
 <!-- Footer start -->
 <footer id="footer" class="footer">
