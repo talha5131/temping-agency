@@ -169,16 +169,22 @@
                                     <div class="col-md-2">
                                         <label for="logo">Add Image</label>
                                     </div>
-                                    <div class="col-md-10">
-                                        <input type="file" id="logo" name="logo">
+                                    
+                                    <div class="col-sm-6" style="position:relative;">
+                                      <a class='btn btn-primary' href='javascript:;'>
+                                        Choose File..
+                                        <input type="file" style='position:absolute;z-index:2;top:0;left:0;filter: alpha(opacity=0);-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";opacity:0;background-color:transparent;color:transparent;' name="file_source" size="40"  onchange='$("#upload-file-info").html($(this).val());'>
+                                      </a>
+                                     &nbsp;
+                                      <span class='label label-info' id="upload-file-info"></span>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-sm-6 form-group">
-                                <div class="row">
-                                    <button type="submit" class="col-sm-3 btn btn-primary" style="float:right;">Submit</button>
-                                    <button type="submit" class="col-sm-3 btn btn-primary" style="float:right; margin-left:20px;">Reset</button>
-                                </div>
+                                
+                                <button type="submit" class=" btn btn-primary" style="float:right; margin-left:10px;">Submit</button>
+                                <button type="submit" style=" float:right;" class=" btn btn-primary"> Reset</button>
+                                
                             </div>
                         </div>
 
