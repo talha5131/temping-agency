@@ -3,243 +3,119 @@
 @section('content')
 
 
-<head>
+<style>
+	html,
+	body {
+		width: 100%;
+		margin: 0px;
+		padding: 0px;
+		overflow-x: hidden;
+	}
+</style>
 
 
 
-	<!-- Basic Page Needs
+<div id="banner-area">
 
-		================================================== -->
+	<img src="public/assets/images/banner/banner1.jpg" alt="" />
 
-	<meta charset="utf-8">
+	<div class="parallax-overlay"></div>
 
-	<meta name="description" content="">
+	<!-- Subpage title start -->
 
-	<meta name="author" content="">
+	<div class="banner-title-content">
 
+		<div class="text-center">
 
+			<h2>Ready Talent</h2>
 
-	<!-- Mobile Specific Metas
+			<ul class="breadcrumb">
 
-		================================================== -->
+				<li><a href="index"> Home</a></li>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+				<li>Services</li>
 
+				<li> Ready Talent </li>
 
+			</ul>
 
-	<!-- Favicons
+		</div>
 
-		================================================== -->
+	</div><!-- Subpage title end -->
 
-	<link rel="icon" href="public/assets/img/favicon/favicon-32x32.png" type="image/x-icon" />
+</div><!-- Banner area end -->
 
-	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="public/assets/img/favicon/favicon-144x144.png">
 
-	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="public/assets/img/favicon/favicon-72x72.png">
 
-	<link rel="apple-touch-icon-precomposed" href="public/assets/img/favicon/favicon-54x54.png">
+<!-- Main container start -->
 
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-	<!-- CSS
 
-		================================================== -->
+<section id="main-container">
 
+	<div class="container">
 
 
-	<!-- Bootstrap -->
 
-	<link rel="stylesheet" href="public/assets/css/bootstrap.min.css">
+		<!-- Company Profile -->
 
-	<!-- Template styles-->
 
-	<link rel="stylesheet" href="public/assets/css/style.css">
 
-	<!-- Responsive styles-->
+		<div class="row">
 
-	<link rel="stylesheet" href="public/assets/css/responsive.css">
+			<div class="col-md-12 heading text-center">
 
-	<!-- FontAwesome -->
+				<h2 class="title2"> Ready Talent
 
-	<link rel="stylesheet" href="public/assets/css/font-awesome.min.css">
+					<span class="title-desc"> Temping Agency </span>
 
-	<!-- Animation -->
+				</h2>
 
-	<link rel="stylesheet" href="public/assets/css/animate.css">
+			</div>
 
-	<!-- Prettyphoto -->
+		</div><!-- Title row end -->
 
-	<link rel="stylesheet" href="public/assets/css/prettyPhoto.css">
 
-	<!-- Owl Carousel -->
 
-	<link rel="stylesheet" href="public/assets/css/owl.carousel.css">
+		<div class="row about-wrapper-top">
 
-	<link rel="stylesheet" href="public/assets/css/owl.theme.css">
+			<div class="col-md-12 ts-padding about-message">
 
-	<!-- Flexslider -->
 
-	<link rel="stylesheet" href="public/assets/css/flexslider.css">
 
-	<!-- Flexslider -->
+				<p> Call us to hire any temp whenever you needs from our big pool of talent – Temps registered with us are always ready to fit right into your business when you need them. </p>
 
-	<link rel="stylesheet" href="public/assets/css/cd-hero.css">
+				<section>
 
-	<!-- Style Swicther -->
+					<div class="container">
 
-	<link id="style-switch" href="public/assets/css/presets/preset3.css" media="screen" rel="stylesheet" type="text/css">
+						<div class="row">
 
+							<div class="w3-content w3-section" style="max-width:1100px">
 
 
-	<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
 
-	<!--[if lt IE 9]>
+								<img class="mySlides" src="public/assets/images/slider/0.jpg" style="width:100%">
 
-      <script src="public/assets/js/html5shiv.js"></script>
+								<img class="mySlides" src="public/assets/images/slider/00.jpg" style="width:100%">
 
-      <script src="public/assets/js/respond.min.js"></script>
+								<img class="mySlides" src="public/assets/images/slider/000.jpg" style="width:100%">
 
-  <![endif]-->
+								<img class="mySlides" src="public/assets/images/slider/0000.jpg" style="width:100%">
 
+								<img class="mySlides" src="public/assets/images/slider/00000.jpg" style="width:100%">
 
 
-</head>
 
 
-
-		<div id="banner-area">
-
-			<img src="public/assets/images/banner/banner1.jpg" alt="" />
-
-			<div class="parallax-overlay"></div>
-
-			<!-- Subpage title start -->
-
-			<div class="banner-title-content">
-
-				<div class="text-center">
-
-					<h2>Ready Talent</h2>
-
-					<ul class="breadcrumb">
-
-						<li><a href="index"> Home</a></li>
-
-						<li>Services</li>
-
-						<li> Ready Talent </li>
-
-					</ul>
-
-				</div>
-
-			</div><!-- Subpage title end -->
-
-		</div><!-- Banner area end -->
-
-
-
-		<!-- Main container start -->
-
-
-
-		<section id="main-container">
-
-			<div class="container">
-
-
-
-				<!-- Company Profile -->
-
-
-
-				<div class="row">
-
-					<div class="col-md-12 heading text-center">
-
-						<h2 class="title2"> Ready Talent
-
-							<span class="title-desc"> Temping Agency </span>
-
-						</h2>
-
-					</div>
-
-				</div><!-- Title row end -->
-
-
-
-				<div class="row about-wrapper-top">
-
-					<div class="col-md-12 ts-padding about-message">
-
-
-
-						<p> Call us to hire any temp whenever you needs from our big pool of talent – Temps registered with us are always ready to fit right into your business when you need them. </p>
-
-						<section>
-
-							<div class="container">
-
-								<div class="row">
-
-									<div class="w3-content w3-section" style="max-width:1100px">
-
-
-
-										<img class="mySlides" src="public/assets/images/slider/0.jpg" style="width:100%">
-
-										<img class="mySlides" src="public/assets/images/slider/00.jpg" style="width:100%">
-
-										<img class="mySlides" src="public/assets/images/slider/000.jpg" style="width:100%">
-
-										<img class="mySlides" src="public/assets/images/slider/0000.jpg" style="width:100%">
-
-										<img class="mySlides" src="public/assets/images/slider/00000.jpg" style="width:100%">
-
-
-
-
-
-									</div>
-
-								</div>
 
 							</div>
 
-						</section>
-
-
-
-
-
-
-
-						<h3>Temping Agency – A new way to Hire </h3>
-
-						<br>
-
-						<p> Our exclusive service model means our temps receive hours of industry-focused preparation – make sure they are the perfect fit for your business from day one. </p>
-
-
-
-
-
-
-
-
-
-
-
-
+						</div>
 
 					</div>
-					<!--/ About message end -->
 
-					<!--/ About image end -->
-
-				</div>
-				<!--/ Content row end -->
+				</section>
 
 
 
@@ -247,94 +123,31 @@
 
 
 
-				<!-- Company Profile -->
+				<h3>Temping Agency – A new way to Hire </h3>
+
+				<br>
+
+				<p> Our exclusive service model means our temps receive hours of industry-focused preparation – make sure they are the perfect fit for your business from day one. </p>
+
+
+
+
+
+
+
+
+
+
 
 
 
 			</div>
-			<!--/ 1st container end -->
+			<!--/ About message end -->
 
+			<!--/ About image end -->
 
-
-
-
-			<div class="gap-60"></div>
-
-
-
-
-
-			<!-- Counter Strat -->
-
-			<div class="ts_counter_bg parallax parallax2">
-
-				<div class="parallax-overlay"></div>
-
-				<div class="container">
-
-					<div class="row wow fadeInLeft text-center">
-
-						<div class="facts col-md-3 col-sm-6">
-
-							<span class="facts-icon"><i class="fa fa-user"></i></span>
-
-							<div class="facts-num">
-
-								<span class="counter">1500</span>
-
-							</div>
-
-							<h3>Candidates</h3>
-
-						</div>
-
-
-
-						<div class="facts col-md-3 col-sm-6">
-
-							<span class="facts-icon"><i class="fa fa-institution"></i></span>
-
-							<div class="facts-num">
-
-								<span class="counter">1277</span>
-
-							</div>
-
-							<h3>Recruitments</h3>
-
-						</div>
-
-
-
-						<div class="facts col-md-3 col-sm-6">
-
-							<span class="facts-icon"><i class="fa fa-suitcase"></i></span>
-
-							<div class="facts-num">
-
-								<span class="counter">1469</span>
-
-							</div>
-
-							<h3>Jobs</h3>
-
-						</div>
-
-
-
-						<div class="facts col-md-3 col-sm-6">
-
-							<span class="facts-icon"><i class="fa fa-trophy"></i></span>
-
-							<div class="facts-num">
-
-								<span class="counter">76</span>
-
-							</div>
-
-							<h3>Awwards</h3>
-
-						</div>
+		</div>
+		<!--/ Content row end -->
 
 
 
@@ -342,18 +155,113 @@
 
 
 
+		<!-- Company Profile -->
 
 
 
+	</div>
+	<!--/ 1st container end -->
+
+
+
+
+
+	<div class="gap-60"></div>
+
+
+
+
+
+	<!-- Counter Strat -->
+
+	<div class="ts_counter_bg parallax parallax2">
+
+		<div class="parallax-overlay"></div>
+
+		<div class="container">
+
+			<div class="row wow fadeInLeft text-center">
+
+				<div class="facts col-md-3 col-sm-6">
+
+					<span class="facts-icon"><i class="fa fa-user"></i></span>
+
+					<div class="facts-num">
+
+						<span class="counter">1500</span>
 
 					</div>
-					<!--/ row end -->
+
+					<h3>Candidates</h3>
 
 				</div>
-				<!--/ Container end -->
+
+
+
+				<div class="facts col-md-3 col-sm-6">
+
+					<span class="facts-icon"><i class="fa fa-institution"></i></span>
+
+					<div class="facts-num">
+
+						<span class="counter">1277</span>
+
+					</div>
+
+					<h3>Recruitments</h3>
+
+				</div>
+
+
+
+				<div class="facts col-md-3 col-sm-6">
+
+					<span class="facts-icon"><i class="fa fa-suitcase"></i></span>
+
+					<div class="facts-num">
+
+						<span class="counter">1469</span>
+
+					</div>
+
+					<h3>Jobs</h3>
+
+				</div>
+
+
+
+				<div class="facts col-md-3 col-sm-6">
+
+					<span class="facts-icon"><i class="fa fa-trophy"></i></span>
+
+					<div class="facts-num">
+
+						<span class="counter">76</span>
+
+					</div>
+
+					<h3>Awwards</h3>
+
+				</div>
+
+
+
+
+
+
+
+
+
+
 
 			</div>
-			<!--/ Counter end -->
+			<!--/ row end -->
+
+		</div>
+		<!--/ Container end -->
+
+	</div>
+	<!--/ Counter end -->
 
 
 
@@ -361,104 +269,45 @@
 
 
 
-		</section>
-		<!--/ Main container end -->
+</section>
+<!--/ Main container end -->
 
 
 
-		<!-- Javascript Files
+<!-- Javascript Files
 
 		================================================== -->
 
-		<script>
-			var myIndex = 0;
+<script>
+	var myIndex = 0;
 
-			carousel();
+	carousel();
 
 
 
-			function carousel() {
+	function carousel() {
 
-				var i;
+		var i;
 
-				var x = document.getElementsByClassName("mySlides");
+		var x = document.getElementsByClassName("mySlides");
 
-				for (i = 0; i < x.length; i++) {
+		for (i = 0; i < x.length; i++) {
 
-					x[i].style.display = "none";
+			x[i].style.display = "none";
 
-				}
+		}
 
-				myIndex++;
+		myIndex++;
 
-				if (myIndex > x.length) {
-					myIndex = 1
-				}
+		if (myIndex > x.length) {
+			myIndex = 1
+		}
 
-				x[myIndex - 1].style.display = "block";
+		x[myIndex - 1].style.display = "block";
 
-				setTimeout(carousel, 2000); // Change image every 2 seconds
+		setTimeout(carousel, 2000); // Change image every 2 seconds
 
-			}
-		</script>
+	}
+</script>
 
-		<!-- initialize jQuery Library -->
-
-		<script type="text/javascript" src="public/assets/js/jquery.js"></script>
-
-		<!-- Bootstrap jQuery -->
-
-		<script type="text/javascript" src="public/assets/js/bootstrap.min.js"></script>
-
-		<!-- Style Switcher -->
-
-		<script type="text/javascript" src="public/assets/js/style-switcher.js"></script>
-
-		<!-- Owl Carousel -->
-
-		<script type="text/javascript" src="public/assets/js/owl.carousel.js"></script>
-
-		<!-- PrettyPhoto -->
-
-		<script type="text/javascript" src="public/assets/js/jquery.prettyPhoto.js"></script>
-
-		<!-- Bxslider -->
-
-		<script type="text/javascript" src="public/assets/js/jquery.flexslider.js"></script>
-
-		<!-- Owl Carousel -->
-
-		<script type="text/javascript" src="public/assets/js/cd-hero.js"></script>
-
-		<!-- Isotope -->
-
-		<script type="text/javascript" src="public/assets/js/isotope.js"></script>
-
-		<script type="text/javascript" src="public/assets/js/ini.isotope.js"></script>
-
-		<!-- Wow Animation -->
-
-		<script type="text/javascript" src="public/assets/js/wow.min.js"></script>
-
-		<!-- SmoothScroll -->
-
-		<script type="text/javascript" src="public/assets/js/smoothscroll.js"></script>
-
-		<!-- Eeasing -->
-
-		<script type="text/javascript" src="public/assets/js/jquery.easing.1.3.js"></script>
-
-		<!-- Counter -->
-
-		<script type="text/javascript" src="public/assets/js/jquery.counterup.min.js"></script>
-
-		<!-- Waypoints -->
-
-		<script type="text/javascript" src="public/assets/js/waypoints.min.js"></script>
-
-		<!-- Template custom -->
-
-		<script type="text/javascript" src="public/assets/js/custom.js"></script>
-
-	</div><!-- Body inner end -->
-
+</div><!-- Body inner end -->

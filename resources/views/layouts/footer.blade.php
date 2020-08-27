@@ -1,4 +1,15 @@
-
+<style>
+	#myBtn {
+		background-color: green;
+		transition: transform .2s;
+		margin: 0 auto;
+		border-radius: 10%;
+		position: fixed;
+		right: 50px;
+		top: 70vh;
+		z-index: 10000000;
+	}
+</style>
 <!-- Footer start -->
 <footer id="footer" class="footer">
 	<div class="container">
@@ -234,42 +245,11 @@
 		<div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top affix">
 			<button class="btn btn-primary" title="Back to Top"><i class="fa fa-angle-double-up"></i></button>
 		</div>
+		<!-- <button onclick="topFunction()" id="myBtn" class="btn btn-primary" title="Go to top"><i class="fas fa-arrow-up"></i></button> -->
 	</div>
 	<!--/ Container end -->
 </section>
 <!--/ Copyright end -->
-<!-- Javascript Files
-		================================================== -->
-
-<!-- initialize jQuery Library -->
-<script type="text/javascript" src="public/assets/js/jquery.js"></script>
-<!-- Bootstrap jQuery -->
-<script type="text/javascript" src="public/assets/js/bootstrap.min.js"></script>
-<!-- Style Switcher -->
-<script type="text/javascript" src="public/assets/js/style-switcher.js"></script>
-<!-- Owl Carousel -->
-<script type="text/javascript" src="public/assets/js/owl.carousel.js"></script>
-<!-- PrettyPhoto -->
-<script type="text/javascript" src="public/assets/js/jquery.prettyPhoto.js"></script>
-<!-- Bxslider -->
-<script type="text/javascript" src="public/assets/js/jquery.flexslider.js"></script>
-<!-- Owl Carousel -->
-<script type="text/javascript" src="public/assets/js/cd-hero.js"></script>
-<!-- Isotope -->
-<script type="text/javascript" src="public/assets/js/isotope.js"></script>
-<script type="text/javascript" src="public/assets/js/ini.isotope.js"></script>
-<!-- Wow Animation -->
-<script type="text/javascript" src="public/assets/js/wow.min.js"></script>
-<!-- SmoothScroll -->
-<script type="text/javascript" src="public/assets/js/smoothscroll.js"></script>
-<!-- Eeasing -->
-<script type="text/javascript" src="public/assets/js/jquery.easing.1.3.js"></script>
-<!-- Counter -->
-<script type="text/javascript" src="public/assets/js/jquery.counterup.min.js"></script>
-<!-- Waypoints -->
-<script type="text/javascript" src="public/assets/js/waypoints.min.js"></script>
-<!-- Template custom -->
-<script type="text/javascript" src="public/assets/js/custom.js"></script>
 
 <!-- Google Map API Key Source -->
 <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyCsa2Mi2HqyEcEnM1urFSIGEpvualYjwwM"></script>
@@ -292,7 +272,24 @@
 				};
 			});
 	});
-</script>
-</body>
 
-</html>
+	// // When the user scrolls down 20px from the top of the document, show the button
+	// window.onscroll = function() {
+	// 	scrollFunction()
+	// };
+
+	// function scrollFunction() {
+	// 	if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+	// 		document.getElementById("myBtn").style.display = "block";
+	// 	} else {
+	// 		// document.getElementById("myBtn").style.display = "none";
+	// 	}
+	// }
+
+	// // When the user clicks on the button, scroll to the top of the document
+	// function topFunction() {
+	// 	console.log('CLICKED')
+	// 	document.body.scrollTop = 0;
+	// 	document.documentElement.scrollTop = 0;
+	// }
+</script>
