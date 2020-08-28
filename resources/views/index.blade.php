@@ -422,7 +422,7 @@
 				<div class="gap-30"></div>
 
 				<div class="image-block-content">
-					<span class="feature-icon pull-left"><i class="fa fa-bicycle"></i></span>
+					<span class="feature-icon pull-left"><i class="fa fa-bicycle" style="padding-top:14px;"></i></span>
 					<div class="feature-content">
 						<h3> Right Temp on Right Time</h3>
 						<p>Proin gravida nibh vel velit auctor Aenean sollicitudin adipisicing</p>
@@ -431,7 +431,7 @@
 				<!--/ End 1st block -->
 
 				<div class="image-block-content">
-					<span class="feature-icon pull-left"><i class="fa fa-diamond"></i></span>
+					<span class="feature-icon pull-left"><i class="fa fa-diamond" style="padding-top:14px;"></i></span>
 					<div class="feature-content">
 						<h3>Your Temp Agency</h3>
 						<p>Proin gravida nibh vel velit auctor Aenean sollicitudin adipisicing</p>
@@ -440,7 +440,7 @@
 				<!--/ End 1st block -->
 
 				<div class="image-block-content">
-					<span class="feature-icon pull-left"><i class="fa fa-street-view"></i></span>
+					<span class="feature-icon pull-left"><i class="fa fa-street-view" style="padding-top:14px;"></i></span>
 					<div class="feature-content">
 						<h3> Temps Registered With Us</h3>
 						<p>Proin gravida nibh vel velit auctor Aenean sollicitudin adipisicing</p>

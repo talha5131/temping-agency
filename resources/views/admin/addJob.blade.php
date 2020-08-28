@@ -62,7 +62,7 @@
                         <div class="row">
                             <div class="col-sm-4 form-group">
                                 <label for="tags">Job Tags</label>
-                                <input type="text" data-role="tagsinput" class="form-control">
+                                <input type="tags" data-role="tagsinput" class="form-control">
                             </div>
 
 
