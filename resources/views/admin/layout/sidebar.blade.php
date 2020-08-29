@@ -92,6 +92,11 @@
                             </a>
                         </li>
                         <li class="nav-item">
+                            <a href="admin-addJob" class="nav-link">
+                                <p>Deleted Jobs</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
                             <a href="public/assets/pages/layout/top-nav.html" class="nav-link">
                                 <p>Applied Jobs</p>
                             </a>
