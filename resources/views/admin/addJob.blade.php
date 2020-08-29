@@ -62,7 +62,7 @@
                         <div class="row">
                             <div class="col-sm-4 form-group">
                                 <label for="tags">Job Tags</label>
-                                <input type="tags" data-role="tagsinput" class="form-control">
+                                <input type="tags" data-role="tagsinput" class="form-control" id="tags" name="tags" style="display: none;">
                             </div>
 
 
@@ -96,25 +96,23 @@
                         <hr>
                         <div class="row">
                             <div class="col-sm-4 form-group">
-                                <label for="location">Duration</label>
-                                <input type="text" class="form-control" id="location" name="location" placeholder="Duration">
+                                <label for="joiningDate">Joining Date</label>
+                                <input type="text" class="form-control" id="joiningDate" name="joiningDate" placeholder="dd / mm / yyyy">
                             </div>
-
                             <div class="col-sm-4 form-group">
-                                <label for="location">Joining Date</label>
-                                <input type="text" class="form-control" id="location" name="location" placeholder="Joining Date">
+                                <label for="endingDate">Ending Date</label>
+                                <input type="text" class="form-control" id="endingDate" name="endingDate" placeholder="dd / mm / yyyy">
                             </div>
-
                             <div class="col-sm-4 form-group">
-                                <label for="location">Ending Date</label>
-                                <input type="text" class="form-control" id="location" name="location" placeholder="Ending Date">
+                                <label for="openingDate">Opening Date</label>
+                                <input type="text" class="form-control" id="openingDate" name="openingDate" placeholder="dd / mm / yyyy">
                             </div>
                         </div>
                         <hr>
                         <div class="row">
                             <div class="col-sm-4 form-group">
                                 <label for="jobtype">Job Timing</label>
-                                <select class="form-control" id="jobtype" name="jobtype">
+                                <select class="form-control" id="jobTiming" name="jobTiming">
                                     <option value="Freelance">Freelance</option>
                                     <option value="Full Time" selected>Full Time</option>
                                     <option value="Internship">Internship</option>
@@ -124,70 +122,71 @@
                             </div>
 
                             <div class="col-sm-4 form-group">
-                                <label for="appEmail">Salary</label>
-                                <div class="row">
-                                    <label class="col-sm-2">From</label>
-                                    <input type="text" class="col-sm-4 form-control" id="appEmail" name="appEmail" placeholder="Enter an e-mail adress or website URL">
-                                    <label class="col-sm-2">To</label>
-                                    <input type="text" class="col-sm-4 form-control" id="appEmail" name="appEmail" placeholder="Enter an e-mail adress or website URL">
-                                </div>
+                                <label for="salary">Salary</label>
+                                <input type="text" class="form-control" id="salaryFrom" name="salaryFrom" placeholder="Salary">
                             </div>
 
                             <div class="col-sm-4 form-group">
-                                <label for="to" class="col-form-label">Salary Type</label>
-                                <div class="input-group">
-                                    <label class="custom-control custom-radio custom-control-inline">
-                                        <input type="radio" name="payType" checked="" value="per hour" class="custom-control-input"><span class="custom-control-label">Per Hour</span>
-                                    </label>
-                                    <label class="custom-control custom-radio custom-control-inline">
-                                        <input type="radio" name="payType" value="per week" class="custom-control-input"><span class="custom-control-label">Per Week</span>
-                                    </label>
-                                    <label class="custom-control custom-radio custom-control-inline">
-                                        <input type="radio" name="payType" value="per year" class="custom-control-input"><span class="custom-control-label">Per Year</span>
-                                    </label>
-                                </div>
+                                <label for="location">Duration</label>
+                                <input type="text" class="form-control" id="duration" name="duration" placeholder="Duration">
+                                <!-- <label for="tsalaryType" class="col-form-label">Salary Type</label>
+							<div class="input-group">
+								<label class="custom-control custom-radio custom-control-inline">
+									<input type="radio" name="salaryType" checked="" value="per hour" class="custom-control-input"><span class="custom-control-label custom-radio"> Per Hour</span>
+								</label>
+								<label class="custom-control custom-radio custom-control-inline">
+									<input type="radio" name="salaryType" value="per week" class="custom-control-input"><span class="custom-control-label custom-radio"> Per Week</span>
+								</label>
+								<label class="custom-control custom-radio custom-control-inline">
+									<input type="radio" name="salaryType" value="per year" class="custom-control-input"><span class="custom-control-label custom-radio"> Per Year</span>
+								</label>
+							</div> -->
                             </div>
                         </div>
                         <hr>
                         <div class="row">
                             <div class="col-sm-4 form-group">
-                                <label for="tags">Job Purpose</label>
-                                <input type="text" data-role="tagsinput" class="form-control">
+                                <label for="jobPurpose">Job Purpose</label>
+                                <input type="text" name="jobPurpose" class="form-control" placeholder="Purpose">
                             </div>
                             <div class="col-sm-4 form-group">
-                                <label for="compName">Job Responsibilites</label>
-                                <input type="text" class="form-control" id="company" name="company" placeholder="Enter the name of the company">
+                                <label for="responsibilities">Job Responsibilites</label>
+                                <input type="text" class="form-control" id="responsibilities" name="responsibilities" placeholder="Responsibilities">
                             </div>
                             <div class="col-sm-4 form-group">
-                                <label for="website">Job Requirements</label>
-                                <input type="text" class="form-control" id="website" name="website" placeholder="http://">
+                                <label for="requirements">Job Requirements</label>
+                                <input type="text" class="form-control" id="requirements" name="requirements" placeholder="Requirements">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4 form-group">
+                                <label for="vacancy">Vacancy</label>
+                                <input type="number" id="vacancy" name="vacancy" class="form-control" placeholder="Vacancy">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-sm-6 form-group">
                                 <div class="row">
-                                    <div class="col-md-2">
+                                    <div class="col-md-3">
                                         <label for="logo">Add Image</label>
                                     </div>
-                                    
-                                    <div class="col-sm-6" style="position:relative;">
-                                      <a class='btn btn-primary' href='#'>
-                                        Choose File..
-                                        <input type="file" style='position:absolute;z-index:2;top:0;left:0;filter: alpha(opacity=0);
-                                        -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";opacity:0;
-                                        background-color:transparent;color:transparent;'
-                                        name="file_source" size="40"  onchange='$("#upload-file-info").html($(this).val());'>
-                                      </a>
-                                     &nbsp;
-                                      <span class='label label-info' id="upload-file-info"></span>
+
+                                    <div class="col-md-9" style="position:relative;">
+                                        <a class='btn btn-primary'>
+                                            Choose File..
+                                            <input type="file" style='position:absolute;z-index:2;top:0;left:0;filter: alpha(opacity=0);
+										-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";opacity:0;background-color:transparent;
+										color:transparent;' name="file_source" size="40" onchange='$("#upload-file-info").html($(this).val());'>
+                                        </a>
+                                        &nbsp;
+                                        <span class='label label-info' id="upload-file-info"></span>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-sm-6 form-group">
-                                
+
                                 <button type="submit" class=" btn btn-primary" style="float:right; margin-left:10px;">Submit</button>
                                 <button type="submit" style=" float:right;" class=" btn btn-primary"> Reset</button>
-                                
                             </div>
                         </div>
 

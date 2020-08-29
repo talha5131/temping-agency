@@ -154,7 +154,7 @@
 					<div class="row">
 						<div class="col-sm-4 form-group">
 							<label for="tags">Job Tags</label>
-							<input type="tags" data-role="tagsinput" class="form-control" id="tags" name="tags">
+							<input type="tags" data-role="tagsinput" class="form-control" id="tags" name="tags" style="display: none;">
 						</div>
 
 
@@ -188,18 +188,16 @@
 					<hr>
 					<div class="row">
 						<div class="col-sm-4 form-group">
-							<label for="location">Duration</label>
-							<input type="text" class="form-control" id="duration" name="duration" placeholder="Duration">
-						</div>
-
-						<div class="col-sm-4 form-group">
-							<label for="location">Joining Date</label>
+							<label for="joiningDate">Joining Date</label>
 							<input type="text" class="form-control" id="joiningDate" name="joiningDate" placeholder="dd / mm / yyyy">
 						</div>
-
 						<div class="col-sm-4 form-group">
-							<label for="location">Ending Date</label>
+							<label for="endingDate">Ending Date</label>
 							<input type="text" class="form-control" id="endingDate" name="endingDate" placeholder="dd / mm / yyyy">
+						</div>
+						<div class="col-sm-4 form-group">
+							<label for="openingDate">Opening Date</label>
+							<input type="text" class="form-control" id="openingDate" name="openingDate" placeholder="dd / mm / yyyy">
 						</div>
 					</div>
 					<hr>
@@ -217,28 +215,13 @@
 
 						<div class="col-sm-4 form-group">
 							<label for="salary">Salary</label>
-							<div class="row">
-								<div class="col-md-6" style="padding: 0px !important;">
-									<div class="col-sm-4">
-										<label class="">From</label>
-									</div>
-									<div class="col-sm-8" style="padding: 0px !important;">
-										<input type="text" class="form-control" id="salaryFrom" name="salaryFrom" placeholder="From">
-									</div>
-								</div>
-								<div class="col-md-6" style="padding: 0px !important;">
-									<div class="col-sm-4" style="padding-right: 0px !important;">
-										<label class="">To</label>
-									</div>
-									<div class="col-sm-8" style="padding: 0px !important; margin-left: -25px;">
-										<input type="text" class="form-control" id="salaryTo" name="salaryTo" placeholder="To">
-									</div>
-								</div>
-							</div>
+							<input type="text" class="form-control" id="salaryFrom" name="salaryFrom" placeholder="Salary">
 						</div>
 
 						<div class="col-sm-4 form-group">
-							<label for="tsalaryType" class="col-form-label">Salary Type</label>
+							<label for="location">Duration</label>
+							<input type="text" class="form-control" id="duration" name="duration" placeholder="Duration">
+							<!-- <label for="tsalaryType" class="col-form-label">Salary Type</label>
 							<div class="input-group">
 								<label class="custom-control custom-radio custom-control-inline">
 									<input type="radio" name="salaryType" checked="" value="per hour" class="custom-control-input"><span class="custom-control-label custom-radio"> Per Hour</span>
@@ -249,7 +232,7 @@
 								<label class="custom-control custom-radio custom-control-inline">
 									<input type="radio" name="salaryType" value="per year" class="custom-control-input"><span class="custom-control-label custom-radio"> Per Year</span>
 								</label>
-							</div>
+							</div> -->
 						</div>
 					</div>
 					<hr>
@@ -268,13 +251,19 @@
 						</div>
 					</div>
 					<div class="row">
+						<div class="col-sm-4 form-group">
+							<label for="vacancy">Vacancy</label>
+							<input type="number" id="vacancy" name="vacancy" class="form-control" placeholder="Vacancy">
+						</div>
+					</div>
+					<div class="row">
 						<div class="col-sm-6 form-group">
 							<div class="row">
 								<div class="col-md-3">
 									<label for="logo">Add Image</label>
 								</div>
 
-								<div class="col-md-9 style="position:relative;">
+								<div class="col-md-9" style="position:relative;">
 									<a class='btn btn-primary'>
 										Choose File..
 										<input type="file" style='position:absolute;z-index:2;top:0;left:0;filter: alpha(opacity=0);

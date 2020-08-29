@@ -47,6 +47,8 @@
     <link id="style-switch" href="public/assets/css/presets/preset3.css" media="screen" rel="stylesheet" type="text/css">
 
     <link rel="stylesheet" href="public/assets/css/richtext.min.css">
+
+    <link href="public/assets/css/tagsinput.css" rel="stylesheet" type="text/css">
     <style>
         /* html,
     body {
@@ -105,6 +107,8 @@
     <script type="text/javascript" src="public/assets/js/waypoints.min.js"></script>
     <!-- Template custom -->
     <script type="text/javascript" src="public/assets/js/custom.js"></script>
+    
+    <script src="public/assets/js/tagsinput.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <!-- Javascript Files
