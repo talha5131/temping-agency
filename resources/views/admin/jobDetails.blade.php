@@ -1,4 +1,4 @@
-@extends('admin.layout.base')
+@extends('admin.layout.base2')
 @section('title','Add Job')
 @section('content')
 </style>
@@ -43,11 +43,6 @@
                             </div>
                         </div>
                         <hr>
-                        <div class="row">
-                            <div class="col-sm-12 form-group">
-                                <label for="desc"> Job Description</label>
-                            </div>
-                        </div>
                         <hr>
                         <div class="row">
                             <div class="col-sm-4 form-group">
@@ -121,15 +116,23 @@
                             </div>
                             <div class="col-sm-4 form-group">
                                 <label for="responsibilities">Job Responsibilites</label>
-                                <h5>Duration Comes Here</h5>
+                                <h5>Job Responsibilites Comes Here</h5>
                             </div>
                             <div class="col-sm-4 form-group">
                                 <label for="requirements">Job Requirements</label>
+                                <h5>Job Requirements Comes Here</h5>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-sm-4 form-group">
                                 <label for="vacancy">Vacancy</label>
+                                <h5>Vacancy Comes Here</h5>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <label for="desc"> Job Description</label>
+                                <p>Job Description Comes Here</p>
                             </div>
                         </div>
                         <div class="row">
@@ -137,6 +140,7 @@
                                 <div class="row">
                                     <div class="col-md-3">
                                         <label for="logo">Add Image</label>
+                                        <img src="">Image Comes Here</img>
                                     </div>
                                 </div>
                             </div>
@@ -153,7 +157,7 @@
         <!-- /.content-wrapper -->
     </div>
     <!-- ./wrapper -->
-    <script type="text/javascript" src="public/assets/js/jquery.richtext.min.js"></script>
+    <script type="text/javascript" src="../public/assets/js/jquery.richtext.min.js"></script>
     <script>
         $('.job-content').richText();
     </script>
