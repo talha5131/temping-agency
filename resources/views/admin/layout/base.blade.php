@@ -75,6 +75,8 @@
 <script src="public/assets/dist/js/pages/dashboard.js"></script>
 <script src="public/assets/js/tagsinput.js"></script>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 </body>
 
 </html>

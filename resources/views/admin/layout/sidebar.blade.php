@@ -77,27 +77,27 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="admin-addJob" class="nav-link">
+                            <a href="{{ route('admin.active-jobs') }}" class="nav-link">
                                 <p>Active Jobs</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="admin-addJob" class="nav-link">
+                            <a href="{{ route('admin.inactive-jobs') }}" class="nav-link">
                                 <p>Inactive Jobs</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="admin-addJob" class="nav-link">
+                            <a href="{{ route('admin.pending-jobs') }}" class="nav-link">
                                 <p>Pending Jobs</p>
                             </a>
                         </li>
-                        <li class="nav-item">
+<!--                         <li class="nav-item">
                             <a href="admin-addJob" class="nav-link">
                                 <p>Deleted Jobs</p>
                             </a>
-                        </li>
+                        </li> -->
                         <li class="nav-item">
-                            <a href="public/assets/pages/layout/top-nav.html" class="nav-link">
+                            <a href="{{ route('admin.applied') }}" class="nav-link">
                                 <p>Applied Jobs</p>
                             </a>
                         </li>

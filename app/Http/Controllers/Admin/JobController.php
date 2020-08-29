@@ -22,6 +22,33 @@ class JobController extends Controller
             return redirect('admin/login');
     }
 
+    public function active(Request $request)
+    {
+        if($request->session()->has('admin')) {
+            $jobs = Job::orderByDesc('id')->where('approved','1')->paginate(10);
+            return view('admin.activejobs', compact('jobs'));
+        }else
+            return redirect('admin/login');
+    }
+
+    public function inactive(Request $request)
+    {
+        if($request->session()->has('admin')) {
+            $jobs = Job::orderByDesc('id')->where('approved','0')->paginate(10);
+            return view('admin.inactivejobs', compact('jobs'));
+        }else
+            return redirect('admin/login');
+    }
+
+    public function pending(Request $request)
+    {
+        if($request->session()->has('admin')) {
+            $jobs = Job::orderByDesc('id')->where('approved','3')->paginate(10);
+            return view('admin.pendingjobs', compact('jobs'));
+        }else
+            return redirect('admin/login');
+    }
+
     /**
      * Show the form for creating a new resource.
      *

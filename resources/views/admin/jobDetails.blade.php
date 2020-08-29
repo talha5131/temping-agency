@@ -39,7 +39,7 @@
                         <div class="row">
                             <div class="col-sm-12 form-group">
                                 <label for="jobTitle">Job Title</label>
-                                <h3>XYZ</h3>
+                                <h3>{{ isset($job->title)?$job->title:'' }}</h3>
                             </div>
                         </div>
                         <hr>
@@ -47,92 +47,80 @@
                         <div class="row">
                             <div class="col-sm-4 form-group">
                                 <label for="tags">Job Tags</label>
-                                <h5>Tags Come Here</h5>
+                                <h3>{{ isset($job->tags)?$job->tags:'' }}</h3>
                             </div>
 
 
 
                             <div class="col-sm-4 form-group">
                                 <label for="jobtype">Job Category</label>
-                                <h5>Category Comes Here</h5>
+                                <h3>{{ isset($job->category)?$job->category:'' }}</h3>
                             </div>
 
 
 
                             <div class="col-sm-4 form-group">
-                                <label for="location">Location <small>(optional)</small></label>
-                                <h5>Location Comes Here</h5>
+                                <label for="location">Location</label>
+                                <h3>{{ isset($job->location)?$job->location:'' }}</h3>
                             </div>
                         </div>
                         <hr>
                         <div class="row">
                             <div class="col-sm-4 form-group">
                                 <label for="joiningDate">Joining Date</label>
-                                <h5>Joining Date Comes Here</h5>
+                                <h3>{{ isset($job->joining_date)?$job->joining_date:'' }}</h3>
                             </div>
                             <div class="col-sm-4 form-group">
                                 <label for="endingDate">Ending Date</label>
-                                <h5>Ending Date Comes Here</h5>
+                                <h3>{{ isset($job->end_date)?$job->end_date:'' }}</h3>
                             </div>
                             <div class="col-sm-4 form-group">
                                 <label for="openingDate">Opening Date</label>
-                                <h5>Opening Date Comes Here</h5>
+                                <h3>{{ isset($job->opening_dates)?$job->opening_dates:'' }}</h3>
                             </div>
                         </div>
                         <hr>
                         <div class="row">
                             <div class="col-sm-4 form-group">
                                 <label for="jobtype">Job Timing</label>
-                                <h5>Job Timing Comes Here</h5>
+                                <h3>{{ isset($job->timings)?$job->timings:'' }}</h3>
                             </div>
 
                             <div class="col-sm-4 form-group">
                                 <label for="salary">Salary</label>
-                                <h5>Salary Comes Here</h5>
+                                <h3>{{ isset($job->salary)?$job->salary:'' }}</h3>
                             </div>
 
                             <div class="col-sm-4 form-group">
                                 <label for="location">Duration</label>
-                                <h5>Duration Comes Here</h5>
-                                <!-- <label for="tsalaryType" class="col-form-label">Salary Type</label>
-							<div class="input-group">
-								<label class="custom-control custom-radio custom-control-inline">
-									<input type="radio" name="salaryType" checked="" value="per hour" class="custom-control-input"><span class="custom-control-label custom-radio"> Per Hour</span>
-								</label>
-								<label class="custom-control custom-radio custom-control-inline">
-									<input type="radio" name="salaryType" value="per week" class="custom-control-input"><span class="custom-control-label custom-radio"> Per Week</span>
-								</label>
-								<label class="custom-control custom-radio custom-control-inline">
-									<input type="radio" name="salaryType" value="per year" class="custom-control-input"><span class="custom-control-label custom-radio"> Per Year</span>
-								</label>
-							</div> -->
+                                <h3>{{ isset($job->duration)?$job->duration:'' }}</h3>
                             </div>
                         </div>
                         <hr>
                         <div class="row">
                             <div class="col-sm-4 form-group">
                                 <label for="jobPurpose">Job Purpose</label>
-                                <h5>Job Purpose Comes Here</h5>
+                                <h3>{{ isset($job->purpose)?$job->purpose:'' }}</h3>
                             </div>
                             <div class="col-sm-4 form-group">
                                 <label for="responsibilities">Job Responsibilites</label>
-                                <h5>Job Responsibilites Comes Here</h5>
+                                <h3>{{ isset($job->responsibilities)?$job->responsibilities:'' }}</h3>
                             </div>
                             <div class="col-sm-4 form-group">
                                 <label for="requirements">Job Requirements</label>
-                                <h5>Job Requirements Comes Here</h5>
+                                <h3>{{ isset($job->requirements)?$job->requirements:'' }}</h3>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-sm-4 form-group">
                                 <label for="vacancy">Vacancy</label>
-                                <h5>Vacancy Comes Here</h5>
+                                <h3>{{ isset($job->vacancies)?$job->vacancies:'' }}</h3>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-sm-12 form-group">
                                 <label for="desc"> Job Description</label>
-                                <p>Job Description Comes Here</p>
+                                <h3>{{ isset($job->description)?$job->description:'' }}</h3>
                             </div>
                         </div>
                         <div class="row">

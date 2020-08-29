@@ -51,7 +51,8 @@
                             @elseif($job->approved == 0)
                                 <a href=""><i class="far fa-eye-slash"></i></a> 
                             @endif
-                            <a href=""><i class="far fa-trash-alt"></i></a> <a href=""><i class="fas fa-info-circle"></i></a>
+                            <a href=""><i class="far fa-trash-alt"></i></a>
+                            <a href="{{ route('admin.jobDetails',['id' => $job->id])}}"><i class="fas fa-info-circle"></i></a>
                         </td>
                     </tr>
                     @endforeach
