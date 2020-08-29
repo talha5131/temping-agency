@@ -26,6 +26,8 @@
     <!-- summernote -->
     <link rel="stylesheet" href="public/assets/plugins/summernote/summernote-bs4.min.css">
 
+    <link rel="stylesheet" href="public/assets/css/richtext.min.css">
+
     <link href="public/assets/css/tagsinput.css" rel="stylesheet" type="text/css">
 </head>
 @include('admin.layout.header')
@@ -71,7 +73,6 @@
 <script src="public/assets/dist/js/demo.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="public/assets/dist/js/pages/dashboard.js"></script>
-
 <script src="public/assets/js/tagsinput.js"></script>
 
 </body>

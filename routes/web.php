@@ -112,6 +112,8 @@ Route::post('admin-addJob', 'Admin\JobController@store')->name('admin.addJob');
 
 Route::get('admin-appliedJobs', 'Admin\JobController@applied')->name('admin.applied');
 
+Route::get('admin-jobDetails/{id}', 'Admin\JobController@show')->name('admin.jobDetails');
+
 Route::get('/blogs', function () {
     return view('admin.blogs');
 });

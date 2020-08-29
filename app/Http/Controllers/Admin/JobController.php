@@ -120,7 +120,8 @@ class JobController extends Controller
      */
     public function show($id)
     {
-        //
+        $job = Job::find($id);
+        return view('admin.jobDetails',compact('job'));
     }
 
     /**

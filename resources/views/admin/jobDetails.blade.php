@@ -34,101 +34,71 @@
             <!-- Main content -->
             <section class="content">
                 <div class="container">
-                    <form id="postAJob" action="{{ route('admin.addJob')}}" method="post">
-                        @csrf
-                        {{-- <div class="form-group">--}}
-                        {{-- <label for="">Have an account?</label>--}}
-                        {{-- <p>--}}
-                        {{-- If you don't have an account you can create one below by entering your email address/username. Your account details will be confirmed via email.--}}
-                        {{-- </p>--}}
-                        {{-- <button class="btn btn-success btn-lg">Sign In</button>--}}
-                        {{-- </div>--}}
+                    <form id="postAJob" action="post-a-job" method="post">
                         <hr>
                         <div class="row">
                             <div class="col-sm-12 form-group">
                                 <label for="jobTitle">Job Title</label>
-                                <input type="text" class="form-control" id="title" name="title" placeholder="Job Title">
+                                <h3>XYZ</h3>
                             </div>
                         </div>
                         <hr>
                         <div class="row">
                             <div class="col-sm-12 form-group">
                                 <label for="desc"> Job Description</label>
-                                <textarea class="form-control job-content" rows="7" id="desc" name="desc"></textarea>
-
                             </div>
                         </div>
                         <hr>
                         <div class="row">
                             <div class="col-sm-4 form-group">
                                 <label for="tags">Job Tags</label>
-                                <input type="tags" data-role="tagsinput" class="form-control" id="tags" name="tags" style="display: none;">
+                                <h5>Tags Come Here</h5>
                             </div>
 
 
 
                             <div class="col-sm-4 form-group">
                                 <label for="jobtype">Job Category</label>
-                                <select class="form-control" id="category" name="category">
-                                    <option selected disabled>Please Select</option>
-                                    <option value="Trade & Construction">Trade & Construction</option>
-                                    <option value="Site Labourers & Cleaners">Site Labourers & Cleaners</option>
-                                    <option value="Multi-Skilled Builders">Multi-Skilled Builders</option>
-                                    <option value="Forklift Operatives">Forklift Operatives</option>
-                                    <option value="Warehouse">Warehouse</option>
-                                    <option value="Drivers">Drivers</option>
-                                    <option value="Pickers & Packers">Pickers & Packers</option>
-                                    <option value="Electricians & Electricians Mate">Electricians & Electricians Mate</option>
-                                    <option value="Plumbing">Plumbing</option>
-                                    <option value="Electrical">Electrical</option>
-                                    <option value="Cleaning">Cleaning</option>
-                                    <option value="Property Maintenance">Property Maintenance</option>
-                                </select>
+                                <h5>Category Comes Here</h5>
                             </div>
 
 
 
                             <div class="col-sm-4 form-group">
                                 <label for="location">Location <small>(optional)</small></label>
-                                <input type="text" class="form-control" id="location" name="location" placeholder="e.g. London">
+                                <h5>Location Comes Here</h5>
                             </div>
                         </div>
                         <hr>
                         <div class="row">
                             <div class="col-sm-4 form-group">
                                 <label for="joiningDate">Joining Date</label>
-                                <input type="text" class="form-control" id="joiningDate" name="joiningDate" placeholder="dd / mm / yyyy">
+                                <h5>Joining Date Comes Here</h5>
                             </div>
                             <div class="col-sm-4 form-group">
                                 <label for="endingDate">Ending Date</label>
-                                <input type="text" class="form-control" id="endingDate" name="endingDate" placeholder="dd / mm / yyyy">
+                                <h5>Ending Date Comes Here</h5>
                             </div>
                             <div class="col-sm-4 form-group">
                                 <label for="openingDate">Opening Date</label>
-                                <input type="text" class="form-control" id="openingDate" name="openingDate" placeholder="dd / mm / yyyy">
+                                <h5>Opening Date Comes Here</h5>
                             </div>
                         </div>
                         <hr>
                         <div class="row">
                             <div class="col-sm-4 form-group">
                                 <label for="jobtype">Job Timing</label>
-                                <select class="form-control" id="jobTiming" name="jobTiming">
-                                    <option value="Freelance">Freelance</option>
-                                    <option value="Full Time" selected>Full Time</option>
-                                    <option value="Internship">Internship</option>
-                                    <option value="Part Time">Part Time</option>
-                                    <option value="Temporary">Temporary</option>
-                                </select>
+                                <h5>Job Timing Comes Here</h5>
                             </div>
 
                             <div class="col-sm-4 form-group">
                                 <label for="salary">Salary</label>
-                                <input type="text" class="form-control" id="salaryFrom" name="salaryFrom" placeholder="Salary">
+                                <h5>Salary Comes Here</h5>
                             </div>
 
                             <div class="col-sm-4 form-group">
                                 <label for="location">Duration</label>
-                                <input type="text" class="form-control" id="duration" name="duration" placeholder="Duration">
+                                <h5>Duration Comes Here</h5>
                                 <!-- <label for="tsalaryType" class="col-form-label">Salary Type</label>
 							<div class="input-group">
 								<label class="custom-control custom-radio custom-control-inline">
@@ -147,21 +117,19 @@
                         <div class="row">
                             <div class="col-sm-4 form-group">
                                 <label for="jobPurpose">Job Purpose</label>
-                                <input type="text" name="jobPurpose" class="form-control" placeholder="Purpose">
+                                <h5>Job Purpose Comes Here</h5>
                             </div>
                             <div class="col-sm-4 form-group">
                                 <label for="responsibilities">Job Responsibilites</label>
-                                <input type="text" class="form-control" id="responsibilities" name="responsibilities" placeholder="Responsibilities">
+                                <h5>Duration Comes Here</h5>
                             </div>
                             <div class="col-sm-4 form-group">
                                 <label for="requirements">Job Requirements</label>
-                                <input type="text" class="form-control" id="requirements" name="requirements" placeholder="Requirements">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-sm-4 form-group">
                                 <label for="vacancy">Vacancy</label>
-                                <input type="number" id="vacancy" name="vacancy" class="form-control" placeholder="Vacancy">
                             </div>
                         </div>
                         <div class="row">
@@ -170,23 +138,9 @@
                                     <div class="col-md-3">
                                         <label for="logo">Add Image</label>
                                     </div>
-
-                                    <div class="col-md-9" style="position:relative;">
-                                        <a class='btn btn-primary'>
-                                            Choose File..
-                                            <input type="file" style='position:absolute;z-index:2;top:0;left:0;filter: alpha(opacity=0);
-										-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";opacity:0;background-color:transparent;
-										color:transparent;' name="file_source" size="40" onchange='$("#upload-file-info").html($(this).val());'>
-                                        </a>
-                                        &nbsp;
-                                        <span class='label label-info' id="upload-file-info"></span>
-                                    </div>
                                 </div>
                             </div>
                             <div class="col-sm-6 form-group">
-
-                                <button type="submit" class=" btn btn-primary" style="float:right; margin-left:10px;">Submit</button>
-                                <button type="submit" style=" float:right;" class=" btn btn-primary"> Reset</button>
                             </div>
                         </div>
 
