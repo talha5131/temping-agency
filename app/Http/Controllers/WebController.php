@@ -74,6 +74,7 @@ class WebController extends Controller
         return redirect()->back()->with('success','Congratulations! Your CV has been uploaded');
     }
     public function post(Request $request){
+        // return $request;
         $code = str_random(10);
         $user = new User();
         $user->name = '';
@@ -83,20 +84,38 @@ class WebController extends Controller
         $user->user_type = 'employer';
         $user->save();
 
+
         $job = new Job();
         $job->title = $request->title;
-        $job->location = isset($request->location)?$request->location:'';
-        $job->type = isset($request->jobtype)?$request->jobtype:'';
-        $job->message = $request->message;
         $job->description = isset($request->desc)?$request->desc:'';
-        $job->appEmail = $request->appEmail;
-        $job->company = $request->company;
-        $job->website = isset($request->website)?$request->website:'';
-        $job->tagline = isset($request->tagline)?$request->tagline:'';
-        $job->video = isset($request->video)?$request->video:'';
-        $job->twitter = isset($request->twitterUsername)?$request->twitterUsername:'';
+        $job->tags = isset($request->tags)?$request->tags:'';
+        $job->category = isset($request->category)?$request->category:'';
+        $job->location = isset($request->location)?$request->location:'';
+        $job->duration = isset($request->duration)?$request->duration:'';
+        $job->joining_date = isset($request->joiningDate)?$request->joiningDate:'';
+        $job->end_date = isset($request->endingDate)?$request->endingDate:'';
+        $job->vacancies = isset($request->vacancy)?$request->vacancy:'';
+        $job->salary = isset($request->salaryFrom)?$request->salaryFrom:'';
+        $job->timings = isset($request->jobTiming)?$request->jobTiming:'';
+        $job->opening_dates = isset($request->openingDate)?$request->openingDate:'';
+        $job->purpose = isset($request->jobPurpose)?$request->jobPurpose:'';
+        $job->responsibilities = isset($request->responsibilities)?$request->responsibilities:'';
+        $job->requirements = isset($request->requirements)?$request->requirements:'';
+        $job->approved = 3;
+        $job->slug = $this->createSlug($job->title);
         $job->user_id = $user->id;
+        if($request->hasfile('file_source')){
+            $file = $request->file('file_source');
+            $ext = $file->getClientOriginalExtension();
+            $trim = str_replace('', '-', $request->title);
+            $name = $user->id.'-'.$trim.'.'.$ext;
+            if($file->move('public/assets/images/jobs/'.$name))
+                $job->image = $name;
+        }else
+            $job->image = '';
+
         $job->save();
+
 
         $mail = [
             'name' => $user->name,
@@ -107,19 +126,51 @@ class WebController extends Controller
             'location' => $job->location,
             'type' => $job->type,
             'company' => $job->company,
-        ];
+        ];s
 
         Mail::to($user->email)->send(new MailJob($mail));
         return redirect()->back()->with('success','Congratulations! Your Job has been uploaded');
     }
 
+    public function createSlug($title, $id = 0)
+    {
+        // Normalize the title
+        $slug = str_slug($title);
+
+        // Get any that could possibly be related.
+        // This cuts the queries down by doing it once.
+        $allSlugs = $this->getRelatedSlugs($slug, $id);
+
+        // If we haven't used it before then we are all good.
+        if (! $allSlugs->contains('slug', $slug)){
+            return $slug;
+        }
+
+        // Just append numbers like a savage until we find not used.
+        for ($i = 1; $i <= 10; $i++) {
+            $newSlug = $slug.'-'.$i;
+            if (! $allSlugs->contains('slug', $newSlug)) {
+                return $newSlug;
+            }
+        }
+
+        throw new \Exception('Can not create a unique slug');
+    }
+
+    protected function getRelatedSlugs($slug, $id = 0)
+    {
+        return Job::select('slug')->where('slug', 'like', $slug.'%')
+            ->where('id', '<>', $id)
+            ->get();
+    }
+
     public function jobs(){
-        $jobs = Job::all();
+        $jobs = Job::orderByDesc('id')->paginate(9);
         return view('career',compact('jobs'));
     }
 
-    public function job_detail($id){
-        $job = Job::find($id);
+    public function job_detail($slug){
+        $job = Job::where('slug',$slug)->first();
         return view('job',compact('job'));
     }
 

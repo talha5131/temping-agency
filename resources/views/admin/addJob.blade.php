@@ -34,7 +34,7 @@
             <!-- Main content -->
             <section class="content">
                 <div class="container">
-                    <form id="postAJob" action="post-a-job" method="post">
+                    <form id="postAJob" action="{{ route('admin.addJob')}}" method="post">
                         @csrf
                         {{-- <div class="form-group">--}}
                         {{-- <label for="">Have an account?</label>--}}

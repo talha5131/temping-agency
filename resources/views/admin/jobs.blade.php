@@ -38,17 +38,25 @@
                 <table class="table table-bordered table-striped">
                     <tr>
                         <th>Title</th>
-                        <th>Approved</th>
+                        <th>Category</th>
                         <th>Actions</th>
                     </tr>
                     @foreach($jobs as $job)
                     <tr>
                         <td>{{$job->title}}</td>
                         <td>{{$job->category}}</td>
-                        <td>{{$job->user_id}}</td>
+                        <td>
+                            @if($job->approved == 1)
+                                <a href=""><i class="far fa-eye"></i></a> 
+                            @elseif($job->approved == 0)
+                                <a href=""><i class="far fa-eye-slash"></i></a> 
+                            @endif
+                            <a href=""><i class="far fa-trash-alt"></i></a> <a href=""><i class="fas fa-info-circle"></i></a>
+                        </td>
                     </tr>
                     @endforeach
                 </table>
+                {{ $jobs->links() }}
                 <!-- /.container-fluid -->
             </section>
             <!-- /.content -->

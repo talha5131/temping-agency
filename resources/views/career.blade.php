@@ -9,6 +9,14 @@
 			overflow-x: hidden;
 		}
 	}
+
+	.desc{
+		display: inline-block;
+		white-space: nowrap;
+		overflow-x: hidden;
+		text-overflow: ellipsis;
+		max-width: 300px;
+	}
 </style>
 
 
@@ -41,12 +49,13 @@
 								<div class="well">
 									<img src="public/assets/images/construction/Construction-Laborers.jpg" class="img-responsive">
 									<h4><a href="#">{{ $job->title }}</a></h4>
-									<p>{{ $job->description }}</p>
-									<a href="job/{{$job->id}}" class="btn btn-primary">Read More</a>
+{{--									<div class="desc">{{ $job->description }}</div> --}}
+									<a href="{{$job->slug}}" class="btn btn-primary">Read More</a>
 								</div>
 							</div>
                             @endforeach
-							<div class="col-md-4">
+                            {{ $jobs->links() }}
+<!-- 							<div class="col-md-4">
 								<div class="well">
 									<img src="public/assets/images/pictures/hub-05-29-jobinterviewlies-Hero-1200x900.jpg" class="img-responsive">
 									<h4><a href="#">Accountant – US Department of Veterans Affairs – Sheridan, WY</a></h4>
@@ -61,10 +70,10 @@
 									<p>Applicants wishing to receive credit for such experience must indicate clearly the nature of their duties and responsibilities in each position and the number… $43,251 – $83,210 a year</p>
 									<button class="btn btn-primary">Read More</button>
 								</div>
-							</div>
-						</div>
+							</div> 
+						</div> -->
 
-						<div class="row">
+<!-- 						<div class="row">
 							<div class="col-md-4">
 								<div class="well">
 									<img src="public/assets/images/pictures/hub-05-29-jobinterviewlies-Hero-1200x900.jpg" class="img-responsive">
@@ -89,7 +98,7 @@
 									<button class="btn btn-primary">Read More</button>
 								</div>
 							</div>
-						</div>
+						</div> -->
 						<!--
 						<h3 class="title-border">Senior Manager</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, natus voluptatibus adipisci porro magni dolore eos eius ducimus corporis quos perspiciatis quis iste, vitae autem libero ullam omnis cupiditate quam.</p>

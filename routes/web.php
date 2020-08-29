@@ -126,6 +126,6 @@ Route::get('/services', function () {
     return view('admin.services');
 });
 
-Route::get('/job/{id}', 'WebController@job_detail');
+Route::get('/{slug}', 'WebController@job_detail');
 
 Route::post('/apply-job', 'WebController@apply_job')->name('apply-job');
