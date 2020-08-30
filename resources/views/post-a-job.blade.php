@@ -217,14 +217,10 @@
 							</select>
 						</div>
 
-<<<<<<< Updated upstream
 						<div class="col-sm-4 form-group">
 							<label for="salary">Salary</label>
 							<input type="text" class="form-control" id="salaryFrom" name="salaryFrom" placeholder="Salary">
 						</div>
-=======
-					<h2 class="text-align">Company Details</h2>
->>>>>>> Stashed changes
 
 						<div class="col-sm-4 form-group">
 							<label for="location">Duration</label>
