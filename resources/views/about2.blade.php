@@ -8,6 +8,9 @@
 			/* width: 100%; */
 			overflow-x: hidden;
 		}
+		.text-align {
+			text-align: center;
+		}
 	}
 </style>
 
@@ -45,7 +48,7 @@
 				<div class="row about-wrapper-top">
 					<div class="col-md-12 ts-padding about-message">
 
-						<p>As part of Workers Direct, Our team known as one of the best temping agency in London. We can claim this based on the many years of experience that we have in the temporary recruitment field. <br> Our placement rates, satisfied clients and happy candidates all attest to our ability to provide an excellent service. </p>
+						<p class="text-align">As part of Workers Direct, Our team known as one of the best temping agency in London. We can claim this based on the many years of experience that we have in the temporary recruitment field. <br> Our placement rates, satisfied clients and happy candidates all attest to our ability to provide an excellent service. </p>
 						<p> Some of the things that you need to look out for in a temping agency are:</p>
 						<ul class="unstyled arrow">
 							<li>Professional service </li>
@@ -56,11 +59,11 @@
 
 						</ul>
 						<br>
-						<p>As team of professionals we can confidently say that we have an outstanding track record in all of the above. Our first concern is always the client’s needs and then we consider our candidates’ potential to fulfil those needs. We are not the regular staff recruitment agency that you will find advertised on the net and in the papers. Our candidates come from a range of backgrounds and are placed on our extensive, specialist databases. </p>
-						<p> One of the things that we are very proud of is the speciality fields within the agency. We cater for staff in industries such as the hospitality industry, medical fields etc. Our consultants in each specialist field are uniquely trained to do both interviews and placements based on the field that they are working in. Our placement rate in these fields is very high and our candidates as well as our clients are very happy with the matches that we made. </p>
+						<p class="text-align">As team of professionals we can confidently say that we have an outstanding track record in all of the above. Our first concern is always the client’s needs and then we consider our candidates’ potential to fulfil those needs. We are not the regular staff recruitment agency that you will find advertised on the net and in the papers. Our candidates come from a range of backgrounds and are placed on our extensive, specialist databases. </p>
+						<p class="text-align"> One of the things that we are very proud of is the speciality fields within the agency. We cater for staff in industries such as the hospitality industry, medical fields etc. Our consultants in each specialist field are uniquely trained to do both interviews and placements based on the field that they are working in. Our placement rate in these fields is very high and our candidates as well as our clients are very happy with the matches that we made. </p>
 
 
-						<p>As a top<a style="color:#51284f; " href="https://www.temping-agency.com"> temping agency in London </a>, we are the best choice for all your recruitment and staffing needs backed by professional service and a replacement guarantee. </p>
+						<p class="text-align">As a top<a style="color:#51284f; " href="https://www.temping-agency.com"> temping agency in London </a>, we are the best choice for all your recruitment and staffing needs backed by professional service and a replacement guarantee. </p>
 						<br> <br> <br>
 
 						<!-- Product Blocks -->
@@ -138,7 +141,7 @@
 							<div class="facts-num">
 								<span class="counter">76</span>
 							</div>
-							<h3>Awwards</h3>
+							<h3>Awards</h3>
 						</div>
 
 

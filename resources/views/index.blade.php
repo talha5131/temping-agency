@@ -3,11 +3,29 @@
 @section('content')
 
 <style>
+	#recruitment-image-index {
+		height: 650px;
+	}
+
 	@media only screen and (min-width: 200px) and (max-width: 768px) {
 		body {
 			/* width: 100%; */
 			overflow-x: hidden;
 		}
+
+		#recruitment-image-index {
+			height: 340px;
+		}
+
+		.text-align {
+			text-align: center;
+		}
+
+		/* #myVideo {
+			top: 20px;
+			max-height: 100%;
+			max-width: 100%;
+		} */
 	}
 </style>
 <!-- Slider start -->
@@ -105,8 +123,8 @@
 
 
 
-				<h3> An Award Winning Recruitment Agency</h3> <br>
-				<p> As part of Workers Direct, Our team known as one of the best temping agency in London. We can claim this based on the many years of experience that we have in the temporary recruitment field. Our placement rates, satisfied clients and happy candidates all attest to our ability to provide an excellent service.
+				<h3 class="text-align"> An Award Winning Recruitment Agency</h3> <br>
+				<p class="text-align"> As part of Workers Direct, Our team known as one of the best temping agency in London. We can claim this based on the many years of experience that we have in the temporary recruitment field. Our placement rates, satisfied clients and happy candidates all attest to our ability to provide an excellent service.
 				</p>
 
 
@@ -127,10 +145,10 @@
 			<!--/ About image end -->
 			<div class="col-md-6 ts-padding about-message">
 
-				<p>As team of professionals we can confidently say that we have an outstanding track record in all of the above. Our first concern is always the client’s needs and then we consider our candidates’ potential to fulfil those needs.</p>
+				<p class="text-align">As team of professionals we can confidently say that we have an outstanding track record in all of the above. Our first concern is always the client’s needs and then we consider our candidates’ potential to fulfil those needs.</p>
 
-				<p> We are not the regular staff recruitment agency that you will find advertised on the net and in the papers. Our candidates come from a range of backgrounds and are placed on our extensive, specialist databases. </p>
-				<p>As a temping agency we vetted all candidates with great vigour. Being a top temp agency our consultants not only present the candidate’s CV, but also with test results of their skills and full reference checks. </p>
+				<p class="text-align"> We are not the regular staff recruitment agency that you will find advertised on the net and in the papers. Our candidates come from a range of backgrounds and are placed on our extensive, specialist databases. </p>
+				<p class="text-align">As a temping agency we vetted all candidates with great vigour. Being a top temp agency our consultants not only present the candidate’s CV, but also with test results of their skills and full reference checks. </p>
 
 
 
@@ -142,8 +160,8 @@
 		<div class="row about-wrapper-top">
 			<div class="col-md-6 ts-padding about-message">
 
-				<p> The consultant that you deal with will have had a thorough face-to-face interview with the candidate and will be able to tell you his / her impressions of the candidate. </p>
-				<p>Agency temps are usually very experienced individuals as they are required to work in a variety of settings. Here they gain a smorgasbord of knowledge and learn to be very adaptable to the different situations that they are placed in. Temps are also very keen to learn as each new skills provides them with an additional opportunity to find assignments. This is beneficial to your company as the work will be done with new creativity and analytical skills. </p>
+				<p class="text-align"> The consultant that you deal with will have had a thorough face-to-face interview with the candidate and will be able to tell you his / her impressions of the candidate. </p>
+				<p class="text-align">Agency temps are usually very experienced individuals as they are required to work in a variety of settings. Here they gain a smorgasbord of knowledge and learn to be very adaptable to the different situations that they are placed in. Temps are also very keen to learn as each new skills provides them with an additional opportunity to find assignments. This is beneficial to your company as the work will be done with new creativity and analytical skills. </p>
 			</div>
 			<!--/ About message end -->
 			<div class="col-md-6 ts-padding about-img" style="height:374px;background:url(public/assets/images/pages/about-1.jpg) 50% 50% / cover no-repeat;">
@@ -296,7 +314,7 @@
 				<div class="facts-num">
 					<span class="counter">76</span>
 				</div>
-				<h3>Awwards</h3>
+				<h3>Awards</h3>
 			</div>
 
 		</div>
@@ -312,8 +330,8 @@
 			<div class="feature-box col-sm-4 wow fadeInDown" data-wow-delay=".5s">
 				<span class="feature-icon pull-left"><i class="fa fa-heart-o"></i></span>
 				<div class="feature-content">
-					<h3>Clean &amp; Modern Design</h3>
-					<p>Bras urna felis accumsan at ultrde cesid posuere masa socis nautoque penat</p>
+					<h3 class="text-align">Clean &amp; Modern Design</h3>
+					<p class="text-align">Bras urna felis accumsan at ultrde cesid posuere masa socis nautoque penat</p>
 				</div>
 			</div>
 			<!--/ End first featurebox -->
@@ -321,8 +339,8 @@
 			<div class="feature-box col-sm-4 wow fadeInDown" data-wow-delay=".5s">
 				<span class="feature-icon pull-left"><i class="fa fa-codepen"></i></span>
 				<div class="feature-content">
-					<h3>Useful Shortcodes</h3>
-					<p>High Life narwhal, banh mi PBR single-origin coffee Odd Future actually aliqua</p>
+					<h3 class="text-align">Useful Shortcodes</h3>
+					<p class="text-align">High Life narwhal, banh mi PBR single-origin coffee Odd Future actually aliqua</p>
 				</div>
 			</div>
 			<!--/ End 2nd featurebox -->
@@ -330,8 +348,8 @@
 			<div class="feature-box col-sm-4 wow fadeInDown" data-wow-delay=".5s">
 				<span class="feature-icon pull-left"><i class="fa fa-film"></i></span>
 				<div class="feature-content">
-					<h3>Parallax Section</h3>
-					<p>Consectetur adipisicing elit sed do eiusmod tempor incididunt ut</p>
+					<h3 class="text-align">Parallax Section</h3>
+					<p class="text-align">Consectetur adipisicing elit sed do eiusmod tempor incididunt ut</p>
 				</div>
 			</div>
 			<!--/ End 3rd featurebox -->
@@ -343,8 +361,8 @@
 			<div class="feature-box col-sm-4 wow fadeInDown" data-wow-delay=".5s">
 				<span class="feature-icon pull-left"><i class="fa fa-newspaper-o"></i></span>
 				<div class="feature-content">
-					<h3>Multipurpose Concept</h3>
-					<p>Consectetur adipisicing elit sed do eiusmod tempor incididunt ut</p>
+					<h3 class="text-align">Multipurpose Concept</h3>
+					<p class="text-align">Consectetur adipisicing elit sed do eiusmod tempor incididunt ut</p>
 				</div>
 			</div>
 			<!--/ End 1st featurebox -->
@@ -352,8 +370,8 @@
 			<div class="feature-box col-sm-4 wow fadeInDown" data-wow-delay=".5s">
 				<span class="feature-icon pull-left"><i class="fa fa-desktop"></i></span>
 				<div class="feature-content">
-					<h3>Responsive Layout</h3>
-					<p>Consectetur adipisicing elit sed do eiusmod tempor incididunt ut</p>
+					<h3 class="text-align">Responsive Layout</h3>
+					<p class="text-align">Consectetur adipisicing elit sed do eiusmod tempor incididunt ut</p>
 				</div>
 			</div>
 			<!--/ End 2nd featurebox -->
@@ -361,8 +379,8 @@
 			<div class="feature-box col-sm-4 wow fadeInDown" data-wow-delay=".5s">
 				<span class="feature-icon pull-left"><i class="fa fa-pagelines"></i></span>
 				<div class="feature-content">
-					<h3>Light wight Performance</h3>
-					<p>High Life narwhal, banh mi PBR single-origin coffee Odd Future actually aliqua</p>
+					<h3 class="text-align">Light wight Performance</h3>
+					<p class="text-align">High Life narwhal, banh mi PBR single-origin coffee Odd Future actually aliqua</p>
 				</div>
 			</div>
 			<!--/ End 3rd featurebox -->
@@ -375,8 +393,8 @@
 			<div class="feature-box col-sm-4 wow fadeInDown" data-wow-delay=".5s">
 				<span class="feature-icon pull-left"><i class="fa fa-recycle"></i></span>
 				<div class="feature-content">
-					<h3>Free Lifetime Updates</h3>
-					<p>Bras urna felis accumsan at ultrde cesid posuere masa socis nautoque penat</p>
+					<h3 class="text-align">Free Lifetime Updates</h3>
+					<p class="text-align">Bras urna felis accumsan at ultrde cesid posuere masa socis nautoque penat</p>
 				</div>
 			</div>
 			<!--/ End first featurebox -->
@@ -384,8 +402,8 @@
 			<div class="feature-box col-sm-4 wow fadeInDown" data-wow-delay=".5s">
 				<span class="feature-icon pull-left"><i class="fa fa-diamond"></i></span>
 				<div class="feature-content">
-					<h3>Endless Possibilites</h3>
-					<p>High Life narwhal, banh mi PBR single-origin coffee Odd Future actually aliqua</p>
+					<h3 class="text-align">Endless Possibilites</h3>
+					<p class="text-align">High Life narwhal, banh mi PBR single-origin coffee Odd Future actually aliqua</p>
 				</div>
 			</div>
 			<!--/ End first featurebox -->
@@ -393,8 +411,8 @@
 			<div class="feature-box col-sm-4 wow fadeInDown" data-wow-delay=".5s">
 				<span class="feature-icon pull-left"><i class="fa fa-whatsapp"></i></span>
 				<div class="feature-content">
-					<h3>24/7 Live Support</h3>
-					<p>Consectetur adipisicing elit sed do eiusmod tempor incididunt ut</p>
+					<h3 class="text-align">24/7 Live Support</h3>
+					<p class="text-align">Consectetur adipisicing elit sed do eiusmod tempor incididunt ut</p>
 				</div>
 			</div>
 			<!--/ End first featurebox -->
@@ -409,7 +427,7 @@
 <section id="image-block" class="image-block no-padding">
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-md-6 col-sm-12 ts-padding" style="height:650px;background:url(public/assets/images/image-block-bg.jpg) 50% 50% / cover no-repeat;">
+			<div class="col-md-6 col-sm-12 ts-padding" id="recruitment-image-index" style="background:url(public/assets/images/image-block-bg.jpg) 50% 50% / cover no-repeat;">
 			</div>
 			<div class="col-md-6 col-sm-12 ts-padding img-block-right">
 				<div class="img-block-head text-center">
@@ -424,8 +442,8 @@
 				<div class="image-block-content">
 					<span class="feature-icon pull-left"><i class="fa fa-bicycle" style="padding-top:14px;"></i></span>
 					<div class="feature-content">
-						<h3> Right Temp on Right Time</h3>
-						<p>Proin gravida nibh vel velit auctor Aenean sollicitudin adipisicing</p>
+						<h3 class="text-align"> Right Temp on Right Time</h3>
+						<p class="text-align">Proin gravida nibh vel velit auctor Aenean sollicitudin adipisicing</p>
 					</div>
 				</div>
 				<!--/ End 1st block -->
@@ -433,8 +451,8 @@
 				<div class="image-block-content">
 					<span class="feature-icon pull-left"><i class="fa fa-diamond" style="padding-top:14px;"></i></span>
 					<div class="feature-content">
-						<h3>Your Temp Agency</h3>
-						<p>Proin gravida nibh vel velit auctor Aenean sollicitudin adipisicing</p>
+						<h3 class="text-align">Your Temp Agency</h3>
+						<p class="text-align">Proin gravida nibh vel velit auctor Aenean sollicitudin adipisicing</p>
 					</div>
 				</div>
 				<!--/ End 1st block -->
@@ -442,8 +460,8 @@
 				<div class="image-block-content">
 					<span class="feature-icon pull-left"><i class="fa fa-street-view" style="padding-top:14px;"></i></span>
 					<div class="feature-content">
-						<h3> Temps Registered With Us</h3>
-						<p>Proin gravida nibh vel velit auctor Aenean sollicitudin adipisicing</p>
+						<h3 class="text-align"> Temps Registered With Us</h3>
+						<p class="text-align">Proin gravida nibh vel velit auctor Aenean sollicitudin adipisicing</p>
 					</div>
 				</div>
 				<!--/ End 1st block -->

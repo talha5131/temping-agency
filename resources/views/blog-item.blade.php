@@ -8,6 +8,9 @@
 			/* width: 100%; */
 			overflow-x: hidden;
 		}
+		.text-align {
+			text-align: center;
+		}
 	}
 </style>
 
@@ -44,7 +47,7 @@
 								<span class="blog-date"><a href="#"> May 03, 2019</a></span>
 							</div><!-- post image end -->
 							<div class="post-header clearfix">
-								<h2 class="post-title">
+								<h2 class="post-title text-align">
 									Analyze Your Effectiveness
 								</h2>
 								<div class="post-meta">
@@ -58,7 +61,7 @@
 								</div><!-- post meta end -->
 							</div><!-- post heading end -->
 
-							<div class="entry-content">
+							<div class="entry-content text-align">
 								<p> You are paid for your work. But the award is paid for the labor above the expected result. Mark projects, tasks, assignments, with which you have successfully managed, evaluate the results of your work for a certain period. Compare them with the goals that the leadership has set for you. So you understand what worked best, and what else you need to work on. Let the fixation of achievements become your weekly habit. Record the analysis data on a sheet of paper or compose the report in electronic form – they will be useful in the future. </p>
 
 
@@ -66,7 +69,7 @@
 
 
 							<div class="post-header clearfix">
-								<h2 class="post-title">
+								<h2 class="post-title text-align">
 									Take the Initiative
 								</h2>
 								<div class="post-meta">
@@ -82,14 +85,14 @@
 
 							<div class="entry-content">
 
-								<p> If you have nothing to write down in the table of achievements, correct the situation and start acting right now. But do not expect that someone else will tell you what to do-take the initiative yourself. Look at work in the company, in your department or on the site in a new way, think about what you can improve here, while spending less money. Support your thinking with arguments proving the positive result of the innovation, and a list of steps that will be taken to implement the initiative. And, of course, take responsibility for the embodiment of ideas. </p>
+								<p class="text-align"> If you have nothing to write down in the table of achievements, correct the situation and start acting right now. But do not expect that someone else will tell you what to do-take the initiative yourself. Look at work in the company, in your department or on the site in a new way, think about what you can improve here, while spending less money. Support your thinking with arguments proving the positive result of the innovation, and a list of steps that will be taken to implement the initiative. And, of course, take responsibility for the embodiment of ideas. </p>
 								<p> </p>
 
 							</div>
 
 
 							<div class="post-header clearfix">
-								<h2 class="post-title">
+								<h2 class="post-title text-align">
 									Increase Your Value
 								</h2>
 								<div class="post-meta">
@@ -105,14 +108,14 @@
 
 							<div class="entry-content">
 
-								<p> If you want to receive a bonus, an increase in salary or even an increase, you must prove to the management that you are of particular value to the company. In this business, one cannot do without constant self-education and professional growth. Build a personal professional brand, learn to spend the weekend with a career benefit, attend training and seminars, activities of interest, study foreign languages, communicate with useful people, make new acquaintances. </p>
+								<p class="text-align"> If you want to receive a bonus, an increase in salary or even an increase, you must prove to the management that you are of particular value to the company. In this business, one cannot do without constant self-education and professional growth. Build a personal professional brand, learn to spend the weekend with a career benefit, attend training and seminars, activities of interest, study foreign languages, communicate with useful people, make new acquaintances. </p>
 
 
 
 							</div>
 
 							<div class="post-header clearfix">
-								<h2 class="post-title">
+								<h2 class="post-title text-allign">
 									Speak
 								</h2>
 								<div class="post-meta">
@@ -128,8 +131,8 @@
 
 							<div class="entry-content">
 
-								<p> You took the initiative and saved the company a large amount of money, increased the customer base fivefold, produced +100500 parts. It is likely the leadership will note this. But it is possible that some efforts will be missed. Your task at the right time to remind about this. Learn to speak with the immediate supervisor. Tell us about the fact that in the next period you expect to receive encouragement and want to understand what you need to do for this. Announce to him the plans and goals, the achievement of which will indicate your effectiveness. Approve them with the boss and get the consent that if the conditions are met, the premium will be paid to you. </p>
-								<p> Follow these simple roles, and your bonuses will find you. The only thing that <a href="https://jooble.org/"> Jooble </a> does not advise to do is to seek payment of the award through blackmail and threaten with a statement of resignation. So you risk your reputation – the employer will consider you a manipulator, and further negotiations, whatever they touch, will not succeed. </p>
+								<p class="text-align"> You took the initiative and saved the company a large amount of money, increased the customer base fivefold, produced +100500 parts. It is likely the leadership will note this. But it is possible that some efforts will be missed. Your task at the right time to remind about this. Learn to speak with the immediate supervisor. Tell us about the fact that in the next period you expect to receive encouragement and want to understand what you need to do for this. Announce to him the plans and goals, the achievement of which will indicate your effectiveness. Approve them with the boss and get the consent that if the conditions are met, the premium will be paid to you. </p>
+								<p class="text-align"> Follow these simple roles, and your bonuses will find you. The only thing that <a href="https://jooble.org/"> Jooble </a> does not advise to do is to seek payment of the award through blackmail and threaten with a statement of resignation. So you risk your reputation – the employer will consider you a manipulator, and further negotiations, whatever they touch, will not succeed. </p>
 
 
 
@@ -144,7 +147,7 @@
 
 
 							<div class="comments-form">
-								<h3>Leave a comment</h3>
+								<h3 class="text-align">Leave a comment</h3>
 								<form role="form">
 									<div class="row">
 										<div class="col-md-4">
@@ -186,7 +189,7 @@
 
 							<!-- Blog search start -->
 							<div class="widget widget-search">
-								<h3 class="widget-title">Search</h3>
+								<h3 class="widget-title text-align">Search</h3>
 								<div id="search">
 									<input class="form-control form-control-lg" placeholder="search" type="search">
 								</div>
@@ -340,7 +343,7 @@
 
 							<!-- Blog category start -->
 							<div class="widget widget-categories">
-								<h3 class="widget-title">Blog Categories</h3>
+								<h3 class="widget-title text-align">Blog Categories</h3>
 								<ul class="category-list clearfix">
 									<li><a href="#">Objects</a><span class="posts-count"> (19)</span></li>
 									<li><a href="#">Technology</a><span class="posts-count"> (09)</span></li>
@@ -353,7 +356,7 @@
 
 							<!-- Blog tags start -->
 							<div class="widget widget-tags">
-								<h3 class="widget-title">Popular Tags</h3>
+								<h3 class="widget-title text-align">Popular Tags</h3>
 								<ul class="unstyled clearfix">
 									<li><a href="#">iMac</a></li>
 									<li><a href="#">Black and Green</a></li>
@@ -367,8 +370,8 @@
 
 							<!-- Blog tags start -->
 							<div class="widget">
-								<h3 class="widget-title">Text Widgets</h3>
-								<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normalopposed.</p>
+								<h3 class="widget-title text-align">Text Widgets</h3>
+								<p class="text-align">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normalopposed.</p>
 							</div><!-- Text widget end -->
 
 						</div><!-- sidebar end -->

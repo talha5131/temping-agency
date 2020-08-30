@@ -8,6 +8,10 @@
 			/* width: 100%; */
 			overflow-x: hidden;
 		}
+
+		.text-align {
+			text-align: center;
+		}
 	}
 
 	.custom-radio {
@@ -91,7 +95,7 @@
 
 
 
-			<div class="col-md-6 ts-padding about-message">
+			<div class="col-md-6 ts-padding about-message text-align">
 
 
 
@@ -213,10 +217,14 @@
 							</select>
 						</div>
 
+<<<<<<< Updated upstream
 						<div class="col-sm-4 form-group">
 							<label for="salary">Salary</label>
 							<input type="text" class="form-control" id="salaryFrom" name="salaryFrom" placeholder="Salary">
 						</div>
+=======
+					<h2 class="text-align">Company Details</h2>
+>>>>>>> Stashed changes
 
 						<div class="col-sm-4 form-group">
 							<label for="location">Duration</label>
@@ -380,7 +388,7 @@
 
 					</div>
 
-					<h3>Awwards</h3>
+					<h3>Awards</h3>
 
 				</div>
 

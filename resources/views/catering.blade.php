@@ -8,6 +8,12 @@
 			/* width: 100%; */
 			overflow-x: hidden;
 		}
+		#table-margin-right{
+			padding-right: 200px;
+		}
+		.text-align {
+			text-align: center;
+		}
 	}
 </style>
 
@@ -83,11 +89,11 @@
 
 
 
-						<p> Our catering division is widely recognised as one of the market leaders in London, supplying professional, well trained staff to the catering and hospitality industry and providing only the best service to our valued clientele.</p>
+						<p class="text-align"> Our catering division is widely recognised as one of the market leaders in London, supplying professional, well trained staff to the catering and hospitality industry and providing only the best service to our valued clientele.</p>
 
-						<p>  Our team consists of a group of driven, motivated individuals who have a good understanding of the recruitment challenges that are unique to the catering industry and they make sure that all candidates who are recruited are well trained and experienced enough to satisfy the individual needs of every customer. We know that you will not tolerate sloppy work and so neither do we.</p>
+						<p class="text-align">  Our team consists of a group of driven, motivated individuals who have a good understanding of the recruitment challenges that are unique to the catering industry and they make sure that all candidates who are recruited are well trained and experienced enough to satisfy the individual needs of every customer. We know that you will not tolerate sloppy work and so neither do we.</p>
 
-						<p>We make sure that every recruit who goes through our agency is of the very highest caliber so that once they arrive on site they are able to commence work and provide top quality service that will hold not only their own, but also our name up to the high standard that our customers have come to expect from us. We think it is important that you have both the confidence and peace of mind that comes from knowing that all of our candidates will provide the very best service to you and your guests.  </p>  
+						<p class="text-align">We make sure that every recruit who goes through our agency is of the very highest caliber so that once they arrive on site they are able to commence work and provide top quality service that will hold not only their own, but also our name up to the high standard that our customers have come to expect from us. We think it is important that you have both the confidence and peace of mind that comes from knowing that all of our candidates will provide the very best service to you and your guests.  </p>  
 
 						<section>
 
@@ -114,7 +120,7 @@
 
 						</section>
 
-						<table class="table table-bordered" style="height: 111px;" width="329">
+						<table  class="table table-bordered" style="height: 111px;" width="250">
 							<tbody>
 								<tr>
 									<td style="background-color: #aebae6; width: 213px;" width="213"><span style="color: #000000;"><strong>Kitchen Porter</strong></span></td>
@@ -138,21 +144,21 @@
 						</table>
 
 
-						<h3> Temporary & Ad-hoc staffing </h3>
+						<h3 class="text-align"> Temporary & Ad-hoc staffing </h3>
 
 						<br>
 
-						<p> We provide staff for any position within the catering industry from chefs to kitchen porter to table waiters on a temporary or ad-hoc basis according to the needs of the customer. We know that no two customer’s needs are exactly the same and we are flexible enough to meet the needs of any individual yet rigid enough that our quality of service and the quality of our candidates is never diminished in any way. </p>
+						<p class="text-align"> We provide staff for any position within the catering industry from chefs to kitchen porter to table waiters on a temporary or ad-hoc basis according to the needs of the customer. We know that no two customer’s needs are exactly the same and we are flexible enough to meet the needs of any individual yet rigid enough that our quality of service and the quality of our candidates is never diminished in any way. </p>
 
 
 
 						<br>
 
-						<h3> Chef Agency </h3>
+						<h3 class="text-align"> Chef Agency </h3>
 
 						<br>
 
-						<p> So when you are looking through catering agencies or temporary chef agencies in London then you need look no further. With us you can rest assured that you are in more than capable hands. </p>
+						<p class="text-align"> So when you are looking through catering agencies or temporary chef agencies in London then you need look no further. With us you can rest assured that you are in more than capable hands. </p>
 
 
 
@@ -262,7 +268,7 @@
 
 							</div>
 
-							<h3>Awwards</h3> 
+							<h3>Awards</h3> 
 
 						</div>
 

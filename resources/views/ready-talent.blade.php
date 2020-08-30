@@ -9,6 +9,10 @@
 			/* width: 100%; */
 			overflow-x: hidden;
 		}
+
+		.text-align {
+			text-align: center;
+		}
 	}
 </style>
 
@@ -82,7 +86,7 @@
 
 
 
-				<p> Call us to hire any temp whenever you needs from our big pool of talent – Temps registered with us are always ready to fit right into your business when you need them. </p>
+				<p class="text-align"> Call us to hire any temp whenever you needs from our big pool of talent – Temps registered with us are always ready to fit right into your business when you need them. </p>
 
 				<section>
 
@@ -122,11 +126,11 @@
 
 
 
-				<h3>Temping Agency – A new way to Hire </h3>
+				<h3 class="text-align">Temping Agency – A new way to Hire </h3>
 
 				<br>
 
-				<p> Our exclusive service model means our temps receive hours of industry-focused preparation – make sure they are the perfect fit for your business from day one. </p>
+				<p class="text-align"> Our exclusive service model means our temps receive hours of industry-focused preparation – make sure they are the perfect fit for your business from day one. </p>
 
 
 
@@ -239,7 +243,7 @@
 
 					</div>
 
-					<h3>Awwards</h3>
+					<h3>Awards</h3>
 
 				</div>
 

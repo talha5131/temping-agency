@@ -8,6 +8,9 @@
 			/* width: 100%; */
 			overflow-x: hidden;
 		}
+		.text-align {
+			text-align: center;
+		}
 	}
 </style>
 
@@ -77,11 +80,11 @@
 
 			<div class="col-md-12 ts-padding about-message">
 
-				<h3> Construction Staffing Solutions </h3>
+				<h3 class="text-align"> Construction Staffing Solutions </h3>
 
 				<br>
 
-				<p>At Temping Agency, we specialise in providing Construction Labourers and skilled tradespeople to the construction and residential industries. We can provide skilled and semi-skilled construction workers who pride themselves on delivering the highest standards to our clients and enhancing any project they work on.
+				<p class="text-align">At Temping Agency, we specialise in providing Construction Labourers and skilled tradespeople to the construction and residential industries. We can provide skilled and semi-skilled construction workers who pride themselves on delivering the highest standards to our clients and enhancing any project they work on.
 
 					Our construction workers are skilled, qualified and will always deliver a professional service to meet with your requirements.</p>
 
@@ -119,7 +122,7 @@
 
 				</section>
 
-				<p>Cobalt is working with an established local A1 Civil Main Contractor who has a solid portfolio of projects to see them through this uncertain time period.
+				<p class="text-align">Cobalt is working with an established local A1 Civil Main Contractor who has a solid portfolio of projects to see them through this uncertain time period.
 
 					They are looking to bring on an experienced Construction Manager to help drive and deliver on the operational aspects of their civil projects managing and overseeing the project and site teams.
 
@@ -241,7 +244,7 @@
 
 					</div>
 
-					<h3>Awwards</h3>
+					<h3>Awards</h3>
 
 				</div>
 

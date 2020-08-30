@@ -8,6 +8,10 @@
 			/* width: 100%; */
 			overflow-x: hidden;
 		}
+
+        .text-align {
+            text-align: center;
+        }
 	}
 </style>
 
@@ -79,20 +83,20 @@
 
             <div class="col-md-12 ts-padding about-message">
 
-                <h3> Choosing a Temp over a full-time employee </h3>
+                <h3 class="text-align"> Choosing a Temp over a full-time employee </h3>
 
                 <br>
 
-                <p>Are you needs temporary staff? Call temping agency for temporary staffing solution.</p>
+                <p class="text-align">Are you needs temporary staff? Call temping agency for temporary staffing solution.</p>
 
-                <p>Companies often face a dilemma when it comes to appointing a new employee. There are many options and pros and cons to these options. Two of the main considerations are either appointing a full-time employee or contract in a temp. Of course each has its own advantages and disadvantages as illustrated below:</p>
-
-                <br>
-
-                <h3>Full-time employee:</h3>
+                <p class="text-align">Companies often face a dilemma when it comes to appointing a new employee. There are many options and pros and cons to these options. Two of the main considerations are either appointing a full-time employee or contract in a temp. Of course each has its own advantages and disadvantages as illustrated below:</p>
 
                 <br>
-                <ul class="list-group list-group-flush">
+
+                <h3 class="text-align">Full-time employee:</h3>
+
+                <br>
+                <ul class="list-group list-group-flush text-align">
                     <li class="list-group-item">Expensive recruitment process</li>
                     <li class="list-group-item">Regular salary</li>
                     <li class="list-group-item">Statutory taxes and deductions</li>
@@ -102,11 +106,11 @@
 
                 <br>
 
-                <h3>Temp employee:</h3>
+                <h3 class="text-align">Temp employee:</h3>
 
                 <br>
 
-                <ul class="list-group list-group-flush">
+                <ul class="list-group list-group-flush text-align">
                     <li class="list-group-item">The Temping Agency will have done all the recruitment interviews and checks</li>
                     <li class="list-group-item">You only pay for the hours that the temp actually works</li>
                     <li class="list-group-item">Any statutory deductions and requirements are managed by the temp agencies</li>
@@ -146,17 +150,17 @@
 
                 </section>
 
-                <h3>Why Agency Temps?</h3>
+                <h3 class="text-align">Why Agency Temps?</h3>
 
                 <br>
 
-                <p>An agency temp usually comes with a replacement guarantee from the temping agency. This is very pleasing to a company. Once a permanent employee has been appointed, it is very difficult to dismiss them for any infringement in the workplace. Disciplinary processes can be very drawn out and eventually expensive if a moderator from outside the company has to be appointed.</p>
-                <p>Taking a temp on board is a more satisfying option for the company. It saves time and money for the company and gives it the reassurance that the employee will perform to the right standard. A permanent employee is only an option when a specific skill and expertise is required. These the company hang onto at all costs.</p>
-                <p>With temping agency companies have the security of top-class temporary employees. We provide properly and expertly interviewed temps. Our consultants are professionals with in-depth knowledge of their field of expertise and they will know whether a potential candidate will suit the client’s requirements. If s/he does, the candidate is introduced to the client and s/he will start working shortly after that.</p>
-                <p>The process with a permanent employee is a little more drawn out. Unlike the temp agency, candidates for a permanent position have to go through several levels of interviews and tests. Then there’s the shortlisting process and another round of interviews. This is followed by background and reference checks. In the meantime the work that the candidate has to do is piling up with no-one to do it.</p>
-                <p>One call to a temping agency can solve this problem. The temp can be used for the period that it takes to find a permanent employee, or the temp may also be offered the permanent position due to his / her competence in the job.</p>
-                <p>Here Temping Agency helps the employer to draft a suitable contract and also helps the candidate go through the contract in detail before s/he makes up his / her mind. Once agreement is reached, the candidate is converted from temp status to perm status and the agency collects a placement fee.</p>
-                <p>Companies choose temp for the convenience of managing the whole performance and recruitment process.</p>
+                <p class="text-align">An agency temp usually comes with a replacement guarantee from the temping agency. This is very pleasing to a company. Once a permanent employee has been appointed, it is very difficult to dismiss them for any infringement in the workplace. Disciplinary processes can be very drawn out and eventually expensive if a moderator from outside the company has to be appointed.</p>
+                <p class="text-align">Taking a temp on board is a more satisfying option for the company. It saves time and money for the company and gives it the reassurance that the employee will perform to the right standard. A permanent employee is only an option when a specific skill and expertise is required. These the company hang onto at all costs.</p>
+                <p class="text-align">With temping agency companies have the security of top-class temporary employees. We provide properly and expertly interviewed temps. Our consultants are professionals with in-depth knowledge of their field of expertise and they will know whether a potential candidate will suit the client’s requirements. If s/he does, the candidate is introduced to the client and s/he will start working shortly after that.</p>
+                <p class="text-align">The process with a permanent employee is a little more drawn out. Unlike the temp agency, candidates for a permanent position have to go through several levels of interviews and tests. Then there’s the shortlisting process and another round of interviews. This is followed by background and reference checks. In the meantime the work that the candidate has to do is piling up with no-one to do it.</p>
+                <p class="text-align">One call to a temping agency can solve this problem. The temp can be used for the period that it takes to find a permanent employee, or the temp may also be offered the permanent position due to his / her competence in the job.</p>
+                <p class="text-align">Here Temping Agency helps the employer to draft a suitable contract and also helps the candidate go through the contract in detail before s/he makes up his / her mind. Once agreement is reached, the candidate is converted from temp status to perm status and the agency collects a placement fee.</p>
+                <p class="text-align">Companies choose temp for the convenience of managing the whole performance and recruitment process.</p>
 
             </div>
             <!--/ About message end -->
@@ -257,7 +261,7 @@
 
                     </div>
 
-                    <h3>Awwards</h3>
+                    <h3>Awards</h3>
 
                 </div>
 

@@ -8,6 +8,10 @@
 			/* width: 100%; */
 			overflow-x: hidden;
 		}
+
+		.text-align {
+			text-align: center;
+		}
 	}
 </style>
 
@@ -62,7 +66,7 @@
 
 					<div class="col-md-12 heading text-center">
 
-						<h2 class="title2">Temporary Staffing Solutions
+						<h2 class="title2" style="padding-bottom:10px;">Temporary Staffing Solutions
 
 							<span class="title-desc"> Temping Agency </span>
 
@@ -74,7 +78,7 @@
 
 
 
-				<div class="row about-wrapper-top">
+				<div class="row about-wrapper-top text-align">
 
 					<div class="col-md-12 ts-padding about-message">
 
@@ -248,7 +252,7 @@
 
 							</div>
 
-							<h3>Awwards</h3> 
+							<h3>Awards</h3> 
 
 						</div>
 

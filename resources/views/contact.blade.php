@@ -8,6 +8,9 @@
 			/* width: 100%; */
 			overflow-x: hidden;
 		}
+		.text-align {
+			text-align: center;
+		}
 	}
 </style>
 
@@ -72,10 +75,10 @@
 				</div>
 				<div class="col-md-5">
 					<div class="contact-info">
-						<h3>Contact Details</h3>
-						<p>We are here to help you.</p>
+						<h3 class="text-align">Contact Details</h3>
+						<p class="text-align">We are here to help you.</p>
 						<br>
-						<p><i class="fa fa-home info"></i> 344-348 High road, Ilford IG1 1QP </p>
+						<p ><i class="fa fa-home info"></i> 344-348 High road, Ilford IG1 1QP </p>
 						<p><i class="fa fa-phone info"></i> +44 (0) 2030 869080 </p>
 						<p><i class="fa fa-envelope-o info"></i> info@temping-agency.com</p>
 						<p><i class="fa fa-globe info"></i> www.workers-direct.com</p>

@@ -13,6 +13,14 @@
 		#btn-top {
 			display: none;
 		}
+
+		.footer-about-us {
+			text-align: center;
+		}
+
+		#map {
+			margin: 50px;
+		}
 	}
 </style>
 <!-- Footer start -->
@@ -21,10 +29,10 @@
 		<div class="row">
 			<div class="col-md-4 col-sm-12 footer-widget">
 
-				<a href="index">
-					<img class="img-responsive" src="public/assets/images/logo.png" alt="logo">
+				<a href="{{url('/')}}">
+					<img style="margin-left: 25%;" src="public/assets/images/logo.png" alt="logo">
 				</a> <br>
-				<p> Temping Agency is a privately owned recruitment agency based in Central London, W1 area and Established as part of the Workers Direct Group in 2010, TA has delivered excellent recruitment and employment services to clients in a variety of industries.<br> <br>Our services include recruitment, selection, placement, contract and temporary workers and our consultants are highly trained and experienced to deal with each step of the process. </p>
+				<p style="text-align: center;"> Temping Agency is a privately owned recruitment agency based in Central London, W1 area and Established as part of the Workers Direct Group in 2010, TA has delivered excellent recruitment and employment services to clients in a variety of industries.<br> <br>Our services include recruitment, selection, placement, contract and temporary workers and our consultants are highly trained and experienced to deal with each step of the process. </p>
 
 				<!-- 1st Latest Post end -->
 

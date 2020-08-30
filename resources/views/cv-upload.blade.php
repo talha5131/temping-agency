@@ -8,6 +8,10 @@
 			/* width: 100%; */
 			overflow-x: hidden;
 		}
+
+		.text-align {
+			text-align: center;
+		}
 	}
 </style>
 
@@ -91,11 +95,11 @@
 
 
 
-						<h3> CV Registration </h3>
+						<h3 class="text-align"> CV Registration </h3>
 
 						<br>
 
-						<p>Fill out the form below. Register your details together with your CV to access our candidate community pages where you can store search profiles, see the latest vacancies since you last logged in, create job alerts and more.</p>
+						<p class="text-align">Fill out the form below. Register your details together with your CV to access our candidate community pages where you can store search profiles, see the latest vacancies since you last logged in, create job alerts and more.</p>
 
 
 
@@ -305,7 +309,7 @@
 
 							</div>
 
-							<h3>Awwards</h3>
+							<h3>Awards</h3>
 
 						</div>
 

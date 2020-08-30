@@ -9,6 +9,10 @@
 			/* width: 100%; */
 			overflow-x: hidden;
 		}
+
+		.text-align {
+			text-align: center;
+		}
 	}
 </style>
 
@@ -80,7 +84,7 @@
 
 
 
-			<div class="col-md-6 ts-padding about-message">
+			<div class="col-md-6 ts-padding about-message text-align">
 
 
 
@@ -119,25 +123,25 @@
 
 
 
-				<p> It often happens that you don’t have the time to discuss the credentials of the temp and then you need to rely on the judgement of the agency consultant to provide you with the right person for the job. </p>
+				<p class="text-align"> It often happens that you don’t have the time to discuss the credentials of the temp and then you need to rely on the judgement of the agency consultant to provide you with the right person for the job. </p>
 
 
 
-				<p>Agency temps are usually very experienced individuals as they are required to work in a variety of settings. Here they gain a smorgasbord of knowledge and learn to be very adaptable to the different situations that they are placed in. Temps are also very keen to learn as each new skills provides them with an additional opportunity to find assignments. This is beneficial to your company as the work will be done with new creativity and analytical skills. </p>
+				<p class="text-align">Agency temps are usually very experienced individuals as they are required to work in a variety of settings. Here they gain a smorgasbord of knowledge and learn to be very adaptable to the different situations that they are placed in. Temps are also very keen to learn as each new skills provides them with an additional opportunity to find assignments. This is beneficial to your company as the work will be done with new creativity and analytical skills. </p>
 
-				<p>The temp that works in your organisation will be well groomed, well-spoken and overall very presentable. Your company’s image will be upheld at all costs. This is important to the temp as his / her working prospects depend on positive feedback from each employer after the completion of the assignment. </p>
+				<p class="text-align">The temp that works in your organisation will be well groomed, well-spoken and overall very presentable. Your company’s image will be upheld at all costs. This is important to the temp as his / her working prospects depend on positive feedback from each employer after the completion of the assignment. </p>
 
-				<p>Using a temp agency in London means that your organisation already has an edge over the competition. You don’t lose any productive time and the work is done to an excellent standard. You may even want the temp to stay on longer than originally planned. It’s always a good idea to get a temp from a reputable temping agency. </p> <br>
+				<p class="text-align">Using a temp agency in London means that your organisation already has an edge over the competition. You don’t lose any productive time and the work is done to an excellent standard. You may even want the temp to stay on longer than originally planned. It’s always a good idea to get a temp from a reputable temping agency. </p> <br>
 
 
 
-				<h3>Your Temp Agency </h3>
+				<h3 class="text-align">Your Temp Agency </h3>
 
 				<br>
 
-				<p> In order to find London temps, you need a London temping agency that specialists in finding quality temps for their clients. Not only must they find the right temp for the job, temp agencies London need to offer the best possible service. </p>
+				<p class="text-align"> In order to find London temps, you need a London temping agency that specialists in finding quality temps for their clients. Not only must they find the right temp for the job, temp agencies London need to offer the best possible service. </p>
 
-				<p>When choosing a temping agency In London to provide you with London temps, you need to look out for the following features: </p>
+				<p class="text-align">When choosing a temping agency In London to provide you with London temps, you need to look out for the following features: </p>
 
 
 
@@ -163,13 +167,13 @@
 
 				<br>
 
-				<h3>Finding the Right Temp on Right Time</h3>
+				<h3 class="text-align">Finding the Right Temp on Right Time</h3>
 
 				<br>
 
-				<p> In the competitive corporate world, it is very difficult to find the right temp for the job. You need specific skills and experience and most people with these skills and experience are already taken – either as temps or on a permanent basis. </p>
+				<p class="text-align"> In the competitive corporate world, it is very difficult to find the right temp for the job. You need specific skills and experience and most people with these skills and experience are already taken – either as temps or on a permanent basis. </p>
 
-				<p> So what do you do to remedy this situation? Your first port of call should be a reputable temp agency with a vast number of temps on their books. They should be experts in their field and have temps that are willing ready and able to start work immediately. </p>
+				<p class="text-align"> So what do you do to remedy this situation? Your first port of call should be a reputable temp agency with a vast number of temps on their books. They should be experts in their field and have temps that are willing ready and able to start work immediately. </p>
 
 
 
@@ -280,7 +284,7 @@
 
 					</div>
 
-					<h3>Awwards</h3>
+					<h3>Awards</h3>
 
 				</div>
 

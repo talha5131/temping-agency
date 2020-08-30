@@ -8,6 +8,10 @@
 			/* width: 100%; */
 			overflow-x: hidden;
 		}
+
+		.text-align {
+			text-align: center;
+		}
 	}
 
 	.desc{
@@ -257,14 +261,14 @@
 						<div class="sidebar sidebar-right">
 							<!-- category start -->
 							<div class="widget widget-categories">
-								<h3>How to Apply</h3>
-								<p>Send your cv, relevant work experience and anything else that will make you stand out to Temping Agency.</p>
+								<h3 class="text-align">How to Apply</h3>
+								<p class="text-align">Send your cv, relevant work experience and anything else that will make you stand out to Temping Agency.</p>
 							</div><!-- category end -->
 
 							<!-- tags start -->
 							<div class="widget widget-tags">
-								<h3>Why Us</h3>
-								<p>We are an awward winning company. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, natus voluptatibus adipisci porro magni dolore eos eius ducimus corporis quos perspiciatis quis iste, vitae autem libero ullam omnis cupiditate quam.</p>
+								<h3 class="text-align">Why Us</h3>
+								<p class="text-align">We are an award winning company. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, natus voluptatibus adipisci porro magni dolore eos eius ducimus corporis quos perspiciatis quis iste, vitae autem libero ullam omnis cupiditate quam.</p>
 							</div><!-- tags end -->
 
 
@@ -277,6 +281,6 @@
 			</div>
 			<!--/ container end -->
 		</section>
-		<!--/ Main container end -->T
+		<!--/ Main container end -->
 
 	</div><!-- Body inner end -->

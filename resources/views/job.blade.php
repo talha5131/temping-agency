@@ -221,7 +221,7 @@
 
                     </div>
 
-                    <h3>Awwards</h3>
+                    <h3>Awards</h3>
 
                 </div>
 

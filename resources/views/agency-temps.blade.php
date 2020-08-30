@@ -8,6 +8,10 @@
 			/* width: 100%; */
 			overflow-x: hidden;
 		}
+
+		.text-align {
+			text-align: center;
+		}
 	}
 </style>
 
@@ -80,19 +84,19 @@
 
 
 
-				<p> Very often a company has the need for a temporary employee and then decides to employ that person on a permanent basis. These practices are common enough for agencies to have clauses in their contracts dealing with this situation.</p>
+				<p class="text-align"> Very often a company has the need for a temporary employee and then decides to employ that person on a permanent basis. These practices are common enough for agencies to have clauses in their contracts dealing with this situation.</p>
 
 				<br>
 
-				<h3>Temp to Perm Staff </h3>
+				<h3 class="text-align">Temp to Perm Staff </h3>
 
 				<br>
 
-				<p> Temp workers are usually hard workers with varied experience and qualifications. However, they are also willing to learn as this will help them perform well in their next assignment. As part of their reward they are often asked to join the company on a permanent basis. This is a great opportunity for the temp and they will often want to accept the offer that is made to them. At this point the employer is then referred to the agency in order to negotiate the most appropriate conditions of employment on behalf of the temp. </p>
+				<p class="text-align"> Temp workers are usually hard workers with varied experience and qualifications. However, they are also willing to learn as this will help them perform well in their next assignment. As part of their reward they are often asked to join the company on a permanent basis. This is a great opportunity for the temp and they will often want to accept the offer that is made to them. At this point the employer is then referred to the agency in order to negotiate the most appropriate conditions of employment on behalf of the temp. </p>
 
 				<br>
 
-				<h3>Contractual Staffing Solutions </h3>
+				<h3 class="text-align">Contractual Staffing Solutions </h3>
 
 				<br>
 
@@ -106,7 +110,7 @@
 
 				</ol>
 
-				<p>As soon as the agency is notified of the offer of permanent employment, we will follow the terms in the existing contract and only charge a placement fee in keeping with the negotiated tariff when the contract was signed. After that there are no further costs or charges for the additional service of getting the temp’s employment contract negotiated and eventually signed. The temp may work at the client’s business for the duration of the negotiations. </p>
+				<p class="text-align">As soon as the agency is notified of the offer of permanent employment, we will follow the terms in the existing contract and only charge a placement fee in keeping with the negotiated tariff when the contract was signed. After that there are no further costs or charges for the additional service of getting the temp’s employment contract negotiated and eventually signed. The temp may work at the client’s business for the duration of the negotiations. </p>
 
 				<section>
 
@@ -140,11 +144,11 @@
 
 				</section>
 
-				<h3>Agency involvement </h3>
+				<h3 class="text-align">Agency involvement </h3>
 
 				<br>
 
-				<p> We pride ourselves on the excellent relationship that we have with both our candidates and clients and we happily assist with the employment process. Our consultants are fully trained to assist with advice as well as practicalities such as reading the employment contract with the candidate and giving an opinion on what is on offer. We will also help the client formulate an appropriate employment contract to offer to the candidate. </p>
+				<p class="text-align"> We pride ourselves on the excellent relationship that we have with both our candidates and clients and we happily assist with the employment process. Our consultants are fully trained to assist with advice as well as practicalities such as reading the employment contract with the candidate and giving an opinion on what is on offer. We will also help the client formulate an appropriate employment contract to offer to the candidate. </p>
 
 
 
@@ -257,7 +261,7 @@
 
 					</div>
 
-					<h3>Awwards</h3>
+					<h3>Awards</h3>
 
 				</div>
 

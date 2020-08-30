@@ -9,6 +9,10 @@
 			/* width: 100%; */
 			overflow-x: hidden;
 		}
+
+		.text-align {
+			text-align: center;
+		}
 	}
 </style>
 
@@ -75,7 +79,7 @@
 
 
 
-				<div class="row about-wrapper-top">
+				<div class="row about-wrapper-top text-align">
 
 					<div class="col-md-12 ts-padding about-message">
 
@@ -136,7 +140,7 @@
 							<li class="list-group-item">Completed commercial training or a degree in economics or a comparable qualification</li>
 							<li class="list-group-item">Professional experience in a comparable position</li>
 							<li class="list-group-item">Well-versed handling of the MS Office package</li>
-							<li class="list-group-item">Excellent manners, high level of commitment and pronounced service orientation/li>
+							<li class="list-group-item">Excellent manners, high level of commitment and pronounced service orientation</li>
 							<li class="list-group-item">Professional, friendly demeanor and pronounced teamwork</li>
 							<li class="list-group-item">Loyalty, motivation and pronounced service awareness are a matter of course</li>
 						</ul>
@@ -261,7 +265,7 @@
 
 							</div>
 
-							<h3>Awwards</h3>
+							<h3>Awards</h3>
 
 						</div>
 
