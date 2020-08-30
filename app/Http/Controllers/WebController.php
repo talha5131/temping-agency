@@ -126,7 +126,7 @@ class WebController extends Controller
             'location' => $job->location,
             'type' => $job->type,
             'company' => $job->company,
-        ];s
+        ];
 
         Mail::to($user->email)->send(new MailJob($mail));
         return redirect()->back()->with('success','Congratulations! Your Job has been uploaded');
