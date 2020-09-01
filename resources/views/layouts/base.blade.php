@@ -16,10 +16,10 @@
 
     <!-- Favicons
     ================================================== -->
-    <link rel="icon" href="public/assets/img/favicon/favicon-32x32.png" type="image/x-icon">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="public/assets/img/favicon/favicon-144x144.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="public/assets/img/favicon/favicon-72x72.png">
-    <link rel="apple-touch-icon-precomposed" href="public/assets/img/favicon/favicon-54x54.png">
+    <link rel="icon" href="public/assets/images/favijfjeghicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="public/assets/images/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="public/assets/images/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="public/assets/images/favicon.ico">
 
     <!-- CSS
     ================================================== -->
