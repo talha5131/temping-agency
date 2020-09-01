@@ -113,7 +113,7 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="public/assets/pages/layout/top-nav.html" class="nav-link">
+                            <a href="blogs" class="nav-link">
                                 <p>Blogs</p>
                             </a>
                         </li>
