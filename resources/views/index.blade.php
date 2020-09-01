@@ -1,7 +1,10 @@
 @extends('layouts.base')
 @section('title','Temping Agency')
 @section('content')
-
+<link rel="icon" href="public/assets/images/logo-favicon.png" type="image/x-icon">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="public/assets/images/logo-favicon.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="public/assets/images/logo-favicon.png">
+<link rel="apple-touch-icon-precomposed" href="public/assets/images/logo-favicon.png">
 <style>
 	#recruitment-image-index {
 		height: 650px;
