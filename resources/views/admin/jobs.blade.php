@@ -51,9 +51,9 @@
                         <td>{{$job->category}}</td>
                         <td>
                             @if($job->approved == 1)
-                                <a href=""><i class="far fa-eye"></i></a> 
+                                <a onclick="upd({{$job->id}})"><i class="far fa-eye"></i></a> 
                             @elseif($job->approved == 0)
-                                <a href=""><i class="far fa-eye-slash"></i></a> 
+                                <a href="#" ><i class="far fa-eye-slash"></i></a> 
                             @endif
                             <a href=""><i class="far fa-trash-alt"></i></a> 
                             <a href="{{ route('admin.jobDetails',['id' => $job->id])}}"><i class="fas fa-info-circle"></i></a>
@@ -70,19 +70,20 @@
     </div>
     <!-- ./wrapper -->
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 <script>
-$(document).ready(function(){
-  $("a").click(function(){
-    $.post("demo_test_post.asp",
-    {
-      name: "Donald Duck",
-      city: "Duckburg"
-    },
-    function(data,status){
-      alert("Data: " + data + "\nStatus: " + status);
-    });
-  });
-});
+    function upd($id){
+        var id = $id;
+        $.ajax({
+              url: 'status',
+              type: 'post',
+              data: {id: id},
+              success: function(response){
+                alert(response);
+              }
+            });
+    }
 </script>
 
     @endsection

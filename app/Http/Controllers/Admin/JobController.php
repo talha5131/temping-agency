@@ -49,6 +49,14 @@ class JobController extends Controller
             return redirect('admin/login');
     }
 
+    public function status(Request $request){
+        if($request->session()->has('admin')) {
+            return $request->id;
+            // return view('admin.pendingjobs', compact('jobs'));
+        }else
+            return redirect('admin/login');        
+    }
+
     /**
      * Show the form for creating a new resource.
      *

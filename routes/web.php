@@ -108,6 +108,7 @@ Route::get('admin-jobs', 'Admin\JobController@index')->name('admin.jobs');
 Route::get('admin-jobsActive', 'Admin\JobController@active')->name('admin.active-jobs');
 Route::get('admin-jobsInactive', 'Admin\JobController@inactive')->name('admin.inactive-jobs');
 Route::get('admin-jobsPending', 'Admin\JobController@pending')->name('admin.pending-jobs');
+Route::post('status', 'Admin\JobController@status');
 
 Route::get('admin-addJob', 'Admin\JobController@create');
 Route::post('admin-addJob', 'Admin\JobController@store')->name('admin.addJob');
