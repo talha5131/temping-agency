@@ -23,7 +23,7 @@ class WebController extends Controller
         $user = new User();
         $user->name = $request->name;
         $user->email = $request->email;
-        $user->phone = $request->phone;
+        $user->phone = $request->CC.''.$request->phone;
         $user->password = Hash::make($code);
         $user->user_type = 'candidate';
         $user->save();
@@ -77,9 +77,9 @@ class WebController extends Controller
         // return $request;
         $code = str_random(10);
         $user = new User();
-        $user->name = '';
+        $user->name = $request->name;
         $user->email = $request->email;
-        $user->phone = '';
+        $user->phone = $request->CC.''.$request->phone;
         $user->password = Hash::make($code);
         $user->user_type = 'employer';
         $user->save();
@@ -179,7 +179,7 @@ class WebController extends Controller
         $user = new User();
         $user->name = $request->name;
         $user->email = $request->email;
-        $user->phone = $request->phone;
+        $user->phone = $request->CC.''.$request->phone;
         $user->password = Hash::make($code);
         $user->user_type = 'candidate';
         $user->save();
