@@ -14,85 +14,89 @@
 	}
 </style>
 
-		<div id="banner-area">
-			<img src="public/assets/images/banner/banner2.jpg" alt="" />
-			<div class="parallax-overlay"></div>
-			<!-- Subpage title start -->
-			<div class="banner-title-content">
-				<div class="text-center">
-					<h2>Testimonials</h2>
-					<ul class="breadcrumb">
+<div id="banner-area">
+	<img src="public/assets/images/banner/banner2.jpg" alt="" />
+	<div class="parallax-overlay"></div>
+	<!-- Subpage title start -->
+	<div class="banner-title-content">
+		<div class="text-center">
+			<h2>Testimonials</h2>
+			<ul class="breadcrumb">
 
-						<li><a href="index"> Home</a></li>
-						<li>Testimonials</li>
-
-
-					</ul>
-				</div>
-			</div><!-- Subpage title end -->
-		</div><!-- Banner area end -->
-
-		<!-- Main container start -->
-
-		<section id="main-container">
-			<div class="container">
-
-				<!-- Services -->
-
-				<div class="row">
-					<div class="col-md-12 heading">
-						<span class="title-icon classic pull-left"><i class="fa fa-cogs"></i></span>
-						<h2 class="title classic">What Our Clients Say</h2>
-					</div>
-				</div>
+				<li><a href="index"> Home</a></li>
+				<li>Testimonials</li>
 
 
-				<div class="row">
-					<div class="col-md-6 col-sm-6">
-						<div class="ts-testimonial-content">
-							<img src="public/assets/images/clients/testimonial1.jpg" alt="testimonial">
-							<p class="ts-testimonial-text">
-								Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose. Lorem Ipsum is that it as opposed to using.Generators on the Internet tend to repeat predefined chunks as necessary, making this the first true evere generator on the Internet. It uses a dictionary of over 200 Latin words, combined with generate Lorem Ipsum which looks reasonable.
-							</p>
+			</ul>
+		</div>
+	</div><!-- Subpage title end -->
+</div><!-- Banner area end -->
 
-							<div class="ts-testimonial-author">
-								<h3 class="name">Tahlia Bidmead<span>Chief Operation Officer</span></h3>
-							</div>
-						</div><!-- Testimonial content end -->
+<!-- Main container start -->
 
-					</div><!-- End col-md-6 -->
+<section id="main-container">
+	<div class="container">
 
-					<div class="col-md-6 col-sm-6">
-						<div class="ts-testimonial-content">
-							<img src="public/assets/images/clients/testimonial2.jpg" alt="testimonial">
-							<p class="ts-testimonial-text">
-								Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose. Lorem Ipsum is that it as opposed to using.Generators on the Internet tend to repeat predefined chunks as necessary, making this the first true evere generator on the Internet. It uses a dictionary of over 200 Latin words, combined with generate Lorem Ipsum which looks reasonable.
-							</p>
+		<!-- Services -->
 
-							<div class="ts-testimonial-author">
-								<h3 class="name">John Anderson<span>General Manager</span></h3>
-							</div>
-						</div><!-- Testimonial content end -->
-
-					</div><!-- End col-md-6 -->
-				</div><!-- Content row  end -->
-
+		<div class="row">
+			<div class="col-md-12 heading">
+				<span class="title-icon classic pull-left"><i class="fa fa-cogs"></i></span>
+				<h2 class="title classic">What Our Clients Say</h2>
 			</div>
-			<!--/ container end -->
+		</div>
 
-		</section>
-		<!--/ Main container end -->
 
-		<section class="call-to-action">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-12">
-						<h3> Email us at info@temping-agency.com
-						</h3>
-						<a href="mailto:info@temping-agency.com" class="pull-right btn btn-primary white">Email Us</a>
+		<div class="row">
+			<div class="col-md-6 col-sm-6">
+				<div class="ts-testimonial-content">
+					<img src="public/assets/images/testimonials/testimonials4.jpg" alt="testimonial">
+					<p class="ts-testimonial-text">
+						I employed 10 staff over a 8 week contract to provide front of house staff for Paddington on Ice
+						The staff proved reliable and very helpful.
+						Always willing to work and in time.
+						Workers direct provided great support and communication throughout the contract and I would not hesitate to use them over and over again.
+					</p>
+
+					<div class="ts-testimonial-author">
+						<h3 class="name">Kim Katherine<span>Recruitment Manager</span></h3>
 					</div>
-				</div>
-			</div>
-		</section>
+				</div><!-- Testimonial content end -->
 
-	</div><!-- Body inner end -->
+			</div><!-- End col-md-6 -->
+
+			<div class="col-md-6 col-sm-6">
+				<div class="ts-testimonial-content">
+					<img src="public/assets/images/testimonials/testimonials5.png" alt="testimonial">
+					<p class="ts-testimonial-text">
+						The company I work for hired a couple of guys for a day's fairly heavy duty work on a building site in London. They were punctual and worked very hard all day. They were well thought of by our site staff who are very difficult to please!
+						Mark Thomas
+					</p>
+
+					<div class="ts-testimonial-author">
+						<h3 class="name">Mark Thomas<span>General Manager</span></h3>
+					</div>
+				</div><!-- Testimonial content end -->
+
+			</div><!-- End col-md-6 -->
+		</div><!-- Content row  end -->
+
+	</div>
+	<!--/ container end -->
+
+</section>
+<!--/ Main container end -->
+
+<section class="call-to-action">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<h3> Email us at info@temping-agency.com
+				</h3>
+				<a href="mailto:info@temping-agency.com" class="pull-right btn btn-primary white">Email Us</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+</div><!-- Body inner end -->

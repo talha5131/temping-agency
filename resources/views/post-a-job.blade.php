@@ -561,7 +561,7 @@
 
 	<!-- Counter Strat -->
 
-	<div class="ts_counter_bg parallax parallax2">
+	<!-- <div class="ts_counter_bg parallax parallax2">
 
 		<div class="parallax-overlay"></div>
 
@@ -637,13 +637,13 @@
 
 
 
-			</div>
+			</div> -->
 			<!--/ row end -->
 
-		</div>
+		<!-- </div> -->
 		<!--/ Container end -->
 
-	</div>
+	<!-- </div> -->
 	<!--/ Counter end -->
 
 

@@ -87,7 +87,7 @@
 					<a href="#0" class="cd-btn btn btn-primary solid">Learn more</a>
 				</div> <!-- .cd-full-width -->
 
-				<div class="cd-bg-video-wrapper" data-video="videos/video">
+				<div class="cd-bg-video-wrapper" data-video="videos/video" width>
 					<!-- video element will be loaded using jQuery -->
 				</div> <!-- .cd-bg-video-wrapper -->
 			</li>
@@ -285,7 +285,7 @@
 
 
 <!-- Counter Strat -->
-<section class="ts_counter no-padding">
+<!-- <section class="ts_counter no-padding">
 	<div class="container-fluid">
 		<div class="row facts-wrapper wow fadeInLeft text-center">
 			<div class="facts one col-md-3 col-sm-6">
@@ -321,13 +321,13 @@
 			</div>
 
 		</div>
-	</div>
-	<!--/ Container end -->
-</section>
+	</div> -->
+<!--/ Container end -->
+<!-- </section> -->
 <!--/ Counter end -->
 
 <!-- Feature box start -->
-<section id="feature" class="feature">
+<!-- <section id="feature" class="feature">
 	<div class="container">
 		<div class="row">
 			<div class="feature-box col-sm-4 wow fadeInDown" data-wow-delay=".5s">
@@ -336,29 +336,29 @@
 					<h3 class="text-align">Clean &amp; Modern Design</h3>
 					<p class="text-align">Bras urna felis accumsan at ultrde cesid posuere masa socis nautoque penat</p>
 				</div>
-			</div>
-			<!--/ End first featurebox -->
+			</div> -->
+<!--/ End first featurebox -->
 
-			<div class="feature-box col-sm-4 wow fadeInDown" data-wow-delay=".5s">
+<!-- <div class="feature-box col-sm-4 wow fadeInDown" data-wow-delay=".5s">
 				<span class="feature-icon pull-left"><i class="fa fa-codepen"></i></span>
 				<div class="feature-content">
 					<h3 class="text-align">Useful Shortcodes</h3>
 					<p class="text-align">High Life narwhal, banh mi PBR single-origin coffee Odd Future actually aliqua</p>
 				</div>
-			</div>
-			<!--/ End 2nd featurebox -->
+			</div> -->
+<!--/ End 2nd featurebox -->
 
-			<div class="feature-box col-sm-4 wow fadeInDown" data-wow-delay=".5s">
+<!-- <div class="feature-box col-sm-4 wow fadeInDown" data-wow-delay=".5s">
 				<span class="feature-icon pull-left"><i class="fa fa-film"></i></span>
 				<div class="feature-content">
 					<h3 class="text-align">Parallax Section</h3>
 					<p class="text-align">Consectetur adipisicing elit sed do eiusmod tempor incididunt ut</p>
 				</div>
-			</div>
-			<!--/ End 3rd featurebox -->
-		</div><!-- Content row end -->
+			</div> -->
+<!--/ End 3rd featurebox -->
+<!-- </div>Content row end -->
 
-		<div class="gap-40"></div>
+<!-- <div class="gap-40"></div>
 
 		<div class="row">
 			<div class="feature-box col-sm-4 wow fadeInDown" data-wow-delay=".5s">
@@ -367,30 +367,30 @@
 					<h3 class="text-align">Multipurpose Concept</h3>
 					<p class="text-align">Consectetur adipisicing elit sed do eiusmod tempor incididunt ut</p>
 				</div>
-			</div>
-			<!--/ End 1st featurebox -->
+			</div> -->
+<!--/ End 1st featurebox -->
 
-			<div class="feature-box col-sm-4 wow fadeInDown" data-wow-delay=".5s">
+<!-- <div class="feature-box col-sm-4 wow fadeInDown" data-wow-delay=".5s">
 				<span class="feature-icon pull-left"><i class="fa fa-desktop"></i></span>
 				<div class="feature-content">
 					<h3 class="text-align">Responsive Layout</h3>
 					<p class="text-align">Consectetur adipisicing elit sed do eiusmod tempor incididunt ut</p>
 				</div>
-			</div>
-			<!--/ End 2nd featurebox -->
+			</div> -->
+<!--/ End 2nd featurebox -->
 
-			<div class="feature-box col-sm-4 wow fadeInDown" data-wow-delay=".5s">
+<!-- <div class="feature-box col-sm-4 wow fadeInDown" data-wow-delay=".5s">
 				<span class="feature-icon pull-left"><i class="fa fa-pagelines"></i></span>
 				<div class="feature-content">
 					<h3 class="text-align">Light wight Performance</h3>
 					<p class="text-align">High Life narwhal, banh mi PBR single-origin coffee Odd Future actually aliqua</p>
 				</div>
-			</div>
-			<!--/ End 3rd featurebox -->
+			</div> -->
+<!--/ End 3rd featurebox -->
 
-		</div><!-- Content row end -->
+<!-- </div>Content row end -->
 
-		<div class="gap-40"></div>
+<!-- <div class="gap-40"></div>
 
 		<div class="row">
 			<div class="feature-box col-sm-4 wow fadeInDown" data-wow-delay=".5s">
@@ -399,31 +399,31 @@
 					<h3 class="text-align">Free Lifetime Updates</h3>
 					<p class="text-align">Bras urna felis accumsan at ultrde cesid posuere masa socis nautoque penat</p>
 				</div>
-			</div>
-			<!--/ End first featurebox -->
+			</div> -->
+<!--/ End first featurebox -->
 
-			<div class="feature-box col-sm-4 wow fadeInDown" data-wow-delay=".5s">
+<!-- <div class="feature-box col-sm-4 wow fadeInDown" data-wow-delay=".5s">
 				<span class="feature-icon pull-left"><i class="fa fa-diamond"></i></span>
 				<div class="feature-content">
 					<h3 class="text-align">Endless Possibilites</h3>
 					<p class="text-align">High Life narwhal, banh mi PBR single-origin coffee Odd Future actually aliqua</p>
 				</div>
-			</div>
-			<!--/ End first featurebox -->
+			</div> -->
+<!--/ End first featurebox -->
 
-			<div class="feature-box col-sm-4 wow fadeInDown" data-wow-delay=".5s">
+<!-- <div class="feature-box col-sm-4 wow fadeInDown" data-wow-delay=".5s">
 				<span class="feature-icon pull-left"><i class="fa fa-whatsapp"></i></span>
 				<div class="feature-content">
 					<h3 class="text-align">24/7 Live Support</h3>
 					<p class="text-align">Consectetur adipisicing elit sed do eiusmod tempor incididunt ut</p>
 				</div>
-			</div>
-			<!--/ End first featurebox -->
-		</div><!-- Content row end -->
+			</div> -->
+<!--/ End first featurebox -->
+<!-- </div>Content row end -->
 
-	</div>
-	<!--/ Container end -->
-</section>
+<!-- </div> -->
+<!--/ Container end -->
+<!-- </section> -->
 <!--/ Feature box end -->
 
 
@@ -484,20 +484,20 @@
 
 
 <!-- Testimonial start-->
-<section class="testimonial parallax parallax2">
+<section class="testimonial parallax parallax2" style="margin-bottom: 30px;">
 	<div class="parallax-overlay"></div>
 	<div class="container">
 		<div class="row">
 			<div id="testimonial-carousel" class="owl-carousel owl-theme text-center testimonial-slide">
 				<div class="item">
 					<div class="testimonial-thumb">
-						<img src="public/assets/images/team/testimonial1.jpg" alt="testimonial">
+						<img src="public/assets/images/testimonials/testimonials1.png" alt="testimonial">
 					</div>
 					<div class="testimonial-content">
 						<p class="testimonial-text">
-							Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose. Lorem Ipsum is that it as opposed to using.
+							Temping Agency, A best agency in Uk which provides a temp job with a good pay rate. All are very helpful in finding a job. A good experience of working with them.
 						</p>
-						<h3 class="name">Sarah Arevik<span>Chief Executive</span></h3>
+						<h3 class="name">Ricardo Villar<span>Temp.Medical Secretary</span></h3>
 					</div>
 				</div>
 				<div class="item">
@@ -506,20 +506,21 @@
 					</div>
 					<div class="testimonial-content">
 						<p class="testimonial-text">
-							Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose. Lorem Ipsum is that it as opposed to using.
+							Recently finished a 6 weeks temp assignment with temping agency as Head chef and found them very professionals.
+							Strongly recommended for temp and short terms job search.
 						</p>
-						<h3 class="name">Narek Bedros<span>Sr. Manager</span></h3>
+						<h3 class="name">Sandra Rojer<span>Head Chef</span></h3>
 					</div>
 				</div>
 				<div class="item">
 					<div class="testimonial-thumb">
-						<img src="public/assets/images/team/testimonial3.jpg" alt="testimonial">
+						<img src="public/assets/images/testimonials/testimonials3.jpg" alt="testimonial">
 					</div>
 					<div class="testimonial-content">
 						<p class="testimonial-text">
-							Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose. Lorem Ipsum is that it as opposed to using.
+							Good Professional people had a good experience from their services. Reliable and very helpful. Highly Recommended.
 						</p>
-						<h3 class="name">Taline Lucine<span>Sales Manager</span></h3>
+						<h3 class="name">Katherine<span>Sales Manager</span></h3>
 					</div>
 				</div>
 			</div>
@@ -533,7 +534,7 @@
 
 
 <!-- Clients start -->
-<section id="clients" class="clients">
+<!-- <section id="clients" class="clients">
 	<div class="container">
 		<div class="row wow fadeInLeft">
 			<div id="client-carousel" class="col-sm-12 owl-carousel owl-theme text-center client-carousel">
@@ -576,11 +577,11 @@
 					<a href="#">
 						<img src="public/assets/images/clients/client8.png" alt="client">
 					</a>
-				</figure>
-			</div><!-- Owl carousel end -->
-		</div><!-- Main row end -->
-	</div>
-	<!--/ Container end -->
+				</figure> -->
+</div><!-- Owl carousel end -->
+</div><!-- Main row end -->
+</div>
+<!--/ Container end -->
 </section>
 <!--/ Clients end -->
 
