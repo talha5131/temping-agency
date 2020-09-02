@@ -1,5 +1,7 @@
 @extends('layouts.base')
-@section('title','Temping Agency')
+@section('title','Temp Agency - Quality Recruitment & Temporary Jobs Specialist')
+@section('metaDesc','Are You Looking for Temporary Jobs or Would Like to Hire Temp? We are UK’s Top-Rated Temp Agency, Specialist Recruitment Agency for Short Terms & Temporary Staff.')
+@section('keywords', 'Temp Agency, Temp, Agency')
 @section('content')
 <link rel="icon" href="public/assets/images/logo-favicon.png" type="image/x-icon">
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="public/assets/images/logo-favicon.png">
@@ -24,18 +26,29 @@
 			text-align: center;
 		}
 
-		/* #myVideo {
-			top: 20px;
+		#myVideo {
+			position: fixed;
 			max-height: 100%;
 			max-width: 100%;
-		} */
+			position: fixed;
+			top: 44px;
+			min-width: 100%;
+		}
+
+		.video-bg {
+			height: 44vh !important;
+		}
+
+		.mobile-margin-top {
+			margin-top: -35px;
+		}
 	}
 </style>
 <!-- Slider start -->
 <section id="home" class="no-padding">
 	<div id="main-slide" class="cd-hero">
 		<ul class="cd-hero-slider">
-			<li class="selected">
+			<li class="selected video-bg">
 				<div class="overlay2">
 					<!-- <img class="" src="images/slider/bg1.jpg" alt="slider"> -->
 					<video autoplay muted loop id="myVideo">
@@ -97,11 +110,11 @@
 		<div class="cd-slider-nav">
 			<nav>
 				<span class="cd-marker item-1"></span>
-				<ul>
-					<li class="selected"><a href="#0"><i class="fas fa-poll" style="color:#51284f"></i> Intro</a></li>
-					<li><a href="#0"><i class="fas fa-edit" style="color:#51284f"></i> Hire</a></li>
-					<li><a href="#0"><i class="fas fa-address-card" style="color:#51284f"></i> Jobs</a></li>
-					<li class="video"><a href="#0"><i class="fa fa-video-camera" style="color:#51284f"></i> Video</a></li>
+				<ul class="mobile-margin-top">
+					<li class="selected"><a href="#0"><i class="fas fa-poll" style="color:#51284f;"></i> Intro</a></li>
+					<li><a href="#0"><i class="fas fa-edit" style="color:#51284f;"></i> Hire</a></li>
+					<li><a href="#0"><i class="fas fa-address-card" style="color:#51284f;"></i> Jobs</a></li>
+					<li class="video"><a href="#0"><i class="fa fa-video-camera" style="color:#51284f;"></i> Video</a></li>
 				</ul>
 			</nav>
 		</div> <!-- .cd-slider-nav -->

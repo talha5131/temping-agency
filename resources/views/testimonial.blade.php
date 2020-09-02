@@ -23,9 +23,8 @@
 			<h2>Testimonials</h2>
 			<ul class="breadcrumb">
 
-				<li><a href="index"> Home</a></li>
+				<li><a href="{{url('/')}}"> Home</a></li>
 				<li>Testimonials</li>
-
 
 			</ul>
 		</div>
@@ -52,10 +51,10 @@
 				<div class="ts-testimonial-content">
 					<img src="public/assets/images/testimonials/testimonials4.jpg" alt="testimonial">
 					<p class="ts-testimonial-text">
-						I employed 10 staff over a 8 week contract to provide front of house staff for Paddington on Ice
+						I employed 10 staff over a 8 week contract to provide front of house staff for Paddington on Ice.
 						The staff proved reliable and very helpful.
 						Always willing to work and in time.
-						Workers direct provided great support and communication throughout the contract and I would not hesitate to use them over and over again.
+						Temping Agency provided great support and communication throughout the contract and I would not hesitate to use them over and over again.
 					</p>
 
 					<div class="ts-testimonial-author">
@@ -70,7 +69,7 @@
 					<img src="public/assets/images/testimonials/testimonials5.png" alt="testimonial">
 					<p class="ts-testimonial-text">
 						The company I work for hired a couple of guys for a day's fairly heavy duty work on a building site in London. They were punctual and worked very hard all day. They were well thought of by our site staff who are very difficult to please!
-						Mark Thomas
+						Mark Thomas.
 					</p>
 
 					<div class="ts-testimonial-author">

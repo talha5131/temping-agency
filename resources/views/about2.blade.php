@@ -18,36 +18,36 @@
 	}
 </style>
 
-<div id="banner-area">
-	<img src="public/assets/images/banner/banner1.jpg" alt="" />
-	<div class="parallax-overlay"></div>
-	<!-- Subpage title start -->
-	<div class="banner-title-content">
-		<div class="text-center">
-			<h2>About Us</h2>
-			<ul class="breadcrumb">
-				<li> <a href="index">Home </a></li>
-				<li>Company</li>
-				<li> About Us</a></li>
-			</ul>
-		</div>
-	</div><!-- Subpage title end -->
-</div><!-- Banner area end -->
+		<div id="banner-area">
+			<img src="public/assets/images/banner/banner1.jpg" alt="" />
+			<div class="parallax-overlay"></div>
+			<!-- Subpage title start -->
+			<div class="banner-title-content">
+				<div class="text-center">
+					<h2>About Us</h2>
+					<ul class="breadcrumb">
+						<li> <a href="{{url('/')}}">Home </a></li>
+						<li>Company</li>
+						<li> About Us</a></li>
+					</ul>
+				</div>
+			</div><!-- Subpage title end -->
+		</div><!-- Banner area end -->
 
-<!-- Main container start -->
+		<!-- Main container start -->
 
-<section id="main-container">
-	<div class="container">
+		<section id="main-container">
+			<div class="container">
 
-		<!-- Company Profile -->
+				<!-- Company Profile -->
 
-		<div class="row">
-			<div class="col-md-12 heading text-center">
-				<h2 class="title2">About Our Company
-					<span class="title-desc">Quality Recruitment Solutions</span>
-				</h2>
-			</div>
-		</div><!-- Title row end -->
+				<div class="row">
+					<div class="col-md-12 heading text-center">
+						<h2 class="title2">About Our Company
+							<span class="title-desc">Quality Recruitment Solutions</span>
+						</h2>
+					</div>
+				</div><!-- Title row end -->
 
 		<div class="row about-wrapper-top">
 			<div class="col-md-12 ts-padding about-message">

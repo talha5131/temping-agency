@@ -26,7 +26,7 @@
 				<div class="text-center">
 					<h2>How to achieve your Bonus?</h2>
 					<ul class="breadcrumb">
-						<li><a href="index"> Home</a></li>
+						<li><a href="{{url('/')}}"> Home</a></li>
 
 						<li>Blog</li>
 						<li>How to achieve your Bonus? </li>

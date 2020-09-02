@@ -39,7 +39,7 @@
 
 			<ul class="breadcrumb">
 
-				<li><a href="index"> Home</a></li>
+				<li><a href="{{url('/')}}"> Home</a></li>
 
 				<li>Post A Job</li>
 
