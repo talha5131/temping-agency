@@ -127,7 +127,7 @@ Route::get('/admin-testimonials', function () {
     return view('admin.testimonials');
 });
 
-Route::get('admin-candidates', 'Admin\CVController@index')->name('admin.candidates');
+Route::get('admin-candidates', 'Admin\CvController@index')->name('admin.candidates');
 
 Route::get('/admin-services', function () {
     return view('admin.services');
