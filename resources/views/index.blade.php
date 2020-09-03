@@ -57,7 +57,7 @@
 				</div>
 				<div class="cd-full-width">
 					<h2> Temping Agency </h2>
-					<h3> Quality Recruitment Solutions</h3>
+					<h3> Top Rated Temp Agency</h3>
 					<p> Our exclusive service model means our temps receive hours of industry-focused preparation – make sure they are the perfect fit for your business from day one.</p>
 					<a href="#0" class="btn btn-primary white cd-btn">Start Now</a>
 					<a href="#0" class="btn btn-primary solid cd-btn">Learn More</a>

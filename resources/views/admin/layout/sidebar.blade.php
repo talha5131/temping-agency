@@ -103,7 +103,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class="nav-item">
+<!--                 <li class="nav-item">
                     <a href="#" class="nav-link">
                         <i class="fas fa-fw fa-rss"></i>
                         <p>
@@ -123,8 +123,8 @@
                             </a>
                         </li>
                     </ul>
-                </li>
-                <li class="nav-item">
+                </li> -->
+<!--                 <li class="nav-item">
                     <a href="#" class="nav-link">
                         <i class="fa fa-star"></i>
                         <p>
@@ -144,7 +144,7 @@
                             </a>
                         </li>
                     </ul>
-                </li>
+                </li> -->
                 <li class="nav-item">
                     <a href="#" class="nav-link">
                         <i class="fa fa-user"></i>
@@ -166,7 +166,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class="nav-item">
+<!--                 <li class="nav-item">
                     <a href="#" class="nav-link">
                         <i class="fas fa-fw fa-cogs"></i>
                         <p> Services
@@ -180,7 +180,7 @@
                             </a>
                         </li>
                     </ul>
-                </li>
+                </li> -->
             </ul>
         </nav>
         <!-- /.sidebar-menu -->

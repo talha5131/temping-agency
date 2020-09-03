@@ -130,13 +130,13 @@
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav navbar-left nav-top-content nav-top-left" style="margin-left: 4%">
 					<li class="">
-						<a href="#" style=" color: white;">CALL US <strong>+442030869080</strong></a>
+						<a href="tel: +442030869080" style=" color: white;">CALL US <strong>+442030869080</strong></a>
 					</li>
 					<li class="">
 						<a href="get-a-quote" style=" color: white;">Get A Quote</a>
 					</li>
 					<li class="">
-						<a href="cv-upload" style=" color: white;">Email Us</a>
+						<a href="mailto: info@temping-agency.com" style=" color: white;">Email Us</a>
 					</li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right nav-top-right" style="margin-top:0.5%;margin-right: 5%">
@@ -153,7 +153,7 @@
 					<li class="">
 						<a href="post-a-job" class="btn btn-primary cd-btn" style="margin-top: 10px; margin-left: 5px; color: white; font-size: 11px">Post A Job</a>
 					</li>
-					<li class="">
+					<li class="" style="display: none;">
 						<a href="#" class="btn btn-primary cd-btn" style="padding-right:15px; margin-top: 10px;
 						margin-left: 5px; color: white; font-size: 11px; padding-left: 17px" data-toggle="modal" data-target="#modalRegisterLogin">Register/Login</a>
 					</li>

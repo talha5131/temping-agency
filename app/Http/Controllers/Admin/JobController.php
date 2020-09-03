@@ -49,14 +49,21 @@ class JobController extends Controller
             return redirect('admin/login');
     }
 
-    public function status(Request $request){
+    public function status(Request $request, $id){
         if($request->session()->has('admin')) {
-            return $request->id;
-            // return view('admin.pendingjobs', compact('jobs'));
+            // return $id;
+            $job = Job::find($id);
+            if($job->approved == 1 || $job->approved == 3){
+                // return $id;
+                Job::where('id',$id)->update(['approved' => 0]);
+            }elseif($job->approved == 0){
+                Job::where('id',$id)->update(['approved' => 1]);
+            }
+            return redirect()->back();
         }else
-            return redirect('admin/login');        
+            return redirect('admin/login');
     }
-
+            
     /**
      * Show the form for creating a new resource.
      *

@@ -39,23 +39,23 @@
             </ul>
             <!-- Main content -->
             <section class="content">
-                <table class="table table-bordered table-striped">
+                <table id="job-table" class="table table-bordered table-striped">
                     <tr>
                         <th>Title</th>
                         <th>Category</th>
                         <th>Actions</th>
-                    </tr>
+                    </tr>@csrf
                     @foreach($jobs as $job)
                     <tr>
                         <td>{{$job->title}}</td>
                         <td>{{$job->category}}</td>
                         <td>
                             @if($job->approved == 1)
-                                <a onclick="upd({{$job->id}})"><i class="far fa-eye"></i></a> 
+                                <a href="{{ url('status') }}/{{$job->id}}"><i class="far fa-eye"></i></a>
                             @elseif($job->approved == 0)
-                                <a href="#" ><i class="far fa-eye-slash"></i></a> 
+                                <a href="{{ url('status') }}/{{$job->id}}"><i class="far fa-eye-slash"></i></a>
                             @endif
-                            <a href=""><i class="far fa-trash-alt"></i></a> 
+<!--                             <a href="javascript:void(0)"><i class="far fa-trash-alt"></i></a> -->
                             <a href="{{ route('admin.jobDetails',['id' => $job->id])}}"><i class="fas fa-info-circle"></i></a>
                         </td>
                     </tr>
@@ -73,17 +73,16 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <script>
-    function upd($id){
-        var id = $id;
+    function upd(id){
         $.ajax({
-              url: 'status',
-              type: 'post',
-              data: {id: id},
-              success: function(response){
-                alert(response);
-              }
-            });
+            url: '{{ url('status') }}/'+id,
+            type: "GET",
+            success: function(result){
+                    // $('#job-table').reload()
+                     console.log(result);
+            }
+        });
     }
 </script>
 
-    @endsection
+@endsection

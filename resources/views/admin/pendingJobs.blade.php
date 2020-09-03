@@ -51,10 +51,10 @@
                         <td>{{$job->category}}</td>
                         <td>
                             @if($job->approved == 3)
-                                <a href=""><i class="far fa-eye-slash"></i></a> 
+                                <a href="{{ url('status') }}/{{$job->id}}"><i class="far fa-eye-slash"></i></a>
                             @endif
-                            <a href=""><i class="far fa-trash-alt"></i></a> 
-                            <a href="{{ route('admin.jobDetails',['id' => $job->id])}}"><i class="fas fa-info-circle"></i></a>                        </td>
+<!--                             <a href=""><i class="far fa-trash-alt"></i></a> -->
+                             <a href="{{ route('admin.jobDetails',['id' => $job->id])}}"><i class="fas fa-info-circle"></i></a>                        </td>
                     </tr>
                     @endforeach
                 </table>
