@@ -130,7 +130,7 @@
 		<!-- Company Profile -->
 		<div class="col-md-12 heading text-center">
 			<h2 class="title2">Welcome to Temping Agency
-				<span class="title-desc"> Quality Recruitment Solutions </span>
+				<span class="title-desc"> Top Rated Temp Agency </span>
 			</h2>
 		</div>
 

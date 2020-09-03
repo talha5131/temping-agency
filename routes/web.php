@@ -26,6 +26,9 @@ Route::get('/blog-item', function () {
 Route::get('/book-a-temp', function () {
     return view('book-a-temp');
 });
+Route::get('/get-a-quote', function () {
+    return view('get-a-quote');
+});
 Route::get('/career', 'WebController@jobs');
 Route::get('/contact', function () {
     return view('contact');

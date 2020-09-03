@@ -133,7 +133,7 @@
 						<a href="#" style=" color: white;">CALL US <strong>+442030869080</strong></a>
 					</li>
 					<li class="">
-						<a href="cv-upload" style=" color: white;">Get A Quote</a>
+						<a href="get-a-quote" style=" color: white;">Get A Quote</a>
 					</li>
 					<li class="">
 						<a href="cv-upload" style=" color: white;">Email Us</a>
