@@ -167,6 +167,7 @@
 											<option data-countryCode="BB" value="+1246">+1246</option>
 											<option data-countryCode="BY" value="+375">+375</option>
 											<option data-countryCode="BE" value="+32">+32</option>
+											<option data-countryCode="PK" value="+92">+92</option>
 											<option data-countryCode="BZ" value="+501">+501</option>
 											<option data-countryCode="BJ" value="+229">+229</option>
 											<option data-countryCode="BM" value="+1441">+1441</option>

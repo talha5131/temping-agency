@@ -188,6 +188,7 @@
 											<option data-countryCode="AZ" value="+994">+994</option>
 											<option data-countryCode="BS" value="+1242">+1242</option>
 											<option data-countryCode="BH" value="+973">+973</option>
+											<option data-countryCode="PK" value="+92">+92</option>
 											<option data-countryCode="BD" value="+880">+880</option>
 											<option data-countryCode="BB" value="+1246">+1246</option>
 											<option data-countryCode="BY" value="+375">+375</option>
