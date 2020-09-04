@@ -13,6 +13,7 @@ use App\Mail\MailCv;
 use App\Mail\MailJob;
 use App\Mail\Applied;
 use Illuminate\Support\Facades\Storage;
+
 class WebController extends Controller
 {
     public function index(){
@@ -31,17 +32,17 @@ class WebController extends Controller
         if($request->hasfile('image'))
         {
             $file = $request->file('image')->getClientOriginalName();
-            $image = 'Temping Agency'.'-'.$user->id.'-'.$file;
-            $path = $request->file('cv')->storeAs('images',$image,'s3');
-            $imgUrl = Storage::disk('s3')->response('images/' . $image);
+            $image = 'Temping-Agency'.'-'.$user->id.'-'.$file;
+            $path = $request->file('cv')->storeAs('candidates/images',$image,'s3');
+            $imgUrl = Storage::disk('s3')->response('candidates/images/' . $image);
         }
 
         if($request->hasfile('cv'))
         {
             $file = $request->file('cv')->getClientOriginalName();
-            $vitae = 'Temping Agency'.'-'.$user->id.'-'.$file;
-            $path = $request->file('cv')->storeAs('vitae',$vitae,'s3');
-            $cvUrl = Storage::disk('s3')->response('vitae/' . $vitae);
+            $vitae = 'Temping-Agency'.'-'.$user->id.'-'.$file;
+            $path = $request->file('cv')->storeAs('candidates/cvs',$vitae,'s3');
+            $cvUrl = Storage::disk('s3')->response('candidates/cvs/' . $vitae);
         }
 
 
@@ -195,9 +196,10 @@ class WebController extends Controller
         if($request->hasfile('cv'))
         {
             $file = $request->file('cv')->getClientOriginalName();
-            $vitae = 'Temping Agency'.'-'.$user->id.'-'.$file;
-            $path = $request->file('cv')->storeAs('vitae',$vitae,'s3');
-            $cvUrl = Storage::disk('s3')->response('vitae/' . $vitae);
+            $vitae = 'Temping-Agency'.'-'.$user->id.'-'.$file;
+            $path = $request->file('cv')->storeAs('candidates/cvs',$vitae,'s3');
+            $cvUrl = Storage::disk('s3')->response('candidates/cvs/' . $vitae);
+            // <img src="{{ Storage::disk('spaces')->url($photo->image) }}" />
         }
 
         $cv = new CV();
