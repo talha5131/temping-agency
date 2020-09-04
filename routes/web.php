@@ -26,6 +26,9 @@ Route::get('/blog-item', function () {
 Route::get('/book-a-temp', function () {
     return view('book-a-temp');
 });
+Route::get('/get-a-quote', function () {
+    return view('get-a-quote');
+});
 Route::get('/career', 'WebController@jobs');
 Route::get('/contact', function () {
     return view('contact');
@@ -96,39 +99,42 @@ Route::get('/ready-talent', function () {
     return view('ready-talent');
 });
 
+
+
 Route::get('admin/login', 'Admin\UserController@login');
-
 Route::post('admin/login', 'Admin\UserController@check')->name('login');
-
 Route::get('admin', 'Admin\DashboardController@index')->name('dashboard');
-
 Route::get('admin/logout', 'Admin\UserController@logout')->name('logout');
+
 
 Route::get('admin-jobs', 'Admin\JobController@index')->name('admin.jobs');
 Route::get('admin-jobsActive', 'Admin\JobController@active')->name('admin.active-jobs');
 Route::get('admin-jobsInactive', 'Admin\JobController@inactive')->name('admin.inactive-jobs');
 Route::get('admin-jobsPending', 'Admin\JobController@pending')->name('admin.pending-jobs');
-Route::post('status', 'Admin\JobController@status');
+Route::get('status/{id}', 'Admin\JobController@status');
+
 
 Route::get('admin-addJob', 'Admin\JobController@create');
 Route::post('admin-addJob', 'Admin\JobController@store')->name('admin.addJob');
 Route::get('admin-appliedJobs', 'Admin\JobController@applied')->name('admin.applied');
 Route::get('admin-jobDetails/{id}', 'Admin\JobController@show')->name('admin.jobDetails');
 
-Route::get('/blogs', function () {
+Route::get('/admin/blogs', function () {
     return view('admin.blogs');
 });
 
-Route::get('/testimonials', function () {
+Route::get('/admin-testimonials', function () {
     return view('admin.testimonials');
 });
 
-Route::get('admin-candidates', 'Admin\CVController@index')->name('admin.candidates');
+Route::get('admin-candidates', 'Admin\CvController@index')->name('admin.candidates');
+Route::get('admin-temps', 'Admin\CvController@temp')->name('admin.tempcandidates');
 
-Route::get('/services', function () {
+Route::get('admin-employers', 'Admin\EmployerController@index')->name('admin.employers');
+
+Route::get('/admin-services', function () {
     return view('admin.services');
 });
 
 Route::get('/{slug}', 'WebController@job_detail');
-
 Route::post('/apply-job', 'WebController@apply_job')->name('apply-job');

@@ -45,14 +45,15 @@
                         <th>Job</th>
                         <th>User</th>
                     </tr>
-                    @foreach($applied as $app)
+                    @foreach($applied as $key => $app)
                         <tr>
-                            <td>{{$app->id}}</td>
-                            <td>{{$app->Job->title}}</td>
+                            <td>{{ $applied->firstItem() + $key }}</td>
+                            <td><a href="{{ route('admin.jobDetails',['id' => $app->job_id])}}">{{$app->Job->title}}</a></td>
                             <td>{{$app->user->name}}</td>
                         </tr>
                     @endforeach
                 </table>
+                {{$applied->links()}}
                 <!-- /.container-fluid -->
             </section>
             <!-- /.content -->

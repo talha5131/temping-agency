@@ -103,7 +103,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class="nav-item">
+<!--                 <li class="nav-item">
                     <a href="#" class="nav-link">
                         <i class="fas fa-fw fa-rss"></i>
                         <p>
@@ -123,26 +123,26 @@
                             </a>
                         </li>
                     </ul>
-                </li>
+                </li> -->
                 <li class="nav-item">
                     <a href="#" class="nav-link">
                         <i class="fa fa-star"></i>
                         <p>
-                            Testimonials
+                            Employers
                             <i class="fas fa-angle-left right"></i>
                         </p>
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="public/assets/pages/layout/top-nav.html" class="nav-link">
-                                <p>Testimonials</p>
+                            <a href="{{ route('admin.employers')}}" class="nav-link">
+                                <p>Employers</p>
                             </a>
                         </li>
-                        <li class="nav-item">
+<!--                         <li class="nav-item">
                             <a href="public/assets/pages/layout/top-nav.html" class="nav-link">
                                 <p>Add Testimonials</p>
                             </a>
-                        </li>
+                        </li> -->
                     </ul>
                 </li>
                 <li class="nav-item">
@@ -160,13 +160,13 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ route('admin.candidates') }}" class="nav-link">
+                            <a href="{{ route('admin.tempcandidates') }}" class="nav-link">
                                 <p>Temping Candidates</p>
                             </a>
                         </li>
                     </ul>
                 </li>
-                <li class="nav-item">
+<!--                 <li class="nav-item">
                     <a href="#" class="nav-link">
                         <i class="fas fa-fw fa-cogs"></i>
                         <p> Services
@@ -180,7 +180,7 @@
                             </a>
                         </li>
                     </ul>
-                </li>
+                </li> -->
             </ul>
         </nav>
         <!-- /.sidebar-menu -->

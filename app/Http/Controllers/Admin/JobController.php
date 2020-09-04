@@ -26,7 +26,7 @@ class JobController extends Controller
     {
         if($request->session()->has('admin')) {
             $jobs = Job::orderByDesc('id')->where('approved','1')->paginate(10);
-            return view('admin.activejobs', compact('jobs'));
+            return view('admin.activeJobs', compact('jobs'));
         }else
             return redirect('admin/login');
     }
@@ -35,7 +35,7 @@ class JobController extends Controller
     {
         if($request->session()->has('admin')) {
             $jobs = Job::orderByDesc('id')->where('approved','0')->paginate(10);
-            return view('admin.inactivejobs', compact('jobs'));
+            return view('admin.inactiveJobs', compact('jobs'));
         }else
             return redirect('admin/login');
     }
@@ -44,19 +44,26 @@ class JobController extends Controller
     {
         if($request->session()->has('admin')) {
             $jobs = Job::orderByDesc('id')->where('approved','3')->paginate(10);
-            return view('admin.pendingjobs', compact('jobs'));
+            return view('admin.pendingJobs', compact('jobs'));
         }else
             return redirect('admin/login');
     }
 
-    public function status(Request $request){
+    public function status(Request $request, $id){
         if($request->session()->has('admin')) {
-            return $request->id;
-            // return view('admin.pendingjobs', compact('jobs'));
+            // return $id;
+            $job = Job::find($id);
+            if($job->approved == 1 || $job->approved == 3){
+                // return $id;
+                Job::where('id',$id)->update(['approved' => 0]);
+            }elseif($job->approved == 0){
+                Job::where('id',$id)->update(['approved' => 1]);
+            }
+            return redirect()->back();
         }else
-            return redirect('admin/login');        
+            return redirect('admin/login');
     }
-
+            
     /**
      * Show the form for creating a new resource.
      *
@@ -195,7 +202,7 @@ class JobController extends Controller
 
     public function applied(Request $request){
         if($request->session()->has('admin')) {
-            $applied = Activity::all();
+            $applied = Activity::orderbyDesc('id')->paginate(10);
             return view('admin.appliedJobs',compact('applied'));
         }else
             return redirect('admin/login');

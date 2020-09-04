@@ -41,12 +41,14 @@
             <section class="content">
                 <table class="table table-bordered table-striped">
                     <tr>
+                        <th>#</th>
                         <th>Title</th>
                         <th>Category</th>
                         <th>Actions</th>
                     </tr>
-                    @foreach($jobs as $job)
+                    @foreach($jobs as $key => $job)
                     <tr>
+                        <td>{{ $jobs->firstItem() + $key }}</td>
                         <td>{{$job->title}}</td>
                         <td>{{$job->category}}</td>
                         <td>

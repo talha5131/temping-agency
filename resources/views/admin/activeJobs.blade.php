@@ -41,21 +41,21 @@
             <section class="content">
                 <table class="table table-bordered table-striped">
                     <tr>
+                        <th>#</th>
                         <th>Title</th>
                         <th>Category</th>
                         <th>Actions</th>
                     </tr>
-                    @foreach($jobs as $job)
+                    @foreach($jobs as $key => $job)
                     <tr>
+                        <td>{{ $jobs->firstItem() + $key }}</td>
                         <td>{{$job->title}}</td>
                         <td>{{$job->category}}</td>
                         <td>
                             @if($job->approved == 1)
-                                <a href=""><i class="far fa-eye"></i></a> 
-                            @elseif($job->approved == 0)
-                                <a href=""><i class="far fa-eye-slash"></i></a> 
+                                <a href="{{ url('status') }}/{{$job->id}}"><i class="far fa-eye"></i></a>
                             @endif
-                            <a href=""><i class="far fa-trash-alt"></i></a>
+                            <!-- <a href=""><i class="far fa-trash-alt"></i></a> -->
                             <a href="{{ route('admin.jobDetails',['id' => $job->id])}}"><i class="fas fa-info-circle"></i></a>
                         </td>
                     </tr>
