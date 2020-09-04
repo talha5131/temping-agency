@@ -41,12 +41,14 @@
             <section class="content">
                 <table id="job-table" class="table table-bordered table-striped">
                     <tr>
+                        <th>#</th>
                         <th>Title</th>
                         <th>Category</th>
                         <th>Actions</th>
-                    </tr>@csrf
-                    @foreach($jobs as $job)
+                    </tr>
+                    @foreach($jobs as $key => $job)
                     <tr>
+                        <td>{{ $jobs->firstItem() + $key }}</td>
                         <td>{{$job->title}}</td>
                         <td>{{$job->category}}</td>
                         <td>
@@ -56,7 +58,7 @@
                                 <a href="{{ url('status') }}/{{$job->id}}"><i class="far fa-eye-slash"></i></a>
                             @endif
 <!--                             <a href="javascript:void(0)"><i class="far fa-trash-alt"></i></a> -->
-                            <a href="{{ route('admin.jobDetails',['id' => $job->id])}}"><i class="fas fa-info-circle"></i></a>
+                            <a target="_blank" href="{{ route('admin.jobDetails',['id' => $job->id])}}"><i class="fas fa-info-circle"></i></a>
                         </td>
                     </tr>
                     @endforeach

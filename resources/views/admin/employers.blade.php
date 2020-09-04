@@ -1,5 +1,5 @@
 @extends('admin.layout.base')
-@section('title','Admin Jobs')
+@section('title','Employers')
 @section('content')
 <link rel="icon" href="public/assets/images/logo-favicon.png" type="image/x-icon">
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="public/assets/images/logo-favicon.png">
@@ -20,7 +20,7 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1 class="m-0 text-dark">All Jobs</h1>
+                            <h1 class="m-0 text-dark">ALL Employers</h1>
                             <hr>
                         </div>
                         <!-- /.col -->
@@ -33,36 +33,31 @@
             <!-- /.content-header -->
 
             <ul class="breadcrumb">
-                <li class="breadcrumb-item"><a href="{{ route('dashboard') }}" class="breadcrumb-link">Dashboard</a></li>
-                <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">Jobs</a></li>
-                <li class="breadcrumb-item active" aria-current="page">All Jobs</li>
+                <li class="breadcrumb-item"><a href="/admin" class="breadcrumb-link">Dashboard</a></li>
+                <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">Employers</a></li>
+                <li class="breadcrumb-item active" aria-current="page">All Employers</li>
             </ul>
             <!-- Main content -->
             <section class="content">
                 <table class="table table-bordered table-striped">
                     <tr>
                         <th>#</th>
-                        <th>Title</th>
-                        <th>Category</th>
-                        <th>Actions</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
                     </tr>
-                    @foreach($jobs as $key => $job)
+                    @foreach($employer as $key => $e)
                     <tr>
-                        <td>{{ $jobs->firstItem() + $key }}</td>
-                        <td>{{$job->title}}</td>
-                        <td>{{$job->category}}</td>
-                        <td>
-                            @if($job->approved == 3)
-                                <a href="{{ url('status') }}/{{$job->id}}"><i class="far fa-eye-slash"></i></a>
-                            @endif
-<!--                             <a href=""><i class="far fa-trash-alt"></i></a> -->
-                             <a href="{{ route('admin.jobDetails',['id' => $job->id])}}"><i class="fas fa-info-circle"></i></a>                        </td>
+                        <td>{{ $employer->firstItem() + $key }}</td>
+                        <td>{{$e->name}}</td>
+                        <td>{{$e->email}}</td>
+                        <td>{{$e->phone}}</td>
                     </tr>
                     @endforeach
                 </table>
-                {{ $jobs->links() }}
                 <!-- /.container-fluid -->
             </section>
+                    {{$employer->links()}}
             <!-- /.content -->
         </div>
         <!-- /.content-wrapper -->

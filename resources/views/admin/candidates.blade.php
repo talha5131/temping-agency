@@ -41,22 +41,27 @@
             <section class="content">
                 <table class="table table-bordered table-striped">
                     <tr>
+                        <th>#</th>
                         <th>Name</th>
                         <th>Email</th>
                         <th>Category</th>
                         <th>Expected Salary</th>
                         <th>Platform</th>
                     </tr>
-                    @foreach($total as $cv)
+                    @foreach($total as $key => $cv)
                     <tr>
+                        <td>{{ $total->firstItem() + $key }}</td>
                         <td>{{$cv->name}}</td>
-                        <td></td>
-                        <td></td>
+                        <td>{{$cv->email}}</td>
+                        <td>{{$cv->category}}</td>
+                        <td>{{$cv->expected_salary}}</td>
+                        <td>{{$cv->platform}}</td>
                     </tr>
                     @endforeach
                 </table>
                 <!-- /.container-fluid -->
             </section>
+                    {{$total->links()}}
             <!-- /.content -->
         </div>
         <!-- /.content-wrapper -->

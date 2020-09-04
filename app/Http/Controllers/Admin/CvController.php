@@ -16,10 +16,18 @@ class CvController extends Controller
     public function index(Request $request)
     {
         if($request->session()->has('admin')) {
-            $total = CV::all();
+            $total = CV::orderbyDesc('id')->paginate(10);
             return view('admin.candidates', compact('total'));
         }else
             return redirect('admin/login');
+    }
+
+    public function temp(Request $request){
+        if($request->session()->has('admin')) {
+            $total = CV::orderbyDesc('id')->where('platform','Temping Agency')->paginate(10);
+            return view('admin.candidates', compact('total'));
+        }else
+            return redirect('admin/login');        
     }
 
     /**
