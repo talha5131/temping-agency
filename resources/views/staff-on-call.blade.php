@@ -20,147 +20,129 @@
 
 
 
-		<div id="banner-area">
+<div id="banner-area">
 
-			<img src="public/assets/images/banner/banner1.jpg" alt="" />
+	<img src="public/assets/images/banner/banner1.jpg" alt="" />
 
-			<div class="parallax-overlay"></div>
+	<div class="parallax-overlay"></div>
 
-			<!-- Subpage title start -->
+	<!-- Subpage title start -->
 
-			<div class="banner-title-content">
+	<div class="banner-title-content">
 
-				<div class="text-center">
+		<div class="text-center">
 
-					<h2> Staff On Call</h2>
+			<h2> Staff On Call</h2>
 
-					<ul class="breadcrumb">
+			<ul class="breadcrumb">
 
-						<li><a href="{{url('/')}}"> Home</a></li>
+				<li><a href="{{url('/')}}"> Home</a></li>
 
-						<li>Services</li>
+				<li>Services</li>
 
-						<li> Staff On Call </li>
+				<li> Staff On Call </li>
 
-					</ul>
+			</ul>
 
-				</div>
+		</div>
 
-			</div><!-- Subpage title end -->
+	</div><!-- Subpage title end -->
 
-		</div><!-- Banner area end -->
-
-
-
-		<!-- Main container start -->
+</div><!-- Banner area end -->
 
 
 
-		<section id="main-container">
-
-			<div class="container">
+<!-- Main container start -->
 
 
 
-				<!-- Company Profile -->
+<section id="main-container">
+
+	<div class="container">
 
 
 
-				<div class="row">
-
-					<div class="col-md-12 heading text-center">
-
-						<h2 class="title2">Staff On Call
-
-							<span class="title-desc"> Temping Agency </span>
-
-						</h2>
-
-					</div>
-
-				</div><!-- Title row end -->
+		<!-- Company Profile -->
 
 
 
-				<div class="row about-wrapper-top text-align">
+		<div class="row">
 
-					<div class="col-md-12 ts-padding about-message">
+			<div class="col-md-12 heading text-center">
 
+				<h2 class="title2">Staff On Call
 
+					<span class="title-desc"> Temping Agency </span>
 
-						<p> One of the benefits of having access to temporary staff is that you can arrange for staff to be on call. This means that your chosen temps are ready to come to work at a moment’s notice. All you have to do is ask the agency to make a call to the temp and inform him / her that they are needed at your offices. </p>
+				</h2>
 
-						<br>
+			</div>
 
-						<h3> How does the staff on call system work? </h3>
-
-						<br>
-
-						<p> The on-call system is a very simple system. For it to work, the agency has to understand your productivity needs. It is also important that the temp understands what is expected of him / her. The best approach would be to identify the ideal candidate for the job and introduce him / her to the company and the office that s/he will be working in. It is also advisable to allow the temp to spend some time observing / working in your office in order to get a feel for the job that s/he will be expected to do. </p>
-
-						<section>
-
-							<div class="container">
-
-								<div class="row">
-
-									<div class="w3-content w3-section" style="max-width:1100px">
+		</div><!-- Title row end -->
 
 
 
-										<img class="mySlides" src="public/assets/images/slider/0.jpg" style="width:100%">
+		<div class="row about-wrapper-top text-align">
 
-										<img class="mySlides" src="public/assets/images/slider/00.jpg" style="width:100%">
-
-										<img class="mySlides" src="public/assets/images/slider/000.jpg" style="width:100%">
-
-										<img class="mySlides" src="public/assets/images/slider/0000.jpg" style="width:100%">
-
-										<img class="mySlides" src="public/assets/images/slider/00000.jpg" style="width:100%">
+			<div class="col-md-12 ts-padding about-message">
 
 
 
+				<p> One of the benefits of having access to temporary staff is that you can arrange for staff to be on call. This means that your chosen temps are ready to come to work at a moment’s notice. All you have to do is ask the agency to make a call to the temp and inform him / her that they are needed at your offices. </p>
+
+				<br>
+
+				<h3> How does the staff on call system work? </h3>
+
+				<br>
+
+				<p> The on-call system is a very simple system. For it to work, the agency has to understand your productivity needs. It is also important that the temp understands what is expected of him / her. The best approach would be to identify the ideal candidate for the job and introduce him / her to the company and the office that s/he will be working in. It is also advisable to allow the temp to spend some time observing / working in your office in order to get a feel for the job that s/he will be expected to do. </p>
+
+				<section>
+
+					<div class="container">
+
+						<div class="row">
+
+							<div class="w3-content w3-section" style="max-width:1100px">
 
 
-									</div>
 
-								</div>
+								<img class="mySlides" src="public/assets/images/slider/0.jpg" style="width:100%">
+
+								<img class="mySlides" src="public/assets/images/slider/00.jpg" style="width:100%">
+
+								<img class="mySlides" src="public/assets/images/slider/000.jpg" style="width:100%">
+
+								<img class="mySlides" src="public/assets/images/slider/0000.jpg" style="width:100%">
+
+								<img class="mySlides" src="public/assets/images/slider/00000.jpg" style="width:100%">
+
+
+
+
 
 							</div>
 
-						</section>
-
-						<h3> Agree the terms and conditions </h3>
-
-						<br>
-
-						<p> Once the ideal candidate is identified, the terms and conditions of his / her on-call status need to be negotiated. Some of the terms could be the hours that the candidate will be expected to be on call. Furthermore, the rate per hour for the period of on-call service also needs to be determined. The rate could be the same as if the candidate is actually working. Alternatively there could be a reduced rate for the on-call period with an increased rate for actual hours worked. </p>
-
-						<br>
-
-						<h3> Convenience </h3>
-
-						<br>
-
-						<p> Our service provides for a service that makes candidates conveniently available whenever you need temporary staff. The candidate will be ready to go in to your office at a moment’s notice and work the hours required. This makes for a convenient solution to having work done on a just-in-time basis at the most affordable way possible. </p>
-
-
-
-
-
-
-
-
-
-
+						</div>
 
 					</div>
-					<!--/ About message end -->
 
-					<!--/ About image end -->
+				</section>
 
-				</div>
-				<!--/ Content row end -->
+				<h3> Agree the terms and conditions </h3>
+
+				<br>
+
+				<p> Once the ideal candidate is identified, the terms and conditions of his / her on-call status need to be negotiated. Some of the terms could be the hours that the candidate will be expected to be on call. Furthermore, the rate per hour for the period of on-call service also needs to be determined. The rate could be the same as if the candidate is actually working. Alternatively there could be a reduced rate for the on-call period with an increased rate for actual hours worked. </p>
+
+				<br>
+
+				<h3> Convenience </h3>
+
+				<br>
+
+				<p> Our service provides for a service that makes candidates conveniently available whenever you need temporary staff. The candidate will be ready to go in to your office at a moment’s notice and work the hours required. This makes for a convenient solution to having work done on a just-in-time basis at the most affordable way possible. </p>
 
 
 
@@ -168,160 +150,152 @@
 
 
 
-				<!-- Company Profile -->
+
 
 
 
 			</div>
-			<!--/ 1st container end -->
+			<!--/ About message end -->
 
+			<!--/ About image end -->
 
+		</div>
+		<!--/ Content row end -->
 
 
 
-			<div class="gap-60"></div>
 
 
 
 
+		<!-- Company Profile -->
 
-			<!-- Counter Strat -->
 
-			<!-- <div class="ts_counter_bg parallax parallax2">
 
-				<div class="parallax-overlay"></div>
+	</div>
+	<!--/ 1st container end -->
 
-				<div class="container">
 
-					<div class="row wow fadeInLeft text-center">
 
-						<div class="facts col-md-3 col-sm-6">
 
-							<span class="facts-icon"><i class="fa fa-user"></i></span>
 
-							<div class="facts-num">
+	<div class="gap-60"></div>
 
-								<span class="counter">1500</span>
 
-							</div>
 
-							<h3>Candidates</h3>
 
-						</div>
 
+	<!-- Counter Strat -->
 
+	<div class="ts_counter_bg parallax parallax2">
+		<div class="parallax-overlay"></div>
+		<div class="container">
+			<div class="row wow fadeInLeft text-center">
+				<div class="facts col-md-2 col-sm-6">
+					<span class="facts-icon"><i class="fas fa-users"></i></span>
+					<div class="facts-num">
+						<span class="counter">52950</span> <span> +</span>
+					</div>
+					<h3>Workers</h3>
+				</div>
 
-						<div class="facts col-md-3 col-sm-6">
+				<div class="facts col-md-2 col-sm-6">
+					<span class="facts-icon"><i class="far fa-thumbs-up"></i></span>
+					<div class="facts-num">
+						<span class="counter">98</span> <span> %</span>
+					</div>
+					<h3>Enjoy work with us</h3>
+				</div>
 
-							<span class="facts-icon"><i class="fa fa-institution"></i></span>
+				<div class="facts col-md-2 col-sm-6">
+					<span class="facts-icon"><i class="fas fa-user-shield"></i></span>
+					<div class="facts-num">
+						<span class="counter">92</span> <span> %</span>
+					</div>
+					<h3>Retained Workers</h3>
+				</div>
 
-							<div class="facts-num">
+				<div class="facts col-md-2 col-sm-6">
+					<span class="facts-icon"><i class="far fa-clock"></i></span>
+					<div class="facts-num">
+						<span class="counter">4773600</span> <span> +</span>
+					</div>
+					<h3>Worked Hours</h3>
+				</div>
 
-								<span class="counter">1277</span>
+				<div class="facts col-md-2 col-sm-6">
+					<span class="facts-icon"><i class="fa fa-user"></i></span>
+					<div class="facts-num">
+						<span class="counter">1200</span> <span> +</span>
+					</div>
+					<h3>Clients</h3>
+				</div>
 
-							</div>
+				<div class="facts col-md-2 col-sm-6">
+					<span class="facts-icon"><i class="fas fa-building"></i></span>
+					<div class="facts-num">
+						<span class="counter">39780</span> <span> +</span>
+					</div>
+					<h3>Sites</h3>
+				</div>
 
-							<h3>Recruitments</h3>
 
-						</div>
 
 
 
-						<div class="facts col-md-3 col-sm-6">
+			</div>
+			<!--/ row end -->
+		</div>
+		<!--/ Container end -->
+	</div>
+	<!--/ Counter end -->
 
-							<span class="facts-icon"><i class="fa fa-suitcase"></i></span>
 
-							<div class="facts-num">
 
-								<span class="counter">1469</span>
 
-							</div>
 
-							<h3>Jobs</h3>
 
-						</div>
 
+</section>
+<!--/ Main container end -->
 
 
-						<div class="facts col-md-3 col-sm-6">
 
-							<span class="facts-icon"><i class="fa fa-trophy"></i></span>
 
-							<div class="facts-num">
-
-								<span class="counter">76</span>
-
-							</div>
-
-							<h3>Awards</h3>
-
-						</div>
-
-
-
-
-
-
-
-
-
-
-
-					</div> -->
-					<!--/ row end -->
-
-				<!-- </div> -->
-				<!--/ Container end -->
-
-			<!-- </div> -->
-			<!--/ Counter end -->
-
-
-
-
-
-
-
-		</section>
-		<!--/ Main container end -->
-
-
-
-
-		<!-- Javascript Files
+<!-- Javascript Files
 
 		================================================== -->
 
-		<script>
-			var myIndex = 0;
+<script>
+	var myIndex = 0;
 
-			carousel();
+	carousel();
 
 
 
-			function carousel() {
+	function carousel() {
 
-				var i;
+		var i;
 
-				var x = document.getElementsByClassName("mySlides");
+		var x = document.getElementsByClassName("mySlides");
 
-				for (i = 0; i < x.length; i++) {
+		for (i = 0; i < x.length; i++) {
 
-					x[i].style.display = "none";
+			x[i].style.display = "none";
 
-				}
+		}
 
-				myIndex++;
+		myIndex++;
 
-				if (myIndex > x.length) {
-					myIndex = 1
-				}
+		if (myIndex > x.length) {
+			myIndex = 1
+		}
 
-				x[myIndex - 1].style.display = "block";
+		x[myIndex - 1].style.display = "block";
 
-				setTimeout(carousel, 2000); // Change image every 2 seconds
+		setTimeout(carousel, 2000); // Change image every 2 seconds
 
-			}
-		</script>
+	}
+</script>
 
-	</div><!-- Body inner end -->
+</div><!-- Body inner end -->

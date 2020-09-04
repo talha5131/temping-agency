@@ -11,9 +11,11 @@
 			/* width: 100%; */
 			overflow-x: hidden;
 		}
-		#table-margin-right{
+
+		#table-margin-right {
 			padding-right: 200px;
 		}
+
 		.text-align {
 			text-align: center;
 		}
@@ -22,321 +24,302 @@
 
 
 
-		<div id="banner-area">
+<div id="banner-area">
 
-			<img src="public/assets/images/banner/banner1.jpg" alt ="" />
+	<img src="public/assets/images/banner/banner1.jpg" alt="" />
 
-			<div class="parallax-overlay"></div>
+	<div class="parallax-overlay"></div>
 
-			<!-- Subpage title start -->
+	<!-- Subpage title start -->
 
-			<div class="banner-title-content">
+	<div class="banner-title-content">
 
-				<div class="text-center">
+		<div class="text-center">
 
-					<h2> Catering Staff</h2>
+			<h2> Catering Staff</h2>
 
-					<ul class="breadcrumb">
+			<ul class="breadcrumb">
 
-						<li><a href="{{url('/')}}"> Home</a></li>
+				<li><a href="{{url('/')}}"> Home</a></li>
 
-						<li>Services</li>
+				<li>Services</li>
 
-						<li> Catering Staff </li>
+				<li> Catering Staff </li>
 
-					</ul>
+			</ul>
 
-				</div>
+		</div>
 
-			</div><!-- Subpage title end -->
+	</div><!-- Subpage title end -->
 
-		</div><!-- Banner area end -->
-
-
-
-		<!-- Main container start -->
+</div><!-- Banner area end -->
 
 
 
-		<section id="main-container">
-
-			<div class="container">
+<!-- Main container start -->
 
 
 
-				<!-- Company Profile -->
+<section id="main-container">
+
+	<div class="container">
 
 
 
-				<div class="row">
+		<!-- Company Profile -->
 
-					<div class="col-md-12 heading text-center">
 
-						<h2 class="title2">Catering Staff
 
-							<span class="title-desc"> Temping Agency </span>
+		<div class="row">
 
-						</h2>
+			<div class="col-md-12 heading text-center">
+
+				<h2 class="title2">Catering Staff
+
+					<span class="title-desc"> Temping Agency </span>
+
+				</h2>
+
+			</div>
+
+		</div><!-- Title row end -->
+
+
+
+		<div class="row about-wrapper-top">
+
+			<div class="col-md-12 ts-padding about-message">
+
+
+
+
+
+				<p class="text-align"> Our catering division is widely recognised as one of the market leaders in London, supplying professional, well trained staff to the catering and hospitality industry and providing only the best service to our valued clientele.</p>
+
+				<p class="text-align"> Our team consists of a group of driven, motivated individuals who have a good understanding of the recruitment challenges that are unique to the catering industry and they make sure that all candidates who are recruited are well trained and experienced enough to satisfy the individual needs of every customer. We know that you will not tolerate sloppy work and so neither do we.</p>
+
+				<p class="text-align">We make sure that every recruit who goes through our agency is of the very highest caliber so that once they arrive on site they are able to commence work and provide top quality service that will hold not only their own, but also our name up to the high standard that our customers have come to expect from us. We think it is important that you have both the confidence and peace of mind that comes from knowing that all of our candidates will provide the very best service to you and your guests. </p>
+
+				<section>
+
+					<div class="container">
+
+						<div class="row">
+
+							<div class="w3-content w3-section" style="max-width:1100px">
+
+
+
+								<img class="mySlides" src="public/assets/images/slider3/66946269_s.jpg" style="width:100%">
+
+								<img class="mySlides" src="public/assets/images/slider3/wedding-1937022.jpg" style="width:100%">
+
+								<img class="mySlides" src="public/assets/images/slider3/hier catering.jpg" style="width:100%">
+
+
+							</div>
+
+						</div>
 
 					</div>
 
-				</div><!-- Title row end -->
+				</section>
 
+				<table class="table table-bordered" style="height: 111px;" width="250">
+					<tbody>
+						<tr>
+							<td style="background-color: #aebae6; width: 213px;" width="213"><span style="color: #000000;"><strong>Kitchen Porter</strong></span></td>
+							<td style="background-color: #83e67e;" width="213" width:=""><span style="color: #000000;"><strong>Waitress</strong></span></td>
+							<td style="background-color: #ede861;" width="213" width:=""><span style="color: #000000;"><strong>Head Chef</strong></span></td>
+							<td style="background-color: #87e0cb;" width="213" width:=""><span style="color: #000000;"><strong>School Cook</strong></span></td>
+						</tr>
+						<tr>
+							<td style="background-color: #aebae6; width: 213px;" width="213"><span style="color: #000000;"><strong>Kitchen Assistant</strong></span></td>
+							<td style="background-color: #83e67e; width: 213px;" width="213"><span style="color: #000000;"><strong>Barista</strong></span></td>
+							<td style="background-color: #ede861; width: 213px;" width="213"><span style="color: #000000;"><strong>Sous Chef</strong></span></td>
+							<td style="background-color: #87e0cb; width: 213px;" width="213"><span style="color: #000000;"><strong>Chef de Partie</strong></span></td>
+						</tr>
+						<tr>
+							<td style="background-color: #aebae6; width: 213px;" width="213"><span style="color: #000000;"><strong>Waiters</strong></span></td>
+							<td style="background-color: #83e67e; width: 213px;" width="213"><span style="color: #000000;"><strong>Café Assistant</strong></span></td>
+							<td style="background-color: #ede861; width: 213px;" width="213"><span style="color: #000000;"><strong>Commic Chef</strong></span></td>
+							<td style="background-color: #87e0cb; width: 213px;" width="213"><span style="color: #000000;"><strong>Grill Chef</strong></span></td>
+						</tr>
+					</tbody>
+				</table>
 
 
-				<div class="row about-wrapper-top">
+				<h3 class="text-align"> Temporary & Ad-hoc staffing </h3>
 
-					<div class="col-md-12 ts-padding about-message">
+				<br>
 
+				<p class="text-align"> We provide staff for any position within the catering industry from chefs to kitchen porter to table waiters on a temporary or ad-hoc basis according to the needs of the customer. We know that no two customer’s needs are exactly the same and we are flexible enough to meet the needs of any individual yet rigid enough that our quality of service and the quality of our candidates is never diminished in any way. </p>
 
 
 
+				<br>
 
-						<p class="text-align"> Our catering division is widely recognised as one of the market leaders in London, supplying professional, well trained staff to the catering and hospitality industry and providing only the best service to our valued clientele.</p>
+				<h3 class="text-align"> Chef Agency </h3>
 
-						<p class="text-align">  Our team consists of a group of driven, motivated individuals who have a good understanding of the recruitment challenges that are unique to the catering industry and they make sure that all candidates who are recruited are well trained and experienced enough to satisfy the individual needs of every customer. We know that you will not tolerate sloppy work and so neither do we.</p>
+				<br>
 
-						<p class="text-align">We make sure that every recruit who goes through our agency is of the very highest caliber so that once they arrive on site they are able to commence work and provide top quality service that will hold not only their own, but also our name up to the high standard that our customers have come to expect from us. We think it is important that you have both the confidence and peace of mind that comes from knowing that all of our candidates will provide the very best service to you and your guests.  </p>  
+				<p class="text-align"> So when you are looking through catering agencies or temporary chef agencies in London then you need look no further. With us you can rest assured that you are in more than capable hands. </p>
 
-						<section>
 
-							<div class="container">
 
-								<div class="row">
 
-									<div class="w3-content w3-section" style="max-width:1100px">
 
 
 
-										<img class="mySlides" src="public/assets/images/slider3/66946269_s.jpg" style="width:100%">
 
-										<img class="mySlides" src="public/assets/images/slider3/wedding-1937022.jpg" style="width:100%">
 
-										<img class="mySlides" src="public/assets/images/slider3/hier catering.jpg" style="width:100%">					   
 
 
-									</div>
 
-								</div>
 
-							</div>
+			</div>
+			<!--/ About message end -->
 
-						</section>
+			<!--/ About image end -->
 
-						<table  class="table table-bordered" style="height: 111px;" width="250">
-							<tbody>
-								<tr>
-									<td style="background-color: #aebae6; width: 213px;" width="213"><span style="color: #000000;"><strong>Kitchen Porter</strong></span></td>
-									<td style="background-color: #83e67e;" width="213" width:=""><span style="color: #000000;"><strong>Waitress</strong></span></td>
-									<td style="background-color: #ede861;" width="213" width:=""><span style="color: #000000;"><strong>Head Chef</strong></span></td>
-									<td style="background-color: #87e0cb;" width="213" width:=""><span style="color: #000000;"><strong>School Cook</strong></span></td>
-								</tr>
-								<tr>
-									<td style="background-color: #aebae6; width: 213px;" width="213"><span style="color: #000000;"><strong>Kitchen Assistant</strong></span></td>
-									<td style="background-color: #83e67e; width: 213px;" width="213"><span style="color: #000000;"><strong>Barista</strong></span></td>
-									<td style="background-color: #ede861; width: 213px;" width="213"><span style="color: #000000;"><strong>Sous Chef</strong></span></td>
-									<td style="background-color: #87e0cb; width: 213px;" width="213"><span style="color: #000000;"><strong>Chef de Partie</strong></span></td>
-								</tr>
-								<tr>
-									<td style="background-color: #aebae6; width: 213px;" width="213"><span style="color: #000000;"><strong>Waiters</strong></span></td>
-									<td style="background-color: #83e67e; width: 213px;" width="213"><span style="color: #000000;"><strong>Café Assistant</strong></span></td>
-									<td style="background-color: #ede861; width: 213px;" width="213"><span style="color: #000000;"><strong>Commic Chef</strong></span></td>
-									<td style="background-color: #87e0cb; width: 213px;" width="213"><span style="color: #000000;"><strong>Grill Chef</strong></span></td>
-								</tr>
-							</tbody>
-						</table>
+		</div>
+		<!--/ Content row end -->
 
-						
-						<h3 class="text-align"> Temporary & Ad-hoc staffing </h3>
 
-						<br>
 
-						<p class="text-align"> We provide staff for any position within the catering industry from chefs to kitchen porter to table waiters on a temporary or ad-hoc basis according to the needs of the customer. We know that no two customer’s needs are exactly the same and we are flexible enough to meet the needs of any individual yet rigid enough that our quality of service and the quality of our candidates is never diminished in any way. </p>
 
 
 
-						<br>
 
-						<h3 class="text-align"> Chef Agency </h3>
+		<!-- Company Profile -->
 
-						<br>
 
-						<p class="text-align"> So when you are looking through catering agencies or temporary chef agencies in London then you need look no further. With us you can rest assured that you are in more than capable hands. </p>
 
+	</div>
+	<!--/ 1st container end -->
 
 
 
 
 
+	<div class="gap-60"></div>
 
 
 
 
 
+	<!-- Counter Strat -->
 
+	<div class="ts_counter_bg parallax parallax2">
+		<div class="parallax-overlay"></div>
+		<div class="container">
+			<div class="row wow fadeInLeft text-center">
+				<div class="facts col-md-2 col-sm-6">
+					<span class="facts-icon"><i class="fas fa-users"></i></span>
+					<div class="facts-num">
+						<span class="counter">52950</span> <span> +</span>
+					</div>
+					<h3>Workers</h3>
+				</div>
 
-					</div><!--/ About message end -->
+				<div class="facts col-md-2 col-sm-6">
+					<span class="facts-icon"><i class="far fa-thumbs-up"></i></span>
+					<div class="facts-num">
+						<span class="counter">98</span> <span> %</span>
+					</div>
+					<h3>Enjoy work with us</h3>
+				</div>
 
-					<!--/ About image end -->
+				<div class="facts col-md-2 col-sm-6">
+					<span class="facts-icon"><i class="fas fa-user-shield"></i></span>
+					<div class="facts-num">
+						<span class="counter">92</span> <span> %</span>
+					</div>
+					<h3>Retained Workers</h3>
+				</div>
 
-				</div><!--/ Content row end -->
+				<div class="facts col-md-2 col-sm-6">
+					<span class="facts-icon"><i class="far fa-clock"></i></span>
+					<div class="facts-num">
+						<span class="counter">4773600</span> <span> +</span>
+					</div>
+					<h3>Worked Hours</h3>
+				</div>
 
+				<div class="facts col-md-2 col-sm-6">
+					<span class="facts-icon"><i class="fa fa-user"></i></span>
+					<div class="facts-num">
+						<span class="counter">1200</span> <span> +</span>
+					</div>
+					<h3>Clients</h3>
+				</div>
 
+				<div class="facts col-md-2 col-sm-6">
+					<span class="facts-icon"><i class="fas fa-building"></i></span>
+					<div class="facts-num">
+						<span class="counter">39780</span> <span> +</span>
+					</div>
+					<h3>Sites</h3>
+				</div>
 
 
 
 
 
-				<!-- Company Profile -->
+			</div>
+			<!--/ row end -->
+		</div>
+		<!--/ Container end -->
+	</div>
+	<!--/ Counter end -->
 
 
 
-			</div><!--/ 1st container end -->
 
 
 
-			
 
-			<div class="gap-60"></div>
+</section>
+<!--/ Main container end -->
 
 
 
 
 
-			<!-- Counter Strat -->
-
-			<!-- <div class="ts_counter_bg parallax parallax2">
-
-				<div class="parallax-overlay"></div>
-
-				<div class="container">
-
-					<div class="row wow fadeInLeft text-center">
-
-						<div class="facts col-md-3 col-sm-6">
-
-							<span class="facts-icon"><i class="fa fa-user"></i></span>
-
-							<div class="facts-num">
-
-								<span class="counter">1500</span>
-
-							</div>
-
-							<h3>Candidates</h3> 
-
-						</div>
-
-
-
-						<div class="facts col-md-3 col-sm-6">
-
-							<span class="facts-icon"><i class="fa fa-institution"></i></span>
-
-							<div class="facts-num">
-
-								<span class="counter">1277</span>
-
-							</div>
-
-							<h3>Recruitments</h3> 
-
-						</div>
-
-
-
-						<div class="facts col-md-3 col-sm-6">
-
-							<span class="facts-icon"><i class="fa fa-suitcase"></i></span>
-
-							<div class="facts-num">
-
-								<span class="counter">1469</span>
-
-							</div>
-
-							<h3>Jobs</h3> 
-
-						</div>
-
-
-
-						<div class="facts col-md-3 col-sm-6">
-
-							<span class="facts-icon"><i class="fa fa-trophy"></i></span>
-
-							<div class="facts-num">
-
-								<span class="counter">76</span>
-
-							</div>
-
-							<h3>Awards</h3> 
-
-						</div> -->
-
-
-
-
-
-
-
-
-
-
-
-					<!-- </div>/ row end -->
-
-				<!-- </div>/ Container end -->
-
-			<!-- </div>/ Counter end -->
-
-
-
-
-
-
-
-		</section><!--/ Main container end -->
-
-
-
-
-
-	<!-- Javascript Files
+<!-- Javascript Files
 
 		================================================== -->
 
-		<script>
+<script>
+	var myIndex = 0;
 
-			var myIndex = 0;
-
-			carousel();
-
+	carousel();
 
 
-			function carousel() {
 
-				var i;
+	function carousel() {
 
-				var x = document.getElementsByClassName("mySlides");
+		var i;
 
-				for (i = 0; i < x.length; i++) {
+		var x = document.getElementsByClassName("mySlides");
 
-					x[i].style.display = "none";  
+		for (i = 0; i < x.length; i++) {
 
-				}
+			x[i].style.display = "none";
 
-				myIndex++;
+		}
 
-				if (myIndex > x.length) {myIndex = 1}    
+		myIndex++;
 
-					x[myIndex-1].style.display = "block";  
+		if (myIndex > x.length) {
+			myIndex = 1
+		}
 
-  setTimeout(carousel, 2000); // Change image every 2 seconds
+		x[myIndex - 1].style.display = "block";
 
-}
+		setTimeout(carousel, 2000); // Change image every 2 seconds
 
+	}
 </script>
 
 </div><!-- Body inner end -->

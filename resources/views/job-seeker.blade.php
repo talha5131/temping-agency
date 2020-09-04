@@ -6,16 +6,16 @@
 <link rel="apple-touch-icon-precomposed" sizes="72x72" href="public/assets/images/logo-favicon.png">
 <link rel="apple-touch-icon-precomposed" href="public/assets/images/logo-favicon.png">
 <style>
-	@media only screen and (min-width: 200px) and (max-width: 768px) {
-		body {
-			/* width: 100%; */
-			overflow-x: hidden;
-		}
+    @media only screen and (min-width: 200px) and (max-width: 768px) {
+        body {
+            /* width: 100%; */
+            overflow-x: hidden;
+        }
 
         .text-align {
             text-align: center;
         }
-	}
+    }
 </style>
 
 
@@ -89,19 +89,19 @@
                         <h3 style="text-align: center;">Facts & Figures</h3>
                     </div>
                     <div class="col-md-4">
-                        <h4>Relevant Experience</h4>
-                        <p>We make sure all our operatvies Must have minimum 1 - 2 years relevant Experience.</p>
+                        <h4>SIGNIFICANT EXPERIENCE</h4>
+                        <p>We ensure all our operatvies Must have least 1 - 2 years important Experience.</p>
                         <a href="#">Learn More <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
                     </div>
                     <div class="col-md-4">
                         <h4>
                             24/7 Availability</h4>
-                        <p>Our Customer Service staff available online & on phone 24/7 to fill any urgent vacancy.</p>
+                        <p>Our customer service staff is available 24/7 online and on phone to fill in any urgent vacancy.</p>
                         <a href="#">Learn More <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
                     </div>
                     <div class="col-md-4">
-                        <h4>Flexible & Reliable</h4>
-                        <p>All our temps are fully able to start on short noitce whenever require.</p>
+                        <h4>ADAPTABLE AND RELIABLE</h4>
+                        <p>Every one of our temps are completely ready to begin on short notice at whatever point required.</p>
                         <a href="#">Learn More <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
                     </div>
                     <div class="col-md-4">
@@ -110,23 +110,22 @@
                     </div>
                     <div class="col-md-4">
                         <h1>10,000+</h1>
-                        <p>Labourer Agency has grown to a team of more than 10,000 talented individuals.</p>
+                        <p>Temping Agency has now grown its team to more than 10,000 talented people.</p>
                     </div>
                     <div class="col-md-4">
-                        <h1>Millions</h1>
-                        <p>Since opening, millions of Job Seekers have been registered with Labourer Agency.</p>
+                        <h1>MILLIONS</h1>
+                        <p>Since founded, millions of job searchers have been registered with temping agency.</p>
                     </div>
                 </div>
                 <br>
-                <h3>Job Seeker</h3>
+                <h3>Job SEARCHER</h3>
 
                 <br>
 
-                <p>Unlike many other recruitment agencies, at Labourer Agency UK, we definitely don’t believe that clients are more
-                    important than our candidates. We strongly believe that our candidates are important and deserve the best service
-                    we can offer, after all, where would we be without you!</p>
+                <p>At Temping Agency, we don’t prioritize our clients as compared to our candidates unlike other recruitment agencies. Our main focus is our candidates and we believe that they’re important and they deserve the best service that we can offer.
+                </p>
 
-                <p>We provide the following services to our job seekers.</p>
+                <p>We provide the following services to our job seekers:</p>
 
                 <br>
 
@@ -134,17 +133,13 @@
 
                 <br>
 
-                <p>We won’t leave you hanging around waiting for a phone call after you make your application. We will ensure we get
-                    back to you quickly, no matter what the outcome of your application.</p>
+                <p>We won't leave you waiting for a call after you make your application. We will guarantee we hit you up quickly, regardless of the result of your application.</p>
 
-                <h3> Regular Contact </h3>
+                <h3> CONSISTENT CONTACT </h3>
 
                 <br>
 
-                <p>We understand the importance of building a strong and lasting relationship with our candidates, which is why we will
-                    always keep in regular contact with you. We will do this throughout the recruitment process and when you start a
-                    job, just to ensure you are getting on well. We will always endeavour to get back to you quickly with any
-                    questions you may have.</p>
+                <p>We realize the significance of building a solid and long-lasting relationship with our candidates, which is the reason we will consistently stay in touch with you. We will do this all through the recruitment process and when you start work, just to guarantee you are getting on well. We will consistently attempt to contact you back rapidly with any inquiries you may have.</p>
 
                 <br>
 
@@ -152,9 +147,7 @@
 
                 <br>
 
-                <p>The job searching process can be quite daunting, especially if you don’t have much experience with it and we want
-                    to make it easier for you by providing ongoing advice and support. We will offer guidance on your CV and interview
-                    skills, to help ensure you perform as well as possible at interview stage.
+                <p>The job searching procedure can be very overwhelming, particularly if you don't have a lot of experience in it and we need to make it simpler for you by giving continuous guidance and support. We will offer guidance on your CV and interview skills, to help guarantee you perform as well as possible during interview.
                 </p>
 
                 <br>
@@ -163,13 +156,11 @@
 
                 <br>
 
-                <p>There is nothing worse than applying for a job or attending an interview and not hearing anything back. It can be
-                    very frustrating and this is why we will always provide you with feedback, regardless of the outcome.
-                </p>
+                <p>There is nothing more awful than going for a job interview and not hearing anything back. It tends to be frustrating and this is the reason we will consistently give you feedback, regardless of the outcome. </p>
 
-                <p>We know how important it is for your development and believe it is only fair when you have went to the effort to apply or attend interview.</p>
+                <p>We realize how significant it is for your progress and believe it is quite reasonable when you have done the effort of applying and attend interview.</p>
 
-                <p>We will talk you through your feedback and offer any support you might need to improve in the future and for other interviews.</p>
+                <p>We will talk you through your feedback and offer any help you may need to improve later and for other interviews.</p>
             </div>
             <!--/ About message end -->
 
@@ -203,94 +194,68 @@
 
     <!-- Counter Strat -->
 
-    <!-- <div class="ts_counter_bg parallax parallax2">
+    <div class="ts_counter_bg parallax parallax2">
+		<div class="parallax-overlay"></div>
+		<div class="container">
+			<div class="row wow fadeInLeft text-center">
+				<div class="facts col-md-2 col-sm-6">
+					<span class="facts-icon"><i class="fas fa-users"></i></span>
+					<div class="facts-num">
+						<span class="counter">52950</span> <span> +</span>
+					</div>
+					<h3>Workers</h3>
+				</div>
 
-        <div class="parallax-overlay"></div>
+				<div class="facts col-md-2 col-sm-6">
+					<span class="facts-icon"><i class="far fa-thumbs-up"></i></span>
+					<div class="facts-num">
+					<span class="counter">98</span> <span> %</span>
+					</div>
+					<h3>Enjoy work with us</h3>
+				</div>
 
-        <div class="container">
+				<div class="facts col-md-2 col-sm-6">
+					<span class="facts-icon"><i class="fas fa-user-shield"></i></span>
+					<div class="facts-num">
+					<span class="counter">92</span> <span> %</span>
+					</div>
+					<h3>Retained Workers</h3>
+				</div>
 
-            <div class="row wow fadeInLeft text-center">
+				<div class="facts col-md-2 col-sm-6">
+					<span class="facts-icon"><i class="far fa-clock"></i></span>
+					<div class="facts-num">
+					<span class="counter">4773600</span> <span> +</span>
+					</div>
+					<h3>Worked Hours</h3>
+				</div>
 
-                <div class="facts col-md-3 col-sm-6">
+				<div class="facts col-md-2 col-sm-6">
+					<span class="facts-icon"><i class="fa fa-user"></i></span>
+					<div class="facts-num">
+					<span class="counter">1200</span> <span> +</span>
+					</div>
+					<h3>Clients</h3>
+				</div>
 
-                    <span class="facts-icon"><i class="fa fa-user"></i></span>
-
-                    <div class="facts-num">
-
-                        <span class="counter">1500</span>
-
-                    </div>
-
-                    <h3>Candidates</h3>
-
-                </div>
-
-
-
-                <div class="facts col-md-3 col-sm-6">
-
-                    <span class="facts-icon"><i class="fa fa-institution"></i></span>
-
-                    <div class="facts-num">
-
-                        <span class="counter">1277</span>
-
-                    </div>
-
-                    <h3>Recruitments</h3>
-
-                </div>
-
-
-
-                <div class="facts col-md-3 col-sm-6">
-
-                    <span class="facts-icon"><i class="fa fa-suitcase"></i></span>
-
-                    <div class="facts-num">
-
-                        <span class="counter">1469</span>
-
-                    </div>
-
-                    <h3>Jobs</h3>
-
-                </div>
-
-
-
-                <div class="facts col-md-3 col-sm-6">
-
-                    <span class="facts-icon"><i class="fa fa-trophy"></i></span>
-
-                    <div class="facts-num">
-
-                        <span class="counter">76</span>
-
-                    </div>
-
-                    <h3>Awards</h3>
-
-                </div>
+				<div class="facts col-md-2 col-sm-6">
+					<span class="facts-icon"><i class="fas fa-building"></i></span>
+					<div class="facts-num">
+					<span class="counter">39780</span> <span> +</span>
+					</div>
+					<h3>Sites</h3>
+				</div>
 
 
 
 
 
-
-
-
-
-
-
-            </div> -->
-            <!--/ row end -->
-
-        <!-- </div> -->
-        <!--/ Container end -->
-
-    <!-- </div> -->
-    <!--/ Counter end -->
+			</div>
+			<!--/ row end -->
+		</div>
+		<!--/ Container end -->
+	</div>
+	<!--/ Counter end -->
 
 
 

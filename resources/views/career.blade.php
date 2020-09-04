@@ -17,7 +17,7 @@
 		}
 	}
 
-	.desc{
+	.desc {
 		display: inline-block;
 		white-space: nowrap;
 		overflow-x: hidden;
@@ -27,42 +27,43 @@
 </style>
 
 
-		<div id="banner-area">
-			<img src="public/assets/images/banner/banner2.jpg" alt="" />
-			<div class="parallax-overlay"></div>
-			<!-- Subpage title start -->
-			<div class="banner-title-content">
-				<div class="text-center">
-					<h2>Jobs Openings</h2>
-					<ul class="breadcrumb">
-						<li>Home</li>
-						<li>Company</li>
-						<li><a href="#"> Jobs</a></li>
-					</ul>
-				</div>
-			</div><!-- Subpage title end -->
-		</div><!-- Banner area end -->
+<div id="banner-area">
+	<img src="public/assets/images/banner/banner2.jpg" alt="" />
+	<div class="parallax-overlay"></div>
+	<!-- Subpage title start -->
+	<div class="banner-title-content">
+		<div class="text-center">
+			<h2>Jobs Openings</h2>
+			<ul class="breadcrumb">
+				<li>Home</li>
+				<li>Company</li>
+				<li><a href="#"> Jobs</a></li>
+			</ul>
+		</div>
+	</div><!-- Subpage title end -->
+</div><!-- Banner area end -->
 
-		<!-- Main container start -->
+<!-- Main container start -->
 
-		<section id="main-container">
-			<div class="container">
+<section id="main-container">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
 				<div class="row">
-					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-
-						<div class="row">
-                            @foreach($jobs as $job)
-							<div class="col-md-4">
-								<div class="well">
-									<img src="public/assets/images/construction/Construction-Laborers.jpg" class="img-responsive">
-									<h4><a href="#">{{ $job->title }}</a></h4>
-{{--									<div class="desc">{{ $job->description }}</div> --}}
-									<a href="{{$job->slug}}" class="btn btn-primary">Read More</a>
-								</div>
-							</div>
-                            @endforeach
-                            {{ $jobs->links() }}
-<!-- 							<div class="col-md-4">
+					@foreach($jobs as $job)
+					<div class="col-md-4">
+						<div class="well">
+							<img src="public/assets/images/construction/Construction-Laborers.jpg" class="img-responsive">
+							<h4><a href="#">{{ $job->title }}</a></h4>
+							{{-- <div class="desc">{{ $job->description }}
+						</div> --}}
+						<a href="{{$job->slug}}" class="btn btn-primary">Read More</a>
+					</div>
+				</div>
+				@endforeach
+				{{ $jobs->links() }}
+				<!-- 							<div class="col-md-4">
 								<div class="well">
 									<img src="public/assets/images/pictures/hub-05-29-jobinterviewlies-Hero-1200x900.jpg" class="img-responsive">
 									<h4><a href="#">Accountant – US Department of Veterans Affairs – Sheridan, WY</a></h4>
@@ -80,7 +81,7 @@
 							</div> 
 						</div> -->
 
-<!-- 						<div class="row">
+				<!-- 						<div class="row">
 							<div class="col-md-4">
 								<div class="well">
 									<img src="public/assets/images/pictures/hub-05-29-jobinterviewlies-Hero-1200x900.jpg" class="img-responsive">
@@ -106,7 +107,7 @@
 								</div>
 							</div>
 						</div> -->
-						<!--
+				<!--
 						<h3 class="title-border">Senior Manager</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, natus voluptatibus adipisci porro magni dolore eos eius ducimus corporis quos perspiciatis quis iste, vitae autem libero ullam omnis cupiditate quam.</p>
 
@@ -130,9 +131,9 @@
 									</div>
 								</div>
 							</div> -->
-						<!--/ Panel 1 end-->
+				<!--/ Panel 1 end-->
 
-						<!-- 							<div class="panel panel-default">
+				<!-- 							<div class="panel panel-default">
 								<div class="panel-heading">
 									<h4 class="panel-title">
 										<a data-toggle="collapse" class="collapsed" data-parent="#accordionA, #accordionB" href="#collapseTwo"> Job Responsibilities</a>
@@ -151,9 +152,9 @@
 									</div>
 								</div>
 							</div> -->
-						<!--/ Panel 2 end-->
+				<!--/ Panel 2 end-->
 
-						<!--
+				<!--
 							<div class="panel panel-default">
 								<div class="panel-heading">
 									<h4 class="panel-title">
@@ -171,18 +172,18 @@
 									</div>
 								</div>
 							</div> -->
-						<!--/ Panel 3 end-->
+				<!--/ Panel 3 end-->
 
-						<!-- 							<div class="gap-20"></div>
+				<!-- 							<div class="gap-20"></div>
 
 							<p><a href="#" class="btn btn-primary solid">Apply Now <i class="fa fa-long-arrow-right"></i></a></p>
 
 						</div> -->
-						<!--/ Accordion end -->
+				<!--/ Accordion end -->
 
-						<!--/ 1st career end -->
+				<!--/ 1st career end -->
 
-						<!-- 						<div class="gap-40"></div>
+				<!-- 						<div class="gap-40"></div>
 
 						<h3 class="title-border">Assistent Manager (P&amp;L)</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, natus voluptatibus adipisci porro magni dolore eos eius ducimus corporis quos perspiciatis quis iste, vitae autem libero ullam omnis cupiditate quam.</p>
@@ -207,9 +208,9 @@
 									</div>
 								</div>
 							</div> -->
-						<!--/ Panel 1 end-->
+				<!--/ Panel 1 end-->
 
-						<!-- 							<div class="panel panel-default">
+				<!-- 							<div class="panel panel-default">
 								<div class="panel-heading">
 									<h4 class="panel-title">
 										<a data-toggle="collapse" class="collapsed" data-parent="#accordionA, #accordionB" href="#collapseB"> Job Responsibilities</a>
@@ -228,10 +229,10 @@
 									</div>
 								</div>
 							</div> -->
-						<!--/ Panel 2 end-->
+				<!--/ Panel 2 end-->
 
 
-						<!-- 							<div class="panel panel-default">
+				<!-- 							<div class="panel panel-default">
 								<div class="panel-heading">
 									<h4 class="panel-title">
 										<a data-toggle="collapse" class="collapsed" data-parent="#accordionA, #accordionB" href="#collapseC"> What’s in it for you?</a>
@@ -248,42 +249,105 @@
 									</div>
 								</div>
 							</div> -->
-						<!--/ Panel 3 end-->
-						<!--
+				<!--/ Panel 3 end-->
+				<!--
 							<div class="gap-20"></div>
 
 							<p><a href="#" class="btn btn-primary solid">Apply Now <i class="fa fa-long-arrow-right"></i></a></p>
 
 						</div> -->
-						<!--/ Accordion end -->
+				<!--/ Accordion end -->
 
-					</div>
-					<!--/ Content col end -->
-
-					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-						<div class="sidebar sidebar-right">
-							<!-- category start -->
-							<div class="widget widget-categories">
-								<h3 class="text-align">How to Apply</h3>
-								<p class="text-align">Send your cv, relevant work experience and anything else that will make you stand out to Temping Agency.</p>
-							</div><!-- category end -->
-
-							<!-- tags start -->
-							<div class="widget widget-tags">
-								<h3 class="text-align">Why Us</h3>
-								<p class="text-align">We are an award winning company. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, natus voluptatibus adipisci porro magni dolore eos eius ducimus corporis quos perspiciatis quis iste, vitae autem libero ullam omnis cupiditate quam.</p>
-							</div><!-- tags end -->
-
-
-						</div>
-						<!--/ Sidebar end -->
-					</div>
-					<!--/ Sidebar col end -->
-				</div>
-				<!--/ row end -->
 			</div>
-			<!--/ container end -->
-		</section>
-		<!--/ Main container end -->
+			<!--/ Content col end -->
 
-	</div><!-- Body inner end -->
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="sidebar sidebar-right">
+					<!-- category start -->
+					<div class="widget widget-categories">
+						<h3 class="text-align">How to Apply</h3>
+						<p class="text-align">Send your cv, relevant work experience and anything else that will make you stand out to Temping Agency.</p>
+					</div><!-- category end -->
+
+					<!-- tags start -->
+					<div class="widget widget-tags">
+						<h3 class="text-align">Why Us</h3>
+						<p class="text-align">We are an award winning company. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, natus voluptatibus adipisci porro magni dolore eos eius ducimus corporis quos perspiciatis quis iste, vitae autem libero ullam omnis cupiditate quam.</p>
+					</div><!-- tags end -->
+
+
+				</div>
+				<!--/ Sidebar end -->
+			</div>
+			<!--/ Sidebar col end -->
+		</div>
+		<!--/ row end -->
+	</div>
+	<!--/ container end -->
+</section>
+<!--/ Main container end -->
+
+</div><!-- Body inner end -->
+
+<div class="ts_counter_bg parallax parallax2">
+	<div class="parallax-overlay"></div>
+	<div class="container">
+		<div class="row wow fadeInLeft text-center">
+			<div class="facts col-md-2 col-sm-6">
+				<span class="facts-icon"><i class="fas fa-users"></i></span>
+				<div class="facts-num">
+					<span class="counter">52950</span> <span> +</span>
+				</div>
+				<h3>Workers</h3>
+			</div>
+
+			<div class="facts col-md-2 col-sm-6">
+				<span class="facts-icon"><i class="far fa-thumbs-up"></i></span>
+				<div class="facts-num">
+					<span class="counter">98</span> <span> %</span>
+				</div>
+				<h3>Enjoy work with us</h3>
+			</div>
+
+			<div class="facts col-md-2 col-sm-6">
+				<span class="facts-icon"><i class="fas fa-user-shield"></i></span>
+				<div class="facts-num">
+					<span class="counter">92</span> <span> %</span>
+				</div>
+				<h3>Retained Workers</h3>
+			</div>
+
+			<div class="facts col-md-2 col-sm-6">
+				<span class="facts-icon"><i class="far fa-clock"></i></span>
+				<div class="facts-num">
+					<span class="counter">4773600</span> <span> +</span>
+				</div>
+				<h3>Worked Hours</h3>
+			</div>
+
+			<div class="facts col-md-2 col-sm-6">
+				<span class="facts-icon"><i class="fa fa-user"></i></span>
+				<div class="facts-num">
+					<span class="counter">1200</span> <span> +</span>
+				</div>
+				<h3>Clients</h3>
+			</div>
+
+			<div class="facts col-md-2 col-sm-6">
+				<span class="facts-icon"><i class="fas fa-building"></i></span>
+				<div class="facts-num">
+					<span class="counter">39780</span> <span> +</span>
+				</div>
+				<h3>Sites</h3>
+			</div>
+
+
+
+
+
+		</div>
+		<!--/ row end -->
+	</div>
+	<!--/ Container end -->
+</div>
+<!--/ Counter end -->

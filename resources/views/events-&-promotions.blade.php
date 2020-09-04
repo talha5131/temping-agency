@@ -184,93 +184,67 @@
 
 	<!-- Counter Strat -->
 
-	<!-- <div class="ts_counter_bg parallax parallax2">
-
+	<div class="ts_counter_bg parallax parallax2">
 		<div class="parallax-overlay"></div>
-
 		<div class="container">
-
 			<div class="row wow fadeInLeft text-center">
+				<div class="facts col-md-2 col-sm-6">
+					<span class="facts-icon"><i class="fas fa-users"></i></span>
+					<div class="facts-num">
+						<span class="counter">52950</span> <span> +</span>
+					</div>
+					<h3>Workers</h3>
+				</div>
 
-				<div class="facts col-md-3 col-sm-6">
+				<div class="facts col-md-2 col-sm-6">
+					<span class="facts-icon"><i class="far fa-thumbs-up"></i></span>
+					<div class="facts-num">
+						<span class="counter">98</span> <span> %</span>
+					</div>
+					<h3>Enjoy work with us</h3>
+				</div>
 
+				<div class="facts col-md-2 col-sm-6">
+					<span class="facts-icon"><i class="fas fa-user-shield"></i></span>
+					<div class="facts-num">
+						<span class="counter">92</span> <span> %</span>
+					</div>
+					<h3>Retained Workers</h3>
+				</div>
+
+				<div class="facts col-md-2 col-sm-6">
+					<span class="facts-icon"><i class="far fa-clock"></i></span>
+					<div class="facts-num">
+						<span class="counter">4773600</span> <span> +</span>
+					</div>
+					<h3>Worked Hours</h3>
+				</div>
+
+				<div class="facts col-md-2 col-sm-6">
 					<span class="facts-icon"><i class="fa fa-user"></i></span>
-
 					<div class="facts-num">
-
-						<span class="counter">1500</span>
-
+						<span class="counter">1200</span> <span> +</span>
 					</div>
-
-					<h3>Candidates</h3>
-
+					<h3>Clients</h3>
 				</div>
 
-
-
-				<div class="facts col-md-3 col-sm-6">
-
-					<span class="facts-icon"><i class="fa fa-institution"></i></span>
-
+				<div class="facts col-md-2 col-sm-6">
+					<span class="facts-icon"><i class="fas fa-building"></i></span>
 					<div class="facts-num">
-
-						<span class="counter">1277</span>
-
+						<span class="counter">39780</span> <span> +</span>
 					</div>
-
-					<h3>Recruitments</h3>
-
-				</div>
-
-
-
-				<div class="facts col-md-3 col-sm-6">
-
-					<span class="facts-icon"><i class="fa fa-suitcase"></i></span>
-
-					<div class="facts-num">
-
-						<span class="counter">1469</span>
-
-					</div>
-
-					<h3>Jobs</h3>
-
-				</div>
-
-
-
-				<div class="facts col-md-3 col-sm-6">
-
-					<span class="facts-icon"><i class="fa fa-trophy"></i></span>
-
-					<div class="facts-num">
-
-						<span class="counter">76</span>
-
-					</div>
-
-					<h3>Awards</h3>
-
+					<h3>Sites</h3>
 				</div>
 
 
 
 
 
-
-
-
-
-
-
-			</div> -->
+			</div>
 			<!--/ row end -->
-
-		<!-- </div> -->
+		</div>
 		<!--/ Container end -->
-
-	<!-- </div> -->
+	</div>
 	<!--/ Counter end -->
 
 

@@ -18,36 +18,36 @@
 	}
 </style>
 
-		<div id="banner-area">
-			<img src="public/assets/images/banner/banner1.jpg" alt="" />
-			<div class="parallax-overlay"></div>
-			<!-- Subpage title start -->
-			<div class="banner-title-content">
-				<div class="text-center">
-					<h2>About Us</h2>
-					<ul class="breadcrumb">
-						<li> <a href="{{url('/')}}">Home </a></li>
-						<li>Company</li>
-						<li> About Us</a></li>
-					</ul>
-				</div>
-			</div><!-- Subpage title end -->
-		</div><!-- Banner area end -->
+<div id="banner-area">
+	<img src="public/assets/images/banner/banner1.jpg" alt="" />
+	<div class="parallax-overlay"></div>
+	<!-- Subpage title start -->
+	<div class="banner-title-content">
+		<div class="text-center">
+			<h2>About Us</h2>
+			<ul class="breadcrumb">
+				<li> <a href="{{url('/')}}">Home </a></li>
+				<li>Company</li>
+				<li> About Us</a></li>
+			</ul>
+		</div>
+	</div><!-- Subpage title end -->
+</div><!-- Banner area end -->
 
-		<!-- Main container start -->
+<!-- Main container start -->
 
-		<section id="main-container">
-			<div class="container">
+<section id="main-container">
+	<div class="container">
 
-				<!-- Company Profile -->
+		<!-- Company Profile -->
 
-				<div class="row">
-					<div class="col-md-12 heading text-center">
-						<h2 class="title2">About Our Company
-							<span class="title-desc">Quality Recruitment Solutions</span>
-						</h2>
-					</div>
-				</div><!-- Title row end -->
+		<div class="row">
+			<div class="col-md-12 heading text-center">
+				<h2 class="title2">About Our Company
+					<span class="title-desc">Quality Recruitment Solutions</span>
+				</h2>
+			</div>
+		</div><!-- Title row end -->
 
 		<div class="row about-wrapper-top">
 			<div class="col-md-12 ts-padding about-message">
@@ -70,7 +70,7 @@
 				<p class="text-align">As a top<a style="color:#51284f; " href="https://www.temping-agency.com"> temping agency in London </a>, we are the best choice for all your recruitment and staffing needs backed by professional service and a replacement guarantee. </p>
 				<br> <br> <br>
 
-				<!-- Product Blocks -->
+
 
 				<div class="container">
 					<!-- Product Blocks -->
@@ -112,51 +112,67 @@
 
 
 	<!-- Counter Strat -->
-	<!-- <div class="ts_counter_bg parallax parallax2">
+	<div class="ts_counter_bg parallax parallax2">
 		<div class="parallax-overlay"></div>
 		<div class="container">
 			<div class="row wow fadeInLeft text-center">
-				<div class="facts col-md-3 col-sm-6">
+				<div class="facts col-md-2 col-sm-6">
+					<span class="facts-icon"><i class="fas fa-users"></i></span>
+					<div class="facts-num">
+						<span class="counter">52950</span> <span> +</span>
+					</div>
+					<h3>Workers</h3>
+				</div>
+
+				<div class="facts col-md-2 col-sm-6">
+					<span class="facts-icon"><i class="far fa-thumbs-up"></i></span>
+					<div class="facts-num">
+					<span class="counter">98</span> <span> %</span>
+					</div>
+					<h3>Enjoy work with us</h3>
+				</div>
+
+				<div class="facts col-md-2 col-sm-6">
+					<span class="facts-icon"><i class="fas fa-user-shield"></i></span>
+					<div class="facts-num">
+					<span class="counter">92</span> <span> %</span>
+					</div>
+					<h3>Retained Workers</h3>
+				</div>
+
+				<div class="facts col-md-2 col-sm-6">
+					<span class="facts-icon"><i class="far fa-clock"></i></span>
+					<div class="facts-num">
+					<span class="counter">4773600</span> <span> +</span>
+					</div>
+					<h3>Worked Hours</h3>
+				</div>
+
+				<div class="facts col-md-2 col-sm-6">
 					<span class="facts-icon"><i class="fa fa-user"></i></span>
 					<div class="facts-num">
-						<span class="counter">1200</span>
+					<span class="counter">1200</span> <span> +</span>
 					</div>
 					<h3>Clients</h3>
 				</div>
 
-				<div class="facts col-md-3 col-sm-6">
-					<span class="facts-icon"><i class="fa fa-institution"></i></span>
+				<div class="facts col-md-2 col-sm-6">
+					<span class="facts-icon"><i class="fas fa-building"></i></span>
 					<div class="facts-num">
-						<span class="counter">1277</span>
+					<span class="counter">39780</span> <span> +</span>
 					</div>
-					<h3>Item Sold</h3>
-				</div>
-
-				<div class="facts col-md-3 col-sm-6">
-					<span class="facts-icon"><i class="fa fa-suitcase"></i></span>
-					<div class="facts-num">
-						<span class="counter">869</span>
-					</div>
-					<h3>Projects</h3>
-				</div>
-
-				<div class="facts col-md-3 col-sm-6">
-					<span class="facts-icon"><i class="fa fa-trophy"></i></span>
-					<div class="facts-num">
-						<span class="counter">76</span>
-					</div>
-					<h3>Awards</h3>
+					<h3>Sites</h3>
 				</div>
 
 
 
 
 
-			</div> -->
+			</div>
 			<!--/ row end -->
-		<!-- </div> -->
+		</div>
 		<!--/ Container end -->
-	<!-- </div> -->
+	</div>
 	<!--/ Counter end -->
 
 
