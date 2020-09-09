@@ -2,23 +2,66 @@
 
 namespace App\Http\Controllers;
 
-use App\Activity;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Storage;
 use App\User;
 use App\CV;
 use App\Job;
+use App\Activity;
 use App\Mail\MailCv;
 use App\Mail\MailJob;
 use App\Mail\Applied;
-use Illuminate\Support\Facades\Storage;
+use App\Mail\QuoteMail;
+use App\Mail\ContactMail;
+use App\Mail\BookMail;
 
 class WebController extends Controller
 {
     public function index(){
         return view('index');
     }
+
+    public function quote(Request $request){
+
+        $mail = [
+            'name' => $request->name,
+            'email' =>$request->email,
+            'subject' =>$request->subject,
+            'message' =>$request->message,
+        ];
+
+        Mail::to('team@temping-agency.com')->send(new QuoteMail($mail));
+        return back()->with('success', 'Thank\'s for contacting us. We\'ll respond you shortly!');
+    }
+
+    public function contact(Request $request){
+
+        $mail = [
+            'name' => $request->name,
+            'email' =>$request->email,
+            'subject' =>$request->subject,
+            'message' =>$request->message,
+        ];
+
+        Mail::to('team@temping-agency.com')->send(new ContactMail($mail));
+        return back()->with('success', 'Thank\'s for contacting us. We\'ll respond you shortly!');
+    }
+
+    public function book_temp(Request $request){
+
+        $mail = [
+            'name' => $request->name,
+            'email' =>$request->email,
+            'subject' =>$request->subject,
+            'message' =>$request->message,
+        ];
+
+        Mail::to('team@temping-agency.com')->send(new BookMail($mail));
+        return back()->with('success', 'Thank\'s for contacting us. We\'ll respond you shortly!');
+    }
+
     public function cvUpload(Request $request){
         $code = str_random(10);
         $user = new User();

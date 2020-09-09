@@ -13,6 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/clear-cache', function() {
+    $exitCode = Artisan::call('config:clear');
+    $exitCode1 = Artisan::call('cache:clear');
+    $exitCode2 = Artisan::call('route:clear');
+    $exitCode3 = Artisan::call('view:clear');
+    return "config clear";
+
+});
+
+
 Route::get('/', 'WebController@index');
 Route::get('/test', function () {
     return view('test');
@@ -23,16 +33,28 @@ Route::get('/about2', function () {
 Route::get('/blog-item', function () {
     return view('blog-item');
 });
+
 Route::get('/book-a-temp', function () {
     return view('book-a-temp');
 });
+
+Route::post('/book-a-temp', 'WebController@book_temp')->name('book-temp');
+
 Route::get('/get-a-quote', function () {
     return view('get-a-quote');
 });
+
+Route::post('/get-a-quote', 'WebController@quote')->name('quote');
+
 Route::get('/career', 'WebController@jobs');
+
 Route::get('/contact', function () {
     return view('contact');
 });
+
+Route::post('/contact', 'WebController@contact')->name('contact');
+
+
 Route::get('/cv-upload', function () {
     return view('cv-upload');
 });

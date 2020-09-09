@@ -12,7 +12,6 @@ class EmployerController extends Controller
         if($request->session()->has('admin')) {
 	    	$employer = User::orderByDesc('id')->where('user_type','employer')->paginate(10);
 	    	return view('admin.employers', compact('employer'));
-	    	// return $employer;
         }else
             return redirect('admin/login');
     }

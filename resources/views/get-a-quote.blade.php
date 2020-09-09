@@ -43,10 +43,15 @@
 
 
 			<div class="gap-40"></div>
-
+				@if(Session::has('success'))
+	            	<div class="alert alert-success">
+    	    	    	{{ Session::get('success') }}
+               		</div>
+        	   @endif
 			<div class="row">
-				<div class="col-md-7">
-					<form id="contact-form">
+				<div class="col-md-2"></div>
+				<div class="col-md-8">
+					<form id="contact-form" method="post" action="{{ route('quote')}}">
 						@csrf
 						<div class="row">
 							<div class="col-md-4">
@@ -71,14 +76,14 @@
 						<div class="form-group">
 							<label>Message</label>
 							<textarea class="form-control contact-content" name="message" id="message" rows="10"></textarea>
-							<label style="color:red;" id="message-error"></label>
+							<!-- <label style="color:red;" id="message-error"></label> -->
 						</div>
-						<div class="text-right"><br>
+						<div class="text-right" style="text-align: center;"><br>
 							<button class="btn btn-primary solid blank" id="btn-submit" type="submit">Send Message</button>
 						</div>
 					</form>
 				</div>
-				<div class="col-md-5">
+				<!-- <div class="col-md-5">
 					<div class="contact-info">
 						<h3 class="text-align">Contact Details</h3>
 						<p class="text-align">We are here to help you.</p>
@@ -88,7 +93,7 @@
 						<p><i class="fa fa-envelope-o info"></i> info@temping-agency.com</p>
 						<p><i class="fa fa-globe info"></i> www.workers-direct.com</p>
 					</div>
-				</div>
+				</div> -->
 
 			</div>
 
@@ -98,19 +103,7 @@
 				<!-- Map start here -->
 				<div id="map-wrapper" class="no-padding">
 					<div class="map" id="map">
-
-
-
-
-
-
 						<iframe style="border:0; height: 400px; width: 100%;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.78303202202!2d-0.14459818479928202!3d51.517196417808655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761bbe2fc04b43%3A0xd63a826bf9b4f497!2sTemp%20Agency!5e0!3m2!1sen!2s!4v1568042407431!5m2!1sen!2s" width="600" height="450" frameborder="0" style="border:0"></iframe>
-
-
-
-
-
-
 					</div>
 				</div>
 				<!--/ Map end here -->
@@ -122,8 +115,6 @@
 
 	</section>
 	<!--/ Main container end -->
-
-
 
 	<!-- Javascript Files
 		================================================== -->

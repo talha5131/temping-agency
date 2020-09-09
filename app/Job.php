@@ -13,7 +13,7 @@ class Job extends Model
 
     protected $fillable = [
         'title' , 'image' , 'description' , 'tags' , 'category' , 'location' , 'joining_date' , 'end_date' , 'vacancies' ,
-        'salary' , 'timings' , 'opening_dates' , 'purpose' , 'responsibilities' , 'requirements' , 'approved' , 'slug' ,
+        'salary' , 'timings' , 'opening_dates' , 'purpose' , 'responsibilities' , 'requirements' , 'links' , 'approved' , 'slug' ,
         'user_id'
     ];
 }

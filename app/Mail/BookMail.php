@@ -7,11 +7,12 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-class MailCv extends Mailable
+class BookMail extends Mailable
 {
     use Queueable, SerializesModels;
 
     public $user;
+
     /**
      * Create a new message instance.
      *
@@ -27,7 +28,8 @@ class MailCv extends Mailable
      *
      * @return $this
      */
-    public function build(){
-        return $this->from('jobs@temping-agency')->subject('Job CV Registered Successfully! - Temping Agency')->view('mail.cv');
+    public function build()
+    {
+        return $this->from($this->user['email'])->subject($this->user['subject'])->view('mail.book');
     }
 }

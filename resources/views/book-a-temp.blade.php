@@ -77,7 +77,11 @@
                 </h2>
 
             </div>
-
+                @if(Session::has('success'))
+                    <div class="alert alert-success">
+                        {{ Session::get('success') }}
+                    </div>
+               @endif
         </div><!-- Title row end -->
 
 
@@ -169,7 +173,7 @@
             <!--/ About message end -->
 
             <!--/ About image end -->
-            <form id="contact-form">
+            <form id="contact-form" method="post" action="{{ route('book-temp')}}">
                 @csrf
                 <div class="row">
                     <div class="col-md-4">

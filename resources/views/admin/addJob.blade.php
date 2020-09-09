@@ -59,6 +59,13 @@
                         </div>
                         <hr>
                         <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <label for="jobTitle">External Link</label>
+                                <input type="url" class="form-control" id="link" name="link" placeholder="Add External Link">
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
                             <div class="col-sm-4 form-group">
                                 <label for="tags">Job Tags</label>
                                 <input type="tags" data-role="tagsinput" class="form-control" id="tags" name="tags" style="display: none;">

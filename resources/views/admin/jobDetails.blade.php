@@ -53,7 +53,12 @@
                                 <h3>{{ isset($job->tags)?$job->tags:'' }}</h3>
                             </div>
 
-
+                            @if($job->links != '')
+                                <div class="col-sm-4 form-group">
+                                    <label for="jobtype">External Link</label>
+                                    <h3><a target="_blank" href="{{ $job->links }}">{{ $job->links }}</a></h3>
+                                </div>
+                            @endif
 
                             <div class="col-sm-4 form-group">
                                 <label for="jobtype">Job Category</label>

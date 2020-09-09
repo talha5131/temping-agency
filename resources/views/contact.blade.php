@@ -42,10 +42,14 @@
 
 
 			<div class="gap-40"></div>
-
+				@if(Session::has('success'))
+	            	<div class="alert alert-success">
+    	    	    	{{ Session::get('success') }}
+               		</div>
+        	   @endif
 			<div class="row">
 				<div class="col-md-7">
-					<form id="contact-form">
+					<form id="contact-form" method="post" action="{{ route('contact')}}">
 						@csrf
 						<div class="row">
 							<div class="col-md-4">

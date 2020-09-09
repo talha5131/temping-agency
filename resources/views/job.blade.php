@@ -92,6 +92,13 @@
 				<br>
 				<p>{{$job->description}}</p>
 				<br>
+                @if($job->links != '')
+                    <div class="col-sm-4 form-group">
+                        <h3><a target="_blank" href="{{ $job->links }}">
+                        	<label for="jobtype">External Link</label>
+                        </a><h3>
+                    </div>
+                @endif
 
 				<form id="jobApplyForm" action="{{route('apply-job')}}" method="post" enctype="multipart/form-data">
 					@csrf

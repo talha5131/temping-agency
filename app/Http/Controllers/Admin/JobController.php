@@ -87,6 +87,7 @@ class JobController extends Controller
             $job = new Job();
             $job->title = $request->title;
             $job->description = isset($request->desc)?$request->desc:'';
+            $job->links = isset($request->link)?$request->link:'';
             $job->tags = isset($request->tags)?$request->tags:'';
             $job->category = isset($request->category)?$request->category:'';
             $job->location = isset($request->location)?$request->location:'';
