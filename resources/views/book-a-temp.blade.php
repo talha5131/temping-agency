@@ -84,7 +84,37 @@
                @endif
         </div><!-- Title row end -->
 
-
+        <form id="contact-form">
+            @csrf
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input class="form-control" name="name" id="name" placeholder="" type="text">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input class="form-control" name="email" id="email" placeholder="" type="email">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>Subject</label>
+                        <input class="form-control" name="subject" id="subject" placeholder="">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Message</label>
+                <textarea class="form-control contact-content" name="message" id="message" rows="10"></textarea>
+                <label style="color:red;" id="message-error"></label>
+            </div>
+            <div class="text-right"><br>
+                <button class="btn btn-primary solid blank" id="btn-submit" type="submit">Send Message</button>
+            </div>
+        </form>
 
         <div class="row about-wrapper-top">
 
