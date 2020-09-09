@@ -128,7 +128,6 @@ class WebController extends Controller
         $user->user_type = 'employer';
         $user->save();
 
-
         $job = new Job();
         $job->title = $request->title;
         $job->description = isset($request->desc)?$request->desc:'';

@@ -84,7 +84,7 @@
                @endif
         </div><!-- Title row end -->
 
-        <form id="contact-form">
+            <form id="contact-form" method="post" action="{{ route('book-temp')}}">
             @csrf
             <div class="row">
                 <div class="col-md-4">
@@ -111,7 +111,7 @@
                 <textarea class="form-control contact-content" name="message" id="message" rows="10"></textarea>
                 <label style="color:red;" id="message-error"></label>
             </div>
-            <div class="text-right"><br>
+            <div class="text-right" style="text-align: center;"><br>
                 <button class="btn btn-primary solid blank" id="btn-submit" type="submit">Send Message</button>
             </div>
         </form>
@@ -198,42 +198,8 @@
                 <p class="text-align">One call to a temping agency can solve this problem. The temp can be used for the period that it takes to find a permanent employee, or the temp may also be offered the permanent position due to his / her competence in the job.</p>
                 <p class="text-align">Here Temping Agency helps the employer to draft a suitable contract and also helps the candidate go through the contract in detail before s/he makes up his / her mind. Once agreement is reached, the candidate is converted from temp status to perm status and the agency collects a placement fee.</p>
                 <p class="text-align">Companies choose temp for the convenience of managing the whole performance and recruitment process.</p>
-
             </div>
             <!--/ About message end -->
-
-            <!--/ About image end -->
-            <form id="contact-form" method="post" action="{{ route('book-temp')}}">
-                @csrf
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label>Name</label>
-                            <input class="form-control" name="name" id="name" placeholder="" type="text">
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label>Email</label>
-                            <input class="form-control" name="email" id="email" placeholder="" type="email">
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label>Subject</label>
-                            <input class="form-control" name="subject" id="subject" placeholder="">
-                        </div>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label>Message</label>
-                    <textarea class="form-control contact-content" name="message" id="message" rows="10"></textarea>
-                    <label style="color:red;" id="message-error"></label>
-                </div>
-                <div class="text-right"><br>
-                    <button class="btn btn-primary solid blank" id="btn-submit" type="submit">Send Message</button>
-                </div>
-            </form>
         </div>
         <!--/ Content row end -->
 
