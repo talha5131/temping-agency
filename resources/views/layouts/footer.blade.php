@@ -9,6 +9,10 @@
 		top: 70vh;
 		z-index: 10000000;
 	} */
+	.footer-ul h1 {
+		font-size: 25px;
+	}
+
 	@media only screen and (min-width: 200px) and (max-width: 768px) {
 		#btn-top {
 			display: none;
@@ -147,41 +151,23 @@
 
 			<div class="col-md-3 col-sm-12">
 				<ul class="footer-ul">
+					<h1>What We Do</h1>
+
 					<li>
 						<h5><a href="temporary-staffing-solutions">Temporary Staffing Solutions</a></h5>
+					</li>
+					<li>
+						<h5><a href="temporary-labourer">Temporary Labourer</a></h5>
+					</li>
+					<li>
+						<h5><a href="light-industrial-staff">Light Industrial Staff</a></h5>
 					</li>
 					<li>
 						<h5><a href="catering">Catering</a></h5>
 					</li>
 					<li>
-						<h5><a href="staff-on-call">Staff On Call</a></h5>
-					</li>
-					<li>
-						<h5><a href="light-industrial-staff">Light Industrial Staff</a></h5>
-					</li>
-				</ul>
-			</div>
-			<div class="col-md-3 col-sm-12">
-				<ul class="footer-ul">
-					<li>
-						<h5><a href="temporary-labourer">Temporary Labourer</a></h5>
-					</li>
-					<li>
-						<h5><a href="ready-talent">Ready Talent</a></h5>
-					</li>
-					<li>
-						<h5><a href="agency-temps">Agency Temps</a></h5>
-					</li>
-					<li>
 						<h5><a href="construction">Construction</a></h5>
 					</li>
-					<li>
-						<h5><a href="employer">Employer</a></h5>
-					</li>
-				</ul>
-			</div>
-			<div class="col-md-3 col-sm-12">
-				<ul class="footer-ul">
 					<li>
 						<h5><a href="events-&-promotions">Events & Promotions</a></h5>
 					</li>
@@ -198,17 +184,79 @@
 			</div>
 			<div class="col-md-3 col-sm-12">
 				<ul class="footer-ul">
+					<h1>Quick Booking</h1>
 					<li>
-						<h5><a href="book-a-temp">Hire Temporary Staff</a></h5>
+						<h5><a href="staff-on-call">Staff On Call</a></h5>
 					</li>
 					<li>
-						<h5><a href="cv-upload">CV Register</a></h5>
+						<h5><a href="book-a-temp">Book A Temp</a></h5>
 					</li>
+					<li>
+						<h5><a href="ready-talent">Ready Talent</a></h5>
+					</li>
+					<li>
+						<h5><a href="agency-temps">Agency Temps</a></h5>
+					</li>
+					<li>
+						<h5><a href="#">Same Day Staffing</a></h5>
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-3 col-sm-12">
+				<ul class="footer-ul">
+					<h1>Candidates</h1>
 					<li>
 						<h5><a href="job-seeker">Job Seeker</a></h5>
 					</li>
 					<li>
+						<h5><a href="cv-upload">CV Registration</a></h5>
+					</li>
+					<li>
+						<h5><a href="#">Time Sheet</a></h5>
+					</li>
+					<li>
+						<h5><a href="career">Latest Jobs</a></h5>
+					</li>
+					<li>
+						<h5><a href="#">Career Advice</a></h5>
+					</li>
+					<li>
+						<h5><a href="#">CV Builder</a></h5>
+					</li>
+					<li>
+						<h5><a href="#">Download Mobile App</a></h5>
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-3 col-sm-12">
+				<ul class="footer-ul">
+					<h1>Employers</h1>
+					<li>
+						<h5><a href="employer">Employer</a></h5>
+					</li>
+					<li>
+						<h5><a href="book-a-temp">Hire Temporary Staff</a></h5>
+					</li>
+					<li>
+						<h5><a href="staff-on-call">Staff On Call</a></h5>
+					</li>
+					<li>
 						<h5><a href="post-a-job">Post A Job</a></h5>
+					</li>
+					<li>
+						<h5><a href="book-a-temp">Book A Temp</a></h5>
+					</li>
+					<li>
+						<h5><a href="services">Our Services</a></h5>
+					</li>
+					<li>
+						<h5><a href="why-us">Why Us</a></h5>
+					</li>
+					<li>
+						<h5><a href="testimonials">Testimonials</a></h5>
+					</li>
+					<li>
+						<h5><a href="#">Our Guarantee</a></h5>
 					</li>
 				</ul>
 			</div>

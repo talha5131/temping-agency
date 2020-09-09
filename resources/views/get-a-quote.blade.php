@@ -11,6 +11,7 @@
 			/* width: 100%; */
 			overflow-x: hidden;
 		}
+
 		.text-align {
 			text-align: center;
 		}
@@ -46,6 +47,7 @@
 			<div class="row">
 				<div class="col-md-7">
 					<form id="contact-form">
+						@csrf
 						<div class="row">
 							<div class="col-md-4">
 								<div class="form-group">
@@ -81,7 +83,7 @@
 						<h3 class="text-align">Contact Details</h3>
 						<p class="text-align">We are here to help you.</p>
 						<br>
-						<p ><i class="fa fa-home info"></i> 344-348 High road, Ilford IG1 1QP </p>
+						<p><i class="fa fa-home info"></i> 344-348 High road, Ilford IG1 1QP </p>
 						<p><i class="fa fa-phone info"></i> +44 (0) 2030 869080 </p>
 						<p><i class="fa fa-envelope-o info"></i> info@temping-agency.com</p>
 						<p><i class="fa fa-globe info"></i> www.workers-direct.com</p>
@@ -159,13 +161,18 @@
 				});
 		});
 
-		$("#btn-submit").click(function() {
-			if ($("#message").text() == "") {
+		$("#contact-form").submit(function() {
+			if ($("#message").val() == "<div><br></div>") {
 				$("#message-error").html("This field is required");
-				console.log("button is clicked");
-				// event.preventDefault();
+				event.preventDefault();
 			}
-
+			else if ($("#message").val() == "<br>") {
+				$("#message-error").html("This field is required");
+				event.preventDefault();
+			} 
+			else {
+				$("#message-error").html("");
+			}
 		});
 
 		// Contact Us Form Validation
@@ -185,13 +192,14 @@
 			}
 		});
 
-		$('#contact-form').submit(function() {
-			if ($("#message").text() == "") {
-				event.preventDefault();
-			} else {
+		// $('#contact-form').submit(function() {
+		// 	if ($("#message").text() == "") {
+		// 		alert('Not Empty');
+		// 		event.preventDefault();
+		// 	} else {
 
-			}
-		});
+		// 	}
+		// });
 
 		$('.contact-content').richText();
 	</script>

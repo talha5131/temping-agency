@@ -12,6 +12,10 @@
 		height: 650px;
 	}
 
+	.cd-slider-nav{
+		margin-bottom: 40px;
+	}
+
 	@media only screen and (min-width: 200px) and (max-width: 768px) {
 		body {
 			/* width: 100%; */
@@ -31,7 +35,7 @@
 			max-height: 100%;
 			max-width: 100%;
 			position: fixed;
-			top: 44px;
+			top: 80px !important;
 			min-width: 100%;
 		}
 
@@ -52,7 +56,7 @@
 				<div class="overlay2">
 					<!-- <img class="" src="images/slider/bg1.jpg" alt="slider"> -->
 					<video autoplay muted loop id="myVideo">
-						<source src="public/assets/videos/temping-agency.mp4" type="video/mp4">
+						<source src="public/assets/videos/temping-agency-8-9-20.mp4" type="video/mp4">
 					</video>
 				</div>
 				<div class="cd-full-width">
@@ -60,7 +64,7 @@
 					<h3> Top Rated Temp Agency</h3>
 					<p> Our exclusive service model means our temps receive hours of industry-focused preparation – make sure they are the perfect fit for your business from day one.</p>
 					<a href="book-a-temp" class="btn btn-primary white cd-btn">HIRE A TEMP</a>
-					<a href="#0" class="btn btn-primary solid cd-btn">Learn More</a>
+					<a href="about2" class="btn btn-primary solid cd-btn">Learn More</a>
 				</div> <!-- .cd-full-width -->
 			</li>
 			<li>
@@ -71,7 +75,7 @@
 					<h2>Hire Staff On-Demand</h2>
 					<p> Over 60,000 flexible workers available 24/7</p>
 					<p>We have a large pool of candidates, who always ready to start a job on short notice</p>
-					<a href="#0" class="cd-btn btn btn-primary solid">Take a Tour</a>
+					<a href="book-a-temp" class="cd-btn btn btn-primary solid">Hire Temporary Staff</a>
 				</div> <!-- .cd-half-width -->
 
 				<div class="cd-half-width cd-img-container">
@@ -87,9 +91,9 @@
 				</div> <!-- .cd-half-width.cd-img-container -->
 				<div class="cd-half-width">
 					<h2> Looking For a Job? </h2>
-					<p>If you looking for a full time, part time or seasonal Job in London then registering with a temping agency always a good move. </p>
-					<a href="#0" class="cd-btn btn btn-primary white">Start</a>
-					<a href="#0" class="cd-btn btn secondary btn-primary solid">Learn More</a>
+					<p>If you looking for a full time, part time or seasonal Job in London then registering with a temping agency is always a good move. </p>
+					<a href="job-seeker" class="cd-btn btn btn-primary white">Job Seekr</a>
+					<a href="career" class="cd-btn btn secondary btn-primary solid">Learn More</a>
 				</div> <!-- .cd-half-width -->
 			</li>
 			<li class="cd-bg-video">
@@ -212,7 +216,7 @@
 						<span class="service-icon icon-pentagon"><i class="fas fa-utensils"></i></span>
 						<h3> Catering </h3>
 						<p> Our catering division is widely recognised as one of the market leaders in London, supplying professional, well trained staff to the…</p> <br>
-						<a href="service2.php" class="btn btn-primary cd-btn">Read More</a>
+						<a href="catering" class="btn btn-primary cd-btn">Read More</a>
 
 					</div>
 				</div>
@@ -223,7 +227,7 @@
 						<span class="service-icon icon-pentagon"><i class="fas fa-hands-helping"></i></span>
 						<h3> Events & Promotions </h3>
 						<p>Event staff recruitment is a much specialised field in the recruitment industry.Many of the positions are seasonal while others require much…</p> <br>
-						<a href="service9.php" class="btn btn-primary cd-btn">Read More</a>
+						<a href="events-&-promotions" class="btn btn-primary cd-btn">Read More</a>
 					</div>
 
 				</div>
@@ -234,7 +238,7 @@
 						<span class="service-icon icon-pentagon"><i class="fas fa-laptop-code"></i></span>
 						<h3>IT & Telecom</h3>
 						<p>Incorporated in the mid-90s, our client is one of Asia’s largest real estate groups. The Singapore office operates one of the largest…</p> <br>
-						<a href="service10.php" class="btn btn-primary cd-btn">Read More</a>
+						<a href="it-&-telecom" class="btn btn-primary cd-btn">Read More</a>
 
 					</div>
 				</div>
@@ -247,7 +251,7 @@
 					<span class="service-icon icon-pentagon"><i class="fas fa-users"></i></span>
 					<h3> Light Industrial Staff</h3>
 					<p>There are many positions that could arise in an industrial setting. Temping Agency will be able to fill any of them on short notice – from cleaning staff to…</p> <br>
-					<a href="service4.php" class="btn btn-primary cd-btn">Read More</a>
+					<a href="light-industrial-staff" class="btn btn-primary cd-btn">Read More</a>
 				</div>
 			</div>
 			<!--/ End first service -->
@@ -258,7 +262,7 @@
 
 					<h3> Sales & Retail </h3>
 					<p>Our client is one of the leading international providers of co-working spaces. In addition to various successful locations in North America, the…</p> <br>
-					<a href="service11.php" class="btn btn-primary cd-btn">Read More</a>
+					<a href="sales-&-retail" class="btn btn-primary cd-btn">Read More</a>
 
 				</div>
 
@@ -271,7 +275,7 @@
 
 					<h3> Hospitality </h3>
 					<p>With over four million confirmed cases of coronavirus around the world, governments across the globe have had to implement stringent measures to…</p> <br>
-					<a href="service12.php" class="btn btn-primary cd-btn">Read More</a>
+					<a href="hospitality" class="btn btn-primary cd-btn">Read More</a>
 				</div>
 			</div>
 			<!--/ End Third service -->
@@ -282,7 +286,7 @@
 
 					<h3> Construction </h3>
 					<p>At Temping Agency, we specialise in providing Construction Labourers and skilled tradespeople to the construction and residential industries. We can…</p> <br>
-					<a href="service8.php" class="btn btn-primary cd-btn">Read More</a>
+					<a href="construction" class="btn btn-primary cd-btn">Read More</a>
 
 
 				</div>
@@ -305,7 +309,7 @@
 			<div class="facts one col-md-2 col-sm-6">
 				<span class="facts-icon"><i class="fas fa-users"></i></span>
 				<div class="facts-num">
-					<span class="counter">52950</span> <span> +</span> 
+					<span class="counter">52950</span> <span> +</span>
 				</div>
 				<h3>Workers</h3>
 			</div>

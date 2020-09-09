@@ -1,3 +1,6 @@
+@extends('layouts.base')
+@section('title','Our Services')
+@section('content')
 <link rel="icon" href="public/assets/images/logo-favicon.png" type="image/x-icon">
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="public/assets/images/logo-favicon.png">
 <link rel="apple-touch-icon-precomposed" sizes="72x72" href="public/assets/images/logo-favicon.png">
@@ -8,185 +11,151 @@
 			/* width: 100%; */
 			overflow-x: hidden;
 		}
+
+		.text-align {
+			text-align: center;
+		}
 	}
 </style>
 
-	<div class="body-inner">
 
-		<div id="banner-area">
-			<img src="images/banner/banner2.jpg" alt="" />
-			<div class="parallax-overlay"></div>
-			<!-- Subpage title start -->
-			<div class="banner-title-content">
-				<div class="text-center">
-					<h2>Services</h2>
-					<ul class="breadcrumb">
-						<li>Home</li>
-						<li>Company</li>
-						<li><a href="#"> Services</a></li>
-					</ul>
-				</div>
-			</div><!-- Subpage title end -->
-		</div><!-- Banner area end -->
+<div id="banner-area">
 
-		<!-- Main container start -->
+	<img src="public/assets/images/banner/banner1.jpg" alt="" />
 
-		<section id="main-container">
-			<div class="container">
+	<div class="parallax-overlay"></div>
 
-				<!-- Services -->
+	<!-- Subpage title start -->
 
-				<div class="row">
-					<div class="col-md-12 heading">
-						<span class="title-icon classic pull-left"><i class="fa fa-cogs"></i></span>
-						<h2 class="title classic">Our Services</h2>
+	<div class="banner-title-content">
+
+		<div class="text-center">
+
+			<h2> Our Services</h2>
+
+			<ul class="breadcrumb">
+
+				<li><a href="{{url('/')}}"> Home</a></li>
+
+				<li> Our Services</li>
+
+			</ul>
+
+		</div>
+
+	</div><!-- Subpage title end -->
+
+</div><!-- Banner area end -->
+
+
+
+<!-- Main container start -->
+
+
+
+<!-- Main container start -->
+
+<section id="main-container">
+	<div class="container">
+	<section id="service" class="service angle">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 heading">
+				<span class="title-icon pull-left"><i class="fa fa-cogs"></i></span>
+				<h1 class="title">Service We Provide <span class="title-desc"> Quality Recruitment Solutions</span></h1>
+			</div>
+		</div><!-- Title row end -->
+
+		<div class="row">
+			<div class="col-md-12">
+				<div class="col-md-4 col-sm-3 wow fadeInDown" data-wow-delay=".5s">
+					<div class="service-content text-center">
+						<span class="service-icon icon-pentagon"><i class="fas fa-utensils"></i></span>
+						<h3> Catering </h3>
+						<p> Our catering division is widely recognised as one of the market leaders in London, supplying professional, well trained staff to the…</p> <br>
+						<a href="catering" class="btn btn-primary cd-btn">Read More</a>
+
 					</div>
 				</div>
+				<!--/ End first service -->
 
-				<div class="row">
-					<div class="col-md-12">
-						<div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay=".5s">
-							<div class="service-content text-center">
-								<span class="service-icon icon-pentagon"><i class="fa fa-tachometer"></i></span>
-								<h3>Web Design</h3>
-								<p>High Life narwhal, banh mi PBR single-origin coffee Odd Future actually aliqua polaroid befor</p>
-							</div>
-						</div>
-						<!--/ End first service -->
-
-						<div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay=".8s">
-							<div class="service-content text-center">
-								<span class="service-icon icon-pentagon"><i class="fa fa-android"></i></span>
-								<h3>Apps Development</h3>
-								<p>Food truck master cleanse mixtape minim Portland, cardigan stumptown chambray swag</p>
-							</div>
-
-						</div>
-						<!--/ End Second service -->
-
-						<div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay="1.1s">
-							<div class="service-content text-center">
-								<span class="service-icon icon-pentagon"><i class="fa fa-shopping-cart"></i></span>
-								<h3>eCommerce Websites</h3>
-								<p>Neutra Thundercats craft beer, listicle meggings bicycle rights 90's XOXO beard cardiga</p>
-							</div>
-						</div>
-						<!--/ End Third service -->
-
-						<div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay="1.4s">
-							<div class="service-content text-center">
-								<span class="service-icon icon-pentagon"><i class="fa fa-lightbulb-o"></i></span>
-								<h3>Design for Startups</h3>
-								<p>We design beautiful modern engaging websites that always latest responsive technologies.</p>
-							</div>
-						</div>
-						<!--/ End 4th service -->
+				<div class="col-md-4 col-sm-3 wow fadeInDown" data-wow-delay=".8s">
+					<div class="service-content text-center">
+						<span class="service-icon icon-pentagon"><i class="fas fa-hands-helping"></i></span>
+						<h3> Events & Promotions </h3>
+						<p>Event staff recruitment is a much specialised field in the recruitment industry.Many of the positions are seasonal while others require much…</p> <br>
+						<a href="events-&-promotions" class="btn btn-primary cd-btn">Read More</a>
 					</div>
-				</div><!-- Content 1st row end -->
 
-				<div class="gap-40"></div>
+				</div>
+				<!--/ End Second service -->
 
-				<div class="row">
-					<div class="col-md-12">
-						<div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay=".5s">
-							<div class="service-content text-center">
-								<span class="service-icon icon-pentagon"><i class="fa fa-bar-chart"></i></span>
-								<h3>SEO Service</h3>
-								<p>High Life narwhal, banh mi PBR single-origin coffee Odd Future actually aliqua polaroid befor</p>
-							</div>
-						</div>
-						<!--/ End first service -->
+				<div class="col-md-4 col-sm-3 wow fadeInDown" data-wow-delay="1.1s">
+					<div class="service-content text-center">
+						<span class="service-icon icon-pentagon"><i class="fas fa-laptop-code"></i></span>
+						<h3>IT & Telecom</h3>
+						<p>Incorporated in the mid-90s, our client is one of Asia’s largest real estate groups. The Singapore office operates one of the largest…</p> <br>
+						<a href="it-&-telecom" class="btn btn-primary cd-btn">Read More</a>
 
-						<div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay=".8s">
-							<div class="service-content text-center">
-								<span class="service-icon icon-pentagon"><i class="fa fa-bicycle"></i></span>
-								<h3>Startup Idea</h3>
-								<p>Food truck master cleanse mixtape minim Portland, cardigan stumptown chambray swag</p>
-							</div>
-
-						</div>
-						<!--/ End Second service -->
-
-						<div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay="1.1s">
-							<div class="service-content text-center">
-								<span class="service-icon icon-pentagon"><i class="fa fa-comments"></i></span>
-								<h3>Consultation</h3>
-								<p>Neutra Thundercats craft beer, listicle meggings bicycle rights 90's XOXO beard cardiga</p>
-							</div>
-						</div>
-						<!--/ End Third service -->
-
-						<div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay="1.4s">
-							<div class="service-content text-center">
-								<span class="service-icon icon-pentagon"><i class="fa fa-dollar"></i></span>
-								<h3>Croud Funding</h3>
-								<p>We design beautiful modern engaging websites that always latest responsive technologies.</p>
-							</div>
-						</div>
-						<!--/ End 4th service -->
 					</div>
-				</div><!-- Content 2nd row end -->
+				</div>
+				<!--/ End Third service -->
+			</div>
+		</div> <br> <br> <br><br>
+		<div class="row">
+			<div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay=".5s">
+				<div class="service-content text-center">
+					<span class="service-icon icon-pentagon"><i class="fas fa-users"></i></span>
+					<h3> Light Industrial Staff</h3>
+					<p>There are many positions that could arise in an industrial setting. Temping Agency will be able to fill any of them on short notice – from cleaning staff to…</p> <br>
+					<a href="light-industrial-staff" class="btn btn-primary cd-btn">Read More</a>
+				</div>
+			</div>
+			<!--/ End first service -->
 
-				<!-- Services end -->
+			<div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay=".8s">
+				<div class="service-content text-center">
+					<span class="service-icon icon-pentagon"><i class="fas fa-percent"></i></span>
 
+					<h3> Sales & Retail </h3>
+					<p>Our client is one of the leading international providers of co-working spaces. In addition to various successful locations in North America, the…</p> <br>
+					<a href="sales-&-retail" class="btn btn-primary cd-btn">Read More</a>
+
+				</div>
 
 			</div>
-			<!--/ 1st container end -->
+			<!--/ End Second service -->
 
+			<div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay="1.1s">
+				<div class="service-content text-center">
+					<span class="service-icon icon-pentagon"><i class="far fa-smile"></i></span>
 
-			<div class="gap-60"></div>
-
-
-			<!-- Testimonial start-->
-			<div class="testimonial parallax parallax3">
-				<div class="parallax-overlay"></div>
-				<div class="container">
-					<div class="row">
-						<div id="testimonial-carousel" class="owl-carousel owl-theme text-center testimonial-slide">
-							<div class="item">
-								<div class="testimonial-thumb">
-									<img src="images/team/testimonial1.jpg" alt="testimonial">
-								</div>
-								<div class="testimonial-content">
-									<p class="testimonial-text">
-										Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose. Lorem Ipsum is that it as opposed to using.
-									</p>
-									<h3 class="name">Sarah Arevik<span>Chief Executive</span></h3>
-								</div>
-							</div>
-							<div class="item">
-								<div class="testimonial-thumb">
-									<img src="images/team/testimonial2.jpg" alt="testimonial">
-								</div>
-								<div class="testimonial-content">
-									<p class="testimonial-text">
-										Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose. Lorem Ipsum is that it as opposed to using.
-									</p>
-									<h3 class="name">Narek Bedros<span>Sr. Manager</span></h3>
-								</div>
-							</div>
-							<div class="item">
-								<div class="testimonial-thumb">
-									<img src="images/team/testimonial3.jpg" alt="testimonial">
-								</div>
-								<div class="testimonial-content">
-									<p class="testimonial-text">
-										Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose. Lorem Ipsum is that it as opposed to using.
-									</p>
-									<h3 class="name">Taline Lucine<span>Sales Manager</span></h3>
-								</div>
-							</div>
-						</div>
-						<!--/ Testimonial carousel end-->
-					</div>
-					<!--/ Row end-->
+					<h3> Hospitality </h3>
+					<p>With over four million confirmed cases of coronavirus around the world, governments across the globe have had to implement stringent measures to…</p> <br>
+					<a href="hospitality" class="btn btn-primary cd-btn">Read More</a>
 				</div>
-				<!--/  Container end-->
 			</div>
-			<!--/ Testimonial end-->
+			<!--/ End Third service -->
 
-			<div class="gap-60"></div>
+			<div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay="1.4s">
+				<div class="service-content text-center">
+					<span class="service-icon icon-pentagon"><i class="fas fa-hammer"></i></span>
 
-		</section>
-		<!--/ Main container end -->
-	</div><!-- Body inner end -->
+					<h3> Construction </h3>
+					<p>At Temping Agency, we specialise in providing Construction Labourers and skilled tradespeople to the construction and residential industries. We can…</p> <br>
+					<a href="construction" class="btn btn-primary cd-btn">Read More</a>
+
+
+				</div>
+			</div>
+			<!--/ End 4th service -->
+		</div>
+	</div><!-- Content row end -->
+	<!--/ Container end -->
+</section>
+	</div>
+	<!--/ 1st container end -->
+
+</section>
+<!--/ Main container end -->
+</div><!-- Body inner end -->

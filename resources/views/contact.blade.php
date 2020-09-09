@@ -46,6 +46,7 @@
 			<div class="row">
 				<div class="col-md-7">
 					<form id="contact-form">
+						@csrf
 						<div class="row">
 							<div class="col-md-4">
 								<div class="form-group">
@@ -185,11 +186,17 @@
 			}
 		});
 
-		$('#contact-form').submit(function() {
-			if ($("#message").text() == "") {
+		$("#contact-form").submit(function() {
+			if ($("#message").val() == "<div><br></div>") {
+				$("#message-error").html("This field is required");
 				event.preventDefault();
-			} else {
-
+			}
+			else if ($("#message").val() == "<br>") {
+				$("#message-error").html("This field is required");
+				event.preventDefault();
+			} 
+			else {
+				$("#message-error").html("");
 			}
 		});
 
