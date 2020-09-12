@@ -67,13 +67,23 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
+                            <a href="{{ route('admin.keywords') }}" class="nav-link">
+                                <p>Keywords</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
                             <a href="{{ route('admin.jobs') }}" class="nav-link">
                                 <p>Jobs</p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="admin-addJob" class="nav-link">
-                                <p>Add Jobs</p>
+                                <p>Add Job with Single Page</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="admin-addBulk" class="nav-link">
+                                <p>Add Job with Pages Pages</p>
                             </a>
                         </li>
                         <li class="nav-item">

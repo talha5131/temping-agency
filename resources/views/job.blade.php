@@ -90,7 +90,11 @@
 					</div>
 				</div>
 				<br>
-				<p>{{$job->description}}</p>
+				<p>
+					<?php
+						echo $job->content;
+					?>
+				</p>
 				<br>
                 @if($job->links != '')
                     <div class="col-sm-4 form-group">

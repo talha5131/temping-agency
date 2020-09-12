@@ -10,6 +10,7 @@ use App\User;
 use App\CV;
 use App\Job;
 use App\Activity;
+use App\Bulk;
 use App\Mail\MailCv;
 use App\Mail\MailJob;
 use App\Mail\Applied;
@@ -202,18 +203,18 @@ class WebController extends Controller
 
     protected function getRelatedSlugs($slug, $id = 0)
     {
-        return Job::select('slug')->where('slug', 'like', $slug.'%')
+        return Bulk::select('slug')->where('slug', 'like', $slug.'%')
             ->where('id', '<>', $id)
             ->get();
     }
 
     public function jobs(){
-        $jobs = Job::orderByDesc('id')->paginate(9);
+        $jobs = Bulk::orderByDesc('id')->paginate(9);
         return view('career',compact('jobs'));
     }
 
     public function job_detail($slug){
-        $job = Job::where('slug',$slug)->first();
+        $job = Bulk::where('slug',$slug)->first();
         return view('job',compact('job'));
     }
 
@@ -228,7 +229,7 @@ class WebController extends Controller
         $user->save();
 
 
-        $job = Job::find($request->job);
+        $job = Bulk::find($request->job);
 
         $ja = new Activity();
         $ja->job_id = $job->id;

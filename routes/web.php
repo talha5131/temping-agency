@@ -132,6 +132,14 @@ Route::get('admin', 'Admin\DashboardController@index')->name('dashboard');
 Route::get('admin/logout', 'Admin\UserController@logout')->name('logout');
 
 
+Route::get('admin-keywords', 'Admin\PostController@index')->name('admin.keywords');
+Route::post('add-keywords', 'Admin\PostController@savekey')->name('admin.savekey');
+Route::post('add-term', 'Admin\PostController@saveterm')->name('admin.saveterm');
+
+
+
+
+
 Route::get('admin-jobs', 'Admin\JobController@index')->name('admin.jobs');
 Route::get('admin-jobsActive', 'Admin\JobController@active')->name('admin.active-jobs');
 Route::get('admin-jobsInactive', 'Admin\JobController@inactive')->name('admin.inactive-jobs');
@@ -141,6 +149,8 @@ Route::get('status/{id}', 'Admin\JobController@status');
 
 Route::get('admin-addJob', 'Admin\JobController@create');
 Route::post('admin-addJob', 'Admin\JobController@store')->name('admin.addJob');
+Route::get('admin-addBulk', 'Admin\JobController@bulk_create');
+Route::post('admin-addBulk', 'Admin\JobController@bulk_store')->name('admin.addBulk');
 Route::get('admin-appliedJobs', 'Admin\JobController@applied')->name('admin.applied');
 Route::get('admin-jobDetails/{id}', 'Admin\JobController@show')->name('admin.jobDetails');
 

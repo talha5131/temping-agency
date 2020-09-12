@@ -6,6 +6,9 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Job;
 use App\Activity;
+use App\Keyword;
+use App\Term;
+use App\Bulk;
 
 class JobController extends Controller
 {
@@ -51,10 +54,8 @@ class JobController extends Controller
 
     public function status(Request $request, $id){
         if($request->session()->has('admin')) {
-            // return $id;
             $job = Job::find($id);
             if($job->approved == 1 || $job->approved == 3){
-                // return $id;
                 Job::where('id',$id)->update(['approved' => 0]);
             }elseif($job->approved == 0){
                 Job::where('id',$id)->update(['approved' => 1]);
@@ -117,10 +118,106 @@ class JobController extends Controller
 
             $job->save();
 
+            $title = $job->title;
+            $content = $job->description;
+            $url = $job->links;
+            $slug = $this->createSlug($job->title);
+            $id = $job->id;
+
+            Bulk::create([
+                'title' => $title , 
+                'content' => $content ,
+                'url' => $url,
+                'slug' => $slug , 
+                'job_id' => $id
+            ]);
+
             return redirect()->route('admin.jobs')->with('success','Job posted successfully!');
         }else
             return redirect('admin/login');
     }
+
+
+    public function bulk_create(Request $request)
+    {
+        if($request->session()->has('admin')) {
+            $keys = Keyword::all();
+            return view('admin.bulkJob',compact('keys'));
+        }else
+            return redirect('admin/login');
+    }
+
+    public function bulk_store(Request $request)
+    {
+        if($request->session()->has('admin')) {
+
+            $a = '{'.$request->job1.'}';
+            $b = '{'.$request->job2.'}';
+            $term1 = Term::where('keyword',$request->job1)->get();
+            $term2 = Term::where('keyword',$request->job2)->get();
+            $description = isset($request->desc)?$request->desc:'';
+
+            $job = new Job();
+            $job->title = $request->job1.' in '.$request->job2;
+            $job->description = $description;
+            $job->links = isset($request->link)?$request->link:'';
+            $job->tags = isset($request->tags)?$request->tags:'';
+            $job->category = isset($request->category)?$request->category:'';
+            $job->location = isset($request->location)?$request->location:'';
+            $job->duration = isset($request->duration)?$request->duration:'';
+            $job->joining_date = isset($request->joiningDate)?$request->joiningDate:'';
+            $job->end_date = isset($request->endingDate)?$request->endingDate:'';
+            $job->vacancies = isset($request->vacancy)?$request->vacancy:'';
+            $job->salary = isset($request->salaryFrom)?$request->salaryFrom:'';
+            $job->timings = isset($request->jobTiming)?$request->jobTiming:'';
+            $job->opening_dates = isset($request->openingDate)?$request->openingDate:'';
+            $job->purpose = isset($request->jobPurpose)?$request->jobPurpose:'';
+            $job->responsibilities = isset($request->responsibilities)?$request->responsibilities:'';
+            $job->requirements = isset($request->requirements)?$request->requirements:'';
+            $job->approved = 1;
+            $job->slug = '';
+            $job->user_id = 1;
+
+            if($request->hasfile('file_source')){
+                $file = $request->file('file_source');
+                $ext = $file->getClientOriginalExtension();
+                $trim = str_replace('', '-', $request->title);
+                $name = '1-'.$trim.'.'.$ext;
+                if($file->move('public/assets/images/jobs/'.$name))
+                    $job->image = $name;
+            }else
+                $job->image = '';
+
+            $job->save();
+
+            foreach($term1 as $job){
+                foreach($term2 as $city){
+                    $x = str_replace($a,$job->name,$description);
+                    $text = str_replace($b,$city->name,$x);
+                    
+                    $title = $job->name.' In '.$city->name;
+                    $content = $text;
+                    $url = $job->links;
+                    $slug = $this->createSlug($title);
+                    $id = $job->id;
+
+                    Bulk::create([
+                        'title' => $title , 
+                        'content' => $content , 
+                        'url' => $url,
+                        'slug' => $slug , 
+                        'job_id' => $id
+                    ]);
+
+                    // echo $job->name.' In '.$city->name.'</br>   '.$text.'</br>----------------</br>';
+                }
+            }
+                    return redirect()->route('admin.jobs')->with('success','Job posted successfully!');
+
+        }else
+            return redirect('admin/login');
+    }
+
 
     public function createSlug($title, $id = 0)
     {
@@ -149,10 +246,13 @@ class JobController extends Controller
 
     protected function getRelatedSlugs($slug, $id = 0)
     {
-        return Job::select('slug')->where('slug', 'like', $slug.'%')
+        return Bulk::select('slug')->where('slug', 'like', $slug.'%')
             ->where('id', '<>', $id)
             ->get();
     }
+
+
+
 
 
     /**

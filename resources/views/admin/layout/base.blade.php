@@ -33,7 +33,11 @@
     <link rel="stylesheet" href="public/assets/css/richtext.min.css">
 
     <link href="public/assets/css/tagsinput.css" rel="stylesheet" type="text/css">
+
+    <!-- Toaster -->
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.css">
 </head>
+
 @include('admin.layout.header')
 @include('admin.layout.sidebar')
 <title>@yield('title')</title>

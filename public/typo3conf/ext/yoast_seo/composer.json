@@ -1,0 +1,82 @@
+{
+  "name": "yoast-seo-for-typo3/yoast_seo",
+  "description": "Yoast SEO for TYPO3",
+  "type": "typo3-cms-extension",
+  "license": "GPL-3.0-or-later",
+  "keywords": [
+    "TYPO3 CMS",
+    "Yoast",
+    "SEO",
+    "MaxServ"
+  ],
+  "authors": [
+    {
+      "name": "Team Yoast",
+      "email": "support@yoast.com",
+      "homepage": "https://yoast.com"
+    },
+    {
+      "name": "Team MaxServ",
+      "email": "support@maxserv.com",
+      "homepage": "https://maxserv.com"
+    }
+  ],
+  "homepage": "https://yoast.com",
+  "require": {
+    "typo3/cms-core": "^8.7|^9.5|^10.3",
+    "typo3/cms-backend": "^8.7|^9.5|^10.3",
+    "typo3/cms-extbase": "^8.7|^9.5|^10.3",
+    "typo3/cms-fluid": "^8.7|^9.5|^10.3",
+    "typo3/cms-frontend": "^8.7|^9.5|^10.3",
+    "typo3/cms-install": "^8.7|^9.5|^10.3",
+    "ext-curl": "*",
+    "ext-json": "*",
+    "php": "^7.0"
+  },
+  "suggest": {
+    "typo3/cms-seo": "^9.5|^10.3"
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^2.0",
+    "overtrue/phplint": "^2.0",
+    "phpstan/phpstan": "^0.12.32",
+    "phpstan/extension-installer": "^1.0",
+    "saschaegerer/phpstan-typo3": "^0.13.1",
+    "slam/phpstan-extensions": "^5.0"
+  },
+  "replace": {
+    "typo3-ter/yoast-seo": "self.version"
+  },
+  "autoload": {
+    "psr-4": {
+      "YoastSeoForTypo3\\YoastSeo\\": "Classes/"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "6.x-dev"
+    },
+    "typo3/cms": {
+      "cms-package-dir": "{$vendor-dir}/typo3/cms",
+      "web-dir": "public"
+    }
+  },
+  "config": {
+    "vendor-dir": "vendor",
+    "bin-dir": "vendor/bin"
+  },
+  "scripts": {
+    "test:php:lint": [
+      "phplint"
+    ],
+    "cgl": [
+      "php-cs-fixer fix -v --dry-run --using-cache false --diff --diff-format=udiff"
+    ],
+    "cgl-fix": [
+      "php-cs-fixer fix -v --using-cache false"
+    ],
+    "test:php:phpstan": [
+      "phpstan analyse"
+    ]
+  }
+}
