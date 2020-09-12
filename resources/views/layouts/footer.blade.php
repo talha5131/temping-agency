@@ -301,6 +301,20 @@
 					&copy; Copyright 2019 Temping Agency <span>Design & Developed by <a href="https://mstdevelopers.com">MST Developers</a></span>
 				</div>
 			</div>
+			<div style="margin-top: 60px;">
+				<div class="col-md-3 text-center">
+					<a href="#"><strong> Temping Agency</strong></a>
+				</div>
+				<div class="col-md-3 text-center">
+					<a href="#"><strong>Temping Agency</strong></a>
+				</div>
+				<div class="col-md-3 text-center">
+					<a href="#"><strong>Temping Agency</strong></a>
+				</div>
+				<div class="col-md-3 text-center">
+					<a href="#"><strong>Temping Agency</strong></a>
+				</div>
+			</div>
 		</div>
 		<!--/ Row end -->
 		<div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top affix">
