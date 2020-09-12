@@ -13,6 +13,10 @@
 		font-size: 25px;
 	}
 
+	.copyright-info a {
+		color: white;
+	}
+
 	@media only screen and (min-width: 200px) and (max-width: 768px) {
 		#btn-top {
 			display: none;
@@ -298,10 +302,12 @@
 		<div class="row">
 			<div class="col-md-12 text-center">
 				<div class="copyright-info">
-					&copy; Copyright 2019 Temping Agency <span>Design & Developed by <a href="https://mstdevelopers.com">MST Developers</a></span>
+					<span style="color: #51284f">Our Agencies</span> - <a href="https://workers-direct.com">Workers Direct</a> - <a href="https://staff-direct.co.uk">Staff Direct</a>
+					- <a href="https://recruitment-agency.london">Recruitment Agency London</a> - <a href="https://temporary-staff.agency">Temporary Staffing Agency</a>
+					<!-- &copy; Copyright 2019 Temping Agency <span>Design & Developed by <a href="https://mstdevelopers.com">MST Developers</a></span> -->
 				</div>
 			</div>
-			<div style="margin-top: 60px;">
+			<!-- <div style="margin-top: 60px;">
 				<div class="col-md-3 text-center">
 					<a href="#"><strong> Temping Agency</strong></a>
 				</div>
@@ -314,7 +320,7 @@
 				<div class="col-md-3 text-center">
 					<a href="#"><strong>Temping Agency</strong></a>
 				</div>
-			</div>
+			</div> -->
 		</div>
 		<!--/ Row end -->
 		<div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top affix">
