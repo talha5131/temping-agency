@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use PiedWeb\TextSpinner\Spinner;
 use App\Job;
 use App\Activity;
 use App\Keyword;
@@ -141,6 +142,10 @@ class JobController extends Controller
     public function bulk_create(Request $request)
     {
         if($request->session()->has('admin')) {
+            $text = 'Chef positions are frequently mostly {enduring|remaining|surviving|long-lasting|permanent|unshakable|steadfast} jobs, however, there are a lot of situations where an {association|relationship|connection|attachment|membership|link} needs to {safe|secure} a chef {on|upon} short {statement|declaration|message|notice|proclamation|publication|broadcast|pronouncement|revelation} to {occupy|fill} in. Without the {precise|correct|exact|true|truthful|perfect} assets and associations, filling {chef|cook} jobs {on|upon} an urgent basis successfully can prove {totally|completely|utterly|extremely|entirely|enormously|very|definitely|certainly|no question|agreed|unconditionally|unquestionably|categorically} difficult.';
+            $spinText = Spinner::spin($text);
+
+            return $spinText;
             $keys = Keyword::all();
             return view('admin.bulkJob',compact('keys'));
         }else
@@ -196,7 +201,7 @@ class JobController extends Controller
                     $text = str_replace($b,$city->name,$x);
                     
                     $title = $job->name.' In '.$city->name;
-                    $content = $text;
+                    $content = Spinner::spin($text);
                     $url = $job->links;
                     $slug = $this->createSlug($title);
                     $id = $job->id;
