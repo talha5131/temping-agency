@@ -19,7 +19,7 @@ class PostController extends Controller
     {
         if($request->session()->has('admin')) {
             $keys = Keyword::all();
-            $terms = Term::all();
+            $terms = Term::orderByDesc('id')->paginate(10);
             return view('admin.keywords',compact('keys', 'terms'));
         }else
             return redirect('admin/login');
@@ -37,8 +37,11 @@ class PostController extends Controller
     public function saveterm(Request $request)
     {
         if($request->session()->has('admin')) {
-            Term::create(['name' => $request->term, 'keyword' => $request->keyword]);
-            return back()->with('success', 'Term inserted successfully to the keyword');
+            $terms = explode(',', $request->term);
+            foreach ($terms as $term) {
+                Term::create(['name' => $term, 'keyword' => $request->keyword]);
+            }
+            return back()->with('success', 'Terms inserted successfully to the keyword');
         }else
             return redirect('admin/login');
     }

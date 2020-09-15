@@ -83,7 +83,7 @@
                         </li>
                         <li class="nav-item">
                             <a href="admin-addBulk" class="nav-link">
-                                <p>Add Job with Pages Pages</p>
+                                <p>Add Job with Bulk Pages</p>
                             </a>
                         </li>
                         <li class="nav-item">

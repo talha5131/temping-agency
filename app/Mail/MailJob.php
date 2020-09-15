@@ -28,7 +28,7 @@ class MailJob extends Mailable
      * @return $this
      */
     public function build(){
-        return $this->from('team@temping-agency')->subject('Job Request Registered Successfully! Please wait for approval - Temping Agency')->view('mail.job');
+        return $this->from('team@workers-direct.com')->subject('Job Request Registered Successfully! Please wait for approval - Temping Agency')->view('mail.job');
     }
 
 }

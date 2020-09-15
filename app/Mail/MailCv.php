@@ -28,6 +28,6 @@ class MailCv extends Mailable
      * @return $this
      */
     public function build(){
-        return $this->from('jobs@temping-agency')->subject('Job CV Registered Successfully! - Temping Agency')->view('mail.cv');
+        return $this->from('jobs@workers-direct.com')->subject('Job CV Registered Successfully! - Temping Agency')->view('mail.cv');
     }
 }

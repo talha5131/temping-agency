@@ -76,18 +76,19 @@
                         <th>#</th>
                         <th>Keyword</th>
                         <th>Term</th>
-                        <th>Actions</th>
+                        <!-- <th>Actions</th> -->
                     </tr>
 
-                    @foreach($terms as $term)
+                    @foreach($terms as $key => $term)
                     <tr>
-                    	<td>{{$term->id}}</td>
+                        <td>{{ $terms->firstItem() + $key }}</td>
                     	<td>{{$term->key->name}}</td>
                     	<td>{{$term->name}}</td>
-                    	<td></td>
+                    	<!-- <td></td> -->
                     </tr>
                     @endforeach
 		        </table>
+                {{$terms->links()}}
 		    </section>
         </div>
     </div>

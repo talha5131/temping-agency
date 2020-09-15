@@ -33,7 +33,7 @@ class WebController extends Controller
             'message' =>$request->message,
         ];
 
-        Mail::to('team@temping-agency.com')->send(new QuoteMail($mail));
+        Mail::to('team@workers-direct.com')->send(new QuoteMail($mail));
         return back()->with('success', 'Thank\'s for contacting us. We\'ll respond you shortly!');
     }
 
@@ -46,7 +46,7 @@ class WebController extends Controller
             'message' =>$request->message,
         ];
 
-        Mail::to('team@temping-agency.com')->send(new ContactMail($mail));
+        Mail::to('team@workers-direct.com')->send(new ContactMail($mail));
         return back()->with('success', 'Thank\'s for contacting us. We\'ll respond you shortly!');
     }
 
@@ -59,7 +59,7 @@ class WebController extends Controller
             'message' =>$request->message,
         ];
 
-        Mail::to('team@temping-agency.com')->send(new BookMail($mail));
+        Mail::to('team@workers-direct.com')->send(new BookMail($mail));
         return back()->with('success', 'Thank\'s for contacting us. We\'ll respond you shortly!');
     }
 
