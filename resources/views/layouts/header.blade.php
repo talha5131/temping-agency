@@ -127,7 +127,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a href="{{url('/')}}" class="logo"><img class="img-responsive" src="public/assets/images/logo.png" alt="logo"></a>
+				<a href="{{url('/')}}" class="logo"><img class="img-responsive" src="{{ url('public/assets/images/logo.png')}}" alt="logo"></a>
 			</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav navbar-left nav-top-content nav-top-left" style="margin-left: 4%">
@@ -165,45 +165,45 @@
 					<li class="active"><a href="{{url('/')}}" class="mobile-li">Home </a></li>
 					<li><a href="about2" class="mobile-li">About Us</a></li>
 					<li><a href="why-us" class="mobile-li">Why Us</a></li>
-					<li><a href="career" class="mobile-li">Jobs</a></li>
+					<li><a href="our-services" class="mobile-li">Jobs</a></li>
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle mobile-li" data-toggle="dropdown">Services <i class="fa fa-angle-down"></i> </a>
 						<div class="dropdown-menu mega-menu custom-scrollbar mega-menu-styles">
 							<div class="row">
 								<div class="col-sm-4">
-									<img src="public/assets/images/catering/2705385-min.jpg" class="img-responsive mobile-img">
+									<img src="{{ url('public/assets/images/catering/2705385-min.jpg')}}" class="img-responsive mobile-img">
 									<a href="catering">
 										<h4 class="mobile-li">CATERING</h4>
 									</a>
-									<img src="public/assets/images/light-industrial-staff/welder-673559.jpg" class="img-responsive mobile-img">
+									<img src="{{ url('public/assets/images/light-industrial-staff/welder-673559.jpg')}}" class="img-responsive mobile-img">
 									<a href="light-industrial-staff">
 										<h4 class="mobile-li">Light Industrial Staff</h4>
 									</a>
 
-									<img src="public/assets/images/construction/Construction-Laborers.jpg" class="img-responsive mobile-img">
+									<img src="{{ url('public/assets/images/construction/Construction-Laborers.jpg')}}" class="img-responsive mobile-img">
 									<a href="construction">
 										<h4 class="mobile-li">Construction</h4>
 									</a>
 
 								</div>
 								<div class="col-sm-4">
-									<img src="public/assets/images/events/events2.jpg" alt="Events" class="img-responsive mobile-img">
+									<img src="{{ url('public/assets/images/events/events2.jpg')}}" alt="Events" class="img-responsive mobile-img">
 									<a href="events-&-promotions">
 										<h4 class="mobile-li">Events & Promotions</h4>
 									</a>
 
-									<img src="public/assets/images/it-and-tech/tech1.jpg" class="img-responsive mobile-img">
+									<img src="{{ url('public/assets/images/it-and-tech/tech1.jpg')}}" class="img-responsive mobile-img">
 									<a href="it-&-telecom">
 										<h4 class="mobile-li">IT & Telecom</h4>
 									</a>
 
 								</div>
 								<div class="col-sm-4">
-									<img src="public/assets/images/hospitality/hospitality1.jpg" class="img-responsive mobile-img">
+									<img src="{{ url('public/assets/images/hospitality/hospitality1.jpg')}}" class="img-responsive mobile-img">
 									<a href="hospitality">
 										<h4 class="mobile-li">Hospitality</h4>
 									</a>
-									<img src="public/assets/images/sales-and-retail/sales1.jpg" class="img-responsive mobile-img">
+									<img src="{{ url('public/assets/images/sales-and-retail/sales1.jpg')}}" class="img-responsive mobile-img">
 									<a href="sales-&-retail">
 										<h4 class="mobile-li">Sales & Retail</h4>
 									</a>

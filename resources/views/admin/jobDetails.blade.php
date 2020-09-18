@@ -47,7 +47,7 @@
                         </div>
                         <hr>
                         <hr>
-                        <div class="row">
+{{                        <div class="row">
                             <div class="col-sm-4 form-group">
                                 <label for="tags">Job Tags</label>
                                 <h3>{{ isset($job->tags)?$job->tags:'' }}</h3>
@@ -128,7 +128,7 @@
                         <div class="row">
                             <div class="col-sm-12 form-group">
                                 <label for="desc"> Job Description</label>
-                                <h3>{{ isset($job->description)?$job->description:'' }}</h3>
+                                <h3><?php echo isset($job->description)?$job->description:''; ?></h3>
                             </div>
                         </div>
                         <div class="row">

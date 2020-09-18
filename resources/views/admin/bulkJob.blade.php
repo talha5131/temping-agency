@@ -12,7 +12,7 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1 class="m-0 text-dark">Add Job</h1>
+                            <h1 class="m-0 text-dark">Add Bulk Jobs</h1>
                             <hr>
                         </div>
                         <!-- /.col -->
@@ -70,18 +70,25 @@
                         <hr>
                         <div class="row">
                             <div class="col-sm-12 form-group">
+                                <label for="desc"> Meta Description</label>
+                                <textarea class="form-control" rows="7" id="meta" name="meta"></textarea>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
                                 <label for="desc"> Job Description</label>
                                 <textarea class="form-control job-content" rows="7" id="desc" name="desc"></textarea>
 
                             </div>
                         </div>
                         <hr>
-                        <div class="row">
+<!--                         <div class="row">
                             <div class="col-sm-12 form-group">
                                 <label for="jobTitle">External Link</label>
                                 <input type="url" class="form-control" id="link" name="link" placeholder="Add External Link">
                             </div>
-                        </div>
+                        </div> -->
                         <hr>
                         <div class="row">
                             <div class="col-sm-4 form-group">

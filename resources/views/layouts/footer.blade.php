@@ -219,7 +219,7 @@
 						<h5><a href="#">Time Sheet</a></h5>
 					</li>
 					<li>
-						<h5><a href="career">Latest Jobs</a></h5>
+						<h5><a href="our-services">Latest Jobs</a></h5>
 					</li>
 					<li>
 						<h5><a href="#">Career Advice</a></h5>
@@ -335,7 +335,7 @@
 <!-- Google Map API Key Source -->
 <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyCsa2Mi2HqyEcEnM1urFSIGEpvualYjwwM"></script>
 <!-- Doc https://developers.google.com/maps/documentation/javascript/get-api-key -->
-<script type="text/javascript" src="public/assets/js/gmap3.js"></script>
+<script type="text/javascript" src="{{ url('public/assets/js/gmap3.js')}}"></script>
 <script type="text/javascript"></script>
 <script type="text/javascript">
 	$(function() {

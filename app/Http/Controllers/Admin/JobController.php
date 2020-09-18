@@ -88,6 +88,7 @@ class JobController extends Controller
             // return $request;
             $job = new Job();
             $job->title = $request->title;
+            $job->meta_description = isset($request->meta)?$request->meta:'';
             $job->description = isset($request->desc)?$request->desc:'';
             $job->links = isset($request->link)?$request->link:'';
             $job->tags = isset($request->tags)?$request->tags:'';
@@ -120,15 +121,17 @@ class JobController extends Controller
             $job->save();
 
             $title = $job->title;
+            $meta = $job->meta_description;
             $content = $job->description;
             $url = $job->links;
             $slug = $this->createSlug($job->title);
             $id = $job->id;
 
             Bulk::create([
-                'title' => $title , 
+                'title' => $title ,
+                'meta_description' => $meta ,
                 'content' => $content ,
-                'url' => $url,
+                'url' => $url ,
                 'slug' => $slug , 
                 'job_id' => $id
             ]);
@@ -156,12 +159,14 @@ class JobController extends Controller
             $b = '{'.$request->job2.'}';
             $term1 = Term::where('keyword',$request->job1)->get();
             $term2 = Term::where('keyword',$request->job2)->get();
+            $meta = isset($request->meta)?$request->meta:'';
             $description = isset($request->desc)?$request->desc:'';
 
             $job = new Job();
             $job->title = $request->job1.' in '.$request->job2;
+            $job->meta_description = $meta;
             $job->description = $description;
-            $job->links = isset($request->link)?$request->link:'';
+            $job->links = '';
             $job->tags = isset($request->tags)?$request->tags:'';
             $job->category = isset($request->category)?$request->category:'';
             $job->location = isset($request->location)?$request->location:'';
@@ -193,24 +198,27 @@ class JobController extends Controller
 
             foreach($term1 as $job){
                 foreach($term2 as $city){
+                    $x = str_replace($a,$job->name,$meta);
+                    $meta_text = str_replace($b,$city->name,$x);
+
                     $x = str_replace($a,$job->name,$description);
                     $text = str_replace($b,$city->name,$x);
                     
                     $title = $job->name.' In '.$city->name;
+                    $meta_desc = Spinner::spin($meta_text);
                     $content = Spinner::spin($text);
                     $url = $job->links;
                     $slug = $this->createSlug($title);
                     $id = $job->id;
 
                     Bulk::create([
-                        'title' => $title , 
+                        'title' => $title ,
+                        'meta_description' => $meta_desc, 
                         'content' => $content , 
                         'url' => $url,
                         'slug' => $slug , 
                         'job_id' => $id
                     ]);
-
-                    // echo $job->name.' In '.$city->name.'</br>   '.$text.'</br>----------------</br>';
                 }
             }
                     return redirect()->route('admin.jobs')->with('success','Job posted successfully!');

@@ -45,8 +45,10 @@
                         <th>#</th>
                         <th>Name</th>
                         <th>Email</th>
+                        <th>Phone</th>
                         <th>Category</th>
                         <th>Expected Salary</th>
+                        <th>Location</th>
                         <th>Platform</th>
                         <th>Actions</th>
                     </tr>
@@ -55,8 +57,10 @@
                         <td>{{ $total->firstItem() + $key }}</td>
                         <td>{{$cv->name}}</td>
                         <td>{{$cv->email}}</td>
+                        <td>{{$cv->phone}}</td>
                         <td>{{$cv->category}}</td>
                         <td>{{$cv->expected_salary}}</td>
+                        <td>{{$cv->location}}</td>
                         <td>{{$cv->platform}}</td>
                         <td><a href="#" data-toggle="modal" data-target="#myModal"><i class="fas fa-info-circle"></i></a></td>
                     </tr>

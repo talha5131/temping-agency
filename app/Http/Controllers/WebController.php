@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Storage;
+use PiedWeb\TextSpinner\Spinner;
 use App\User;
 use App\CV;
 use App\Job;
@@ -215,7 +216,11 @@ class WebController extends Controller
 
     public function job_detail($slug){
         $job = Bulk::where('slug',$slug)->first();
-        return view('job',compact('job'));
+        $brand = Spinner::spin('{No 1 Temp Recruitment Agency UK|Leading Recruitment Agency In UK|Top Rated Recruitment Agency In UK|Leading Recruitment Agency For Temp Jobs|UK\'s Leading Recruitment Agency For Temp Jobs}');
+        $meta_title = $job->title.' - '.$brand;
+        // preg_match("/(?:\w+(?:\W+|$)){0,10}/", $job->content, $matches);
+        // return $matches[0];
+        return view('job',compact('job','meta_title'));
     }
 
     public function apply_job(Request $request){

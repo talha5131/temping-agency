@@ -93,7 +93,7 @@
 					<h2> Looking For a Job? </h2>
 					<p>If you looking for a full time, part time or seasonal Job in London then registering with a temping agency is always a good move. </p>
 					<a href="job-seeker" class="cd-btn btn btn-primary white">Job Seekr</a>
-					<a href="career" class="cd-btn btn secondary btn-primary solid">Learn More</a>
+					<a href="our-services" class="cd-btn btn secondary btn-primary solid">Learn More</a>
 				</div> <!-- .cd-half-width -->
 			</li>
 			<li class="cd-bg-video">

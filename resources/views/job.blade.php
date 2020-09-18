@@ -1,10 +1,14 @@
 @extends('layouts.base')
+@include('meta::manager', [
+    'title'         => $meta_title,
+    'description' => $job->meta_description,
+])
 @section('title',$job->title)
 @section('content')
-<link rel="icon" href="public/assets/images/logo-favicon.png" type="image/x-icon">
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="public/assets/images/logo-favicon.png">
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="public/assets/images/logo-favicon.png">
-<link rel="apple-touch-icon-precomposed" href="public/assets/images/logo-favicon.png">
+<link rel="icon" href="{{ url('public/assets/images/logo-favicon.png')}}" type="image/x-icon">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ url('public/assets/images/logo-favicon.png')}}">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ url('public/assets/images/logo-favicon.png')}}">
+<link rel="apple-touch-icon-precomposed" href="{{ url('public/assets/images/logo-favicon.png')}}">
 <style>
 	@media only screen and (min-width: 200px) and (max-width: 768px) {
 		body {
@@ -23,7 +27,7 @@
 
 <div id="banner-area">
 
-	<img src="../{{asset('images/banner/banner1.jpg')}}" alt="" />
+	<img src="{{url('public/assets/images/banner/banner1.jpg')}}" alt="" />
 
 	<div class="parallax-overlay"></div>
 
@@ -473,7 +477,7 @@
 
 <!-- initialize jQuery Library -->
 
-<script type="text/javascript" src="../{{asset('js/jquery.js')}}"></script>
+<script type="text/javascript" src="{{url('public/assets/js/jquery.js')}}"></script>
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
 

@@ -52,6 +52,13 @@
                         <hr>
                         <div class="row">
                             <div class="col-sm-12 form-group">
+                                <label for="desc"> Meta Description</label>
+                                <textarea class="form-control" rows="7" id="meta" name="meta"></textarea>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
                                 <label for="desc"> Job Description</label>
                                 <textarea class="form-control job-content" rows="7" id="desc" name="desc"></textarea>
 

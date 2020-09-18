@@ -56,7 +56,7 @@
 						<div class="well">
 							<img src="public/assets/images/construction/Construction-Laborers.jpg" class="img-responsive">
 							<h4><span class="title">{{ $job->title }}</span></h4>
-							<a href="{{$job->slug}}" class="btn btn-primary">Read More</a>
+							<a href="our-services/{{$job->slug}}" class="btn btn-primary">Read More</a>
 						</div>
 					</div>
 					@endforeach
