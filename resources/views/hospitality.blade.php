@@ -1,4 +1,8 @@
 @extends('layouts.base')
+@include('meta::manager', [
+    'title'         => 'Hospitality',
+    'description' => 'With more than four million confirmed cases of Covid-19 around the globe, governments all over the globe have needed to execute severe measures to contain the spread of this horrendous disease. One of the industries which is being most affected by these new measures is the hospitality and catering sector.',
+])
 @section('title','Hospitality')
 @section('content')
 <link rel="icon" href="public/assets/images/logo-favicon.png" type="image/x-icon">

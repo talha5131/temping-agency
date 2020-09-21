@@ -1,4 +1,11 @@
 @extends('layouts.base')
+@include('meta::manager', [
+    'title'         => 'Ready Talent',
+    'description' => 'Call us to hire any temp whenever you need from our huge pool of talent – Temps registered with us are consistently prepared to fit right into your business when you need them.
+TEMPING AGENCY – A NEW WAY TO HIRE 
+Our exclusive service model means our temps receive hours of industry-focused preparation – make sure they are the perfect fit for your business from day one.
+',
+])
 @section('title','Ready Talent')
 @section('content')
 <link rel="icon" href="public/assets/images/logo-favicon.png" type="image/x-icon">

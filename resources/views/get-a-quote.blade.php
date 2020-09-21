@@ -1,4 +1,8 @@
 @extends('layouts.base')
+@include('meta::manager', [
+    'title'         => 'Get A Quote',
+    'description' => 'Get a quote',
+])
 @section('title','Get A Quote')
 @section('content')
 <link rel="icon" href="public/assets/images/logo-favicon.png" type="image/x-icon">

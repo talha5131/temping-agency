@@ -1,4 +1,8 @@
 @extends('layouts.base')
+@include('meta::manager', [
+    'title'         => 'CV Register',
+    'description' => 'Fill out the form below, register your details along with your CV to gain access to our community pages for our candidates where you can store search profiles and get to know about recent vacancies.',
+])
 @section('title','CV Register')
 @section('content')
 <link rel="icon" href="public/assets/images/logo-favicon.png" type="image/x-icon">

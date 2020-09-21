@@ -1,4 +1,8 @@
 @extends('layouts.base')
+@include('meta::manager', [
+    'title'         => 'Employer',
+    'description' => 'We have been providing professional and experienced construction workers to our customers for various years and have great information of the industry. We will provide the best candidates to suit your requirements and to help your tasks.',
+])
 @section('title','Employer')
 @section('content')
 <link rel="icon" href="public/assets/images/logo-favicon.png" type="image/x-icon">

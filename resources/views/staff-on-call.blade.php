@@ -1,4 +1,13 @@
 @extends('layouts.base')
+@include('meta::manager', [
+    'title'         => 'Staff On Call',
+    'description' => 'One of the advantages of approaching temporary staff is that you can organize staff to be accessible if the need arises. You should simply ask the agency to make a call to the temp and inform him / her that they are needed at your offices.
+HOW DOES THE STAFF ON CALL SYSTEM WORK?
+The on-call system is a very simple system. For it to work, the organization needs to comprehend your productivity needs. It is advisable to permit the temp to spend some time observing/working in your office so as to figure out the job that s/he will be expected to do.
+CONVENIENCE
+Our administration accommodates an assistance that makes applicants conveniently accessible at whatever point you need temporary staff. This makes for a convenient solution for having work done at the most affordable way possible.
+',
+])
 @section('title','Staff On Call')
 @section('content')
 <link rel="icon" href="public/assets/images/logo-favicon.png" type="image/x-icon">

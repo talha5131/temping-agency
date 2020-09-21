@@ -1,5 +1,12 @@
 @extends('layouts.base')
-@section('title','About Us')
+@include('meta::manager', [
+    'title'         => 'Hire Temporary Labour',
+    'description' => 'Temping Agency has developed a name as one of the absolute best labourer agencies in London. We aim to offer our clients top quality service. Our incredibly capable, dedicated team of recruiters are well trained in the process.
+TEAM OF SITE OPERATIVES
+whether you simply need one individual to fill a post or if you require an entire team, our recruiters will find the candidates to make sure your job gets done in a manner that meets your deadlines and expectations and promotes your companies good name and image.
+',
+])
+@section('title','Hire Temporary Labour')
 @section('content')
 <link rel="icon" href="public/assets/images/logo-favicon.png" type="image/x-icon">
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="public/assets/images/logo-favicon.png">

@@ -1,4 +1,8 @@
 @extends('layouts.base')
+@include('meta::manager', [
+    'title'         => 'Our Services',
+    'description' => 'We provide quality of service for our clients.',
+])
 @section('title','Our Services')
 @section('content')
 <link rel="icon" href="public/assets/images/logo-favicon.png" type="image/x-icon">

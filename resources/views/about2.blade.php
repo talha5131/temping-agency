@@ -1,5 +1,8 @@
 @extends('layouts.base')
-@section('title','About Us')
+@include('meta::manager', [
+    'title'         => 'About Us',
+    'description' => 'Temping Agency is one of the best recruitment agencies in London, working to millions of individuals to secure their dream jobs according to their necessities. We have been providing brilliant recruitment services to our customers since the last 10 years by offering millions of the most recent employment opportunity postings in different industries.',
+])@section('title','About Us')
 @section('content')
 <link rel="icon" href="public/assets/images/logo-favicon.png" type="image/x-icon">
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="public/assets/images/logo-favicon.png">

@@ -1,4 +1,8 @@
 @extends('layouts.base')
+@include('meta::manager', [
+    'title'         => 'Contruction',
+    'description' => 'At Temping Agency, we specialize in giving Construction Laborers and talented dealers to the development and private ventures. We can provide skilled and semi-skilled workers.',
+])
 @section('title','Contruction')
 @section('content')
 <link rel="icon" href="public/assets/images/logo-favicon.png" type="image/x-icon">

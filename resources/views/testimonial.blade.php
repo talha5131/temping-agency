@@ -1,4 +1,15 @@
 @extends('layouts.base')
+@include('meta::manager', [
+    'title'         => 'Testimonials',
+    'description' => 'WHAT OUR CLIENTS SAY
+I employed 10 staff over an 8 week contract to provide front of house staff for Paddington on Ice. The staff proved reliable and very helpful. Always willing to work and in time. Temping Agency provided great support and communication throughout the contract and I would not hesitate to use them repeatedly.
+KIM KATHERINE
+Recruitment Manager
+The company I work for hired a couple of guys for a day's fairly heavy duty work on a building site in London. They were punctual and worked very hard all day. They were well thought of by our site staff who are very difficult to please! Mark Thomas.
+MARK THOMAS
+General Manager
+',
+])
 @section('title','Testimonials')
 @section('content')
 <link rel="icon" href="public/assets/images/logo-favicon.png" type="image/x-icon">

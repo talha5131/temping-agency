@@ -1,4 +1,8 @@
 @extends('layouts.base')
+@include('meta::manager', [
+    'title'         => 'Our Services',
+    'description' => 'Temp agency provides temp jobs in various industries that helps our clients finding their dream jobs according to their necessities.',
+])
 @section('title','Jobs')
 @section('content')
 <link rel="icon" href="public/assets/images/logo-favicon.png" type="image/x-icon">

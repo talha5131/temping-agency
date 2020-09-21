@@ -1,4 +1,8 @@
 @extends('layouts.base')
+@include('meta::manager', [
+    'title'         => 'IT & Telecom',
+    'description' => 'Joined during the 90s, our customer is one of Asia's largest real estate groups. The Singapore office works one of the biggest hospitality portfolios in the city. We are hoping to welcome on board an IT Manager. This job will help the Infrastructure Manager to create IT foundation arrangements driving system and change. You will be a technology expert.',
+])
 @section('title','IT & Telecom')
 @section('content')
 <link rel="icon" href="public/assets/images/logo-favicon.png" type="image/x-icon">

@@ -1,4 +1,11 @@
 @extends('layouts.base')
+@include('meta::manager', [
+    'title'         => 'Post A Job',
+    'description' => 'Request A STAFF 
+If you Need To Fill any Temporary or Permanent Job For Your Business/Organization, Fill up the Form underneath and send to us for a Quick Response. 
+Temping Agency is consistently prepared to support their customers and users to fulfil their Job/Employment needs!
+',
+])
 @section('title','Post A Job')
 @section('content')
 <link rel="icon" href="public/assets/images/logo-favicon.png" type="image/x-icon">

@@ -1,4 +1,8 @@
 @extends('layouts.base')
+@include('meta::manager', [
+    'title'         => 'Contact US',
+    'description' => 'Our consultants are available 24/7 to help you with your queries, you can call or message us anytime and we’ll be available to guide you.',
+])
 @section('title','Contact Us')
 @section('content')
 <link rel="icon" href="public/assets/images/logo-favicon.png" type="image/x-icon">

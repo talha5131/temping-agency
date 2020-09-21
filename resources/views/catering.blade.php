@@ -1,4 +1,8 @@
 @extends('layouts.base')
+@include('meta::manager', [
+    'title'         => 'Catering',
+    'description' => 'Our catering division is broadly known as one of the market leaders in London, providing professional staff to the catering and hospitality industry and offering simply the best service to our valued clients.',
+])
 @section('title','Catering')
 @section('content')
 <link rel="icon" href="public/assets/images/logo-favicon.png" type="image/x-icon">

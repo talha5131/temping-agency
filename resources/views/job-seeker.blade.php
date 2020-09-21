@@ -1,4 +1,36 @@
 @extends('layouts.base')
+@include('meta::manager', [
+    'title'         => 'Job Seeker',
+    'description' => 'FACTS & FIGURES:
+Significant EXPERIENCE
+We ensure all our operatvies Must have least 1 - 2 years important Experience.
+24/7 AVAILABILITY
+Our customer service staff is available 24/7 online and on phone to fill in any urgent vacancy.
+Adaptable and RELIABLE
+Every one of our temps are completely ready to begin on short notice at whatever point required.
+1000+
+More than 1,000 job searchers have landed their dream jobs through Temping Agency.
+10,000+
+Temping Agency has now grown its team to more than 10,000 talented people.
+MILLIONS
+Since founded, millions of job searchers have been registered with temping agency.
+Job Searcher:
+At Temping Agency, we don’t prioritize our clients as compared to our candidates unlike other recruitment agencies. Our main focus is our candidates and we believe that they’re important and they deserve the best service that we can offer.
+We provide the following services to our job seekers:
+QUICK TURNAROUND
+We won't leave you waiting for a call after you make your application. We will guarantee we hit you up quickly, regardless of the result of your application.
+CONSISTENT CONTACT
+We realize the significance of building a solid and long-lasting relationship with our candidates, which is the reason we will consistently stay in touch with you. We will do this all through the recruitment process and when you start work, just to guarantee you are getting on well. We will consistently attempt to contact you back rapidly with any inquiries you may have.
+ADVICE AND SUPPORT
+The job searching procedure can be very overwhelming, particularly if you don't have a lot of experience in it and we need to make it simpler for you by giving continuous guidance and support. We will offer guidance on your CV and interview skills, to help guarantee you perform as well as possible during interview.
+
+FEEDBACK
+
+There is nothing more awful than going for a job interview and not hearing anything back. It tends to be frustrating and this is the reason we will consistently give you feedback, regardless of the outcome. 
+We realize how significant it is for your progress and believe it is quite reasonable when you have done the effort of applying and attend interview.
+We will talk you through your feedback and offer any help you may need to improve later and for other interviews.
+',
+])
 @section('title','Job Seeker')
 @section('content')
 <link rel="icon" href="public/assets/images/logo-favicon.png" type="image/x-icon">

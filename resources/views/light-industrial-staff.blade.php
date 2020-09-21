@@ -1,4 +1,8 @@
 @extends('layouts.base')
+@include('meta::manager', [
+    'title'         => 'Light Industrial Staff',
+    'description' => 'There are numerous places that could emerge in an industrial setting. Temping Agency will have the option to fill any of them on short notice from cleaning staff to fork lifters etc. We have a broad information base of candidates who will have the option to fill these positions. They are experienced, have the necessary qualifications and are ready.',
+])
 @section('title','Light Industrial Staff')
 @section('content')
 <link rel="icon" href="public/assets/images/logo-favicon.png" type="image/x-icon">

@@ -1,4 +1,8 @@
 @extends('layouts.base')
+@include('meta::manager', [
+    'title'         => 'Sales & Retail',
+    'description' => 'Our client is one of the leading international providers of co-working spaces. In addition to various successful locations in North America, the Middle East and the Asia-Pacific region, our client is also increasingly expanding in Europe. As part of the market entry in Germany at the end of 2018, we are now looking for a sales manager (m / f / d) who will set milestones in the market penetration of the respective regional markets and also build up and maintain a network to create sustainable synergies here.',
+])
 @section('title','Sales & Retail')
 @section('content')
 <link rel="icon" href="public/assets/images/logo-favicon.png" type="image/x-icon">

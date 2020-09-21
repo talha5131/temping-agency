@@ -1,4 +1,8 @@
 @extends('layouts.base')
+@include('meta::manager', [
+    'title'         => 'Events & Promotions',
+    'description' => 'Event staff recruitment is a much specific field in the recruitment industry. Our experts who work in this division are uniquely trained and experienced at dealing with clients and candidates who work within this industry.',
+])
 @section('title','Events & Promotions')
 @section('content')
 <link rel="icon" href="public/assets/images/logo-favicon.png" type="image/x-icon">

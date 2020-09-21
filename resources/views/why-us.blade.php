@@ -1,4 +1,13 @@
 @extends('layouts.base')
+@include('meta::manager', [
+    'title'         => 'Why Us',
+    'description' => 'TEMPS REGISTERED WITH US
+As a temping agency we checked all applicants with great vigour. Being a top hiring agency, our consultants not only present the candidate’s CV, but also with test results of their skills and full reference checks. 
+The consultant that you deal with will have had a careful face-to-face interview with the candidate and will be able to tell you his / her impressions of the candidate.
+YOUR TEMP AGENCY
+In order to find London temps, you need a London temping agency that specialists in finding quality temps for their clients. Not only must they find the right temp for the job, temp agencies London need to offer the best possible service.
+',
+])
 @section('title','Why Us')
 @section('content')
 <link rel="icon" href="public/assets/images/logo-favicon.png" type="image/x-icon">

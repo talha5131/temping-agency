@@ -1,4 +1,8 @@
 @extends('layouts.base')
+@include('meta::manager', [
+    'title'         => 'Agency Temps',
+    'description' => 'Temp workers are generally hard-working employees with diverse understanding and capabilities. However, they are also ready to learn as this will assist them with performing well in their next task. As part of their reward they are regularly asked to join the organization on a permanent basis.',
+])
 @section('title','Agency Temp')
 @section('content')
 <link rel="icon" href="public/assets/images/logo-favicon.png" type="image/x-icon">

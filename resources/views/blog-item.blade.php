@@ -1,4 +1,8 @@
 @extends('layouts.base')
+@include('meta::manager', [
+    'title'         => ''How to achieve your Bonus?'',
+    'description' => 'Need help in understanding recruitment process? Our blog provides complete guidance that will guide you through the complete process of recruitment.',
+])
 @section('title','How to achieve your Bonus?')
 @section('content')
 <link rel="icon" href="public/assets/images/logo-favicon.png" type="image/x-icon">

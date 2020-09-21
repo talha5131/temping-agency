@@ -1,7 +1,10 @@
 @extends('layouts.base')
+@include('meta::manager', [
+    'title'         => 'Temp Agency - Quality Recruitment & Temporary Jobs Specialist',
+    'description' => 'Are You Looking for Temporary Jobs or Would Like to Hire Temp? We are UK’s Top-Rated Temp Agency, Specialist Recruitment Agency for Short Terms & Temporary Staff.',
+    'keywords' => 'Temp Agency, Temp, Agency',
+])
 @section('title','Temp Agency - Quality Recruitment & Temporary Jobs Specialist')
-@section('metaDesc','Are You Looking for Temporary Jobs or Would Like to Hire Temp? We are UK’s Top-Rated Temp Agency, Specialist Recruitment Agency for Short Terms & Temporary Staff.')
-@section('keywords', 'Temp Agency, Temp, Agency')
 @section('content')
 <link rel="icon" href="public/assets/images/logo-favicon.png" type="image/x-icon">
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="public/assets/images/logo-favicon.png">

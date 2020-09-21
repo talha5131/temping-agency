@@ -132,6 +132,8 @@ class WebController extends Controller
 
         $job = new Job();
         $job->title = $request->title;
+        $job->meta_description = '';
+        $job->links = '';
         $job->description = isset($request->desc)?$request->desc:'';
         $job->tags = isset($request->tags)?$request->tags:'';
         $job->category = isset($request->category)?$request->category:'';

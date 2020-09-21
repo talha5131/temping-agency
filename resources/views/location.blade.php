@@ -1,4 +1,16 @@
 @extends('layouts.base')
+@include('meta::manager', [
+    'title'         => 'Locations',
+    'description' => '•	RECRUITMENT AGENCY ILFORD, GREATER LONDON
+Ilford, Greater London 344-348 High Road, IG1 1QP
+
+Tel: +442030869080
+•	RECRUITMENT AGENCY CENTRAL LONDON
+207 Regent Street, Marylebone, London W1A 6US Tel:+443332422711
+•	RECRUITMENT AGENCY MANCHESTER
+Unit 20648, Oldham Road, Manchester. M61 0BW Tel:+443332422711
+',
+])
 @section('title','Locations')
 @section('content')
 <link rel="icon" href="public/assets/images/logo-favicon.png" type="image/x-icon">
