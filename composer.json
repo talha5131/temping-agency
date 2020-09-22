@@ -19,6 +19,8 @@
         "laravel/tinker": "^2.0",
         "league/flysystem-aws-s3-v3": "^1.0",
         "piedweb/text-spinner": "^1.0",
+        "spatie/schema-org": "^3.0",
+        "webklex/laravel-imap": "^1.6",
         "yoast-seo-for-typo3/yoast_seo": "^7.0"
     },
     "require-dev": {

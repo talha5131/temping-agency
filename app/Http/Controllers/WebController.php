@@ -65,14 +65,18 @@ class WebController extends Controller
     }
 
     public function cvUpload(Request $request){
-        $code = str_random(10);
-        $user = new User();
-        $user->name = $request->name;
-        $user->email = $request->email;
-        $user->phone = $request->CC.''.$request->phone;
-        $user->password = Hash::make($code);
-        $user->user_type = 'candidate';
-        $user->save();
+        if(User::where('email',$request->email)->first()){
+            $user = User::where('email',$request->email)->first();
+        }else{
+            $code = str_random(10);
+            $user = new User();
+            $user->name = $request->name;
+            $user->email = $request->email;
+            $user->phone = $request->CC.''.$request->phone;
+            $user->password = Hash::make($code);
+            $user->user_type = 'candidate';
+            $user->save();
+        }
 
         if($request->hasfile('image'))
         {
@@ -89,7 +93,6 @@ class WebController extends Controller
             $path = $request->file('cv')->storeAs('candidates/cvs',$vitae,'s3');
             $cvUrl = Storage::disk('s3')->response('candidates/cvs/' . $vitae);
         }
-
 
         $cv = new CV();
         $cv->name = $user->name;
@@ -111,7 +114,7 @@ class WebController extends Controller
             'name' => $cv->name,
             'email' =>$cv->email,
             'phone' =>$cv->phone,
-            'code' => $code,
+            'code' => isset($code)?$code:'',
             'location' => $cv->location,
             'cv' => $cvUrl,
         ];
@@ -120,15 +123,18 @@ class WebController extends Controller
         return redirect()->back()->with('success','Congratulations! Your CV has been uploaded');
     }
     public function post(Request $request){
-        // return $request;
-        $code = str_random(10);
-        $user = new User();
-        $user->name = $request->name;
-        $user->email = $request->email;
-        $user->phone = $request->CC.''.$request->phone;
-        $user->password = Hash::make($code);
-        $user->user_type = 'employer';
-        $user->save();
+        if(User::where('email',$request->email)->first()){
+            $user = User::where('email',$request->email)->first();
+        }else{
+            $code = str_random(10);
+            $user = new User();
+            $user->name = $request->name;
+            $user->email = $request->email;
+            $user->phone = $request->CC.''.$request->phone;
+            $user->password = Hash::make($code);
+            $user->user_type = 'candidate';
+            $user->save();
+        }
 
         $job = new Job();
         $job->title = $request->title;
@@ -163,12 +169,11 @@ class WebController extends Controller
 
         $job->save();
 
-
         $mail = [
             'name' => $user->name,
             'email' =>$user->email,
             'phone' =>$user->phone,
-            'code' => $code,
+            'code' => isset($code)?$code:'',
             'title' => $job->title,
             'location' => $job->location,
             'type' => $job->type,
@@ -177,6 +182,75 @@ class WebController extends Controller
 
         Mail::to($user->email)->send(new MailJob($mail));
         return redirect()->back()->with('success','Congratulations! Your Job has been uploaded');
+    }
+
+    public function jobs(){
+        $jobs = Bulk::orderByDesc('id')->paginate(9);
+        return view('career',compact('jobs'));
+    }
+
+    public function job_detail($slug){
+        $job = Bulk::where('slug',$slug)->first();
+        $brand = Spinner::spin('{No 1 Temp Recruitment Agency UK|Leading Recruitment Agency In UK|Top Rated Recruitment Agency In UK|Leading Recruitment Agency For Temp Jobs|UK\'s Leading Recruitment Agency For Temp Jobs}');
+        $meta_title = $job->title.' - '.$brand;
+        // preg_match("/(?:\w+(?:\W+|$)){0,10}/", $job->content, $matches);
+        // return $matches[0];
+        return view('job',compact('job','meta_title'));
+    }
+
+    public function apply_job(Request $request){
+        if(User::where('email',$request->email)->first()){
+            $user = User::where('email',$request->email)->first();
+        }else{
+            $code = str_random(10);
+            $user = new User();
+            $user->name = $request->name;
+            $user->email = $request->email;
+            $user->phone = $request->CC.''.$request->phone;
+            $user->password = Hash::make($code);
+            $user->user_type = 'candidate';
+            $user->save();
+        }
+
+        $job = Bulk::find($request->job);
+
+        $ja = new Activity();
+        $ja->job_id = $job->id;
+        $ja->user_id = $user->id;
+        $ja->save();
+
+        if($request->hasfile('cv'))
+        {
+            $file = $request->file('cv')->getClientOriginalName();
+            $vitae = 'Temping-Agency'.'-'.$user->id.'-'.$file;
+            $path = $request->file('cv')->storeAs('candidates/cvs',$vitae,'s3');
+            $cvUrl = Storage::disk('s3')->response('candidates/cvs/' . $vitae);
+            // <img src="{{ Storage::disk('spaces')->url($photo->image) }}" />
+        }
+
+        $cv = new CV();
+        $cv->name = $user->name;
+        $cv->email = $user->email;
+        $cv->phone = $user->phone;
+        $cv->cv = $vitae;
+        $cv->user_id = $user->id;
+        $cv->platform = 'Temping Agency';
+        $cv->save();
+
+        $mail = [
+            'name' => $user->name,
+            'email' =>$user->email,
+            'phone' =>$user->phone,
+            'code' => isset($code)?$code:'',
+            'title' => $job->title,
+            'location' => $job->location,
+            'type' => $job->type,
+            'company' => $job->company,
+        ];
+
+        Mail::to($user->email)->send(new Applied($mail));
+        return redirect()->back()->with('success','Successfully Applied for this job!');
+
     }
 
     public function createSlug($title, $id = 0)
@@ -211,69 +285,4 @@ class WebController extends Controller
             ->get();
     }
 
-    public function jobs(){
-        $jobs = Bulk::orderByDesc('id')->paginate(9);
-        return view('career',compact('jobs'));
-    }
-
-    public function job_detail($slug){
-        $job = Bulk::where('slug',$slug)->first();
-        $brand = Spinner::spin('{No 1 Temp Recruitment Agency UK|Leading Recruitment Agency In UK|Top Rated Recruitment Agency In UK|Leading Recruitment Agency For Temp Jobs|UK\'s Leading Recruitment Agency For Temp Jobs}');
-        $meta_title = $job->title.' - '.$brand;
-        // preg_match("/(?:\w+(?:\W+|$)){0,10}/", $job->content, $matches);
-        // return $matches[0];
-        return view('job',compact('job','meta_title'));
-    }
-
-    public function apply_job(Request $request){
-        $code = str_random(10);
-        $user = new User();
-        $user->name = $request->name;
-        $user->email = $request->email;
-        $user->phone = $request->CC.''.$request->phone;
-        $user->password = Hash::make($code);
-        $user->user_type = 'candidate';
-        $user->save();
-
-
-        $job = Bulk::find($request->job);
-
-        $ja = new Activity();
-        $ja->job_id = $job->id;
-        $ja->user_id = $user->id;
-        $ja->save();
-
-        if($request->hasfile('cv'))
-        {
-            $file = $request->file('cv')->getClientOriginalName();
-            $vitae = 'Temping-Agency'.'-'.$user->id.'-'.$file;
-            $path = $request->file('cv')->storeAs('candidates/cvs',$vitae,'s3');
-            $cvUrl = Storage::disk('s3')->response('candidates/cvs/' . $vitae);
-            // <img src="{{ Storage::disk('spaces')->url($photo->image) }}" />
-        }
-
-        $cv = new CV();
-        $cv->name = $user->name;
-        $cv->email = $user->email;
-        $cv->phone = $user->phone;
-        $cv->cv = $vitae;
-        $cv->user_id = $user->id;
-        $cv->platform = 'Temping Agency';
-        $cv->save();
-
-        $mail = [
-            'name' => $user->name,
-            'email' =>$user->email,
-            'phone' =>$user->phone,
-            'code' => $code,
-            'title' => $job->title,
-            'location' => $job->location,
-            'type' => $job->type,
-            'company' => $job->company,
-        ];
-
-        Mail::to($user->email)->send(new Applied($mail));
-        return redirect()->back()->with('success','Successfully Applied for this job!');
-
-    }
 }

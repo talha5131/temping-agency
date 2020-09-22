@@ -129,7 +129,7 @@
                                     <li><i class="fas fa-key"></i>{{ $user['name'] }}</li>
                                 </h4>
                                 <h4>
-                                    <li><i class="fas fa-map-marker-alt"></i>{{ $user['message'] }}</li>
+                                    <li><i class="fas fa-map-marker-alt"></i><?php echo $user['message']; ?></li>
                                 </h4>
                             </ul>
                         </div>

@@ -45,17 +45,6 @@ return [
             'auth_mode' => null,
         ],
 
-        'job' => [
-            'transport' => 'smtp',
-            'host' => env('JOB_HOST', 'mail.workers-direct.com'),
-            'port' => env('JOB_PORT', 465),
-            'encryption' => env('JOB_ENCRYPTION', 'ssl'),
-            'username' => env('JOB_USERNAME'),
-            'password' => env('JOB_PASSWORD'),
-            'timeout' => null,
-            'auth_mode' => null,
-        ],
-
         'ses' => [
             'transport' => 'ses',        
         ],

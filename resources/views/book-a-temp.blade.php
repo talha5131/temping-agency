@@ -1,6 +1,6 @@
 @extends('layouts.base')
 @include('meta::manager', [
-    'title'         => ''Hire Temporary Staff'',
+    'title'         => 'Hire Temporary Staff',
     'description' => 'Organizations frequently face a difficulty with regards to designating a new worker. There are numerous choices and advantages and disadvantages to these alternatives. Two of the principle considerations are either designating a full-time worker or agreement in a temp.',
 ])
 @section('title','Hire Temporary Staff')

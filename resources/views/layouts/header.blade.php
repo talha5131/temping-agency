@@ -1,7 +1,8 @@
 <head>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101177998);</script>
+	<script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101276393);</script>
 	<script async src="//static.getclicky.com/js"></script>
+	<schema:jsonLd type="webSite" data="{url:'https://www.temping-agency.com'}" />
 </head>
 <style>
 	@media (min-width: 1200px) {
