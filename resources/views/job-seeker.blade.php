@@ -15,14 +15,14 @@ Temping Agency has now grown its team to more than 10,000 talented people.
 MILLIONS
 Since founded, millions of job searchers have been registered with temping agency.
 Job Searcher:
-At Temping Agency, we don’t prioritize our clients as compared to our candidates unlike other recruitment agencies. Our main focus is our candidates and we believe that they’re important and they deserve the best service that we can offer.
+At Temping Agency, we don\’t prioritize our clients as compared to our candidates unlike other recruitment agencies. Our main focus is our candidates and we believe that they\’re important and they deserve the best service that we can offer.
 We provide the following services to our job seekers:
 QUICK TURNAROUND
-We won't leave you waiting for a call after you make your application. We will guarantee we hit you up quickly, regardless of the result of your application.
+We won\'t leave you waiting for a call after you make your application. We will guarantee we hit you up quickly, regardless of the result of your application.
 CONSISTENT CONTACT
 We realize the significance of building a solid and long-lasting relationship with our candidates, which is the reason we will consistently stay in touch with you. We will do this all through the recruitment process and when you start work, just to guarantee you are getting on well. We will consistently attempt to contact you back rapidly with any inquiries you may have.
 ADVICE AND SUPPORT
-The job searching procedure can be very overwhelming, particularly if you don't have a lot of experience in it and we need to make it simpler for you by giving continuous guidance and support. We will offer guidance on your CV and interview skills, to help guarantee you perform as well as possible during interview.
+The job searching procedure can be very overwhelming, particularly if you don\'t have a lot of experience in it and we need to make it simpler for you by giving continuous guidance and support. We will offer guidance on your CV and interview skills, to help guarantee you perform as well as possible during interview.
 
 FEEDBACK
 

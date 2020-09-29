@@ -166,7 +166,7 @@
 					<li class="active"><a href="{{url('/')}}" class="mobile-li">Home </a></li>
 					<li><a href="about2" class="mobile-li">About Us</a></li>
 					<li><a href="why-us" class="mobile-li">Why Us</a></li>
-					<li><a href="our-services" class="mobile-li">Jobs</a></li>
+					<li><a href="jobs" class="mobile-li">Jobs</a></li>
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle mobile-li" data-toggle="dropdown">Services <i class="fa fa-angle-down"></i> </a>
 						<div class="dropdown-menu mega-menu custom-scrollbar mega-menu-styles">

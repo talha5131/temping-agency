@@ -34,8 +34,8 @@ class WebController extends Controller
             'message' =>$request->message,
         ];
 
-        Mail::to('team@workers-direct.com')->send(new QuoteMail($mail));
-        return back()->with('success', 'Thank\'s for contacting us. We\'ll respond you shortly!');
+        if(Mail::to('team@workers-direct.com')->send(new QuoteMail($mail)))
+            return back()->with('success', 'Thank\'s for contacting us. We\'ll respond you shortly!');
     }
 
     public function contact(Request $request){
@@ -47,8 +47,8 @@ class WebController extends Controller
             'message' =>$request->message,
         ];
 
-        Mail::to('team@workers-direct.com')->send(new ContactMail($mail));
-        return back()->with('success', 'Thank\'s for contacting us. We\'ll respond you shortly!');
+        if(Mail::to('team@workers-direct.com')->send(new ContactMail($mail)))
+            return back()->with('success', 'Thank\'s for contacting us. We\'ll respond you shortly!');
     }
 
     public function book_temp(Request $request){
@@ -60,8 +60,8 @@ class WebController extends Controller
             'message' =>$request->message,
         ];
 
-        Mail::to('team@workers-direct.com')->send(new BookMail($mail));
-        return back()->with('success', 'Thank\'s for contacting us. We\'ll respond you shortly!');
+        if(Mail::to('team@workers-direct.com')->send(new BookMail($mail)))
+            return back()->with('success', 'Thank\'s for contacting us. We\'ll respond you shortly!');
     }
 
     public function cvUpload(Request $request){
@@ -119,8 +119,8 @@ class WebController extends Controller
             'cv' => $cvUrl,
         ];
 
-        Mail::to($user->email)->send(new MailCv($mail));
-        return redirect()->back()->with('success','Congratulations! Your CV has been uploaded');
+        if(Mail::to($user->email)->send(new MailCv($mail)))
+            return redirect()->back()->with('success','Congratulations! Your CV has been uploaded');
     }
     public function post(Request $request){
         if(User::where('email',$request->email)->first()){
@@ -180,8 +180,8 @@ class WebController extends Controller
             'company' => $job->company,
         ];
 
-        Mail::to($user->email)->send(new MailJob($mail));
-        return redirect()->back()->with('success','Congratulations! Your Job has been uploaded');
+        if(Mail::to($user->email)->send(new MailJob($mail)))
+            return redirect()->back()->with('success','Congratulations! Your Job has been uploaded');
     }
 
     public function jobs(){
@@ -248,14 +248,14 @@ class WebController extends Controller
             'company' => $job->company,
         ];
 
-        Mail::to($user->email)->send(new Applied($mail));
-        return redirect()->back()->with('success','Successfully Applied for this job!');
+        if(Mail::to($user->email)->send(new Applied($mail)))
+            return redirect()->back()->with('success','Successfully Applied for this job!');
 
     }
 
     public function createSlug($title, $id = 0)
     {
-        // Normalize the title
+        // Normalize the title;;;;;
         $slug = str_slug($title);
 
         // Get any that could possibly be related.

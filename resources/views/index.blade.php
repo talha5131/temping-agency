@@ -59,7 +59,7 @@
 				<div class="overlay2">
 					<!-- <img class="" src="images/slider/bg1.jpg" alt="slider"> -->
 					<video autoplay muted loop id="myVideo">
-						<source src="public/assets/videos/temping-agency-latest-video.gif" type="video/gif">
+						<source src="public/assets/videos/temping-agency-8-9-20.mp4" type="video/mp4">
 					</video>
 				</div>
 				<div class="cd-full-width">

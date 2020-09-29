@@ -21,28 +21,28 @@
 		================================================== -->
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="public/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url('public/assets/css/bootstrap.min.css')}}">
     <!-- Template styles-->
-    <link rel="stylesheet" href="public/assets/css/style.css">
+    <link rel="stylesheet" href="{{ url('public/assets/css/style.css')}}">
     <!-- Responsive styles-->
-    <link rel="stylesheet" href="public/assets/css/responsive.css">
+    <link rel="stylesheet" href="{{ url('public/assets/css/responsive.css')}}">
     <!-- FontAwesome -->
-    <link rel="stylesheet" href="public/assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ url('public/assets/css/font-awesome.min.css')}}">
     <!-- Animation -->
-    <link rel="stylesheet" href="public/assets/css/animate.css">
+    <link rel="stylesheet" href="{{ url('public/assets/css/animate.css')}}">
     <!-- Prettyphoto -->
-    <link rel="stylesheet" href="public/assets/css/prettyPhoto.css">
+    <link rel="stylesheet" href="{{ url('public/assets/css/prettyPhoto.css')}}">
     <!-- Owl Carousel -->
-    <link rel="stylesheet" href="public/assets/css/owl.carousel.css">
-    <link rel="stylesheet" href="public/assets/css/owl.theme.css">
+    <link rel="stylesheet" href="{{ url('public/assets/css/owl.carousel.css')}}">
+    <link rel="stylesheet" href="{{ url('public/assets/css/owl.theme.css')}}">
     <!-- Flexslider -->
-    <link rel="stylesheet" href="public/assets/css/flexslider.css">
+    <link rel="stylesheet" href="{{ url('public/assets/css/flexslider.css')}}">
     <!-- Flexslider -->
-    <link rel="stylesheet" href="public/assets/css/cd-hero.css">
+    <link rel="stylesheet" href="{{ url('public/assets/css/cd-hero.css')}}">
     <!-- Style Swicther -->
-    <link id="style-switch" href="public/assets/css/presets/preset3.css" media="screen" rel="stylesheet" type="text/css">
+    <link id="style-switch" href="{{ url('public/assets/css/presets/preset3.css')}}" media="screen" rel="stylesheet" type="text/css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url('public/assets/css/fa.min.css')}}">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
     <!--[if lt IE 9]>
@@ -120,7 +120,7 @@
         <div class="row">
             <div class="col-md-12 col-sm-12">
                 <div class="ts-testimonial-content" style="margin: 0 25%;padding-bottom: 50px;">
-                    <img src="public/assets/images/temping-logo.png" alt="testimonial" class="temping-logo">
+                    <img src="{{ url('public/assets/images/temping-logo.png')}}" alt="testimonial" class="temping-logo">
                     <div class="row">
                         <div class="col-md-12 heading">
                             <h3 class="classic">YOUR CV HAS BEEN UPLOADED.</h3>
@@ -128,7 +128,7 @@
                     </div>
                     <div class="row vertical-hr">
                         <div class="col-md-12 col-sm-12">
-                            <img src="public/assets/images/clients/testimonial1.jpg" alt="testimonial" style="position: relative;top:10px;color: black;">
+                            <img src="{{ url('public/assets/images/clients/testimonial1.jpg')}}" alt="testimonial" style="position: relative;top:10px;color: black;">
                             <div class="vertical-hr1">
                                 <h3 style="padding-top: 3%;position: relative;left: -50px;top:20px;color: black;">{{ $user['name'] }}</h3>
                             </div>
@@ -176,32 +176,32 @@
 		================================================== -->
 
 <!-- initialize jQuery Library -->
-<script type="text/javascript" src="public/assets/js/jquery.js"></script>
+<script type="text/javascript" src="{{ url('public/assets/js/jquery.js')}}"></script>
 <!-- Bootstrap jQuery -->
-<script type="text/javascript" src="public/assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="{{ url('public/assets/js/bootstrap.min.js')}}"></script>
 <!-- Style Switcher -->
-<script type="text/javascript" src="public/assets/js/style-switcher.js"></script>
+<script type="text/javascript" src="{{ url('public/assets/js/style-switcher.js')}}"></script>
 <!-- Owl Carousel -->
-<script type="text/javascript" src="public/assets/js/owl.carousel.js"></script>
+<script type="text/javascript" src="{{ url('public/assets/js/owl.carousel.js')}}"></script>
 <!-- PrettyPhoto -->
-<script type="text/javascript" src="public/assets/js/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" src="{{ url('public/assets/js/jquery.prettyPhoto.js')}}"></script>
 <!-- Bxslider -->
-<script type="text/javascript" src="public/assets/js/jquery.flexslider.js"></script>
+<script type="text/javascript" src="{{ url('public/assets/js/jquery.flexslider.js')}}"></script>
 <!-- Owl Carousel -->
-<script type="text/javascript" src="public/assets/js/cd-hero.js"></script>
+<script type="text/javascript" src="{{ url('public/assets/js/cd-hero.js')}}"></script>
 <!-- Isotope -->
-<script type="text/javascript" src="public/assets/js/isotope.js"></script>
-<script type="text/javascript" src="public/assets/js/ini.isotope.js"></script>
+<script type="text/javascript" src="{{ url('public/assets/js/isotope.js')}}"></script>
+<script type="text/javascript" src="{{ url('public/assets/js/ini.isotope.js')}}"></script>
 <!-- Wow Animation -->
-<script type="text/javascript" src="public/assets/js/wow.min.js"></script>
+<script type="text/javascript" src="{{ url('public/assets/js/wow.min.js')}}"></script>
 <!-- SmoothScroll -->
-<script type="text/javascript" src="public/assets/js/smoothscroll.js"></script>
+<script type="text/javascript" src="{{ url('public/assets/js/smoothscroll.js')}}"></script>
 <!-- Eeasing -->
-<script type="text/javascript" src="public/assets/js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="{{ url('public/assets/js/jquery.easing.1.3.js')}}"></script>
 <!-- Counter -->
-<script type="text/javascript" src="public/assets/js/jquery.counterup.min.js"></script>
+<script type="text/javascript" src="{{ url('public/assets/js/jquery.counterup.min.js')}}"></script>
 <!-- Waypoints -->
-<script type="text/javascript" src="public/assets/js/waypoints.min.js"></script>
+<script type="text/javascript" src="{{ url('public/assets/js/waypoints.min.js')}}"></script>
 <!-- Template custom -->
-<script type="text/javascript" src="public/assets/js/custom.js"></script>
+<script type="text/javascript" src="{{ url('public/assets/js/custom.js')}}"></script>
 </div><!-- Body inner end -->

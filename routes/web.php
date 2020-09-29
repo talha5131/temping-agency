@@ -46,8 +46,8 @@ Route::get('/get-a-quote', function () {
 
 Route::post('/get-a-quote', 'WebController@quote')->name('quote');
 
-Route::get('/our-services', 'WebController@jobs');
-Route::get('/our-services/{slug}', 'WebController@job_detail');
+Route::get('/jobs', 'WebController@jobs');
+Route::get('/jobs/{slug}', 'WebController@job_detail');
 Route::post('/apply-job', 'WebController@apply_job')->name('apply-job');
 
 Route::get('/contact', function () {
