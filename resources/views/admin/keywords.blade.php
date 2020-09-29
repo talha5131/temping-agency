@@ -40,7 +40,7 @@
             	<div class="row">
                     <div class="col-sm-6">
                         <h4 class="m-0 text-dark">Keywords</h4></br>
-                        <form method="POST" action="{{ route('admin.savekey')}}">
+                        <form method="POST" action="{{route('admin.savekey')}}">
                         	@csrf
 	                    	<input type="text" class="form-group" name="key" placeholder="Keyword">  <input type="submit" value="Add Keyword" class="btn btn-primary">
                     	</form>
@@ -53,7 +53,7 @@
             	<div class="row">
                     <div class="col-sm-6">
                         <h4 class="m-0 text-dark">Terms</h4></br>
-                        <form method="POST" action="{{ route('admin.saveterm')}}">
+                        <form method="POST" action="{{route('admin.saveterm')}}"enctype="multipart/form-data">
                         	@csrf
 	                    	<select name="keyword" class="form-control">
 	                    		<option disabled>Select Keyword</option>
@@ -61,7 +61,7 @@
 	                    			<option value="{{$key->name}}">{{ $key->name }}</option>
 	                    		@endforeach	
 	                    	</select> 
-	                    	<input type="text" class="form-group" name="term">  <input type="submit" value="Add Term" placeholder="Term" class="btn btn-primary">
+	                    	<input type="file" class="form-group" name="term" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel"> <input type="submit" value="Add Term" placeholder="Term" class="btn btn-primary">
                     	</form>
                         <hr>
                     </div>

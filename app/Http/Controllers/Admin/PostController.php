@@ -4,6 +4,8 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Maatwebsite\Excel\Facades\Excel;
+use App\Imports\TermsImport;
 
 use App\Keyword;
 use App\Term;
@@ -27,7 +29,6 @@ class PostController extends Controller
 
     public function savekey(Request $request){
         if($request->session()->has('admin')) {
-            // return $request;
             Keyword::create(['name' => $request->key]);
             return back()->with('success', 'Keyword inserted successfully');
         }else
@@ -37,10 +38,8 @@ class PostController extends Controller
     public function saveterm(Request $request)
     {
         if($request->session()->has('admin')) {
-            $terms = explode(',', $request->term);
-            foreach ($terms as $term) {
-                Term::create(['name' => $term, 'keyword' => $request->keyword]);
-            }
+            Excel::import(new TermsImport, $request->file('term'));
+            Term::where('keyword','')->update(['keyword' => $request->keyword]);
             return back()->with('success', 'Terms inserted successfully to the keyword');
         }else
             return redirect('admin/login');
