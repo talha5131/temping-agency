@@ -219,7 +219,7 @@
 						<h5><a href="#">Time Sheet</a></h5>
 					</li>
 					<li>
-						<h5><a href="our-services">Latest Jobs</a></h5>
+						<h5><a href="jobs">Latest Jobs</a></h5>
 					</li>
 					<li>
 						<h5><a href="#">Career Advice</a></h5>
@@ -349,7 +349,7 @@
 			.marker(function(map) {
 				return {
 					position: map.getCenter(),
-					icon: 'http://themewinter.com/html/marker.png'
+					icon: 'https://themewinter.com/html/marker.png'
 				};
 			});
 	});

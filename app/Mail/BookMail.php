@@ -30,6 +30,6 @@ class BookMail extends Mailable
      */
     public function build()
     {
-        return $this->from('team@workers-direct.com')->subject($this->user['subject'])->view('mail.book');
+        return $this->from($this->user['email'])->subject($this->user['subject'])->view('mail.book');
     }
 }

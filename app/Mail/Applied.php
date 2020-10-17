@@ -28,6 +28,6 @@ class Applied extends Mailable
      * @return $this
      */
     public function build(){
-        return $this->from('jobs@workers-direct.com')->subject('Job Application Submitted Successfully! - Temping Agency')->view('mail.applied');
+        return $this->from('jobs@temping-agency.com')->subject('Job Application Submitted Successfully! - Temping Agency')->view('mail.applied');
     }
 }

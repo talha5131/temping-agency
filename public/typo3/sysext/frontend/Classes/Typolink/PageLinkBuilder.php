@@ -498,8 +498,8 @@ class PageLinkBuilder extends AbstractTypolinkBuilder
         // Create map if not found already
         $config = $this->getTypoScriptFrontendController()->config;
         $mountPointMap = $this->initializeMountPointMap(
-            !empty($config['config']['MP_defaults']) ? $config['config']['MP_defaults'] : null,
-            !empty($config['config']['MP_mapRootPoints']) ? $config['config']['MP_mapRootPoints'] : null
+            !empty($config['config']['MP_defaults']) ? $config['config']['MP_defaults'] : '',
+            !empty($config['config']['MP_mapRootPoints']) ? $config['config']['MP_mapRootPoints'] : ''
         );
 
         // Finding MP var for Page ID:
@@ -513,10 +513,10 @@ class PageLinkBuilder extends AbstractTypolinkBuilder
      * Create mount point map, based on TypoScript config.MP_mapRootPoints and config.MP_defaults.
      *
      * @param string $defaultMountPoints a string as defined in config.MP_defaults
-     * @param string|null $mapRootPointList a string as defined in config.MP_mapRootPoints
+     * @param string $mapRootPointList a string as defined in config.MP_mapRootPoints
      * @return array
      */
-    protected function initializeMountPointMap(string $defaultMountPoints = null, string $mapRootPointList = null): array
+    protected function initializeMountPointMap(string $defaultMountPoints = '', string $mapRootPointList = ''): array
     {
         $runtimeCache = GeneralUtility::makeInstance(CacheManager::class)->getCache('runtime');
         $mountPointMap = $runtimeCache->get('pageLinkBuilderMountPointMap') ?: [];

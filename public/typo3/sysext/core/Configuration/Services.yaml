@@ -297,13 +297,6 @@ services:
         method: 'addUserPermissionsToStorage'
         event: TYPO3\CMS\Core\Resource\Event\AfterResourceStorageInitializationEvent
 
-  TYPO3\CMS\Core\Resource\OnlineMedia\Processing\PreviewProcessing:
-    tags:
-      - name: event.listener
-        identifier: 'processing'
-        method: 'processFile'
-        event: TYPO3\CMS\Core\Resource\Event\BeforeFileProcessingEvent
-
   TYPO3\CMS\Core\Cache\DatabaseSchemaService:
     tags:
       - name: event.listener
@@ -415,7 +408,7 @@ services:
     alias: GuzzleHttp\Client
     public: true
   Symfony\Contracts\EventDispatcher\EventDispatcherInterface:
-    alias: TYPO3\CMS\Core\Adapter\SymfonyEventDispatcher
+    alias: TYPO3\SymfonyPsrEventDispatcherAdapter\EventDispatcherAdapter
     public: true
 
   # External dependencies

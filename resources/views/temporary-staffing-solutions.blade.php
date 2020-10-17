@@ -2,9 +2,9 @@
 @include('meta::manager', [
     'title'         => 'Temporary Staffing Solutions',
     'description' => 'EASY TO HIRE – WHENEVER YOU REQUIRE
-We have an enormous pool of applicants, who are always ready to start a job on short notice. This implies our team can find the right temporary staff at whatever point our customer’s needs. Team temping agency can pre-book a temporary staff for a time in the future when our clients need a temp. This will ease the process for employers and HR department of any business.
+We have an enormous pool of applicants, who are always ready to start a job on short notice. This implies our team can find the right temporary staff at whatever point our customer\'s needs. Team temping agency can pre-book a temporary staff for a time in the future when our clients need a temp. This will ease the process for employers and HR department of any business.
 IMMEDIATE AVAILABILITY
-Because of our broad information base, we can send a temp to you within hours of your request. There is no waiting and you also don't need to give us advance notice. When you your request for a temp, we will find the most proper temp candidate for the position and send him / her immediately to your organisation.
+Because of our broad information base, we can send a temp to you within hours of your request. There is no waiting and you also don\'t need to give us advance notice. When you your request for a temp, we will find the most proper temp candidate for the position and send him / her immediately to your organisation.
 ',
 ])
 @section('title','Temporary Staffing Solutions')

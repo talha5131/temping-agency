@@ -7,6 +7,8 @@ use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Storage;
 use PiedWeb\TextSpinner\Spinner;
+use Goutte\Client;
+use GuzzleHttp\Client as GuzzleClient;
 use App\User;
 use App\CV;
 use App\Job;
@@ -25,6 +27,34 @@ class WebController extends Controller
         return view('index');
     }
 
+    public function indextwo(){
+        $goutte = new Client();
+        $guzzle = new GuzzleClient(array('timeout' => 60, ));
+        $goutte->setClient($guzzle);
+        $crawler = $goutte->request('GET', 'https://www.indeed.co.uk/jobs?q=&l=London');
+        $data = $crawler->filter('div.jobsearch-SerpJobCard')->each(function ($node) {
+                    return $this->getNodeContent($node); });
+        foreach ($data as $detail) {
+            return $detail['url'][0];
+        }
+        return 'https://www.indeed.co.uk'.$data[0]['url'][0];
+    }
+
+    private function hasContent($node){
+        return $node->count() > 0 ? true : false;
+    }
+
+     private function getNodeContent($node){
+        $array = [
+            'title' => $this->hasContent($node->filter('h2.title')) != false ? $node->filter('h2.title')->text() : '',
+            'location' => $this->hasContent($node->filter('span.location')) != false ? $node->filter('span.location')->text() : '',
+            'content' => $this->hasContent($node->filter('div.summary')) != false ? $node->filter('div.summary')->text() : '',
+            'url' => $this->hasContent($node->filter('h2.title > a')) != false ? $node->filter('h2.title > a')->extract(array('href')) : '',
+            // 'featured_image' => $this->hasContent($node->filter('.post__image a img')) != false ? $node->filter('.post__image a img')->eq(0)->attr('src') : ''
+        ];
+        return $array;
+    }
+
     public function quote(Request $request){
 
         $mail = [
@@ -34,8 +64,8 @@ class WebController extends Controller
             'message' =>$request->message,
         ];
 
-        if(Mail::to('team@workers-direct.com')->send(new QuoteMail($mail)))
-            return back()->with('success', 'Thank\'s for contacting us. We\'ll respond you shortly!');
+        Mail::to('team@temping-agency.com')->send(new QuoteMail($mail));
+        return back()->with('success', 'Thank\'s for contacting us. We\'ll respond you shortly!');
     }
 
     public function contact(Request $request){
@@ -47,8 +77,8 @@ class WebController extends Controller
             'message' =>$request->message,
         ];
 
-        if(Mail::to('team@workers-direct.com')->send(new ContactMail($mail)))
-            return back()->with('success', 'Thank\'s for contacting us. We\'ll respond you shortly!');
+        Mail::to('team@temping-agency.com')->send(new ContactMail($mail));
+        return back()->with('success', 'Thank\'s for contacting us. We\'ll respond you shortly!');
     }
 
     public function book_temp(Request $request){
@@ -60,8 +90,8 @@ class WebController extends Controller
             'message' =>$request->message,
         ];
 
-        if(Mail::to('team@workers-direct.com')->send(new BookMail($mail)))
-            return back()->with('success', 'Thank\'s for contacting us. We\'ll respond you shortly!');
+        Mail::to('team@temping-agency.com')->send(new BookMail($mail));
+        return back()->with('success', 'Thank\'s for contacting us. We\'ll respond you shortly!');
     }
 
     public function cvUpload(Request $request){
@@ -119,8 +149,8 @@ class WebController extends Controller
             'cv' => $cvUrl,
         ];
 
-        if(Mail::to($user->email)->send(new MailCv($mail)))
-            return redirect()->back()->with('success','Congratulations! Your CV has been uploaded');
+        Mail::to($user->email)->send(new MailCv($mail));
+        return redirect()->back()->with('success','Congratulations! Your CV has been uploaded');
     }
     public function post(Request $request){
         if(User::where('email',$request->email)->first()){
@@ -180,8 +210,8 @@ class WebController extends Controller
             'company' => $job->company,
         ];
 
-        if(Mail::to($user->email)->send(new MailJob($mail)))
-            return redirect()->back()->with('success','Congratulations! Your Job has been uploaded');
+        Mail::to($user->email)->send(new MailJob($mail));
+        return redirect()->back()->with('success','Congratulations! Your Job has been uploaded');
     }
 
     public function jobs(){
@@ -248,8 +278,8 @@ class WebController extends Controller
             'company' => $job->company,
         ];
 
-        if(Mail::to($user->email)->send(new Applied($mail)))
-            return redirect()->back()->with('success','Successfully Applied for this job!');
+        Mail::to($user->email)->send(new Applied($mail));
+        return redirect()->back()->with('success','Successfully Applied for this job!');
 
     }
 

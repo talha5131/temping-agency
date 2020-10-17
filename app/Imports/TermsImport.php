@@ -14,7 +14,6 @@ class TermsImport implements ToModel
     */
     public function model(array $row)
     {
-        // return $row;
         return new Term([
             'name' => $row[0],
             'keyword' => ''

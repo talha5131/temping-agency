@@ -60,8 +60,11 @@
 	                    		@foreach($keys as $key)
 	                    			<option value="{{$key->name}}">{{ $key->name }}</option>
 	                    		@endforeach	
-	                    	</select> 
-	                    	<input type="file" class="form-group" name="term" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel"> <input type="submit" value="Add Term" placeholder="Term" class="btn btn-primary">
+	                    	</select> <br>
+                            <input type="text" class="form-control" name="term"><br>
+               	           <input type="file" class="form-control" name="file" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel"> 
+                           <br> 
+                           <input type="submit" value="Add Term" placeholder="Term" class="btn btn-primary">
                     	</form>
                         <hr>
                     </div>

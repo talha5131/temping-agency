@@ -282,10 +282,8 @@ class InlineControlContainer extends AbstractContainer
         }
 
         // Render the level links (create new record):
-        $levelLinks = '';
-        if (!empty($config['appearance']['enabledControls']['new'])) {
-            $levelLinks = $this->getLevelInteractionLink('newRecord', $nameObject . '-' . $foreign_table, $config);
-        }
+        $levelLinks = $this->getLevelInteractionLink('newRecord', $nameObject . '-' . $foreign_table, $config);
+
         // Wrap all inline fields of a record with a <div> (like a container)
         $html = '<div class="form-group" id="' . htmlspecialchars($nameObject) . '" data-uid="' . htmlspecialchars($row['uid']) . '" data-foreign-table="' . htmlspecialchars($foreign_table) . '" data-object-group="' . htmlspecialchars($nameObject) . '-' . htmlspecialchars($foreign_table) . '" data-form-field="' . htmlspecialchars($nameForm) . '" data-appearance="' . htmlspecialchars(json_encode($config['appearance'])) . '">';
 
@@ -396,7 +394,7 @@ class InlineControlContainer extends AbstractContainer
             case 'newRecord':
                 $title = htmlspecialchars($languageService->sL('LLL:EXT:core/Resources/Private/Language/locallang_core.xlf:cm.createnew'));
                 $icon = 'actions-add';
-                $className = 'typo3-newRecordLink';
+                $className = 'typo3-newRecordLink t3js-inline-controls';
                 $attributes['class'] = 'btn btn-default t3js-create-new-button';
                 if (!empty($conf['inline']['inlineNewButtonStyle'])) {
                     $attributes['style'] = $conf['inline']['inlineNewButtonStyle'];

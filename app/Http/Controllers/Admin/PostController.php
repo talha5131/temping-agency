@@ -38,8 +38,15 @@ class PostController extends Controller
     public function saveterm(Request $request)
     {
         if($request->session()->has('admin')) {
-            Excel::import(new TermsImport, $request->file('term'));
-            Term::where('keyword','')->update(['keyword' => $request->keyword]);
+            if($request->file('file')){
+                Excel::import(new TermsImport, $request->file('file'));
+                Term::where('keyword','')->update(['keyword' => $request->keyword]);
+            }else{
+                $terms = explode(',', $request->term);
+                foreach($terms as $term){
+                    Term::create(['name' => $term, 'keyword' => $request->keyword]);
+                }
+            }
             return back()->with('success', 'Terms inserted successfully to the keyword');
         }else
             return redirect('admin/login');

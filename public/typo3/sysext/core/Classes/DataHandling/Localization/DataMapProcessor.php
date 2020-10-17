@@ -19,10 +19,11 @@ use TYPO3\CMS\Backend\Utility\BackendUtility;
 use TYPO3\CMS\Core\Authentication\BackendUserAuthentication;
 use TYPO3\CMS\Core\Database\Connection;
 use TYPO3\CMS\Core\Database\ConnectionPool;
-use TYPO3\CMS\Core\Database\Query\Restriction\BackendWorkspaceRestriction;
 use TYPO3\CMS\Core\Database\Query\Restriction\DeletedRestriction;
+use TYPO3\CMS\Core\Database\Query\Restriction\WorkspaceRestriction;
 use TYPO3\CMS\Core\Database\RelationHandler;
 use TYPO3\CMS\Core\DataHandling\DataHandler;
+use TYPO3\CMS\Core\DataHandling\ReferenceIndexUpdater;
 use TYPO3\CMS\Core\Localization\LanguageService;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Core\Utility\MathUtility;
@@ -44,6 +45,8 @@ use TYPO3\CMS\Core\Utility\StringUtility;
  * Namings in this class:
  * + forTableName, forId always refers to dependencies data is provided *for*
  * + fromTableName, fromId always refers to ancestors data is retrieved *from*
+ *
+ * @internal should only be used by the TYPO3 Core
  */
 class DataMapProcessor
 {
@@ -68,6 +71,11 @@ class DataMapProcessor
     protected $backendUser;
 
     /**
+     * @var ReferenceIndexUpdater
+     */
+    protected $referenceIndexUpdater;
+
+    /**
      * @var DataMapItem[]
      */
     protected $allItems = [];
@@ -82,26 +90,39 @@ class DataMapProcessor
      *
      * @param array $dataMap The submitted data-map to be worked on
      * @param BackendUserAuthentication $backendUser Forwarded backend-user scope
+     * @param ReferenceIndexUpdater|null $referenceIndexUpdater Forward reference index updater to sub DataHandler instances
      * @return DataMapProcessor
      */
-    public static function instance(array $dataMap, BackendUserAuthentication $backendUser)
-    {
+    public static function instance(
+        array $dataMap,
+        BackendUserAuthentication $backendUser,
+        ReferenceIndexUpdater $referenceIndexUpdater = null
+    ) {
         return GeneralUtility::makeInstance(
             static::class,
             $dataMap,
-            $backendUser
+            $backendUser,
+            $referenceIndexUpdater
         );
     }
 
     /**
      * @param array $dataMap The submitted data-map to be worked on
      * @param BackendUserAuthentication $backendUser Forwarded backend-user scope
+     * @param ReferenceIndexUpdater|null $referenceIndexUpdater Forward reference index updater to sub DataHandler instances
      */
-    public function __construct(array $dataMap, BackendUserAuthentication $backendUser)
-    {
+    public function __construct(
+        array $dataMap,
+        BackendUserAuthentication $backendUser,
+        ReferenceIndexUpdater $referenceIndexUpdater = null
+    ) {
         $this->allDataMap = $dataMap;
         $this->modifiedDataMap = $dataMap;
         $this->backendUser = $backendUser;
+        if ($referenceIndexUpdater === null) {
+            $referenceIndexUpdater = GeneralUtility::makeInstance(ReferenceIndexUpdater::class);
+        }
+        $this->referenceIndexUpdater = $referenceIndexUpdater;
     }
 
     /**
@@ -614,7 +635,7 @@ class DataMapProcessor
         }
         // execute copy, localize and delete actions on persisted child records
         if (!empty($localCommandMap)) {
-            $localDataHandler = GeneralUtility::makeInstance(DataHandler::class);
+            $localDataHandler = GeneralUtility::makeInstance(DataHandler::class, $this->referenceIndexUpdater);
             $localDataHandler->start([], $localCommandMap, $this->backendUser);
             $localDataHandler->process_cmdmap();
             // update copied or localized ids
@@ -860,7 +881,7 @@ class DataMapProcessor
         $queryBuilder->getRestrictions()
             ->removeAll()
             ->add(GeneralUtility::makeInstance(DeletedRestriction::class))
-            ->add(GeneralUtility::makeInstance(BackendWorkspaceRestriction::class, $this->backendUser->workspace, false));
+            ->add(GeneralUtility::makeInstance(WorkspaceRestriction::class, $this->backendUser->workspace));
         $statement = $queryBuilder
             ->select(...array_values($fieldNames))
             ->from($tableName)
@@ -1069,7 +1090,7 @@ class DataMapProcessor
         $queryBuilder->getRestrictions()
             ->removeAll()
             ->add(GeneralUtility::makeInstance(DeletedRestriction::class))
-            ->add(GeneralUtility::makeInstance(BackendWorkspaceRestriction::class, $this->backendUser->workspace, false));
+            ->add(GeneralUtility::makeInstance(WorkspaceRestriction::class, $this->backendUser->workspace));
 
         $zeroParameter = $queryBuilder->createNamedParameter(0, \PDO::PARAM_INT);
         $ids = $this->filterNumericIds($ids);

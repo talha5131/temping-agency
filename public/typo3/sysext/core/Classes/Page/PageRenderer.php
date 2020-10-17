@@ -23,7 +23,10 @@ use TYPO3\CMS\Core\Core\Environment;
 use TYPO3\CMS\Core\Localization\Locales;
 use TYPO3\CMS\Core\Localization\LocalizationFactory;
 use TYPO3\CMS\Core\MetaTag\MetaTagManagerRegistry;
+use TYPO3\CMS\Core\Package\Package;
+use TYPO3\CMS\Core\Package\PackageInterface;
 use TYPO3\CMS\Core\Package\PackageManager;
+use TYPO3\CMS\Core\Resource\RelativeCssPathFixer;
 use TYPO3\CMS\Core\Resource\ResourceCompressor;
 use TYPO3\CMS\Core\Service\MarkerBasedTemplateService;
 use TYPO3\CMS\Core\SingletonInterface;
@@ -103,7 +106,7 @@ class PageRenderer implements SingletonInterface
 
     // Arrays containing associative array for the included files
     /**
-     * @var array
+     * @var array<string, array>
      */
     protected $jsFiles = [];
 
@@ -123,12 +126,12 @@ class PageRenderer implements SingletonInterface
     protected $jsFooterLibs = [];
 
     /**
-     * @var array
+     * @var array<string, array>
      */
     protected $cssFiles = [];
 
     /**
-     * @var array
+     * @var array<string, array>
      */
     protected $cssLibs = [];
 
@@ -224,7 +227,7 @@ class PageRenderer implements SingletonInterface
 
     // Static inline code blocks
     /**
-     * @var array
+     * @var array<string, array>
      */
     protected $jsInline = [];
 
@@ -234,7 +237,7 @@ class PageRenderer implements SingletonInterface
     protected $jsFooterInline = [];
 
     /**
-     * @var array
+     * @var array<string, array>
      */
     protected $cssInline = [];
 
@@ -1347,7 +1350,7 @@ class PageRenderer implements SingletonInterface
      * resource folders plus some additional generic configuration.
      *
      * @param bool $isDevelopment
-     * @param array $packages
+     * @param array<string, PackageInterface> $packages
      * @return array The RequireJS configuration
      */
     protected function computeRequireJsConfig($isDevelopment, array $packages)
@@ -1363,7 +1366,7 @@ class PageRenderer implements SingletonInterface
         $corePath = PathUtility::getAbsoluteWebPath($corePath);
         // first, load all paths for the namespaces, and configure contrib libs.
         $requireJsConfig['public']['paths'] = [
-            'jquery' => $corePath . '/jquery/jquery',
+            'jquery' => $corePath . 'jquery/jquery',
             'jquery-ui' => $corePath . 'jquery-ui',
             'nprogress' => $corePath . 'nprogress',
             'moment' => $corePath . 'moment',
@@ -1378,7 +1381,7 @@ class PageRenderer implements SingletonInterface
             'Sortable' => $corePath . 'Sortable.min',
             'tablesort' => $corePath . 'tablesort',
             'tablesort.dotsep' => $corePath . 'tablesort.dotsep',
-            'broadcastchannel' => $corePath . '/broadcastchannel-polyfill',
+            'broadcastchannel' => $corePath . 'broadcastchannel-polyfill',
         ];
         $requireJsConfig['public']['shim'] = [
             'tablesort.dotsep' => ['deps' => ['tablesort']],
@@ -1930,7 +1933,7 @@ class PageRenderer implements SingletonInterface
     {
         $templateFile = GeneralUtility::getFileAbsFileName($this->templateFile);
         if (is_file($templateFile)) {
-            $template = file_get_contents($templateFile);
+            $template = (string)file_get_contents($templateFile);
             if ($this->removeLineBreaksFromTemplate) {
                 $template = strtr($template, [LF => '', CR => '']);
             }
@@ -2544,7 +2547,7 @@ class PageRenderer implements SingletonInterface
         if (strpos($file, 'EXT:') === 0) {
             $file = GeneralUtility::getFileAbsFileName($file);
             // as the path is now absolute, make it "relative" to the current script to stay compatible
-            $file = PathUtility::getRelativePathTo($file);
+            $file = PathUtility::getRelativePathTo($file) ?? '';
             $file = rtrim($file, '/');
         } else {
             $file = GeneralUtility::resolveBackPath($file);
@@ -2694,13 +2697,21 @@ class PageRenderer implements SingletonInterface
     protected function createInlineCssTagFromFile(string $file, array $properties): string
     {
         $cssInline = file_get_contents($file);
-
+        if ($cssInline === false) {
+            return '';
+        }
+        $cssInlineFix = $this->getPathFixer()->fixRelativeUrlPaths($cssInline, '/' . PathUtility::dirname($file) . '/');
         return '<style type="text/css"'
             . ' media="' . htmlspecialchars($properties['media']) . '"'
             . ($properties['title'] ? ' title="' . htmlspecialchars($properties['title']) . '"' : '')
             . '>' . LF
             . '/*<![CDATA[*/' . LF . '<!-- ' . LF
-            . $cssInline
+            . $cssInlineFix
             . '-->' . LF . '/*]]>*/' . LF . '</style>' . LF;
+    }
+
+    protected function getPathFixer(): RelativeCssPathFixer
+    {
+        return GeneralUtility::makeInstance(RelativeCssPathFixer::class);
     }
 }

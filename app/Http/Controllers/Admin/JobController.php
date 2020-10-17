@@ -117,6 +117,7 @@ class JobController extends Controller
                     $job->image = $name;
             }else
                 $job->image = '';
+                
 
             $job->save();
 
@@ -195,6 +196,7 @@ class JobController extends Controller
                 $job->image = '';
 
             $job->save();
+            $id = $job->id;
 
             foreach($term1 as $job){
                 foreach($term2 as $city){
@@ -209,7 +211,6 @@ class JobController extends Controller
                     $content = Spinner::spin($text);
                     $url = $job->links;
                     $slug = $this->createSlug($title);
-                    $id = $job->id;
 
                     Bulk::create([
                         'title' => $title ,
@@ -243,7 +244,7 @@ class JobController extends Controller
         }
 
         // Just append numbers like a savage until we find not used.
-        for ($i = 1; $i <= 10; $i++) {
+        for ($i = 1; $i <= 999999; $i++) {
             $newSlug = $slug.'-'.$i;
             if (! $allSlugs->contains('slug', $newSlug)) {
                 return $newSlug;

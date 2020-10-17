@@ -151,7 +151,7 @@
 				.marker(function(map) {
 					return {
 						position: map.getCenter(),
-						icon: 'http://themewinter.com/html/marker.png'
+						icon: 'https://themewinter.com/html/marker.png'
 					};
 				});
 		});

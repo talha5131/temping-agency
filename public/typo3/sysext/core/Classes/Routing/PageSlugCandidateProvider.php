@@ -231,6 +231,11 @@ class PageSlugCandidateProvider
 
         while ($row = $statement->fetch()) {
             $mountPageInformation = null;
+            // This changes the PID value and adds a _ORIG_PID value (only different in move actions)
+            // In live: This fetches everything in a bad way ! as there is no workspace limitation given, fetching all new and moved placeholders here!
+            // In a workspace: Filter out versioned records (t3ver_oid=0), leaving effectively the new/move placeholders in place, where the new placeholder
+            // However, this is checked in $siteFinder->getSiteByPageId() via RootlineUtility where overlays are happening
+            // so the fixVersioningPid() call is probably irrelevant.
             $pageRepository->fixVersioningPid('pages', $row);
             $pageIdInDefaultLanguage = (int)($languageId > 0 ? $row['l10n_parent'] : $row['uid']);
             // When this page was added before via recursion, this page should be skipped
@@ -299,6 +304,7 @@ class PageSlugCandidateProvider
 
             // Add possible sub-pages prepended with the MountPoint page slug
             if ($mountPageInformation) {
+                /** @var array $mountedPage */
                 $siteOfMountedPage = $siteFinder->getSiteByPageId((int)$mountedPage['uid']);
                 $morePageCandidates = $this->findPageCandidatesOfMountPoint(
                     $row,
@@ -442,7 +448,7 @@ class PageSlugCandidateProvider
         if (!empty($redecorationPattern) && preg_match('#' . $redecorationPattern . '#', $routePath, $matches)) {
             $decoration = $matches['decoration'];
             $decorationPattern = preg_quote($decoration, '#');
-            $routePath = preg_replace('#' . $decorationPattern . '$#', '', $routePath);
+            $routePath = preg_replace('#' . $decorationPattern . '$#', '', $routePath) ?? '';
         }
 
         $candidatePathParts = [];
